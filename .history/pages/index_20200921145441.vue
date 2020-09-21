@@ -163,14 +163,14 @@ export default {
       const num = 3 - this.frame
       const width = 200
       const resize = num * width
-      const check = position === 'reset' ? resize : width
+      const check = position == 'reset' ? resize : width
       // var obj=this;
       function frame() {
-        if (pos === check) {
+        if (pos == check) {
           clearInterval(id)
         } else {
           pos += 5
-          if (position === 'next') {
+          if (position == 'next') {
             el.scrollLeft += 5
           } else {
             el.scrollLeft -= 5
