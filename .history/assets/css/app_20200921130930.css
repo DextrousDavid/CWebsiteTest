@@ -1,8 +1,15 @@
+html, body {width: auto!important; overflow-x: hidden!important} 
 .nav-bg{
 background-color:#F1F5FB;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+width: 100%;
 }
 .log-wrapper{
 margin-left: 80px;
+display: flex;
 }
 .list-item-navigation{
 font-size: 16px;
@@ -26,9 +33,11 @@ padding: 12px 26px;
 max-width: 583px;
 }
 .landing-page-banner{
-    padding-top: 181px;
+    padding-top: 101px;
     padding-bottom: 200px;
     background: rgb(186, 147, 249, 0.01);
+    position: relative;
+
 }
 .cloudenly-headline{
 font-family: GalanoGrotesque;
@@ -68,7 +77,7 @@ margin-right: 35px;
     font-size: 16px;
     line-height: 19px;
     color: #F1F5FB;
-    padding:15px 65px;
+    padding:15px 65px 17px 65px;
 }
 
 .white-btn-border{
@@ -80,7 +89,7 @@ margin-right: 35px;
     font-size: 16px;
     line-height: 19px;
     color: #4781DC;
-    padding:15px 65px;
+    padding:15px 65px 17px 65px;
 }
 .enterprices{
 padding-top:29px;
@@ -118,7 +127,7 @@ background: rgb(241, 245, 251,0.4);
 padding-left: 60px;
 }
 .div-cover{
-    width: 377px;
+    max-width: 377px;
     padding-top: 74px;
 }
 .cloudenly-text-box{
@@ -202,7 +211,7 @@ color: #4781DC;
 margin-top: 15px;
 width: 100%;
 padding-top: 15px;
-padding-bottom: 15px;
+padding-bottom: 17px;
 text-align: center;
 border-radius: 3px;
 }
@@ -252,10 +261,10 @@ margin-top: 10px;
     padding: 80px 70px 20px 80px;
     background: #FFFFFF;
 }
-.columnb-box{
+.column-box{
     text-align: left;
     /* margin-right: 50px; */
-    margin-right: 96px;
+    margin-right: 64px;
 }
 .menu-head{
 /* font-family: BRFirma; */
@@ -355,16 +364,51 @@ margin-left: 0px;
 .list-item-navigation{
 margin-left: 0px;
 } 
+.header-text-bold {
+    font-size: 30px;
+    line-height: 60%;
+}
 .landing-page-banner{
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
     padding-bottom:40px;
 }
+.landing-page-right-div{
+    margin-top: 35px;
+}
+.enterprices{
+    padding-top:0px;
+    padding-bottom: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    }
+    .enterprice-box {
+        width: 179px;
+        margin-top: 20px;
+    }
+    .cloudenly-suite{
+        padding-top: 20px;
+        margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 0px;
+    }
+    .div-cover{
+        /* max-width: 377px; */
+        padding-top: 0px;
+    }
+    .cloudenly-text-box{
+        font-size: 30px;
+    line-height: 50px;
+    }
 .blue-btn, .white-btn-border{
     width: 100%;
 }
 .call-to-action-div .blue-btn{
     margin-right: 0px;
+    }
+    .nav-bg{
+        justify-content: space-around;
     }
 }

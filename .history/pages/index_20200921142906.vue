@@ -50,15 +50,13 @@
           customer experiences.
         </div>
         <div class="arrow-direction flex">
-          <div class="arrow-left" style="margin-right: 60px" @click="previous">
+          <div @click="previous" class="arrow-left" style="margin-right: 60px">
             <img src="/img/left-arrow.svg" />
           </div>
-          <div class="arrow-left" @click="next">
-            <img src="/img/right-arrow.svg" />
-          </div>
+          <div @click="next" class="arrow-left"><img src="/img/right-arrow.svg" /></div>
         </div>
       </div>
-      <div id="slide" class="products-container sm:flex">
+      <div class="products-container sm:flex" id="slide">
         <div class="product-div">
           <div class="product-top-line optima-top"></div>
           <div class="product-desc">
@@ -137,49 +135,57 @@ export default {
   data() {
     return {
       frame: 3,
-      rightArrow: true,
-      leftArrow: false,
-      scrollWidth: 0,
-      count: 0,
+      rightArrow:true,
+    leftArrow:false,
+    scrollWidth:0,
+    count: 0,
     }
   },
-  methods: {
+  methods:{
     previous() {
-      // this.portArrowRight=true;
-      this.count--
-      this.count = this.count--
-      this.scroll('previous')
+      this.rightArrow=true;
+      this.count--;
+      this.count = this.count--;
+      this.slider("previous");
     },
     next() {
-      // this.portArrowLeft=true;
-      this.count++
-      this.count = this.count++
-      this.scroll('next')
+      this.leftArrow=true;
+      this.count++;
+      this.count = this.count++;
+      this.slider("next");
     },
-    scroll(position) {
-      const el = document.getElementById('slide')
-      let pos = 0
-      const id = setInterval(frame, 5)
-      const num = 3 - this.frame
-      const width = 200
-      const resize = num * width
-      const check = position === 'reset' ? resize : width
-      // var obj=this;
+    slider(position) {
+      let el = document.getElementById("slide1");
+      let pos = 0;
+      let id = setInterval(frame, 5);
+      let num = 3 - this.frame;
+      let width = 324;
+      let resize = num * width;
+      let check = position == "reset" ? resize : width;
+      var obj=this;
       function frame() {
-        if (pos === check) {
-          clearInterval(id)
+        if (pos == check) {
+          clearInterval(id);
         } else {
-          pos += 5
-          if (position === 'next') {
-            el.scrollLeft += 5
+          pos += 5;
+          if (position == "next") {
+            el.scrollLeft += 5;
           } else {
-            el.scrollLeft -= 5
+            el.scrollLeft -= 5;
           }
-          // obj.portfolioScroll(el.scrollLeft);
+         obj.checkScrolLeft(el.scrollLeft);
         }
       }
     },
+    checkScrolLeft:function(value){
+      if(this.scrollWidth==value  && value>0){
+          this.rightArrow=false;
+      }
+      else{
+        this.scrollWidth=value;
+      }
   },
+  }
 }
 </script>
 

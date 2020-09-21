@@ -145,26 +145,26 @@ export default {
   },
   methods: {
     previous() {
-      // this.portArrowRight=true;
+      this.rightArrow = true
       this.count--
       this.count = this.count--
-      this.scroll('previous')
+      this.slider('previous')
     },
     next() {
-      // this.portArrowLeft=true;
+      this.leftArrow = true
       this.count++
       this.count = this.count++
-      this.scroll('next')
+      this.slider('next')
     },
-    scroll(position) {
+    slider(position) {
       const el = document.getElementById('slide')
       let pos = 0
       const id = setInterval(frame, 5)
       const num = 3 - this.frame
-      const width = 200
+      const width = 324
       const resize = num * width
       const check = position === 'reset' ? resize : width
-      // var obj=this;
+      const obj = this
       function frame() {
         if (pos === check) {
           clearInterval(id)
@@ -175,8 +175,15 @@ export default {
           } else {
             el.scrollLeft -= 5
           }
-          // obj.portfolioScroll(el.scrollLeft);
+          obj.checkScrolLeft(el.scrollLeft)
         }
+      }
+    },
+    checkScrolLeft(value) {
+      if (this.scrollWidth === value && value > 0) {
+        this.rightArrow = false
+      } else {
+        this.scrollWidth = value
       }
     },
   },

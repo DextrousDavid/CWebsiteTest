@@ -76,7 +76,7 @@ export default {
       innovationText:
         'Our magic lies in our vision, craft, and the courage to shape tomorrow, in catalyzing innovation for growth. From the very first code, our mission remains the same, to provide your business with the tools that it needs to thrive.',
       tab: null,
-      items: ['Innovation', 'Scalability', 'Ecosystem'],
+      items: ['Automation & Mobility', 'Enterprise - Grade', 'Ecosystem'],
       text:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     }
