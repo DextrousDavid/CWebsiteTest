@@ -12,7 +12,7 @@
             business operation.
           </div>
           <div class="call-to-action-div sm:flex">
-            <button class="blue-btn">TRY FOR FREE</button>
+            <button class="btn btn-primary">TRY FOR FREE</button>
             <button class="white-btn-border">EXPLORE MORE</button>
           </div>
         </div>
@@ -50,15 +50,13 @@
           customer experiences.
         </div>
         <div class="arrow-direction flex">
-          <div class="arrow-left" style="margin-right: 60px" @click="previous">
+          <div class="arrow-left" style="margin-right: 60px">
             <img src="/img/left-arrow.svg" />
           </div>
-          <div class="arrow-left" @click="next">
-            <img src="/img/right-arrow.svg" />
-          </div>
+          <div class="arrow-left"><img src="/img/right-arrow.svg" /></div>
         </div>
       </div>
-      <div id="slide" class="products-container sm:flex">
+      <div class="products-container sm:flex">
         <div class="product-div">
           <div class="product-top-line optima-top"></div>
           <div class="product-desc">
@@ -135,50 +133,7 @@ export default {
     ProductPackComponent,
   },
   data() {
-    return {
-      frame: 3,
-      rightArrow: true,
-      leftArrow: false,
-      scrollWidth: 0,
-      count: 0,
-    }
-  },
-  methods: {
-    previous() {
-      // this.portArrowRight=true;
-      this.count--
-      this.count = this.count--
-      this.scroll('previous')
-    },
-    next() {
-      // this.portArrowLeft=true;
-      this.count++
-      this.count = this.count++
-      this.scroll('next')
-    },
-    scroll(position) {
-      const el = document.getElementById('slide')
-      let pos = 0
-      const id = setInterval(frame, 5)
-      const num = 3 - this.frame
-      const width = 200
-      const resize = num * width
-      const check = position === 'reset' ? resize : width
-      // var obj=this;
-      function frame() {
-        if (pos === check) {
-          clearInterval(id)
-        } else {
-          pos += 5
-          if (position === 'next') {
-            el.scrollLeft += 5
-          } else {
-            el.scrollLeft -= 5
-          }
-          // obj.portfolioScroll(el.scrollLeft);
-        }
-      }
-    },
+    return {}
   },
 }
 </script>

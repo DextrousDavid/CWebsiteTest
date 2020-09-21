@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="flex-wrap nav-bg p-6" :class="fixed ? 'sticky' : null">
-      <div class="items-center flex-shrink-0 text-white mr-6 log-wrapper">
+      <div class="flex items-center flex-shrink-0 text-white mr-6 log-wrapper">
         <img src="/img/cloudenly-logo.svg" />
       </div>
       <div class="block lg:hidden">

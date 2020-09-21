@@ -1,8 +1,8 @@
 <template>
   <div>
     <AppHeader />
-    <Nuxt />
-    <AppFooter />
+    <!-- <Nuxt /> -->
+    <!-- <AppFooter /> -->
   </div>
 </template>
 <script>
@@ -18,7 +18,7 @@ export default {
 <style>
 @import '../assets/css/app.css';
 @import '../assets/fonts/stylesheet.css';
-/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 * {
   font-family: GalanoGrotesque;

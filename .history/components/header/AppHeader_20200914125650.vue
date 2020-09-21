@@ -1,12 +1,12 @@
 <template>
   <div>
-    <nav class="flex-wrap nav-bg p-6" :class="fixed ? 'sticky' : null">
-      <div class="items-center flex-shrink-0 text-white mr-6 log-wrapper">
+    <nav class="flex items-center justify-between flex-wrap nav-bg p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6 log-wrapper">
         <img src="/img/cloudenly-logo.svg" />
       </div>
       <div class="block lg:hidden">
         <button
-          class="flex items-center bg-indigo-600 px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
           @click="toggle"
         >
           <svg
@@ -62,36 +62,13 @@ export default {
   data() {
     return {
       open: false,
-      fixed: false,
     }
-  },
-  beforeMount() {
-    window.addEventListener('scroll', this.stickNavbar)
   },
   methods: {
     toggle() {
       this.open = !this.open
     },
-    stickNavbar() {
-      if (window.pageYOffset > 100) {
-        //  console.log(pageYOffset, "see")
-        this.fixed = true
-      } else {
-        this.fixed = false
-      }
-    },
   },
 }
 </script>
-<style scoped>
-.sticky {
-  position: fixed;
-  width: 100%;
-  /* background: #fff; */
-  /* box-shadow: inset 0px -1px 0px #efefef; */
-  z-index: 1;
-  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-}
-</style>
+<style scoped></style>
