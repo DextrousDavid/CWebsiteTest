@@ -12,7 +12,6 @@
             <v-tab>Dome</v-tab>
           </v-tabs>
         </div>
-
         <v-tabs-items v-model="currentTab">
           <v-tab-item>
             <Product :features="optima_content" />
@@ -29,15 +28,15 @@
   </div>
 </template>
 <script>
-// import { VTabs, VTab, VTabItem, VTabsItems } from 'vuetify/lib'
+import { VTabs, VTab, VTabsItems, VTabItem } from 'vuetify/lib'
 import Product from './Product'
 export default {
   components: {
     Product,
-    // VTabItem,
-    // VTabsItems,
-    // VTabs,
-    // VTab,
+    VTabs,
+    VTab,
+    VTabsItems,
+    VTabItem,
   },
   data() {
     return {
