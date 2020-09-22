@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div>
     <div class="sm:flex product-wrapper">
@@ -95,7 +96,9 @@
 </template>
 <script>
 export default {
-  props: ['features'],
+  props: {
+    features: String,
+  },
   data() {
     return {}
   },
