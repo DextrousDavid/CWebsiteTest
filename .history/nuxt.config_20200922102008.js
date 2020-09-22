@@ -1,9 +1,5 @@
+// const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
-const webpackPlugins = () => {
-  const plugins = [];
-  plugins.push(new VuetifyLoaderPlugin());
-  return plugins;
-};
 export default {
   /*
    ** Nuxt rendering mode
@@ -40,7 +36,16 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    'vuetify-loader/lib/plugin.js',
+    // new VuetifyLoaderPlugin()
+    // make sure to include the plugin!
+  //   new VueLoaderPlugin({
+  //     title: 'use plugin',
+  //     filename: 'plugin.js'
+  // })
+  //  new  '@node_modules/vue-loader/lib/plugin'
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -70,7 +75,6 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
-    
   ],
   /*
    ** Axios module configuration
@@ -87,8 +91,6 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
-    plugins: webpackPlugins(),
-    transpile: [/^vuetify/],
     extend(config, ctx) {
       config.module.rules.push({
         enforce: "pre",
@@ -104,11 +106,5 @@ export default {
       //   new VuetifyLoaderPlugin()
       // )
     }
-    // ,
-  //   parallel: true,
-	// plugins: [
-	// 	new VuetifyLoaderPlugin(),
-	// ],
-	// transpile: [/^vuetify/]
   },
 }

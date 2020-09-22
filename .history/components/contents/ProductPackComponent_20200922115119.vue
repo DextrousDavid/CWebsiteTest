@@ -6,14 +6,13 @@
       </div>
       <div class="w-full sm:flex justify-center tabs-container">
         <div class="tabs-control">
-          <v-tabs v-model="currentTab" background-color="transparent" grow>
-            <v-tab>Optima</v-tab>
-            <v-tab>HumanaR</v-tab>
-            <v-tab>Dome</v-tab>
-          </v-tabs>
+          <!-- <VTabs v-model="currentTab" background-color="transparent" grow>
+            <VTab>Optima</VTab>
+            <VTab>HumanaR</VTab>
+            <VTab>Dome</VTab>
+          </VTabs> -->
         </div>
-
-        <v-tabs-items v-model="currentTab">
+        <!-- <v-tabs-items v-model="currentTab">
           <v-tab-item>
             <Product :features="optima_content" />
           </v-tab-item>
@@ -23,21 +22,21 @@
           <v-tab-item>
             <Product :features="dome_content" />
           </v-tab-item>
-        </v-tabs-items>
+        </v-tabs-items> -->
       </div>
     </div>
   </div>
 </template>
 <script>
-// import { VTabs, VTab, VTabItem, VTabsItems } from 'vuetify/lib'
-import Product from './Product'
+// import { VTabs, VTab } from 'vuetify/lib'
+// import Product from './Product'
 export default {
   components: {
-    Product,
-    // VTabItem,
-    // VTabsItems,
+    // Product,
     // VTabs,
     // VTab,
+    // VTabsItems,
+    // VTabItem,
   },
   data() {
     return {

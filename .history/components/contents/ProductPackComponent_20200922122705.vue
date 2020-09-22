@@ -29,15 +29,15 @@
   </div>
 </template>
 <script>
-// import { VTabs, VTab, VTabItem, VTabsItems } from 'vuetify/lib'
+import { VTabs, VTab, VTabItem, VTabsItems } from 'vuetify/lib'
 import Product from './Product'
 export default {
   components: {
     Product,
-    // VTabItem,
-    // VTabsItems,
-    // VTabs,
-    // VTab,
+    VTabItem,
+    VTabsItems,
+    VTabs,
+    VTab,
   },
   data() {
     return {
