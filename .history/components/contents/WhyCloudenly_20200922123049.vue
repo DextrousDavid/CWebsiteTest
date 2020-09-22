@@ -70,14 +70,7 @@
   </div>
 </template>
 <script>
-// import { VTabs, VTab, VTabItem, VTabsItems } from 'vuetify/lib'
 export default {
-  components: {
-    // VTabItem,
-    // VTabsItems,
-    // VTabs,
-    // VTab,
-  },
   data() {
     return {
       innovationText:

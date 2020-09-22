@@ -1,9 +1,6 @@
+// const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
-const webpackPlugins = () => {
-  const plugins = [];
-  plugins.push(new VuetifyLoaderPlugin());
-  return plugins;
-};
+const createInstant= new VuetifyLoaderPlugin();
 export default {
   /*
    ** Nuxt rendering mode
@@ -40,7 +37,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [createInstant],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -70,7 +67,6 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
-    
   ],
   /*
    ** Axios module configuration
@@ -87,8 +83,6 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
-    plugins: webpackPlugins(),
-    transpile: [/^vuetify/],
     extend(config, ctx) {
       config.module.rules.push({
         enforce: "pre",
@@ -99,16 +93,10 @@ export default {
           fix: true
         }
       })
-      // ,
-      // config.plugins.push(
-      //   new VuetifyLoaderPlugin()
-      // )
+      ,
+      config.plugins.push(
+        createInstant
+      )
     }
-    // ,
-  //   parallel: true,
-	// plugins: [
-	// 	new VuetifyLoaderPlugin(),
-	// ],
-	// transpile: [/^vuetify/]
   },
 }

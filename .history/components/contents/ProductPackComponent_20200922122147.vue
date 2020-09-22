@@ -4,7 +4,8 @@
       <div class="cloudenly-headline" style="text-align: center">
         Our Product Pack
       </div>
-      <div class="w-full sm:flex justify-center tabs-container">
+      <v-tabs></v-tabs>
+      <!-- <div class="w-full sm:flex justify-center tabs-container">
         <div class="tabs-control">
           <v-tabs v-model="currentTab" background-color="transparent" grow>
             <v-tab>Optima</v-tab>
@@ -12,7 +13,6 @@
             <v-tab>Dome</v-tab>
           </v-tabs>
         </div>
-
         <v-tabs-items v-model="currentTab">
           <v-tab-item>
             <Product :features="optima_content" />
@@ -24,20 +24,17 @@
             <Product :features="dome_content" />
           </v-tab-item>
         </v-tabs-items>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 <script>
-// import { VTabs, VTab, VTabItem, VTabsItems } from 'vuetify/lib'
-import Product from './Product'
+// import Product from './Product'
+import { VTabs } from 'vuetify/lib'
 export default {
   components: {
-    Product,
-    // VTabItem,
-    // VTabsItems,
-    // VTabs,
-    // VTab,
+    // Product,
+    VTabs,
   },
   data() {
     return {
