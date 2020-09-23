@@ -1,9 +1,9 @@
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
-const webpackPlugins = () => {
-  const plugins = [];
-  plugins.push(new VuetifyLoaderPlugin());
-  return plugins;
-};
+// const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
+// const webpackPlugins = () => {
+//   const plugins = [];
+//   plugins.push(new VuetifyLoaderPlugin());
+//   return plugins;
+// };
 export default {
   /*
    ** Nuxt rendering mode
@@ -59,7 +59,7 @@ export default {
     '@nuxtjs/vuetify',
 
     // With options
-    ['@nuxtjs/vuetify', { /* module options */ }]
+    // ['@nuxtjs/vuetify', { /* module options */ }]
   ],
   /*
    ** Nuxt.js modules
@@ -87,8 +87,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
-    plugins: webpackPlugins(),
-    transpile: [/^vuetify/],
+    // plugins: webpackPlugins(),
+    // transpile: [/^vuetify/],
     extend(config, ctx) {
       config.module.rules.push({
         enforce: "pre",
