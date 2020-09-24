@@ -4,10 +4,9 @@
       <div class="items-center flex-shrink-0 text-white mr-6 log-wrapper">
         <img src="/img/cloudenly-logo.svg" />
       </div>
-      <div class="block lg:hidden">
+      <div class="block lg:hidden" @click="toggle">
         <button
           class="flex items-center bg-indigo-600 px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-          @click="toggle"
         >
           <svg
             class="fill-current h-3 w-3"
