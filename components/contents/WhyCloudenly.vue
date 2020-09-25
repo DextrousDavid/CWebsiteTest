@@ -2,7 +2,7 @@
   <div>
     <div class="product-wrapper">
       <div class="why-cloudenly">
-        <div class="section-name">Why Cloudenly?</div>
+        <div class="cloudenly-headline">Why Cloudenly?</div>
         <div class="w-full sm:flex justify-center tabs-wrapper">
           <div class="section-tabs">
             <v-tabs
@@ -26,7 +26,9 @@
                     <div class="section-text">{{ innovationText }}</div>
                   </div>
                 </div>
-                <div class="sm:w-1/2 sm:flex justify-center sm:ml-4">
+                <div
+                  class="sm:w-1/2 sm:flex justify-center sm:ml-4 innovation-container"
+                >
                   <img src="/img/innovation-frame.svg" />
                 </div>
               </div>
@@ -105,17 +107,13 @@ export default {
   padding-right: 60px;
   padding-bottom: 100px;
 }
-.section-name {
-  font-family: GalanoGrotesque;
-  font-size: 48px;
-  line-height: 80px;
-  color: #031a40;
-}
+
 .section-content {
   max-width: 501px;
   text-align: left;
   margin-top: 25px;
 }
+
 .section-text {
   font-family: GalanoGrotesque;
   font-size: 20px;
@@ -186,6 +184,54 @@ export default {
 .ecosystem-bg {
   background: linear-gradient(180deg, #ffa35d 0%, #fe6c76 100%);
 }
+@media (max-width: 768px) {
+  .product-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-text {
+    text-align: center;
+  }
+  .innovation-text {
+    font-size: 30px;
+  }
+  .innovation-container {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .card-text-div {
+    padding: 24px 16px 40px;
+    height: unset;
+  }
+  .card-header {
+    font-size: 30px;
+    text-align: center;
+  }
+  .card-inner-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .card-img-right {
+    width: unset;
+    height: unset;
+    box-sizing: border-box;
+    border-radius: 0px;
+    padding-top: 97px;
+    display: flex;
+    justify-content: center;
+  }
+  .why-cloudenly {
+    padding-bottom: 0px;
+  }
+}
 </style>
 <style>
 .section-tabs .v-tabs-slider-wrapper .v-tabs-slider {
@@ -198,4 +244,35 @@ export default {
   font-size: 20px;
   line-height: 23px;
 }
+/* @media (max-width: 768px) {
+  .section-tabs .v-slide-group__wrapper {
+    height: 120px;
+  }
+  .section-tabs .v-slide-group__content {
+    flex-direction: column;
+  }
+  .section-tabs .v-window-item {
+    margin-top: 40px;
+  }
+  .section-tabs .v-tabs-slider-wrapper {
+    display: none;
+  }
+  .section-tabs .v-tab.v-tab--active {
+    border: 1.5px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 80px;
+    color: #333333;
+  }
+  .section-tabs .v-slide-group__content {
+    padding: 20px;
+  }
+  .section-tabs .v-tab {
+    padding: 12px 17px;
+  }
+  .section-tabs {
+    margin-bottom: 50px !important;
+  }
+} */
 </style>

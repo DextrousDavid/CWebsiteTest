@@ -24,7 +24,7 @@ font-family: GalanoGrotesque-SemiBold;
 font-size: 16px;
 line-height: 19px;
 color: #F1F5FB;
-padding: 12px 26px;
+padding: 12px 26px 15px;
 }
 .sign-in-nav{
  margin-right: 22px;
@@ -94,7 +94,8 @@ margin-right: 35px;
 .enterprices{
 padding-top:29px;
 padding-bottom: 30px;
-margin-left: 60px;
+padding-left: 60px;
+border-top: 1px solid #4781DC;
 }
 .trust-enterprices{
     font-family: GalanoGrotesque;
@@ -130,7 +131,7 @@ padding-left: 60px;
     max-width: 377px;
     padding-top: 74px;
 }
-.cloudenly-text-box{
+.cloudenly-text-suite{
 font-family: GalanoGrotesque;
 font-size: 48px;
 line-height: 80px;
@@ -146,7 +147,7 @@ color: #343434;
 margin-top: 10px;
 }
 .arrow-direction{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .products-container{
 margin-left: 72px;
@@ -225,13 +226,13 @@ text-align: center;
 border-radius: 3px;
 }
 .dome-btn{
-background: #1034A6;
+background: #05613A;;
 }
 .humana-btn{
     background: #5E227F;
 }
 .optima-btn{
-    background: #05613A;
+    background:#1034A6;
 }
 
 .high-growth-companies{
@@ -252,7 +253,8 @@ margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
+    background-color: rgb(241, 245, 251,0.5);
 }
 
 .free-try-text{
@@ -292,7 +294,7 @@ margin-bottom: 5px;
     cursor: pointer;
 }
 .newletter-div{
-    margin-left: 23px;
+    margin-left: 96px;
     text-align: left;;
 }
 .newsleter-head{
@@ -310,6 +312,9 @@ color: #828282;
 .new-letter-form{
 margin-top: 13px;
 }
+.new-letter-form .blue-btn{
+    padding: 12px 26px 14px;
+  }
 .cloudenly-textbox{
 background: #F1F5FB;
 border-radius: 3px;
@@ -349,13 +354,41 @@ font-family: GalanoGrotesque;
 font-size: 16px;
 line-height: 19px;
 color: #828282;
+cursor: pointer;
 /* margin-right: 30px; */
 margin-right: 50px;
+}
+.list-element{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.dot-bg-top{
+    position: absolute; 
+    top: 172px;
+    left: 65px;
+  }
+.dot-bg-right{
+    position: absolute; 
+    top: 622px;
+    right: -37px;
+}
+.dot-bottom-bg{
+    position: absolute; 
+    top: 552px;
+    left: 0px;
 }
 
 
 
 
+  @media (max-width: 1280px){
+    .dot-bg-top{
+    left: 15px;
+  }
+  .newletter-div {
+    margin-left: 50px;
+  }
+  }
 
 
 
@@ -375,7 +408,6 @@ margin-left: 0px;
 } 
 .header-text-bold {
     font-size: 30px;
-    line-height: 60%;
 }
 .landing-page-banner{
     margin-top: 2rem;
@@ -389,6 +421,7 @@ margin-left: 0px;
 .enterprices{
     padding-top:0px;
     padding-bottom: 30px;
+    padding-left: 0px;
     margin-left: 2rem;
     margin-right: 2rem;
     justify-content: center;
@@ -399,16 +432,17 @@ margin-left: 0px;
     }
     .cloudenly-suite{
         padding-top: 20px;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1.5rem;
+    padding-right: 1.5rem;
     }
     .div-cover{
         min-width: unset;
         padding-top: 0px;
     }
-    .cloudenly-text-box{
+    .cloudenly-text-suite{
         font-size: 30px;
     line-height: 50px;
+    text-align: center;
     }
     .product-div{
         margin-right: 0px;
@@ -428,4 +462,92 @@ margin-left: 0px;
     .nav-bg{
         justify-content: space-around;
     }
+    .arrow-direction{
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .cloudenly-headline{
+        font-size: 30px;
+        line-height: unset;
+        text-align: center;
+    }
+    .high-growth-companies{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .high-growth-companies
+     .cloudenly-headline,
+     .free-try-text
+     {
+        text-align: center;
+    }
+    .brand-wrapper{
+        justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    }
+    .text-below{
+        text-align: center;
+    }
+    .company-div{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .try-product-free {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .footer-wrapper{
+        padding: 2rem;
+      }
+      .column-box{
+          margin-top: 2rem;
+      }
+      .list-element{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 16px;
+      }
+      .menu-head{
+        /* font-family: BRFirma; */
+        font-size: 18px;
+      }
+      .menu-head{
+        /* font-family: BRFirma; */
+        font-size: 16px;
+      }
+      .newletter-div{
+       margin-top: 40px;
+       margin-left: 0px;   
+      }
+      .cloudenly-textbox{
+          width: 100%;
+      }
+      .text-newsletter{
+          margin-top: 15px;
+      }
+      .newsleter-head {
+        font-size: 21px;
+      }
+      .new-letter-form .blue-btn{
+        padding: 12px 26 14px;
+        margin-top: 15px;
+      }
+      .bottom-navigation-div {
+        margin-top: 40px;
+      }
+      .bottom-link{
+        padding-top: 8px;
+        padding-bottom: 8px;   
+      }
+      .info-link{
+        padding-top: 5px;
+        padding-bottom: 5px;  
+      }
+      .dot-bg-top,
+      .dot-bg-right,
+      .dot-bottom-bg{
+          display: none;
+      }
 }

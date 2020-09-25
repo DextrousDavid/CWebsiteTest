@@ -20,6 +20,15 @@
       <div class="sm:w-1/2 landing-page-right-div flex justify-center">
         <img src="/img/frame.svg" />
       </div>
+      <div class="dot-bg-top">
+        <img src="/img/top-bg.svg" />
+      </div>
+      <div class="dot-bg-right">
+        <img src="/img/right-bg.svg" />
+      </div>
+      <div class="dot-bottom-bg">
+        <img src="/img/bottom-bg.png" />
+      </div>
     </div>
     <div class="enterprices flex flex-wrap">
       <div class="trust-enterprices">
@@ -44,7 +53,7 @@
     </div>
     <div class="cloudenly-suite sm:flex">
       <div class="div-cover">
-        <div class="cloudenly-text-box">Cloudenly Suite</div>
+        <div class="cloudenly-text-suite">Cloudenly Suite</div>
         <div class="text-below">
           Our Product help your team work from anywhere delivering exceptional
           customer experiences.
@@ -105,7 +114,10 @@
       <div class="cloudenly-headline">
         Powering Growth for Amazing Businesses.
       </div>
-      <div class="sm:flex justify-center" style="margin-top: 30px">
+      <div
+        class="sm:flex justify-center brand-wrapper"
+        style="margin-top: 30px"
+      >
         <div class="company-div"><img src="/img/aws.png" /></div>
         <div class="company-div"><img src="/img/beans.png" /></div>
         <div class="company-div"><img src="/img/oya.png" /></div>

@@ -97,7 +97,7 @@
 <script>
 export default {
   props: {
-    features: String,
+    features: Array,
   },
   data() {
     return {}
@@ -193,5 +193,50 @@ export default {
   position: absolute;
   top: 40%;
   left: 43.3%;
+}
+
+@media (max-width: 768px) {
+  .product-wrapper {
+    background-color: rgb(241, 245, 251, 0.4);
+    border: 5px solid #ffffff;
+    border-radius: 15px;
+    margin-top: 30px;
+    width: unset;
+    height: unset;
+    padding: 20px 15px;
+    position: relative;
+  }
+  .card-feature {
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .feature-description-left,
+  .feature-header {
+    text-align: center;
+  }
+
+  .feature-icons-left {
+    justify-content: center;
+  }
+  .vertical-divider,
+  .center-div-icons {
+    display: none;
+  }
+  .card-feature {
+    margin-bottom: 45px;
+  }
+  .product-features-right {
+    align-items: unset;
+  }
+  .feature-header {
+    text-align: center;
+  }
+  .product-features-right .feature-header,
+  .feature-description-right {
+    text-align: center;
+  }
 }
 </style>

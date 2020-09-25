@@ -161,6 +161,11 @@ Analytics, etc.`,
 }
 .tabs-control {
 }
+@media (max-width: 768px) {
+  .our-product {
+    padding: 0px 0px;
+  }
+}
 </style>
 <style>
 .tabs-control .v-tab {
