@@ -3,13 +3,18 @@
     <div class="sm:flex mb-4 landing-page-banner">
       <div class="sm:w-1/2 landing-page-left-div sm:flex justify-center">
         <div class="div-wrapper">
-          <div class="header-text-bold">
-            MAKING <b> THE SHIFT </b> IN
-            <b> ENTERPRISE SOFTWARE </b>
+          <div class="bold-header">
+            The Business
+            <span>Software</span>
+            for a Connected Economy
           </div>
-          <div class="header-text-light">
+          <div class="light-text-header">
             Transform with Cloudenly and experience the power of a unified
             business operation.
+          </div>
+          <div class="light-text-header">
+            CRM. Sales. Purchase. Inventory. Operations. Commerce. Finance.
+            Cloud Storage. HRM.
           </div>
           <div class="call-to-action-div sm:flex">
             <button class="blue-btn">TRY FOR FREE</button>
@@ -18,16 +23,7 @@
         </div>
       </div>
       <div class="sm:w-1/2 landing-page-right-div flex justify-center">
-        <img src="/img/frame.svg" />
-      </div>
-      <div class="dot-bg-top">
-        <img src="/img/top-bg.svg" />
-      </div>
-      <div class="dot-bg-right">
-        <img src="/img/right-bg.svg" />
-      </div>
-      <div class="dot-bottom-bg">
-        <img src="/img/bottom-bg.png" />
+        <img src="/img/mana-img.svg" />
       </div>
     </div>
     <div class="enterprices flex flex-wrap">
@@ -52,74 +48,64 @@
       </div>
     </div>
     <div class="cloudenly-suite sm:flex">
-      <div class="div-cover">
-        <div class="cloudenly-text-suite">Cloudenly Suite</div>
-        <div class="text-below">
-          Our Product help your team work from anywhere delivering exceptional
-          customer experiences.
-        </div>
-        <!-- <div class="arrow-direction flex">
-          <div class="arrow-left" style="margin-right: 60px" @click="previous">
-            <img src="/img/left-arrow.svg" />
-          </div>
-          <div class="arrow-left" @click="next">
-            <img src="/img/right-arrow.svg" />
-          </div>
-        </div> -->
+      <div class="cloudenly-headline">Cloudenly Suite</div>
+      <div class="cloudenly-light-headline">
+        Our Product help your team work from anywhere delivering exceptional
+        customer experiences.
       </div>
-      <!-- Slider Started -->
       <div class="products-container sm:flex">
-        <hooper :items-to-show="3">
-          <slide>
-            <div class="product-div">
-              <div class="product-top-line optima-top"></div>
-              <div class="product-desc">
-                <img src="/img/Optima-logo.svg" />
-                <div class="product-name">Optima</div>
-                <div class="product-explain">
-                  An Integrated Cloud ERP for Accounting, Supply Chain and
-                  Unified Commerce Solution.
-                </div>
-                <div class="product-learn-more">Learn More</div>
-                <button class="product-btn optima-btn">TRY FOR FREE</button>
-              </div>
+        <div class="product-div">
+          <div class="product-top-line optima-top"></div>
+          <div class="product-desc">
+            <img src="/img/Optima-logo.svg" />
+            <div class="product-name">Optima</div>
+            <div class="product-explain">
+              Streamline your retail, supply chain, commerce, finance, and
+              accounting for improved customer experience, operational
+              efficiency, business intelligence, and agility.
             </div>
-          </slide>
-          <slide>
-            <div class="product-div">
-              <div class="product-top-line humana-top"></div>
-              <div class="product-desc">
-                <img src="/img/Humana-logo.svg" />
-                <div class="product-name">HumanaR</div>
-                <div class="product-explain">
-                  A digital HR system for seamless HR Operations and Payroll
-                  compliance.
-                </div>
-                <div class="product-learn-more">Learn More</div>
-                <button class="product-btn humana-btn">TRY FOR FREE</button>
-              </div>
+            <button class="product-btn optima-btn">TRY FOR FREE</button>
+          </div>
+        </div>
+        <div class="product-div">
+          <div class="product-top-line humana-top"></div>
+          <div class="product-desc">
+            <img src="/img/Humana-logo.svg" />
+            <div class="product-name">HumanaR</div>
+            <div class="product-explain">
+              Amplify your HR processes with ease, and achieve better employee
+              experience with self-service. Improve people and business
+              performance through workforce analytics.
             </div>
-          </slide>
-          <slide>
-            <div class="product-div">
-              <div class="product-top-line dome-top"></div>
-              <div class="product-desc">
-                <img src="/img/Dome-logo.svg" />
-                <div class="product-name">Dome</div>
-                <div class="product-explain">
-                  A cloud file storage and collaboration tool. Keep track of
-                  changes and restrict access.
-                </div>
-                <div class="product-learn-more">Learn More</div>
-                <button class="product-btn dome-btn">TRY FOR FREE</button>
-              </div>
+            <button class="product-btn humana-btn">TRY FOR FREE</button>
+          </div>
+        </div>
+        <div class="product-div">
+          <div class="product-top-line dome-top"></div>
+          <div class="product-desc">
+            <img src="/img/Dome-logo.svg" />
+            <div class="product-name">Dome</div>
+            <div class="product-explain" style="max-width: 247px">
+              Manage files and folders securely on the cloud and collaborate
+              remotely. Enjoy the boundless opportunity.
             </div>
-          </slide>
-          <hooper-navigation slot="hooper-addons"></hooper-navigation>
-          <hooper-pagination slot="hooper-addons"></hooper-pagination>
-        </hooper>
+            <button class="product-btn dome-btn">TRY FOR FREE</button>
+          </div>
+        </div>
+        <div class="product-div lite-margin">
+          <div class="product-top-line lite-top"></div>
+          <div class="product-desc">
+            <img src="/img/Optima-logo.svg" />
+            <div class="product-name">Lite</div>
+            <div class="product-explain">
+              Built for micro and small businesses, to unify purchase,
+              inventory, sales, customer, expense management, and more. Scaling
+              from Lite to other Apps is seamless.
+            </div>
+            <button class="product-btn lite-btn">TRY FOR FREE</button>
+          </div>
+        </div>
       </div>
-      <!-- Slider Stopped -->
     </div>
     <WhyCloudenly />
     <div class="high-growth-companies sm:flex justify-center">
@@ -151,17 +137,12 @@
 </template>
 
 <script>
-import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
 import WhyCloudenly from '../components/contents/WhyCloudenly'
 import ProductPackComponent from '../components/contents/ProductPackComponent'
-import 'hooper/dist/hooper.css'
 export default {
   components: {
     WhyCloudenly,
     ProductPackComponent,
-    Hooper,
-    Slide,
-    HooperNavigation,
   },
   data() {
     return {

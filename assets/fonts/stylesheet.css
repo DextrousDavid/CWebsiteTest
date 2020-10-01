@@ -95,7 +95,7 @@
 }
 
 @font-face {
-    font-family: 'GalanoGrotesque';
+    font-family: 'GalanoGrotesque-Bold';
     src: url('GalanoGrotesque-Bold.eot');
     src: local('☞Galano Grotesque Bold'), local('GalanoGrotesque-Bold'),
         url('GalanoGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
@@ -215,7 +215,7 @@
 }
 
 @font-face {
-    font-family: 'GalanoGrotesque';
+    font-family: 'GalanoGrotesque-Heavy';
     src: url('GalanoGrotesque-Heavy.eot');
     src: local('☞Galano Grotesque Heavy'), local('GalanoGrotesque-Heavy'),
         url('GalanoGrotesque-Heavy.eot?#iefix') format('embedded-opentype'),
@@ -347,7 +347,7 @@
 }
 
 @font-face {
-    font-family: 'GalanoGrotesque';
+    font-family: 'GalanoGrotesque-Medium';
     src: url('GalanoGrotesque-Medium.eot');
     src: local('☞Galano Grotesque Medium'), local('GalanoGrotesque-Medium'),
         url('GalanoGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
