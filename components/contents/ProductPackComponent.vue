@@ -45,22 +45,24 @@ export default {
       optima_content: [
         {
           header: 'CRM',
-          content: `Contact Registration, Customer Engagement, Pipeline
-                    Management, Loyalty & Promo`,
+          content: `Contact Registration, Customer Engagement, Pipeline 
+Management, Loyalty & Promos`,
         },
         {
-          header: 'Supply Chain',
-          content: `Supplier Management, Product Catalog, Price Book, Quotes and
-                    Invoice Management, Multi-Outlet/Multi- Inventory
-                    Operations, Inventory Valuation, Material Management.`,
+          header: 'Purchase',
+          content: `Supplier Management, Product Catalog, Purchase
+ Requisition, Request for Quote, Quotes, Purchase 
+Orders, Invoice, Debit Notes`,
         },
         {
-          header: 'Account Management',
-          content: `Account Receivables, Account Payables, Revenue, Expense,
-                    Profits & Loss, Assets & Liabilities.`,
+          header: 'Sales',
+          content: `Supplier Management, Product Catalog, Price Book,
+ Quotes, Purchase Orders, Invoice, Credit Notes.`,
         },
         {
-          header: '	Analytics & Business Intelligence',
+          header: '	Inventory',
+          content: `Multi-Outlet/Multi-Inventory Operations,
+ Inventory Valuation, Stock Management.`,
         },
         {
           header: 'Commerce Cloud',

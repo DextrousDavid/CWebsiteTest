@@ -18,18 +18,18 @@
           </div>
           <v-tabs-items v-model="tab">
             <v-tab-item>
-              <div class="sm:flex" style="margin-top: 56px">
-                <div class="sm:w-1/2 sm:flex justify-center sm:mr-4">
-                  <div class="section-content">
-                    <img src="/img/innovation-icon.svg" />
-                    <div class="innovation-text">Innovation</div>
-                    <div class="section-text">{{ innovationText }}</div>
+              <div class="md:flex round-card" style="margin-top: 56px">
+                <div class="flex-2 card-text-div">
+                  <div class="card-header">Innovation</div>
+                  <div class="card-inner-text">
+                    Our magic lies in our vision, craft, and the courage to
+                    shape tomorrow,in catalyzing innovation for growth. From the
+                    very first code, our mission remains the same, to provide
+                    your business with the tools that it needs to thrive.
                   </div>
                 </div>
-                <div
-                  class="sm:w-1/2 sm:flex justify-center sm:ml-4 innovation-container"
-                >
-                  <img src="/img/innovation-frame.svg" />
+                <div class="flex-1 card-img-right scalability-bg">
+                  <img src="/img/innovation_icon.svg" />
                 </div>
               </div>
             </v-tab-item>
@@ -45,7 +45,7 @@
                   </div>
                 </div>
                 <div class="flex-1 card-img-right scalability-bg">
-                  <img src="/img/scalability-img.svg" />
+                  <img src="/img/scalability-icon.svg" />
                 </div>
               </div>
             </v-tab-item>
@@ -61,7 +61,7 @@
                   </div>
                 </div>
                 <div class="flex-1 card-img-right ecosystem-bg">
-                  <img src="/img/ecosystem-img.svg" />
+                  <img src="/img/ecosystem-icon.svg" />
                 </div>
               </div>
             </v-tab-item>
@@ -94,15 +94,16 @@ export default {
 </script>
 <style scoped>
 .why-cloudenly {
-  background: #ffffff;
+  /* background: #ffffff;
   box-shadow: 0px 2px 10px rgba(47, 48, 97, 0.1);
-  border-radius: 10px;
+  border-radius: 10px; */
+
   padding-top: 30px;
   text-align: center;
   padding-bottom: 56px;
 }
 .product-wrapper {
-  background: rgb(241, 245, 251, 0.4);
+  background: #ffffff;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 100px;
@@ -153,20 +154,21 @@ export default {
   padding: 149px 53px 0px 59px;
 }
 .card-header {
-  font-family: GalanoGrotesque;
-  font-size: 48px;
+  font-family: GalanoGrotesque-Heavy;
+  font-size: 46px;
   line-height: 80px;
   color: #333333;
   text-align: left;
 }
 .card-inner-text {
-  font-family: GalanoGrotesque;
   margin-top: 33px;
-  font-size: 18px;
-  line-height: 21px;
   color: #8e8e8e;
   max-width: 615px;
   text-align: left;
+
+  font-family: GalanoGrotesque-Medium;
+  font-size: 18px;
+  line-height: 21px;
 }
 .card-img-right {
   width: 438px;
@@ -241,8 +243,10 @@ export default {
   color: #4781dc;
 }
 .section-tabs .v-tab {
-  font-size: 20px;
-  line-height: 23px;
+  font-family: GalanoGrotesque-Medium;
+  font-size: 18px;
+  line-height: 80px;
+  color: #333333;
 }
 /* @media (max-width: 768px) {
   .section-tabs .v-slide-group__wrapper {

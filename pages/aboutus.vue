@@ -1,9 +1,15 @@
 <template>
-  <div class="bg-red-100">
-    <span class="text-blue font-bold">AboutUs</span>
+  <div>
+    <ProductSlider />
   </div>
 </template>
 <script>
-export default {}
+import ProductSlider from '../components/contents/Slider'
+
+export default {
+  components: {
+    ProductSlider,
+  },
+}
 </script>
 <style></style>

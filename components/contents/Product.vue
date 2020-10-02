@@ -107,7 +107,8 @@ export default {
 <style scoped>
 /* Product Card */
 .product-wrapper {
-  background-color: rgb(241, 245, 251, 0.4);
+  /* background-color: rgb(241, 245, 251, 0.4); */
+  background: #f9fbfd;
   border: 5px solid #ffffff;
   border-radius: 15px;
   margin-top: 30px;
@@ -131,25 +132,26 @@ export default {
   margin-bottom: 30px;
 }
 .feature-header {
-  font-family: GalanoGrotesque;
-  font-size: 22px;
-  line-height: 26px;
-  color: #031a40;
+  font-family: GalanoGrotesque-Medium;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
 }
 .feature-description-left {
-  font-family: GalanoGrotesqueAlt;
+  font-family: GalanoGrotesque-Medium;
   font-size: 16px;
   line-height: 19px;
   text-align: right;
-  color: #343434;
+  color: #8e8e8e;
   margin-top: 5px;
 }
 .feature-description-right {
-  font-family: GalanoGrotesqueAlt;
+  font-family: GalanoGrotesque-Medium;
   font-size: 16px;
   line-height: 19px;
   text-align: left;
-  color: #343434;
+  color: #8e8e8e;
   margin-top: 5px;
 }
 .feature-icons-right {
