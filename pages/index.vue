@@ -8,11 +8,11 @@
             <span>Software</span>
             for a Connected Economy
           </div>
-          <div class="light-text-header">
+          <div class="light-text-header top-text">
             Transform with Cloudenly and experience the power of a unified
             business operation.
           </div>
-          <div class="light-text-header">
+          <div class="light-text-header bottom-text">
             CRM. Sales. Purchase. Inventory. Operations. Commerce. Finance.
             Cloud Storage. HRM.
           </div>
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <div class="sm:w-1/2 landing-page-right-div flex justify-center">
+      <div class="sm:w-1/2 landing-page-right-div flex">
         <img src="/img/mana-img.svg" />
       </div>
     </div>
@@ -45,6 +45,9 @@
       <div class="enterprice-box">
         <img src="/img/Circle-logo.svg" />
         Circle Comp
+      </div>
+      <div class="chat-icon-div">
+        <img src="/img/chat-icon.svg" />
       </div>
     </div>
     <div class="cloudenly-suite sm:flex">
