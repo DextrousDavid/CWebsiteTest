@@ -5,23 +5,40 @@
         Our Product Pack
       </div>
       <div class="w-full sm:flex justify-center tabs-container">
-        <div class="tabs-control">
+        <div
+          class="tabs-control"
+          :class="
+            currentTab == 1
+              ? 'domeActive'
+              : currentTab == 2
+              ? 'humanaActive'
+              : null
+          "
+        >
           <v-tabs v-model="currentTab" background-color="transparent" grow>
-            <v-tab>Optima</v-tab>
-            <v-tab>HumanaR</v-tab>
+            <v-tab>Ally</v-tab>
             <v-tab>Dome</v-tab>
+            <v-tab>HumanaR</v-tab>
+            <v-tab>Optima</v-tab>
+            <v-tab>Quantum</v-tab>
           </v-tabs>
         </div>
 
         <v-tabs-items v-model="currentTab">
           <v-tab-item>
-            <Product :features="optima_content" />
+            <div></div>
+          </v-tab-item>
+          <v-tab-item>
+            <Product :features="dome_content" />
           </v-tab-item>
           <v-tab-item>
             <Product :features="humana_content" />
           </v-tab-item>
           <v-tab-item>
-            <Product :features="dome_content" />
+            <Product :features="optima_content" />
+          </v-tab-item>
+          <v-tab-item>
+            <Product :features="quantum_content" />
           </v-tab-item>
         </v-tabs-items>
       </div>
@@ -41,7 +58,7 @@ export default {
   },
   data() {
     return {
-      currentTab: null,
+      currentTab: 3,
       optima_content: [
         {
           header: 'CRM',
@@ -65,21 +82,31 @@ Orders, Invoice, Debit Notes`,
  Inventory Valuation, Stock Management.`,
         },
         {
+          header: 'Payment',
+          content: `Payment & collection`,
+        },
+        {
           header: 'Commerce Cloud',
           content: `PoS, Marketplace integrations`,
         },
         {
-          header: 'Production Management',
+          header: 'Production Management (Coming Soon)',
           content: `Material Requirement Planning, Material Assembly, Job
                     Orders, Material Request, Production Management`,
         },
         {
-          header: 'Finance Management (Coming Soon)',
-          content: `Expense Management, Budget Planning & Management`,
+          header: '	Accounting',
+          content: `Chart of Accounts, Cost Centers, Expense Codes, 
+Account Receivables, Account Payables, Revenue,
+Expense, Profits & Loss, Assets & Liabilities.`,
         },
         {
-          header: 'Payment',
-          content: `Payment & collection`,
+          header: `Budget, Asset and Expense Management
+(Coming Soon)`,
+          content: `Expense Management, BudgetPlanning & Management`,
+        },
+        {
+          header: `Analytics & Business Intelligence`,
         },
       ],
       humana_content: [
@@ -98,7 +125,9 @@ Orders, Invoice, Debit Notes`,
         },
         {
           header: 'HR Documentation',
+          content: `Organisation Documents and Employee Documents.`,
         },
+        {},
         {
           header: 'Payroll',
           content: `Pay Runs, PAYE, Pension.`,
@@ -116,6 +145,10 @@ Improvement Plans, 360 Degrees Feedback`,
         },
         {
           header: 'HRBP & Advisory Service (Coming Soon)',
+          // content: `Payment & collection`,
+        },
+        {
+          header: '	Analytics & Business Intelligence',
           // content: `Payment & collection`,
         },
       ],
@@ -136,6 +169,9 @@ Improvement Plans, 360 Degrees Feedback`,
           header: '',
         },
         {
+          header: '',
+        },
+        {
           header: 'Security',
           content: `Password Policy Enforcement, Two Factor
 Authentication, Data Loss Prevention, Security Logs`,
@@ -144,6 +180,55 @@ Authentication, Data Loss Prevention, Security Logs`,
           header: 'Advanced Control (Coming Soon)',
           content: `Dynamic Version Management, Usage
 Analytics, etc.`,
+        },
+        {
+          header: '',
+        },
+        {
+          header: 'Analytics & Business Intelligence',
+        },
+      ],
+      quantum_content: [
+        {
+          header: 'Account Profile',
+          content: `Organisation, Root Admin`,
+        },
+        {
+          header: 'Organsation',
+          content: `Functions, Job Levels, Designations,	People.`,
+        },
+        {
+          header: 'Payments & Collection',
+          content: `Currency, Payments, Collections`,
+        },
+        {
+          header: 'Location & Tax',
+          content: ` Outlets & Offices, Tax ,Remittance.`,
+        },
+        {
+          header: 'Notification & Messaging',
+          content: `Subscription Management`,
+        },
+        {
+          header: 'Security Policy',
+          content: `Password Protection, Security Question, 
+Two Factor Authentication (2FA), IP Fencing`,
+        },
+        {
+          header: 'Identify & Access Management',
+          content: `User Roles, Privilege settings.`,
+        },
+        {
+          header: 'Users & Groups',
+          content: `Users, Groups.`,
+        },
+        {
+          header: `Approval Flow`,
+          content: ` Automatic Set up, Manual Set up.`,
+        },
+        {
+          header: `Activity & Audit Log`,
+          content: `Active Users, Access Reports, Failed Login Reports.`,
         },
       ],
     }
@@ -174,5 +259,26 @@ Analytics, etc.`,
   font-size: 16px;
   line-height: 19px;
   font-family: GalanoGrotesque-SemiBold;
+}
+
+.tabs-control .v-tabs-slider-wrapper .v-tabs-slider {
+  background-color: unset;
+}
+.tabs-control .v-tab.v-tab--active {
+  font-family: GalanoGrotesque-SemiBold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f1f5fb;
+  background: #4781dc;
+  border-radius: 3px;
+}
+.domeActive .v-tab.v-tab--active {
+  background: #05613a !important;
+}
+.humanaActive .v-tab.v-tab--active {
+  background: #5e227f !important;
+}
+.qunatumActive .v-tab.v-tab--active {
+  background: #5e227f !important;
 }
 </style>

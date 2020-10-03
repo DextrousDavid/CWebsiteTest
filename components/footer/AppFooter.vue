@@ -5,11 +5,11 @@
       <div class="sm:flex">
         <div class="column-box">
           <div class="menu-head">Products</div>
-          <div class="list-element">Ally</div>
-          <div class="list-element">Dome</div>
-          <div class="list-element">HumanaR</div>
           <div class="list-element">Optima</div>
-          <div class="list-element">Quantum</div>
+          <div class="list-element">HumanaR</div>
+          <div class="list-element">Dome</div>
+          <div class="list-element">Ally</div>
+          <!-- <div class="list-element">Quantum</div> -->
         </div>
         <div class="column-box">
           <div class="menu-head">Pricing</div>
@@ -25,6 +25,7 @@
         </div>
         <div class="column-box">
           <div class="menu-head">Resources</div>
+          <div class="list-element">User Guides</div>
           <div class="list-element">Demos</div>
           <div class="list-element">Case Studies</div>
           <div class="list-element">Blog</div>
@@ -33,6 +34,7 @@
         </div>
         <div class="column-box">
           <div class="menu-head">Support</div>
+          <div class="list-element">Support@cloudenly.com</div>
           <div class="list-element">+234 8159530070</div>
           <div class="list-element">+234 5566 55667</div>
         </div>

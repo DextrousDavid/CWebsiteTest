@@ -24,7 +24,7 @@
         <div class="card-feature">
           <div class="feature-header">{{ features[1].header }}</div>
           <div class="feature-description-left">
-            {{ features[0].content }}
+            {{ features[1].content }}
           </div>
           <div class="feature-icons-left flex justify-items-end">
             <img src="/img/icon-1.svg" />
@@ -47,19 +47,28 @@
         </div>
         <div v-if="features[3].header" class="card-feature">
           <div class="feature-header">{{ features[3].header }}</div>
+          <div v-if="features[3].content" class="feature-description-left">
+            {{ features[3].content }}
+          </div>
+          <div class="feature-icons-left flex justify-items-end">
+            <img src="/img/icon-1.svg" />
+            <img src="/img/icon-2.svg" />
+            <img src="/img/icon-3.svg" />
+            <img src="/img/icon-4.svg" />
+          </div>
         </div>
-      </div>
-      <div class="sm:w-1/2 product-features-right flex justify-center">
-        <div class="card-feature">
+        <div v-if="features[4].header" class="card-feature">
           <div class="feature-header">{{ features[4].header }}</div>
-          <div class="feature-description-right">
+          <div v-if="features[4].content" class="feature-description-left">
             {{ features[4].content }}
           </div>
-          <div class="feature-icons-right flex justify-items-end">
+          <div class="feature-icons-left flex justify-items-end">
             <img src="/img/icon-1.svg" />
             <img src="/img/icon-2.svg" />
           </div>
         </div>
+      </div>
+      <div class="sm:w-1/2 product-features-right flex justify-center">
         <div class="card-feature">
           <div class="feature-header">{{ features[5].header }}</div>
           <div class="feature-description-right">
@@ -68,11 +77,9 @@
           <div class="feature-icons-right flex justify-items-end">
             <img src="/img/icon-1.svg" />
             <img src="/img/icon-2.svg" />
-            <img src="/img/icon-3.svg" />
-            <img src="/img/icon-4.svg" />
           </div>
         </div>
-        <div v-if="features[6]" class="card-feature">
+        <div class="card-feature">
           <div class="feature-header">{{ features[6].header }}</div>
           <div class="feature-description-right">
             {{ features[6].content }}
@@ -84,10 +91,38 @@
             <img src="/img/icon-4.svg" />
           </div>
         </div>
-        <div v-if="features[7]" class="card-feature">
+        <div v-if="features[7].header" class="card-feature">
           <div class="feature-header">{{ features[7].header }}</div>
-          <div v-if="features[7].content" class="feature-description-right">
+          <div class="feature-description-right">
             {{ features[7].content }}
+          </div>
+          <div
+            v-if="features[7].header"
+            class="feature-icons-right flex justify-items-end"
+          >
+            <img src="/img/icon-1.svg" />
+            <img src="/img/icon-2.svg" />
+            <img src="/img/icon-3.svg" />
+            <img src="/img/icon-4.svg" />
+          </div>
+        </div>
+        <div v-if="features[8]" class="card-feature">
+          <div class="feature-header">{{ features[8].header }}</div>
+          <div v-if="features[8].content" class="feature-description-right">
+            {{ features[8].content }}
+          </div>
+          <div
+            v-if="features[8].content"
+            class="feature-icons-right flex justify-items-end"
+          >
+            <img src="/img/icon-1.svg" />
+            <img src="/img/icon-2.svg" />
+          </div>
+        </div>
+        <div v-if="features[9]" class="card-feature">
+          <div class="feature-header">{{ features[9].header }}</div>
+          <div v-if="features[9].content" class="feature-description-right">
+            {{ features[9].content }}
           </div>
         </div>
       </div>

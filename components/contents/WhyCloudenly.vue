@@ -237,10 +237,13 @@ export default {
 </style>
 <style>
 .section-tabs .v-tabs-slider-wrapper .v-tabs-slider {
-  background-color: #4781dc;
+  background-color: #c4c4c4;
 }
 .section-tabs .v-tab.v-tab--active {
-  color: #4781dc;
+  color: #333333;
+  border: 2px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 .section-tabs .v-tab {
   font-family: GalanoGrotesque-Medium;

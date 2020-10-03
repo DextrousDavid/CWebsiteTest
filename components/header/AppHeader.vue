@@ -39,7 +39,7 @@
             Talk to an Expert
           </li>
         </div>
-        <div>
+        <div class="nav-item-left">
           <li
             class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0"
           >
@@ -49,7 +49,7 @@
             href="#"
             class="join-btn inline-block text-sm px-4 py-2 mt-4 lg:mt-0"
           >
-            Join us Now
+            Sign Up
           </a>
         </div>
       </div>
