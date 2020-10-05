@@ -16,7 +16,7 @@
           "
         >
           <v-tabs v-model="currentTab" background-color="transparent" grow>
-            <v-tab>Ally</v-tab>
+            <!-- <v-tab>Ally</v-tab> -->
             <v-tab>Dome</v-tab>
             <v-tab>HumanaR</v-tab>
             <v-tab>Optima</v-tab>
@@ -25,9 +25,9 @@
         </div>
 
         <v-tabs-items v-model="currentTab">
-          <v-tab-item>
+          <!-- <v-tab-item>
             <div></div>
-          </v-tab-item>
+          </v-tab-item> -->
           <v-tab-item>
             <Product :features="dome_content" />
           </v-tab-item>
@@ -58,7 +58,7 @@ export default {
   },
   data() {
     return {
-      currentTab: 3,
+      currentTab: 2,
       optima_content: [
         {
           header: 'CRM',
