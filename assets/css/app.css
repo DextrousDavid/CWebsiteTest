@@ -10,8 +10,14 @@ display: flex;
 width: 100%;
 z-index: 100;
 }
+.container {
+    width: 100%;
+    padding: 12px;
+    margin-right: 70px;
+    margin-left: auto;
+}
 .log-wrapper{
-margin-left: 80px;
+margin-left: 0px;
 display: flex;
 }
 .nav-item-left{
@@ -21,7 +27,7 @@ display: flex;
 font-size: 16px;
 line-height: 19px;
 color: #343434;
-margin-left: 40px;
+margin-left: 20px;
 font-family: GalanoGrotesque-Medium;
 }
 .join-btn{
@@ -61,7 +67,7 @@ line-height: 21px;
 color: #8E8E8E; 
 }
 .landing-page-left-div{
-    padding-top: 181px;
+    padding-top: 180px;
     padding-left: 5%;
 }
 .landing-page-right-div{
@@ -94,7 +100,8 @@ margin-right: 35px;
     font-size: 16px;
     line-height: 19px;
     color: #F1F5FB;
-    padding:15px 65px 17px 65px;
+
+    padding:6px 65px 17px 6px;
 }
 
 .white-btn-border{
@@ -106,7 +113,7 @@ margin-right: 35px;
     font-size: 16px;
     line-height: 19px;
     color: #4781DC;
-    padding:15px 65px 17px 65px;
+    padding: 10px 35px 10px 10px;
 }
 .enterprices{
 padding-top:29px;
@@ -116,13 +123,15 @@ border-top: 1px solid #ECECEC;;
 }
 .trust-enterprices{
     font-family: GalanoGrotesque;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 23px;
-    color: #343434;
+    color: #272525;
     margin-right: 20px;
     margin-top: 10px;
+    display: inline-block
 }
 .enterprice-box{
+    display: inline-block;
     display: flex;
     background:rgb(219, 219, 219,0.3);
     border-radius: 5px;
@@ -132,9 +141,10 @@ border-top: 1px solid #ECECEC;;
 font-size: 16px;
 line-height: 19px;
 color: #343434;
-padding-right: 30px;
-padding: 13px 15px;
+padding-right: 20px;
+padding: 10px 12px;
 margin-right: 30px;
+margin-top: 5px;
 }
 .enterprice-box img{
     margin-right: 10px;
@@ -186,10 +196,12 @@ margin-top: 30px;
     background: #FFFFFF;
     box-shadow: 0px 2px 10px rgba(47, 48, 97, 0.1);
     border-radius: 8px;
-    width: 339px; 
-    margin-right: 35px;
+
+    margin: auto;
     padding-bottom: 34px;
 }
+
+
 .product-top-line{
     border-radius: 8px 8px 0px 0px;
     /* width: 324px; */
@@ -221,7 +233,7 @@ margin-top: 30px;
 
 .product-explain{
     margin-top: 26px;
-    max-width: 283px;
+    max-width: 263px;
     text-align: center;
     font-family: GalanoGrotesque-Medium;
 font-size: 14px;
@@ -229,9 +241,7 @@ line-height: 16px;
 color: #8E8E8E;
 
 }
-.lite-margin{
-    margin-top: 67px;
-}
+
 .product-name{
 margin-top: 10px;
 font-family: GalanoGrotesque-Bold;
@@ -283,7 +293,10 @@ margin-top: 45px;
     margin-right: 17px;
 }
 .all-brand-btn{
-margin-top: 50px;
+    border-style: none;
+    background-color: #4781dc;
+    color: #fff;
+    padding: 10px 20px;
 }
 .try-product-free{
     padding-top: 50px;
@@ -465,13 +478,11 @@ color: #666666;
     margin-left: 50px;
   }
   .call-to-action-div .blue-btn,
-  .call-to-action-div .white-btn-border
+  .call-to-action-div
   {
-    padding-left: 55px;
     padding-right: 55px;
-  }
-  .log-wrapper{
-    margin-left: 45px;
+  }  .log-wrapper{
+    margin-left: 35px;
     }
     .nav-item-left{
         margin-right: 0px;
@@ -523,17 +534,6 @@ margin-left: 0px;
     margin-top: 35px;
     padding-top: 0px;
 }
-.trust-enterprices{
-    text-align: center;
-}
-.enterprices{
-    padding-top:0px;
-    padding-bottom: 30px;
-    padding-left: 0px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    justify-content: center;
-    }
     .enterprice-box {
         width: 179px;
         margin-top: 20px;
@@ -555,33 +555,30 @@ margin-left: 0px;
     }
 .cloudenly-light-headline{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
     .product-div{
-        margin-right: 20px;
-        width: 315px;
+        
+        width: 260px;
         margin-bottom: 30px;
     }
     .lite-margin{
         margin-bottom: 30px;
     }
     .landing-page-left-div {
-        padding-top: 128px;
+        padding-top: 100px;
     }
     .products-container {
-        margin-left: 0px;
+       
+        margin: auto;
     }
     .product-desc{
         min-width: unset;
     }
-.blue-btn, .white-btn-border{
-    width: 100%;
-}
+
 .call-to-action-div .blue-btn{
-    margin-right: 0px;
-    }
-    .nav-bg{
-        justify-content: space-around;
+    margin-right: 15px;
     }
     .arrow-direction{
         margin-bottom: 20px;

@@ -1,61 +1,79 @@
 <template>
-  <section>
-    <div class="footer-wrapper">
+  <div class="flex flex-wrap px-12 justify-center bg-gray-200 p-6 footer">
+    <div class="flex flex-wrap mb-3 text-center w-full">
       <hr class="sm:invisible" />
-      <div class="sm:flex">
-        <div class="column-box">
-          <div class="menu-head">Products</div>
-          <div class="list-element">Optima</div>
-          <div class="list-element">HumanaR</div>
-          <div class="list-element">Dome</div>
-          <div class="list-element">Ally</div>
-          <!-- <div class="list-element">Quantum</div> -->
-        </div>
-        <div class="column-box">
-          <div class="menu-head">Pricing</div>
-          <div class="list-element">Optima</div>
-          <div class="list-element">HumanaR</div>
-          <div class="list-element">Dome</div>
-        </div>
-        <div class="column-box">
-          <div class="menu-head">Partners</div>
-          <div class="list-element">Find a Partner</div>
-          <div class="list-element">Become a Partner</div>
-          <div class="list-element">Dome</div>
-        </div>
-        <div class="column-box">
-          <div class="menu-head">Resources</div>
-          <div class="list-element">User Guides</div>
-          <div class="list-element">Demos</div>
-          <div class="list-element">Case Studies</div>
-          <div class="list-element">Blog</div>
-          <div class="list-element">FAQ</div>
-          <div class="list-element">Support</div>
-        </div>
-        <div class="column-box">
-          <div class="menu-head">Support</div>
-          <div class="list-element">Support@cloudenly.com</div>
-          <div class="list-element">+234 8159530070</div>
-          <div class="list-element">+234 5566 55667</div>
-        </div>
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
+        <div class="menu-head">Products</div>
+        <div class="list-element">Optima</div>
+        <div class="list-element">HumanaR</div>
+        <div class="list-element">Dome</div>
+        <div class="list-element">Ally</div>
+        <!-- <div class="list-element">Quantum</div> -->
       </div>
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
+        <div class="menu-head">Pricing</div>
+        <div class="list-element">Optima</div>
+        <div class="list-element">HumanaR</div>
+        <div class="list-element">Dome</div>
+      </div>
+
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
+        <div class="menu-head">Partners</div>
+        <div class="list-element">Find a Partner</div>
+        <div class="list-element">Become a Partner</div>
+        <div class="list-element">Dome</div>
+      </div>
+
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
+        <div class="menu-head">Resources</div>
+        <div class="list-element">User Guides</div>
+        <div class="list-element">Demos</div>
+        <div class="list-element">Case Studies</div>
+        <div class="list-element">Blog</div>
+        <div class="list-element">FAQ</div>
+        <div class="list-element">Support</div>
+      </div>
+
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
+        <div class="menu-head">Support</div>
+        <div class="list-element">Support@cloudenly.com</div>
+        <div class="list-element">+234 8159530070</div>
+        <div class="list-element">+234 5566 55667</div>
+      </div>
+
       <hr style="margin-top: 17px; border-top-color: #e1e0e0" />
-      <div class="flex social-media-icons">
-        <div class="social-media-icon">
-          <img src="/img/whatsapp-icon.svg" />
-        </div>
-        <div class="social-media-icon">
-          <img src="/img/twitter-icon.svg" />
-        </div>
-        <div class="social-media-icon">
-          <img src="/img/facebook-icon.svg" />
-        </div>
-        <div class="social-media-icon">
-          <img src="/img/instagram-icon.svg" />
+
+      <div class="flex flex-wrap mb-3 w-full md:text-left">
+        <div class="w-full mb-6 px-2">
+          <div class="inline-block mr-2">
+            <img src="/img/whatsapp-icon.svg" />
+          </div>
+          <div class="inline-block mr-2">
+            <img src="/img/twitter-icon.svg" />
+          </div>
+          <div class="inline-block mr-2">
+            <img src="/img/facebook-icon.svg" />
+          </div>
+          <div class="inline-block mr-2">
+            <img src="/img/instagram-icon.svg" />
+          </div>
         </div>
       </div>
-      <div class="sm:flex">
-        <div>
+
+      <div
+        class="flex flex-wrap mb-3 w-full -mt-3 xs:-px-8 sm:-px-8 md:px-2 lg:px-2"
+      >
+        <div class="w-full md:w-2/4 lg:w-3/4 mb-3 text-left">
           <div class="sm:flex bottom-navigation-div">
             <div class="bottom-link">Terms of Service</div>
             <div class="bottom-link">Privacy Information</div>
@@ -63,40 +81,37 @@
             <div class="bottom-link">Careers</div>
             <div class="bottom-link">Contract</div>
           </div>
-          <div class="footer-info sm:flex justify-between">
-            <div class="copy-right-text">
-              &copy; Copyright 2020 Scelloo Nigeria. All rights reserved.
-              Scelloo HQ, Plot 16 New Creation Street, Lekki, Lagos, Nigeria
-            </div>
-          </div>
-          <div class="legal-navigation sm:flex">
-            Terms of Service. Privacy Information. Security. Careers. Contact.
-            <!-- <div class="info-link">Legal</div>
-        <div class="info-link">Terms of use</div>
-        <div class="info-link">Privacy Policy</div>
-        <div class="info-link">Trust</div>
-        <div class="info-link">Contact</div>
-        <div class="info-link">Cookie Discolosure</div> -->
+          <div class="text-newsletter mt-1">
+            &copy; Copyright 2020 Scelloo Nigeria. All rights reserved. Scelloo
+            HQ, Plot 16 New Creation Street, Lekki, Lagos, Nigeria
           </div>
         </div>
-        <div class="newletter-div">
+
+        <div class="w-full md:w-2/4 lg:w-1/4 mb-3 text-left">
           <div class="newsleter-head">Suscribe to our Newsletter</div>
           <div class="text-newsletter">
             Subscribe to our newsletters. We don’t Bite!
           </div>
-          <div class="new-letter-form sm:flex">
-            <input
-              type="text"
-              placeholder="Enter Email"
-              class="cloudenly-textbox"
-              name="email"
-            />
-            <button class="blue-btn">SUBMIT</button>
-          </div>
+          <form class="mt-1" action="#">
+            <div class="flex items-center mb-6">
+              <input
+                id="inline-full-name"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 w-full font-extrabold py-2 px-2 text-white leading-tight focus:outline-none hover:border-blue-500 focus:bg-white focus:border-blue-500"
+                type="email"
+                placeholder="Enter Email"
+              />
+              <button
+                class="bg-blue-500 ml-2 hover:bg-white hover:text-blue-500 text-white font-extrabold py-2 px-2 shadow-lg duration-200 border rounded"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <script>
 export default {
@@ -106,4 +121,35 @@ export default {
   methods: {},
 }
 </script>
-<style scoped></style>
+<style scoped>
+.footer {
+  margin-top: 6em;
+}
+
+a {
+  color: #000;
+}
+li {
+  padding-top: 5px;
+}
+a:hover {
+  color: #ddd;
+}
+
+button {
+  color: #fff;
+}
+
+@media (max-width: 642px) {
+  .bottom {
+    text-align: center;
+  }
+  .pl-8 {
+    padding-left: 0px;
+  }
+
+  .footer {
+    margin-top: 5em;
+  }
+}
+</style>

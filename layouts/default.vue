@@ -1,17 +1,26 @@
 <template>
   <div>
-    <AppHeader />
     <Nuxt />
     <AppFooter />
   </div>
 </template>
 <script>
-import AppHeader from '../components/header/AppHeader'
 import AppFooter from '../components/footer/AppFooter'
 export default {
   components: {
-    AppHeader,
     AppFooter,
+  },
+  head() {
+    return {
+      title: 'Cloudenly - Welcome',
+      meta: [
+        {
+          hid: 'Cloudenly Website',
+          name: 'Cloudenly Website',
+          content: 'Welcome to Cloudenly',
+        },
+      ],
+    }
   },
 }
 </script>
