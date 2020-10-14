@@ -555,7 +555,8 @@ margin-left: 0px;
 
     .product-div{
         margin-right: 20px;
-        width: 315px;
+        margin-left: 20px;
+        width: auto;
         margin-bottom: 30px;
     }
     .lite-margin{

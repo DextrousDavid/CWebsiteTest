@@ -263,7 +263,7 @@ export default {
     max-width: none;
   }
   .products-div-lite {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 </style>
