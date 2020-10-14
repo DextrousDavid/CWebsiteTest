@@ -251,7 +251,7 @@ export default {
   }
   .product-div-lite {
     background: #ffffff;
-    box-shadow: 0px 2px 10px rgba(47, 48, 97, 0.1);
+    box-shadow: 0px 3px 10px rgba(47, 48, 97, 0.1);
     border-radius: 8px;
     max-width: 270px;
     margin: auto;
