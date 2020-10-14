@@ -37,9 +37,7 @@ padding: 12px 26px 15px;
 .sign-in-nav{
  margin-right: 22px;
 }
-.div-wrapper{
-/* max-width: 583px; */
-}
+
 .landing-page-banner{
     /* padding-top: 181px; */
     /* padding-bottom: 143px; */
@@ -513,9 +511,7 @@ margin-left: 0px;
     font-size: 30px;
     line-height: 32px; 
  }
-.light-text-header{
 
-}
 .nav-item-left{
     margin-right: 0px;
 }
@@ -653,9 +649,7 @@ color: #333333
         padding: 12px 26 14px;
         margin-top: 15px;
       }
-      .bottom-navigation-div {
-        /* margin-top: 40px; */
-      }
+     
       .bottom-link{
         padding-top: 8px;
         padding-bottom: 8px;   
