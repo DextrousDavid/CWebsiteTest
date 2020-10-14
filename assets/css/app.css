@@ -191,8 +191,8 @@ margin-top: 30px;
     background: #FFFFFF;
     box-shadow: 0px 2px 10px rgba(47, 48, 97, 0.1);
     border-radius: 8px;
-
-    margin: auto;
+    width: 339px;
+    margin-right: 35px;
     padding-bottom: 34px;
 }
 
@@ -554,8 +554,8 @@ margin-left: 0px;
 }
 
     .product-div{
-        
-        width: 260px;
+        margin-right: 20px;
+        width: 315px;
         margin-bottom: 30px;
     }
     .lite-margin{
