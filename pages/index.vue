@@ -7,7 +7,7 @@
           <div class="bold-header">
             The Business
             <span>Software</span>
-            for a Connected Economy
+            for a Connected Digital Economy
           </div>
           <div class="light-text-header top-text">
             Transform with Cloudenly and experience the power of a unified
@@ -56,76 +56,62 @@
       </div>
     </div>
 
-    <div class="cloudenly-suite">
+    <div class="cloudenly-suite sm:flex">
       <div class="cloudenly-headline">Cloudenly Suite</div>
-      <div class="cloudenly-light-headline container">
+      <div class="cloudenly-light-headline">
         Our Product help your team work from anywhere delivering exceptional
         customer experiences.
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="product-div">
-              <div class="product-top-line optima-top"></div>
-              <div class="product-desc">
-                <img src="/img/Optima-logo.svg" />
-                <div class="product-name">Optima</div>
-                <div class="product-explain">
-                  Streamline your retail, supply chain, commerce, finance, and
-                  accounting for improved customer experience, operational
-                  efficiency, business intelligence, and agility.
-                </div>
-                <button class="product-btn optima-btn">TRY FOR FREE</button>
-              </div>
+      <div class="products-container sm:flex">
+        <div class="product-div">
+          <div class="product-top-line optima-top"></div>
+          <div class="product-desc">
+            <img src="/img/Optima-logo.svg" />
+            <div class="product-name">Optima</div>
+            <div class="product-explain">
+              Streamline your retail, supply chain, commerce, finance, and
+              accounting for improved customer experience, operational
+              efficiency, business intelligence, and agility.
             </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="product-div">
-              <div class="product-top-line humana-top"></div>
-              <div class="product-desc">
-                <img src="/img/Humana-logo.svg" />
-                <div class="product-name">HumanaR</div>
-                <div class="product-explain">
-                  Amplify your HR processes with ease, and achieve better
-                  employee experience with self-service. Improve people and
-                  business performance through workforce analytics.
-                </div>
-                <button class="product-btn humana-btn">TRY FOR FREE</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="product-div">
-              <div class="product-top-line dome-top"></div>
-              <div class="product-desc">
-                <img src="/img/Dome-logo.svg" />
-                <div class="product-name">Dome</div>
-                <div class="product-explain" style="max-width: 247px">
-                  Manage files and folders securely on the cloud and collaborate
-                  remotely. Enjoy the boundless opportunity.
-                </div>
-                <button class="product-btn dome-btn">TRY FOR FREE</button>
-              </div>
-            </div>
+            <button class="product-btn optima-btn">TRY FOR FREE</button>
           </div>
         </div>
-        <div class="row">
-          <div class="col align-self-center">
-            <div class="product-div-lite lite-margin">
-              <div class="product-top-line lite-top"></div>
-              <div class="product-desc">
-                <img src="/img/Optima-logo.svg" />
-                <div class="product-name">Lite</div>
-                <div class="product-explain">
-                  Built for micro and small businesses, to unify purchase,
-                  inventory, sales, customer, expense management, and more.
-                  Scaling from Lite to other Apps is seamless.
-                </div>
-                <button class="product-btn lite-btn">TRY FOR FREE</button>
-              </div>
+        <div class="product-div">
+          <div class="product-top-line humana-top"></div>
+          <div class="product-desc">
+            <img src="/img/Humana-logo.svg" />
+            <div class="product-name">HumanaR</div>
+            <div class="product-explain">
+              Amplify your HR processes with ease, and achieve better employee
+              experience with self-service. Improve people and business
+              performance through workforce analytics.
             </div>
+            <button class="product-btn humana-btn">TRY FOR FREE</button>
+          </div>
+        </div>
+        <div class="product-div">
+          <div class="product-top-line dome-top"></div>
+          <div class="product-desc">
+            <img src="/img/Dome-logo.svg" />
+            <div class="product-name">Dome</div>
+            <div class="product-explain" style="max-width: 247px">
+              Manage files and folders securely on the cloud and collaborate
+              remotely. Enjoy the boundless opportunity.
+            </div>
+            <button class="product-btn dome-btn">TRY FOR FREE</button>
+          </div>
+        </div>
+        <div class="product-div products-div-lite lite-margin">
+          <div class="product-top-line lite-top"></div>
+          <div class="product-desc">
+            <img src="/img/Optima-logo.svg" />
+            <div class="product-name">Lite</div>
+            <div class="product-explain">
+              Built for micro and small businesses, to unify purchase,
+              inventory, sales, customer, expense management, and more. Scaling
+              from Lite to other Apps is seamless.
+            </div>
+            <button class="product-btn lite-btn">TRY FOR FREE</button>
           </div>
         </div>
       </div>
@@ -223,6 +209,12 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  width: 100%;
+  padding: 12px;
+  margin-right: 70px;
+  margin-left: auto;
+}
 @media (max-width: 480px) {
   .why-cloudenly-img {
     max-width: none;
@@ -259,7 +251,7 @@ export default {
   }
   .product-div-lite {
     background: #ffffff;
-    box-shadow: 0px 2px 10px rgba(47, 48, 97, 0.1);
+    box-shadow: 0px 3px 10px rgba(47, 48, 97, 0.1);
     border-radius: 8px;
     max-width: 270px;
     margin: auto;
@@ -270,13 +262,8 @@ export default {
   .why-cloudenly-img {
     max-width: none;
   }
-  .product-div-lite {
-    background: #ffffff;
-    box-shadow: 0px 2px 10px rgba(47, 48, 97, 0.1);
-    border-radius: 8px;
-    max-width: 370px;
-    margin: auto;
-    padding-bottom: 34px;
+  .products-div-lite {
+    margin-top: 20px;
   }
 }
 </style>
