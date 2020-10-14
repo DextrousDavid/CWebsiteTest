@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="flex-wrap justify-between nav-bg p-6"
+      class="flex-wrap justify-between nav-bg p-8 mb-20"
       :class="fixed ? 'sticky' : null"
     >
       <div class="items-center flex-shrink-0 text-white mr-6 log-wrapper">
@@ -34,36 +34,27 @@
       >
         <div class="text-sm lg:flex-grow">
           <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-            Products
+            User Guide
           </li>
           <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-            Pricing
+            Whitepaper
           </li>
           <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-            Partners
+            Blogs
           </li>
-          <nuxt-link to="/resources">
+          <nuxt-link to="">
             <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-              Resources
+              Community
             </li></nuxt-link
           >
 
           <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-            Talk to an Expert
+            Developer Documentation
           </li>
-        </div>
-        <div class="nav-item-left">
-          <li
-            class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0"
-          >
-            Sign In
+
+          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+            Events
           </li>
-          <a
-            href="#"
-            class="join-btn inline-block text-sm px-4 py-2 mt-4 lg:mt-0"
-          >
-            Sign Up
-          </a>
         </div>
       </div>
     </nav>

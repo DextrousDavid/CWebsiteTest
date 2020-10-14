@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div>
     <div class="product-wrapper">
@@ -12,7 +13,9 @@
               grow
             >
               <v-tab v-for="item in items" :key="item">
-                {{ item }}
+                <span style="font-size: 16px; text-transform: capitalize">
+                  {{ item }}</span
+                >
               </v-tab>
             </v-tabs>
           </div>
@@ -29,7 +32,10 @@
                   </div>
                 </div>
                 <div class="flex-1 card-img-right scalability-bg">
-                  <img src="/img/innovation_icon.svg" />
+                  <img
+                    src="/img/innovation_icon.svg"
+                    class="why-cloudenly-img"
+                  />
                 </div>
               </div>
             </v-tab-item>
@@ -45,7 +51,10 @@
                   </div>
                 </div>
                 <div class="flex-1 card-img-right scalability-bg">
-                  <img src="/img/scalability-icon.svg" />
+                  <img
+                    src="/img/scalability-icon.svg"
+                    class="why-cloudenly-img"
+                  />
                 </div>
               </div>
             </v-tab-item>
@@ -61,7 +70,10 @@
                   </div>
                 </div>
                 <div class="flex-1 card-img-right ecosystem-bg">
-                  <img src="/img/ecosystem-icon.svg" />
+                  <img
+                    src="/img/ecosystem-icon.svg"
+                    class="why-cloudenly-img"
+                  />
                 </div>
               </div>
             </v-tab-item>
@@ -155,7 +167,7 @@ export default {
 }
 .card-header {
   font-family: GalanoGrotesque-Heavy;
-  font-size: 46px;
+  font-size: 40px;
   line-height: 80px;
   color: #333333;
   text-align: left;
@@ -234,6 +246,26 @@ export default {
     padding-bottom: 0px;
   }
 }
+@media (max-width: 480px) {
+  .why-cloudenly-img {
+    max-width: none;
+  }
+}
+@media (max-width: 786px) {
+  .why-cloudenly-img {
+    max-width: none;
+  }
+}
+@media (max-width: 1024px) {
+  .why-cloudenly-img {
+    max-width: 100%;
+  }
+}
+/* @media (max-width: 1200px) {
+  .why-cloudenly-img {
+    max-width: none;
+  }
+} */
 </style>
 <style>
 .section-tabs .v-tabs-slider-wrapper .v-tabs-slider {
@@ -251,6 +283,12 @@ export default {
   line-height: 80px;
   color: #333333;
 }
+
+.cloudenly-headline {
+  font-size: 35px;
+}
+/* 
+/*  *
 /* @media (max-width: 768px) {
   .section-tabs .v-slide-group__wrapper {
     height: 120px;
