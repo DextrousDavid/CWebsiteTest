@@ -10,12 +10,7 @@ display: flex;
 width: 100%;
 z-index: 100;
 }
-.container {
-    width: 100%;
-    padding: 12px;
-    margin-right: 70px;
-    margin-left: auto;
-}
+
 .log-wrapper{
 margin-left: 0px;
 display: flex;

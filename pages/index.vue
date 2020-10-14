@@ -7,7 +7,7 @@
           <div class="bold-header">
             The Business
             <span>Software</span>
-            for a Connected Economy
+            for a Connected Digital Economy
           </div>
           <div class="light-text-header top-text">
             Transform with Cloudenly and experience the power of a unified
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="product-div">
+            <div class="product-div-lite">
               <div class="product-top-line optima-top"></div>
               <div class="product-desc">
                 <img src="/img/Optima-logo.svg" />
@@ -81,7 +81,7 @@
           </div>
 
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="product-div">
+            <div class="product-div-lite">
               <div class="product-top-line humana-top"></div>
               <div class="product-desc">
                 <img src="/img/Humana-logo.svg" />
@@ -97,7 +97,7 @@
           </div>
 
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="product-div">
+            <div class="product-div-lite">
               <div class="product-top-line dome-top"></div>
               <div class="product-desc">
                 <img src="/img/Dome-logo.svg" />
@@ -223,6 +223,12 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  width: 100%;
+  padding: 12px;
+  margin-right: 70px;
+  margin-left: auto;
+}
 @media (max-width: 480px) {
   .why-cloudenly-img {
     max-width: none;
