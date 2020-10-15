@@ -7,14 +7,9 @@
         <h1 class="banner-h1 font-bold">How can we help you?</h1>
         <div style="max-width: 550px; margin: auto">
           <p class="banner-p font-normal">
-            Flexible pricing options, from personal projects to enterprise
-            applications, and everything in between.
+            Find help and learning resources below
           </p>
         </div>
-
-        <span class="content-center">
-          <Inputform />
-        </span>
       </div>
     </section>
 
@@ -28,7 +23,7 @@
           />
           <span class="logoTexts">
             <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
-            <h3 class="-mt-2 text-center font-semibold">White Paper</h3>
+            <h3 class="-mt-2 text-center font-semibold">Product Overview</h3>
           </span>
         </div>
       </nuxt-link>
@@ -189,7 +184,7 @@ export default {
 }
 
 h3 {
-  margin-left: 3.5rem;
+  margin-left: 5rem;
 }
 
 .resource-card {
@@ -245,7 +240,7 @@ h5 {
 
 .banner {
   max-width: 100%;
-  padding: 13rem 0 5rem 0;
+  padding: 15rem 0 10rem 0;
   text-align: center;
   background-image: url('rectangle3.jpg');
   background-repeat: no-repeat;

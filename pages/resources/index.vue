@@ -7,14 +7,9 @@
           <h1 class="banner-h1 font-bold">How can we help you?</h1>
           <div style="max-width: 550px; margin: auto">
             <p class="banner-p font-normal">
-              Flexible pricing options, from personal projects to enterprise
-              applications, and everything in between.
+              Find help and learning resources below
             </p>
           </div>
-
-          <span class="content-center">
-            <Inputform />
-          </span>
         </div>
       </section>
     </div>
@@ -29,7 +24,8 @@
                 <h1 class="font-bold">User Guide</h1>
                 <div style="max-width: 400px; margin: auto">
                   <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
+                    Read how-to articles and guides for all Cloudenly's product
+                    suite
                   </p>
                 </div>
               </div>
@@ -41,10 +37,11 @@
           <nuxt-link to="/resources/whitepaper">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">White Paper</h1>
-                <div style="max-width: 400px; margin: auto">
+                <h1 class="font-bold">Product Overview</h1>
+                <div style="max-width: 400px; margin: auto; margin-top: -10px">
                   <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
+                    Read reference product overview documentation for all
+                    Cloudenly's product suite.
                   </p>
                 </div>
               </div>
@@ -59,7 +56,8 @@
                 <h1 class="font-bold">Blog</h1>
                 <div style="max-width: 400px; margin: auto">
                   <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
+                    Be up to date on Cloudenly's activities as well as industry
+                    and Business trends
                   </p>
                 </div>
               </div>
@@ -89,7 +87,7 @@
                 <h1 class="font-bold">FAQ</h1>
                 <div style="max-width: 400px; margin: auto">
                   <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
+                    Read and find answers to frequently asked questions
                   </p>
                 </div>
               </div>
@@ -106,7 +104,7 @@
                 </h1>
                 <div style="max-width: 400px; margin: auto">
                   <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
+                    Read reference documentation for API development
                   </p>
                 </div>
               </div>
@@ -136,7 +134,8 @@
                 <h1 class="font-bold">Academy</h1>
                 <div style="max-width: 400px; margin: auto">
                   <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
+                    Watch video training, take test and get certified in
+                    Cloudenly's product suite
                   </p>
                 </div>
               </div>
@@ -149,11 +148,9 @@
 </template>
 
 <script>
-import Inputform from '../../components/contents/Inputform'
 import AppHeader from '../../components/header/AppHeader'
 export default {
   components: {
-    Inputform,
     AppHeader,
   },
 }
@@ -166,6 +163,7 @@ export default {
 .resource-card {
   padding: 80px 6px 15px 6px;
   border-radius: 6px;
+  min-height: 270px;
 }
 
 h1 {
@@ -176,7 +174,7 @@ h1 {
 }
 
 p {
-  margin-top: 120px;
+  margin-top: 70px;
 }
 
 .banner-h1 {
@@ -197,7 +195,7 @@ p {
 
 .banner {
   max-width: 100%;
-  padding: 13rem 0 5rem 0;
+  padding: 15rem 0 10rem 0;
   text-align: center;
   background-image: url('rectangle3.jpg');
   background-repeat: no-repeat;
@@ -221,5 +219,15 @@ p {
       #4881da 79.59%
     );
   }
+}
+
+@media (max-width: 480px) {
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+}
+@media (min-width: 1200px) {
 }
 </style>

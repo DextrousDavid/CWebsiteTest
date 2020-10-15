@@ -27,7 +27,6 @@
         <div class="menu-head">Partners</div>
         <div class="list-element">Find a Partner</div>
         <div class="list-element">Become a Partner</div>
-        <div class="list-element">Dome</div>
       </div>
 
       <div

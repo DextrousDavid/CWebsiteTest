@@ -6,14 +6,9 @@
         <h1 class="banner-h1">How can we help you?</h1>
         <div style="max-width: 550px; margin: auto">
           <p class="banner-p font-normal">
-            Flexible pricing options, from personal projects to enterprise
-            applications, and everything in between.
+            Find help and learning resources below
           </p>
         </div>
-
-        <span class="content-center">
-          <Inputform />
-        </span>
       </div>
     </section>
     <div class="mt-12 mb-8 flex items-center text-center justify-center">
@@ -275,7 +270,7 @@ h5 {
 
 .banner {
   max-width: 100%;
-  padding: 12rem 0 5rem 0;
+  padding: 14rem 0 10rem 0;
   text-align: center;
   background-image: url('rectangle3.jpg');
   background-repeat: no-repeat;

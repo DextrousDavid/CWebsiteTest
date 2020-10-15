@@ -4,27 +4,17 @@
       <div class="content-center mr-3 ml-3">
         <h1 class="font-normal">How can we help you?</h1>
         <div style="max-width: 550px; margin: auto">
-          <p class="font-normal">
-            Flexible pricing options, from personal projects to enterprise
-            applications, and everything in between.
-          </p>
+          <p class="font-normal">Find help and learning resources below</p>
         </div>
-
-        <span class="content-center">
-          <Inputform />
-        </span>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import Inputform from '../contents/Inputform'
 export default {
   name: 'Banner',
-  components: {
-    Inputform,
-  },
+  components: {},
   head() {
     return {
       link: [
