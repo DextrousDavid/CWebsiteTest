@@ -9,9 +9,11 @@
           class="tabs-control"
           :class="
             currentTab == 1
-              ? 'domeActive'
-              : currentTab == 2
               ? 'humanaActive'
+              : currentTab == 2
+              ? 'optimaActive'
+              : currentTab == 3
+              ? 'quantumActive'
               : null
           "
         >
@@ -269,16 +271,20 @@ Two Factor Authentication (2FA), IP Fencing`,
   font-size: 16px;
   line-height: 19px;
   color: #f1f5fb;
-  background: #4781dc;
+  background: #05613a;
   border-radius: 3px;
 }
-.domeActive .v-tab.v-tab--active {
-  background: #05613a !important;
+.quantumActive .v-tab.v-tab--active {
+  background: #525252 !important;
 }
 .humanaActive .v-tab.v-tab--active {
   background: #5e227f !important;
 }
-.qunatumActive .v-tab.v-tab--active {
-  background: #5e227f !important;
+.optimaActive .v-tab.v-tab--active {
+  background: #4781dc !important;
 }
+
+/* dome: #05613a green
+optima: ##4781dc blue
+humanaR: #5e227f purple */
 </style>

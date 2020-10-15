@@ -240,7 +240,8 @@ h5 {
 
 .banner {
   max-width: 100%;
-  padding: 15rem 0 10rem 0;
+  padding: 11rem 0 9rem 0;
+  margin-top: 5rem;
   text-align: center;
   background-image: url('rectangle3.jpg');
   background-repeat: no-repeat;

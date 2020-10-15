@@ -22,7 +22,7 @@ display: flex;
 font-size: 16px;
 line-height: 19px;
 color: #343434;
-margin-left: 20px;
+margin-left: 3px;
 font-family: GalanoGrotesque-Medium;
 }
 .join-btn{
@@ -103,7 +103,7 @@ margin-right: 35px;
     font-size: 16px;
     line-height: 19px;
     color: #4781DC;
-    padding: 10px 35px 10px 10px;
+    padding: 10px 23px 10px 10px;
 }
 .enterprices{
 padding-top:29px;
@@ -188,6 +188,7 @@ margin-top: 30px;
     border-radius: 8px;
     width: 339px;
     margin-right: 35px;
+    margin-bottom: 20px;
     padding-bottom: 34px;
 }
 
