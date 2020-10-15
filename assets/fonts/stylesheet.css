@@ -96,11 +96,7 @@
 
 @font-face {
     font-family: 'GalanoGrotesque-Bold';
-    src: url('GalanoGrotesque-Bold.eot');
-    src: local('☞Galano Grotesque Bold'), local('GalanoGrotesque-Bold'),
-        url('GalanoGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
-        url('GalanoGrotesque-Bold.woff2') format('woff2'),
-        url('GalanoGrotesque-Bold.woff') format('woff'),
+    src:        
         url('GalanoGrotesque-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;

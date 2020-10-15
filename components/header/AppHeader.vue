@@ -33,34 +33,42 @@
         class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 px-1 py-2 pt-1 rounded"
+          >
             Products
           </li>
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 px-1 py-2 pt-1 rounded"
+          >
             Pricing
           </li>
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 px-1 py-2 pt-1 rounded"
+          >
             Partners
           </li>
-          <nuxt-link to="/resources">
-            <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-              Resources
-            </li></nuxt-link
+          <nuxt-link
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 px-1 py-2 pt-1 rounded"
+            to="/resources"
           >
-
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+            Resources
+          </nuxt-link>
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 px-1 py-2 pt-1 rounded"
+          >
             Talk to an Expert
           </li>
         </div>
         <div class="nav-item-left">
           <li
-            class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0"
+            class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 px-1 py-2 pt-1 rounded"
           >
             Sign In
           </li>
           <a
             href="#"
-            class="join-btn inline-block text-sm px-4 py-2 mt-4 lg:mt-0"
+            class="join-btn inline-block text-sm px-6 py-4 leading-none border rounded text-white bg-blue-500 hover:bg-white hover:text-blue-500 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Sign Up
           </a>
@@ -109,5 +117,8 @@ export default {
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+.nuxt-link-exact-active {
+  color: rgb(70, 143, 226);
 }
 </style>

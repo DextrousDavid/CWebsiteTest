@@ -35,7 +35,7 @@
             User Guide
           </li>
           <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-            Whitepaper
+            Product Overview
           </li>
           <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
             Blogs

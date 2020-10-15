@@ -26,13 +26,10 @@ margin-left: 20px;
 font-family: GalanoGrotesque-Medium;
 }
 .join-btn{
-background: #4781DC;
-border-radius: 3px;
 font-family: GalanoGrotesque-SemiBold;
 font-size: 16px;
 line-height: 19px;
-color: #F1F5FB;
-padding: 12px 26px 15px;
+
 }
 .sign-in-nav{
  margin-right: 22px;
