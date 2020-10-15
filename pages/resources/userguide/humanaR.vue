@@ -278,7 +278,7 @@ h5 {
 
 .banner {
   max-width: 100%;
-  padding: 14rem 0 5rem 0;
+  padding: 14rem 0 10rem 0;
   text-align: center;
   background-image: url('rectangle3.jpg');
   background-repeat: no-repeat;
