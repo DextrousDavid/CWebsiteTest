@@ -34,7 +34,7 @@
         </div>
         <!-- Row Two Ends Here -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources/whitepaper">
+          <nuxt-link to="/resources/product-overview">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Product Overview</h1>

@@ -157,12 +157,12 @@ export default {
   },
   head() {
     return {
-      title: 'White Paper',
+      title: 'Product Overview',
       meta: [
         {
-          hid: 'Whitepaper',
-          name: 'White paper',
-          content: 'Welcome to cloudenly White paper page',
+          hid: 'Product-overview',
+          name: 'Product Overview',
+          content: 'Welcome to cloudenly Product Overview page',
         },
       ],
       link: [

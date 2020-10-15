@@ -33,26 +33,40 @@
         class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+          <nuxt-link
+            to="/resources/userguide"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+          >
             User Guide
-          </li>
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
-            Whitepaper
-          </li>
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+          </nuxt-link>
+          <nuxt-link
+            to="/resources/product-overview"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+          >
+            Product Overview
+          </nuxt-link>
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+          >
             Blogs
           </li>
           <nuxt-link to="">
-            <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+            <li
+              class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+            >
               Community
             </li></nuxt-link
           >
 
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+          >
             Developer Documentation
           </li>
 
-          <li class="list-item-navigation block mt-4 lg:inline-block lg:mt-0">
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+          >
             Events
           </li>
         </div>
@@ -100,5 +114,9 @@ export default {
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.nuxt-link-exact-active {
+  color: rgb(70, 143, 226);
 }
 </style>
