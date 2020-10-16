@@ -5,7 +5,7 @@
       <div class="sm:w-1/2 landing-page-left-div sm:flex justify-center">
         <div class="div-wrapper">
           <div class="bold-header">
-            The Business
+            Business
             <span>Software</span>
             for a Connected Digital Economy
           </div>
@@ -261,9 +261,6 @@ export default {
 @media (min-width: 1200px) {
   .why-cloudenly-img {
     max-width: none;
-  }
-  .products-div-lite {
-    margin-top: 20px;
   }
 }
 </style>

@@ -9,6 +9,7 @@
         <div class="list-element">Optima</div>
         <div class="list-element">HumanaR</div>
         <div class="list-element">Dome</div>
+        <div class="list-element">Quantum</div>
         <div class="list-element">Ally</div>
         <!-- <div class="list-element">Quantum</div> -->
       </div>
@@ -18,7 +19,6 @@
         <div class="menu-head">Pricing</div>
         <div class="list-element">Optima</div>
         <div class="list-element">HumanaR</div>
-        <div class="list-element">Dome</div>
       </div>
 
       <div
@@ -33,12 +33,14 @@
         class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
       >
         <div class="menu-head">Resources</div>
-        <div class="list-element">User Guides</div>
-        <div class="list-element">Demos</div>
-        <div class="list-element">Case Studies</div>
-        <div class="list-element">Blog</div>
+        <div class="list-element">Product Overview</div>
         <div class="list-element">FAQ</div>
-        <div class="list-element">Support</div>
+        <div class="list-element">User Guide</div>
+        <div class="list-element">Blogs</div>
+        <div class="list-element">Events</div>
+        <div class="list-element">Community</div>
+        <div class="list-element">Developer Documentation</div>
+        <div class="list-element">Academy</div>
       </div>
 
       <div
@@ -81,8 +83,12 @@
             <div class="bottom-link">Contract</div>
           </div>
           <div class="text-newsletter mt-1">
-            &copy; Copyright 2020 Scelloo Nigeria. All rights reserved. Scelloo
-            HQ, Plot 16 New Creation Street, Lekki, Lagos, Nigeria
+            <p class="text-newsletter">
+              Scelloo HQ, Plot 16 New Creation Street, Lekki, Lagos, Nigeria.
+            </p>
+            <p class="text-newsletter copyright-margin-bottom">
+              &copy; Copyright 2020 Scelloo Nigeria. All rights reserved.
+            </p>
           </div>
         </div>
 
@@ -150,5 +156,8 @@ button {
   .footer {
     margin-top: 5em;
   }
+}
+.copyright-margin-bottom {
+  margin-bottom: 2px;
 }
 </style>

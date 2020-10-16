@@ -34,40 +34,46 @@
       >
         <div class="text-sm lg:flex-grow">
           <nuxt-link
-            to="/resources/userguide"
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
-          >
-            User Guide
-          </nuxt-link>
-          <nuxt-link
             to="/resources/product-overview"
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Product Overview
           </nuxt-link>
+
+          <nuxt-link
+            to="/resources/userguide"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
+          >
+            User Guide
+          </nuxt-link>
           <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Blogs
           </li>
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
+          >
+            Events
+          </li>
           <nuxt-link to="">
             <li
-              class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+              class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
             >
               Community
             </li></nuxt-link
           >
 
           <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Developer Documentation
           </li>
 
           <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
-            Events
+            Demo
           </li>
         </div>
       </div>

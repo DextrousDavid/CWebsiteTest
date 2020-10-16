@@ -17,6 +17,35 @@
     <main class="container mx-auto px-10 py-10">
       <div class="flex flex-wrap mt-12">
         <!-- Row One Starts here! -->
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources/product-overview">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">Product Overview</h1>
+                <div style="max-width: 400px; margin: auto; margin-top: -10px">
+                  <p class="font-normal">
+                    Read reference product overview documentation for all
+                    Cloudenly's product suite
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <div class="resource-card bg-gray-200">
+            <div class="text-center mr-3 ml-3">
+              <h1 class="font-bold">FAQ</h1>
+              <div style="max-width: 400px; margin: auto">
+                <p class="font-normal">
+                  Read and find answers to frequently asked questions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
           <nuxt-link to="/resources/userguide">
             <div class="resource-card bg-gray-200">
@@ -33,114 +62,74 @@
           </nuxt-link>
         </div>
         <!-- Row Two Ends Here -->
+
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources/product-overview">
-            <div class="resource-card bg-gray-200">
-              <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">Product Overview</h1>
-                <div style="max-width: 400px; margin: auto; margin-top: -10px">
-                  <p class="font-normal">
-                    Read reference product overview documentation for all
-                    Cloudenly's product suite.
-                  </p>
-                </div>
+          <div class="resource-card bg-gray-200">
+            <div class="text-center mr-3 ml-3">
+              <h1 class="font-bold">Blog</h1>
+              <div style="max-width: 400px; margin: auto">
+                <p class="font-normal">
+                  Be up to date on Cloudenly's activities as well as industry
+                  and Business trends
+                </p>
               </div>
             </div>
-          </nuxt-link>
+          </div>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/">
-            <div class="resource-card bg-gray-200">
-              <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">Blog</h1>
-                <div style="max-width: 400px; margin: auto">
-                  <p class="font-normal">
-                    Be up to date on Cloudenly's activities as well as industry
-                    and Business trends
-                  </p>
-                </div>
+          <div class="resource-card bg-gray-200">
+            <div class="text-center mr-3 ml-3">
+              <h1 class="font-bold">Events</h1>
+              <div style="max-width: 400px; margin: auto">
+                <p class="font-normal">
+                  Stay up to date with events across our ecosystem
+                </p>
               </div>
             </div>
-          </nuxt-link>
+          </div>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/">
-            <div class="resource-card bg-gray-200">
-              <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">Community</h1>
-                <div style="max-width: 400px; margin: auto">
-                  <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
-                  </p>
-                </div>
+          <div class="resource-card bg-gray-200">
+            <div class="text-center mr-3 ml-3">
+              <h1 class="font-bold">Community</h1>
+              <div style="max-width: 400px; margin: auto">
+                <p class="font-normal">
+                  Start a discussion, browse solutions, and get tips from us
+                </p>
               </div>
             </div>
-          </nuxt-link>
+          </div>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/">
-            <div class="resource-card bg-gray-200">
-              <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">FAQ</h1>
-                <div style="max-width: 400px; margin: auto">
-                  <p class="font-normal">
-                    Read and find answers to frequently asked questions
-                  </p>
-                </div>
+          <div class="resource-card bg-gray-200">
+            <div class="text-center mr-3 ml-3">
+              <h1 style="margin-bottom: -24px" class="font-bold">
+                Developer Documentation
+              </h1>
+              <div style="max-width: 400px; margin: auto">
+                <p class="font-normal">
+                  Read reference documentation for API development
+                </p>
               </div>
             </div>
-          </nuxt-link>
+          </div>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/">
-            <div class="resource-card bg-gray-200">
-              <div class="text-center mr-3 ml-3">
-                <h1 style="margin-bottom: -24px" class="font-bold">
-                  Developer Documentation
-                </h1>
-                <div style="max-width: 400px; margin: auto">
-                  <p class="font-normal">
-                    Read reference documentation for API development
-                  </p>
-                </div>
+          <div class="resource-card bg-gray-200">
+            <div class="text-center mr-3 ml-3">
+              <h1 class="font-bold">Academy</h1>
+              <div style="max-width: 400px; margin: auto">
+                <p class="font-normal">
+                  Watch video trainings, take test and get certified in
+                  Cloudenly's product suite
+                </p>
               </div>
             </div>
-          </nuxt-link>
-        </div>
-
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/">
-            <div class="resource-card bg-gray-200">
-              <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">Events</h1>
-                <div style="max-width: 400px; margin: auto">
-                  <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
-                  </p>
-                </div>
-              </div>
-            </div>
-          </nuxt-link>
-        </div>
-
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/">
-            <div class="resource-card bg-gray-200">
-              <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">Academy</h1>
-                <div style="max-width: 400px; margin: auto">
-                  <p class="font-normal">
-                    Watch video training, take test and get certified in
-                    Cloudenly's product suite
-                  </p>
-                </div>
-              </div>
-            </div>
-          </nuxt-link>
+          </div>
         </div>
       </div>
     </main>
@@ -195,7 +184,8 @@ p {
 
 .banner {
   max-width: 100%;
-  padding: 15rem 0 10rem 0;
+  padding: 11rem 0 9rem 0;
+  margin-top: 5rem;
   text-align: center;
   background-image: url('rectangle3.jpg');
   background-repeat: no-repeat;
