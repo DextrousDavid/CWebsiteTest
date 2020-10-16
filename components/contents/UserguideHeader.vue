@@ -123,6 +123,6 @@ export default {
 }
 
 .nuxt-link-exact-active {
-  color: rgb(70, 143, 226);
+  color: #1034a6;
 }
 </style>

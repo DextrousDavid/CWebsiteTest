@@ -195,12 +195,12 @@ export default {
   },
   head() {
     return {
-      title: 'HumanaR - User Guide',
+      title: 'User Guide - HumanaR',
       meta: [
         {
-          hid: 'HumanaR - User Guide',
-          name: 'HumanaR - User Guide',
-          content: 'Tips and Tricks of HumanaR, Get started with HumanaR ',
+          hid: 'User Guide - HumanaR',
+          name: 'User Guide - HumanaR',
+          content: 'Tips and Tricks of HumanaR, Get started with HumanaR. ',
         },
       ],
     }

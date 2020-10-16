@@ -38,12 +38,12 @@ export default {
   },
   head() {
     return {
-      title: 'Quantum - User Guide',
+      title: 'User Guide - Quantum',
       meta: [
         {
-          hid: 'Quantum - User Guide',
-          name: 'Quantum - User Guide',
-          content: 'Tips and Tricks of Quantum, Get started with Quantum',
+          hid: 'User Guide - Quantum',
+          name: 'User Guide - Quantum',
+          content: 'Tips and Tricks of Quantum, Get started with Quantum.',
         },
       ],
     }

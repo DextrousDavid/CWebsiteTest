@@ -38,12 +38,12 @@ export default {
   },
   head() {
     return {
-      title: 'Dome - User Guide',
+      title: 'User Guide - Dome',
       meta: [
         {
-          hid: 'Dome - User Guide',
-          name: 'Dome - User Guide',
-          content: 'Tips and Tricks of Dome, Get started with Dome',
+          hid: 'User Guide - Dome',
+          name: 'User Guide - Dome',
+          content: 'Tips and Tricks of Dome, Get started with Dome.',
         },
       ],
     }

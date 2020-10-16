@@ -36,11 +36,11 @@
         <div class="list-element">Product Overview</div>
         <div class="list-element">FAQ</div>
         <div class="list-element">User Guide</div>
-        <div class="list-element">Blogs</div>
-        <div class="list-element">Events</div>
+        <div class="list-element">Blogs / Events</div>
         <div class="list-element">Community</div>
         <div class="list-element">Developer Documentation</div>
         <div class="list-element">Academy</div>
+        <div class="list-element">Demo</div>
       </div>
 
       <div
@@ -48,8 +48,12 @@
       >
         <div class="menu-head">Support</div>
         <div class="list-element">Support@cloudenly.com</div>
-        <div class="list-element">+234 8159530070</div>
-        <div class="list-element">+234 5566 55667</div>
+        <a href="tel:+2348159530070">
+          <div class="list-element">+234 8159530070</div>
+        </a>
+        <a href="tel:+234556655667">
+          <div class="list-element">+234 5566 55667</div>
+        </a>
       </div>
 
       <hr style="margin-top: 17px; border-top-color: #e1e0e0" />
@@ -86,8 +90,8 @@
             <p class="text-newsletter">
               Scelloo HQ, Plot 16 New Creation Street, Lekki, Lagos, Nigeria.
             </p>
-            <p class="text-newsletter copyright-margin-bottom">
-              &copy; Copyright 2020 Scelloo Nigeria. All rights reserved.
+            <p class="text-newsletter copyright-margin-bottom md:mt-1">
+              &copy; Copyright 2020 Scelloo Nigeria. All Rights Reserved.
             </p>
           </div>
         </div>
@@ -101,7 +105,7 @@
             <div class="flex items-center mb-6">
               <input
                 id="inline-full-name"
-                class="bg-gray-200 appearance-none border-2 border-gray-200 w-full font-extrabold py-2 px-2 text-white leading-tight focus:outline-none hover:border-blue-500 focus:bg-white focus:border-blue-500"
+                class="bg-gray-200 appearance-none border-2 border-gray-200 w-full font-extrabold py-2 px-2 text-black leading-tight focus:outline-none hover:border-blue-500 focus:bg-white focus:border-blue-500"
                 type="email"
                 placeholder="Enter Email"
               />

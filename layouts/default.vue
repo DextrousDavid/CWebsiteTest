@@ -12,12 +12,16 @@ export default {
   },
   head() {
     return {
-      title: 'Cloudenly - Welcome',
+      title:
+        'Cloudenly - The Business Software for a Connected Digital Economy',
       meta: [
         {
-          hid: 'Cloudenly Website',
-          name: 'Cloudenly Website',
-          content: 'Welcome to Cloudenly',
+          hid:
+            'Cloudenly - The Business Software for a Connected Digital Economy',
+          name:
+            'Cloudenly - The Business Software for a Connected Digital Economy',
+          content:
+            'Cloudenly - The Business Software for a Connected Digital Economy',
         },
       ],
     }

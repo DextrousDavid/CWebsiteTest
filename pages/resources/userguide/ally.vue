@@ -36,12 +36,12 @@ export default {
   },
   head() {
     return {
-      title: 'Ally - User Guide',
+      title: 'User Guide - Ally',
       meta: [
         {
-          hid: 'Ally - User Guide',
-          name: 'Ally - User Guide',
-          content: 'Tips and Tricks of Ally, Get started with Ally',
+          hid: 'User Guide - Ally',
+          name: 'User Guide - Ally',
+          content: 'Tips and Tricks of Ally, Get started with Ally.',
         },
       ],
     }

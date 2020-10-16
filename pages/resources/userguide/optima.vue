@@ -195,12 +195,12 @@ export default {
   },
   head() {
     return {
-      title: 'Optima - User Guide',
+      title: 'User Guide - Optima',
       meta: [
         {
-          hid: 'Optima - User Guide',
-          name: 'Optima - User Guide',
-          content: 'Tips and Tricks of Optima, Get started with Optima',
+          hid: 'User Guide - Optima',
+          name: 'User Guide - Optima',
+          content: 'Tips and Tricks of Optima, Get started with Optima.',
         },
       ],
     }
