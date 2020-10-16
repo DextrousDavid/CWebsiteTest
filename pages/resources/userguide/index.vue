@@ -156,12 +156,12 @@ export default {
   },
   head() {
     return {
-      title: 'User Guides',
+      title: 'Cloudenly - User Guide',
       meta: [
         {
-          hid: 'UserGuide',
-          name: 'UserGuides',
-          content: 'Our Userguides - All you need to know about our resources',
+          hid: 'Cloudenly - User Guide',
+          name: 'Cloudenly - User Guide',
+          content: 'Our User Guide - All you need to know',
         },
       ],
       link: [

@@ -35,14 +35,16 @@
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card bg-gray-200">
-            <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold">FAQ</h1>
-              <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
-                  Read and find answers to frequently asked questions
-                </p>
+            <a href="https://scelloo.com/resources/faq/" target="_blank">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">FAQ</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Read and find answers to frequently asked questions
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -65,15 +67,17 @@
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card bg-gray-200">
-            <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold">Blog</h1>
-              <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
-                  Be up to date on Cloudenly's activities as well as industry
-                  and Business trends
-                </p>
+            <a href="https://scelloo.com/resources/blog/" target="_blank">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">Blog</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Be up to date on Cloudenly's activities as well as industry
+                    and business trends
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -141,6 +145,18 @@ import AppHeader from '../../components/header/AppHeader'
 export default {
   components: {
     AppHeader,
+  },
+  head() {
+    return {
+      title: 'Cloudenly - Resources',
+      meta: [
+        {
+          hid: 'Cloudenly - Resources',
+          name: 'Cloudenly - Resources',
+          content: 'Cloudenly - Resources All you need to know.',
+        },
+      ],
+    }
   },
 }
 </script>

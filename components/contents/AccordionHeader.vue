@@ -110,7 +110,7 @@ export default {
 }
 
 .userguide {
-  color: #24a3dd;
+  color: #1034a6;
 }
 
 /* .sticky {

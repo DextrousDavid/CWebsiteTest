@@ -157,12 +157,12 @@ export default {
   },
   head() {
     return {
-      title: 'Product Overview',
+      title: 'Cloudenly - Product Overview',
       meta: [
         {
-          hid: 'Product-overview',
-          name: 'Product Overview',
-          content: 'Welcome to cloudenly Product Overview page',
+          hid: 'Cloudenly - Product Overview',
+          name: 'Cloudenly - Product Overview',
+          content: 'Welcome to Product Overview page',
         },
       ],
       link: [

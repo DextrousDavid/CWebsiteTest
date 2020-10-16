@@ -5,7 +5,7 @@
       <div class="sm:w-1/2 landing-page-left-div sm:flex justify-center">
         <div class="div-wrapper">
           <div class="bold-header">
-            Business
+            The Business
             <span>Software</span>
             for a Connected Digital Economy
           </div>
