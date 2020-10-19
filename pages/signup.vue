@@ -460,7 +460,7 @@ export default {
 
 <style scoped>
 .v-application .pa-3 {
-  padding: 0px !important;
+  padding: 3px !important;
 }
 
 .already-have {
