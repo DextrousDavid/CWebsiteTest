@@ -34,35 +34,35 @@
       >
         <div class="text-sm lg:flex-grow">
           <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 lg:px-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Products
           </li>
           <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 lg:px-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Pricing
           </li>
           <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 lg:px-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Partners
           </li>
           <nuxt-link
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 lg:px-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
             to="/resources"
           >
             Resources
           </nuxt-link>
           <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 lg:px-2 pt-1 rounded duration-300"
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Talk to an Expert
           </li>
         </div>
         <div class="nav-item-left">
           <li
-            class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 lg:px-2 pt-1 rounded duration-300"
+            class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Sign In
           </li>

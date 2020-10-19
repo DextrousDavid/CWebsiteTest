@@ -6,7 +6,7 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
   <v-app>
     <theme>
       <div slot="content" class="pa-0">
-        <v-row class="pa-0 dark">
+        <v-row class="pa-0 bg-gray-200">
           <v-col md="2">
             <div class="d-flex">
               <nuxt-link to="/">
@@ -168,8 +168,9 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                   <v-btn
                                     v-if="!authenticatingUser"
                                     color="#4881DB"
+                                    class="py-3"
                                     dark
-                                    small=""
+                                    small
                                     align="right"
                                     @click="authenticateUser"
                                     >Continue</v-btn
@@ -179,6 +180,10 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                             </v-col>
                           </template>
                         </v-row>
+                        <p class="d-flex justify-end already-have">
+                          Already have an account?
+                          <span class="have-an-account">Sign in</span>
+                        </p>
                       </v-form>
                     </v-flex>
                   </v-layout>
@@ -216,6 +221,7 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
 <script>
 import Theme from './../theme'
 export default {
+  layout: 'signupLayout',
   components: {
     theme: Theme,
   },
@@ -482,6 +488,13 @@ export default {
 </script>
 
 <style scoped>
+.v-application .pa-3 {
+  padding: 0px !important;
+}
+
+.already-have {
+  font-size: 12px;
+}
 /* .telephone {
   padding: 10px;
   margin-bottom: 29px;
@@ -516,12 +529,16 @@ export default {
 .term {
   color: #38b938;
 }
+.have-an-account {
+  color: #38b938;
+  margin-left: 2px;
+}
 .transform-with-cloudenly {
   font-size: 22px;
 }
 
 .create-account {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 900;
 }
 .main-img {
@@ -535,7 +552,7 @@ export default {
   position: absolute;
   left: 0px;
   transform: translateY(-50%);
-  top: 50%;
+  top: 52%;
 }
 .placement-relative {
   color: white;
