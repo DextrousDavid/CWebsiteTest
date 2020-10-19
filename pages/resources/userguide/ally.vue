@@ -3,17 +3,15 @@
     <UserguideHeader />
     <Banner />
     <div class="mt-12 mb-8 flex items-center text-center justify-center">
-      <nuxt-link to="/userguide/ally">
-        <div class="rounded-lg">
-          <img
-            class="mr-3 inline-block"
-            src="~assets/userguideIcons/Ally.png"
-            alt="AllyLogo"
-          />
-          <h1 class="font-bold inline-block">Ally</h1>
-          <h3 class="-mt-2 font-semibold">User Guide</h3>
-        </div>
-      </nuxt-link>
+      <div class="rounded-lg">
+        <img
+          class="mr-3 inline-block"
+          src="~assets/userguideIcons/Ally.png"
+          alt="AllyLogo"
+        />
+        <h1 class="font-bold inline-block">Ally</h1>
+        <h3 class="-mt-2 font-semibold">User Guide</h3>
+      </div>
     </div>
 
     <!-- main content -->

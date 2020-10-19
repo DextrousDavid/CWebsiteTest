@@ -13,18 +13,16 @@
     </section>
 
     <div class="mt-12 mb-8 flex items-center text-center justify-center">
-      <nuxt-link to="/userguide/humanaR">
-        <div class="rounded-lg">
-          <img
-            class="mr-3 inline-block"
-            src="~assets/userguideIcons/HumanaR.png"
-            alt="humanaRLogo"
-          />
-          <h1 class="font-bold inline-block">HumanaR</h1>
-          <!-- The one belser Guide</h2> -->
-          <h3 class="-mt-2 font-semibold">User Guide</h3>
-        </div>
-      </nuxt-link>
+      <div class="rounded-lg">
+        <img
+          class="mr-3 inline-block"
+          src="~assets/userguideIcons/HumanaR.png"
+          alt="humanaRLogo"
+        />
+        <h1 class="font-bold inline-block">HumanaR</h1>
+        <!-- The one belser Guide</h2> -->
+        <h3 class="-mt-2 font-semibold">User Guide</h3>
+      </div>
     </div>
 
     <!-- main content -->

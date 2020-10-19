@@ -3,19 +3,17 @@
     <UserguideHeader />
     <Banner />
     <div class="mt-12 mb-8 flex items-center text-center justify-center">
-      <nuxt-link to="/userguide/lite">
-        <div class="rounded-lg">
-          <img
-            class="mr-2 inline-block"
-            src="~assets/userguideIcons/Lite.png"
-            alt="LiteLogo"
-          />
-          <h1 class="font-bold inline-block">Lite</h1>
-          <!-- The one below Doesnt look to Good -->
-          <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
-          <h3 class="-mt-2 font-semibold">User Guide</h3>
-        </div>
-      </nuxt-link>
+      <div class="rounded-lg">
+        <img
+          class="mr-2 inline-block"
+          src="~assets/userguideIcons/Lite.png"
+          alt="LiteLogo"
+        />
+        <h1 class="font-bold inline-block">Lite</h1>
+        <!-- The one below Doesnt look to Good -->
+        <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
+        <h3 class="-mt-2 font-semibold">User Guide</h3>
+      </div>
     </div>
 
     <!-- main content -->
