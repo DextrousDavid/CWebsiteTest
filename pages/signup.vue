@@ -63,7 +63,6 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                     :rules="nameRules"
                                     outlined
                                     required
-                                    color="green"
                                   ></v-text-field>
                                 </v-col>
                                 <v-col cols="12" sm="12" md="6" lg="6">
@@ -75,7 +74,6 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                     :rules="nameRules"
                                     outlined
                                     required
-                                    color="green"
                                   >
                                   </v-text-field>
                                 </v-col>
@@ -95,12 +93,11 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                               <v-text-field
                                 ref="email"
                                 outlined
-                                label="Email"
+                                label="Work Email Address"
                                 autocomplete
                                 :rules="emailRules"
                                 required
                                 persistent-hint
-                                color="green"
                               ></v-text-field>
                               <!-- <v-text-field
                                   ref="password"
@@ -121,16 +118,12 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                 </v-text-field> -->
                               <v-text-field
                                 ref="referenceCode"
-                                class=""
-                                :readonly="readOnly"
                                 persistent-hint
                                 label="Reference Code"
                                 autocomplete
                                 :rules="nameRules"
                                 outlined
-                                text
                                 required
-                                color="green"
                               >
                               </v-text-field>
                             </v-col>
@@ -165,9 +158,8 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                   <v-btn
                                     v-if="!authenticatingUser"
                                     color="#4881DB"
-                                    class="py-5"
                                     dark
-                                    small
+                                    medium
                                     align="right"
                                     @click="validate"
                                     >Continue</v-btn
