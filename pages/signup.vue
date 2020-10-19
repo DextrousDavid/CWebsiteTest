@@ -87,7 +87,6 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                               <div>
                                 <template>
                                   <vue-tel-input
-                                    style="padding: 10px; margin-bottom: 29px"
                                     required
                                     placeholder="Mobile Number"
                                   ></vue-tel-input>
