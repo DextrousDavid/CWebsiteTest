@@ -165,7 +165,7 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                   <v-btn
                                     v-if="!authenticatingUser"
                                     color="#4881DB"
-                                    class="py-3"
+                                    class="py-5"
                                     dark
                                     small
                                     align="right"
