@@ -85,14 +85,14 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
 
                               <!-- Phone input goes here -->
                               <div>
-                                <template>
+                                <!-- <template>
                                   <vue-tel-input
                                     v-model="phone"
-                                    required
+                                    required="true"
                                     class="telephone"
                                     placeholder="Mobile Number"
                                   ></vue-tel-input>
-                                </template>
+                                </template> -->
                               </div>
 
                               <!-- Phone input ends here -->
