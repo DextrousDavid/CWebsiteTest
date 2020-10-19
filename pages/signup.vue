@@ -64,7 +64,6 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                     outlined
                                     required
                                     color="green"
-                                    @focus="inputFocused"
                                   ></v-text-field>
                                 </v-col>
                                 <v-col cols="12" sm="12" md="6" lg="6">
@@ -77,19 +76,19 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                     outlined
                                     required
                                     color="green"
-                                    @focus="inputFocused"
                                   >
                                   </v-text-field>
                                 </v-col>
                               </v-row>
 
                               <!-- Phone input goes here -->
-
-                              <vue-tel-input
-                                style="padding: 10px; margin-bottom: 29px"
-                                required
-                                placeholder="Mobile Number"
-                              ></vue-tel-input>
+                              <no-ssr>
+                                <vue-tel-input
+                                  style="padding: 10px; margin-bottom: 29px"
+                                  required
+                                  placeholder="Mobile Number"
+                                ></vue-tel-input>
+                              </no-ssr>
 
                               <!-- Phone input ends here -->
 
@@ -102,7 +101,6 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                 required
                                 persistent-hint
                                 color="green"
-                                @focus="inputFocused"
                               ></v-text-field>
                               <!-- <v-text-field
                                   ref="password"
@@ -133,7 +131,6 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                 text
                                 required
                                 color="green"
-                                @focus="inputFocused"
                               >
                               </v-text-field>
                             </v-col>
@@ -172,7 +169,7 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                     dark
                                     small
                                     align="right"
-                                    @click="authenticateUser"
+                                    @click="validate"
                                     >Continue</v-btn
                                   >
                                 </v-col>
@@ -260,230 +257,204 @@ export default {
       readOnly: true,
     }
   },
-  computed: {
-    addSidebar() {
-      return this.$route.meta.addSidebar
-    },
-    getTheme() {
-      return this.$route.meta.theme
-    },
-  },
-  mounted() {
-    this.channel = this.$route.query.channel
-    // this.authCredentials.alias = this.$route.params.alias
-    // this.email = this.$route.query.email
-    this.alias = this.$route.params.alias
-    // this.authCredentials.email = this.email
-    this.app = this.$route.query.app
-    this.onload()
-    // eslint-disable-next-line eqeqeq
-    if (this.$route.meta.theme == 'humanar') {
-      this.dark = true
-      this.color = '#5E227F'
-      // eslint-disable-next-line eqeqeq
-    } else if (this.$route.meta.theme == 'optima') {
-      this.dark = false
-      this.color = 'primary'
-    }
-  },
   methods: {
-    async domainCheck() {
-      this.domainChecking = true
-      const domain = this.authCredentials.accountId
-      try {
-        const response = await this.$_checkUserAlias(domain)
-        if (response.data.aliasExists) {
-          try {
-            const checkalias = await this.$_getUserId(domain)
-            this.errorMsgVisible = false
-            this.domainChecking = false
-            if (checkalias.data.alreadyVerified) {
-              this.domain = true
-            } else {
-              this.awaitVerify = true
-              this.userId = checkalias.data.userId
-              localStorage.setItem(
-                'userId',
-                JSON.stringify(checkalias.data.userId)
-              )
-            }
-          } catch (error) {
-            this.errorMsgVisible = false
-            this.domainChecking = false
-            this.domain = true
-            const params = `domain=${domain}`
-            window.location.href = window.location.href + `?${params}`
-          }
-        } else {
-          this.errorMsgVisible = true
-          this.errorMsg = 'Invalid Domain Name'
-          this.domainChecking = false
-          this.domain = false
-        }
-      } catch (error) {
-        this.errorMsgVisible = true
-        this.errorMsg = 'Invalid Domain Name'
-        this.domainChecking = false
-        // eslint-disable-next-line no-console
-        console.log('error', error)
-      }
-    },
-    async resend() {
-      try {
-        const user = {
-          userId: this.userId,
-        }
-        // eslint-disable-next-line no-unused-vars
-        const response = await this.$_resendVerification(user)
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.log(error)
-      }
-    },
-    onload() {
-      if (this.authCredentials.alias) {
-        this.orgId = true
-      } else if (this.authCredentials.email) {
-        this.orgId = true
-      }
-    },
-    setVariables() {
-      this.authCredentials.alias = this.$route.query.alias
-      this.authCredentials.email = this.$route.query.email
-      this.authCredentials.firstName = this.$route.query.firstName
-      this.authCredentials.lastName = this.$route.query.lastName
-    },
-    proceedWithLogin() {
-      const linchpin = localStorage.getItem('linchpin')
-      const token = localStorage.getItem('token')
-      // eslint-disable-next-line no-unused-vars
-      const params = `linchpin=${linchpin}&token=${token}`
-      const query = this.$route.query.channel
-      // eslint-disable-next-line no-console
-      console.log('query', query)
-      /* if (this.channel === 'localdev') {
-              window.location.href = `http://localhost:8080?${params}`;
-          }
-          else {
-              if (this.channel === 'localdev') {
-                  window.location.href = `http://localhost:8080?${params}`;
-              }
-              if (this.$route.name === "EssLogin") {
-                  window.location.href = `http://dev-cloudenly-humanar.s3-website.eu-west-2.amazonaws.com?${params}`;
-              }
-              else  if (this.$route.name === "Login") {
-                  if (this.app == 'optima') {
-                      window.location.href = `http://dev-cloudenly-optima.s3-website.eu-west-2.amazonaws.com?${params}`;                            
-                  }else{
-                    window.location.href = `http://dev-cloudenly-humanar.s3-website.eu-west-2.amazonaws.com?${params}`;
-                  }
-              }
-          } */
-    },
-    inputFocused() {
-      this.readOnly = false
-    },
-    authenticateUser() {
-      if (this.$refs.form.validate()) {
-        /* if (!result) {
-                return
-            } */
-        const authenticateUser = this.$store.dispatch(
-          'authentication/login',
-          this.authCredentials
-        )
-        this.authenticatingUser = true
-        authenticateUser
-          .then((res) => {
-            // eslint-disable-next-line no-unused-vars
-            const org = res.org
-
-            const linchpin = localStorage.getItem('linchpin')
-            const token = localStorage.getItem('token')
-            const params = `linchpin=${linchpin}&token=${token}`
-            const query = this.$route.query.channel
-            // eslint-disable-next-line no-console
-            console.log('query', query)
-            if (query === 'localdev') {
-              window.location.href = `http://localhost:8080?${params}`
-            } else {
-              this.proceedWithLogin()
-              this.$router.push({ name: 'Dashboard' })
-            }
-            /* if (!org.isPlanSetup) {
-                    let defaultPackage = "optimaBundle";
-                    this.$router.push({name: "SubscriptionPricing", query: {package: defaultPackage}})
-                } else {
-                    
-                } */
-          })
-          .catch((error) => {
-            // eslint-disable-next-line eqeqeq
-            if (error.response.status == 401) {
-              localStorage.setItem(
-                'userId',
-                JSON.stringify(error.response.data.userId)
-              )
-              if (error.response.data.requiresTwoFactorAuth) {
-                this.$router.push({ name: 'VerifyOTP' })
-              }
-              // this.$router.push({name: "VerifyAccount", params:{app: this.$route.query.app}});
-              // this.$router.push({name: "UnVerifyAccount", params: {userId:error.response.data.userId,userEmail: error.response.data.userId.userEmail}})
-            }
-            this.authenticatingUser = false
-            this.errorMsgVisible = true
-            this.errorMsg = error.response.data.msg
-            setTimeout(
-              function () {
-                this.errorMsgVisible = false
-              }.bind(this),
-              5000
-            )
-          })
-      } else {
-        /* if(error.response.status == 401){
-                        localStorage.setItem('userId', JSON.stringify(error.response.data.userId));
-                        this.$router.push({name: "VerifyAccount", params:{app: this.$route.query.app}});
-                        //this.$router.push({name: "UnVerifyAccount", params: {userId:error.response.data.userId,userEmail: error.response.data.userId.userEmail}})
-                    }
-                    this.authenticatingUser = false;
-                    this.showErrorMsg = true;
-                    this.errorMsg = error.response.data.msg;
-*/
-      }
-    },
-    async checkalias() {
-      const alias = this.authCredentials.alias
-      try {
-        this.authenticatingUser = true
-        const response = await this.$_checkUserAlias(alias)
-        this.aliasExists = response.data.aliasExists
-        if (response.data.aliasExists) {
-          this.requestopt = true
-          const params = `alias=${alias}`
-          if (this.app) {
-            window.location.href = window.location.href + `&${params}`
-          } else {
-            window.location.href = window.location.href + `?${params}`
-          }
-        } else {
-          this.authenticatingUser = false
-          this.errorMsgVisible = true
-          this.errorMsg = 'Invalid Domain'
-          setTimeout(
-            function () {
-              this.errorMsgVisible = false
-              this.authenticatingUser = true
-            }.bind(this),
-            5000
-          )
-        }
-      } catch (error) {
-        this.authenticatingUser = false
-        this.show = false
-      }
+    validate() {
+      this.$refs.form.validate()
     },
   },
+  // computed: {
+  //   addSidebar() {
+  //     return this.$route.meta.addSidebar
+  //   },
+  //   getTheme() {
+  //     return this.$route.meta.theme
+  //   },
+  // },
+  // mounted() {
+  //   this.channel = this.$route.query.channel
+  //   // this.authCredentials.alias = this.$route.params.alias
+  //   // this.email = this.$route.query.email
+  //   this.alias = this.$route.params.alias
+  //   // this.authCredentials.email = this.email
+  //   this.app = this.$route.query.app
+  //   this.onload()
+  //   // eslint-disable-next-line eqeqeq
+  //   if (this.$route.meta.theme == 'humanar') {
+  //     this.dark = true
+  //     this.color = '#5E227F'
+  //     // eslint-disable-next-line eqeqeq
+  //   } else if (this.$route.meta.theme == 'optima') {
+  //     this.dark = false
+  //     this.color = 'primary'
+  //   }
+  // },
+  // methods: {
+  //   async domainCheck() {
+  //     this.domainChecking = true
+  //     const domain = this.authCredentials.accountId
+  //     try {
+  //       const response = await this.$_checkUserAlias(domain)
+  //       if (response.data.aliasExists) {
+  //         try {
+  //           const checkalias = await this.$_getUserId(domain)
+  //           this.errorMsgVisible = false
+  //           this.domainChecking = false
+  //           if (checkalias.data.alreadyVerified) {
+  //             this.domain = true
+  //           } else {
+  //             this.awaitVerify = true
+  //             this.userId = checkalias.data.userId
+  //             localStorage.setItem(
+  //               'userId',
+  //               JSON.stringify(checkalias.data.userId)
+  //             )
+  //           }
+  //         } catch (error) {
+  //           this.errorMsgVisible = false
+  //           this.domainChecking = false
+  //           this.domain = true
+  //           const params = `domain=${domain}`
+  //           window.location.href = window.location.href + `?${params}`
+  //         }
+  //       } else {
+  //         this.errorMsgVisible = true
+  //         this.errorMsg = 'Invalid Domain Name'
+  //         this.domainChecking = false
+  //         this.domain = false
+  //       }
+  //     } catch (error) {
+  //       this.errorMsgVisible = true
+  //       this.errorMsg = 'Invalid Domain Name'
+  //       this.domainChecking = false
+  //       // eslint-disable-next-line no-console
+  //       console.log('error', error)
+  //     }
+  //   },
+  //   async resend() {
+  //     try {
+  //       const user = {
+  //         userId: this.userId,
+  //       }
+  //       // eslint-disable-next-line no-unused-vars
+  //       const response = await this.$_resendVerification(user)
+  //     } catch (error) {
+  //       // eslint-disable-next-line no-console
+  //       console.log(error)
+  //     }
+  //   },
+  //   onload() {
+  //     if (this.authCredentials.alias) {
+  //       this.orgId = true
+  //     } else if (this.authCredentials.email) {
+  //       this.orgId = true
+  //     }
+  //   },
+  //   setVariables() {
+  //     this.authCredentials.alias = this.$route.query.alias
+  //     this.authCredentials.email = this.$route.query.email
+  //     this.authCredentials.firstName = this.$route.query.firstName
+  //     this.authCredentials.lastName = this.$route.query.lastName
+  //   },
+  //   proceedWithLogin() {
+  //     const linchpin = localStorage.getItem('linchpin')
+  //     const token = localStorage.getItem('token')
+  //     // eslint-disable-next-line no-unused-vars
+  //     const params = `linchpin=${linchpin}&token=${token}`
+  //     const query = this.$route.query.channel
+  //     // eslint-disable-next-line no-console
+  //     console.log('query', query)
+
+  //   },
+  //   inputFocused() {
+  //     this.readOnly = false
+  //   },
+  //   authenticateUser() {
+  //     if (this.$refs.form.validate()) {
+  //       /* if (!result) {
+  //               return
+  //           } */
+  //       const authenticateUser = this.$store.dispatch(
+  //         'authentication/login',
+  //         this.authCredentials
+  //       )
+  //       this.authenticatingUser = true
+  //       authenticateUser
+  //         .then((res) => {
+  //           // eslint-disable-next-line no-unused-vars
+  //           const org = res.org
+
+  //           const linchpin = localStorage.getItem('linchpin')
+  //           const token = localStorage.getItem('token')
+  //           const params = `linchpin=${linchpin}&token=${token}`
+  //           const query = this.$route.query.channel
+  //           // eslint-disable-next-line no-console
+  //           console.log('query', query)
+  //           if (query === 'localdev') {
+  //             window.location.href = `http://localhost:8080?${params}`
+  //           } else {
+  //             this.proceedWithLogin()
+  //             this.$router.push({ name: 'Dashboard' })
+  //           }
+
+  //         })
+  //         .catch((error) => {
+  //           // eslint-disable-next-line eqeqeq
+  //           if (error.response.status == 401) {
+  //             localStorage.setItem(
+  //               'userId',
+  //               JSON.stringify(error.response.data.userId)
+  //             )
+  //             if (error.response.data.requiresTwoFactorAuth) {
+  //               this.$router.push({ name: 'VerifyOTP' })
+  //             }
+
+  //           }
+  //           this.authenticatingUser = false
+  //           this.errorMsgVisible = true
+  //           this.errorMsg = error.response.data.msg
+  //           setTimeout(
+  //             function () {
+  //               this.errorMsgVisible = false
+  //             }.bind(this),
+  //             5000
+  //           )
+  //         })
+  //     } else {
+
+  //     }
+  //   },
+  //   async checkalias() {
+  //     const alias = this.authCredentials.alias
+  //     try {
+  //       this.authenticatingUser = true
+  //       const response = await this.$_checkUserAlias(alias)
+  //       this.aliasExists = response.data.aliasExists
+  //       if (response.data.aliasExists) {
+  //         this.requestopt = true
+  //         const params = `alias=${alias}`
+  //         if (this.app) {
+  //           window.location.href = window.location.href + `&${params}`
+  //         } else {
+  //           window.location.href = window.location.href + `?${params}`
+  //         }
+  //       } else {
+  //         this.authenticatingUser = false
+  //         this.errorMsgVisible = true
+  //         this.errorMsg = 'Invalid Domain'
+  //         setTimeout(
+  //           function () {
+  //             this.errorMsgVisible = false
+  //             this.authenticatingUser = true
+  //           }.bind(this),
+  //           5000
+  //         )
+  //       }
+  //     } catch (error) {
+  //       this.authenticatingUser = false
+  //       this.show = false
+  //     }
+  //   },
+  // },
 }
 </script>
 
