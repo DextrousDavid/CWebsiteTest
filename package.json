@@ -18,6 +18,7 @@
     "bootstrap": "^4.5.2",
     "hooper": "^0.3.4",
     "nuxt": "^2.14.0",
+    "vue-tel-input": "^4.4.1",
     "vuetify": "^2.3.10",
     "vuetify-loader": "^1.6.0"
   },

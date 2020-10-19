@@ -66,12 +66,12 @@
           >
             Sign In
           </li>
-          <a
-            href="#"
+          <nuxt-link
+            to="/signup"
             class="join-btn inline-block text-sm px-6 py-4 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Sign Up
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </nav>

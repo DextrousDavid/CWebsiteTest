@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 // const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 // const webpackPlugins = () => {
 //   const plugins = [];
@@ -25,9 +26,12 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'Cloudenly - The Business Software for a Connected Digital Economy',
-        name: 'Cloudenly - The Business Software for a Connected Digital Economy',
-        content: 'Cloudenly - The Business Software for a Connected Digital Economy',
+        hid:
+          'Cloudenly - The Business Software for a Connected Digital Economy',
+        name:
+          'Cloudenly - The Business Software for a Connected Digital Economy',
+        content:
+          'Cloudenly - The Business Software for a Connected Digital Economy',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
@@ -40,18 +44,18 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['~/plugins/vue-tel-input'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
-  /*                                                               
+  /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-   
+
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
 
@@ -70,7 +74,6 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
-    
   ],
   /*
    ** Axios module configuration
@@ -91,24 +94,24 @@ export default {
     // transpile: [/^vuetify/],
     extend(config, ctx) {
       config.module.rules.push({
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.(js|vue)$/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         exclude: /(node_modules)/,
         options: {
-          fix: true
-        }
+          fix: true,
+        },
       })
       // ,
       // config.plugins.push(
       //   new VuetifyLoaderPlugin()
       // )
-    }
+    },
     // ,
-  //   parallel: true,
-	// plugins: [
-	// 	new VuetifyLoaderPlugin(),
-	// ],
-	// transpile: [/^vuetify/]
+    //   parallel: true,
+    // plugins: [
+    // 	new VuetifyLoaderPlugin(),
+    // ],
+    // transpile: [/^vuetify/]
   },
 }
