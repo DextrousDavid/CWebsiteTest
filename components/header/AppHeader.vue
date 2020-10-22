@@ -7,7 +7,7 @@
       <div class="items-center flex-shrink-0 text-white mr-6 log-wrapper">
         <nuxt-link to="/">
           <img
-            class="xl:ml-16 xl:mr-5 cloudenly-logo"
+            class="nav-image xl:mr-5 cloudenly-logo"
             src="/img/cloudenly-logo.svg"
           />
         </nuxt-link>
@@ -122,6 +122,12 @@ export default {
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 .nuxt-link-exact-active {
-  color: #1034a6;
+  color: #4781dc;
+}
+
+@media (min-width: 1280px) {
+  .nav-image {
+    margin-left: 3.2rem;
+  }
 }
 </style>

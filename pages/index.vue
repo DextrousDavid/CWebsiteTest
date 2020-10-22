@@ -19,11 +19,13 @@
           </div>
           <div class="call-to-action-div sm:flex"></div>
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white mr-2 py-2 px-6 rounded inline-block"
+            class="try-for text-white mr-2 py-2 px-10 rounded inline-block hover:bg-blue-700 hover:text-white duration-200"
           >
             TRY FOR FREE
           </button>
-          <button class="white-btn-border inline-block">EXPLORE MORE</button>
+          <button class="white-btn-border inline-block duration-200">
+            EXPLORE MORE
+          </button>
         </div>
       </div>
       <div class="sm:w-1/2 landing-page-right-div flex">

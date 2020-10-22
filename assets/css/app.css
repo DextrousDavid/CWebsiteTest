@@ -30,7 +30,7 @@ cursor: pointer;
 font-family: GalanoGrotesque-SemiBold;
 font-size: 16px;
 line-height: 19px;
-background: #1034A6;
+background: #4781dc;
 padding-top: 10px;
 
 }
@@ -106,8 +106,9 @@ margin-right: 35px;
     font-size: 16px;
     line-height: 19px;
     color: #4781DC;
-    padding: 10px 23px 10px 10px;
+    padding: 10px 30px 10px 35px;
 }
+
 .enterprices{
 padding-top:29px;
 padding-bottom: 30px;
@@ -274,6 +275,10 @@ margin-top: 45px;
 }
 .optima-btn{
     background:#1034A6;
+}
+
+.try-for {
+    background-color: #4781dc;
 }
 
 .high-growth-companies{
