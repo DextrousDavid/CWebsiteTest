@@ -47,35 +47,29 @@
           <v-tab-item>
             <v-card flat>
               <v-card-text class="grey lighten-3">
-                update Users<span class="float-right"> update N80</span>
+                Cloudenly<span class="float-right">Cloudenly</span>
               </v-card-text>
 
               <v-card-text class="grey lighten-5">
-                update User Discount<span class="float-right">
-                  update _ _ _</span
-                >
+                Cloudenly<span class="float-right"> Cloudenly</span>
               </v-card-text>
 
               <v-card-text class="grey lighten-3"
-                >update 9 Apps<span class="float-right">update 4800</span>
+                >Cloudenly<span class="float-right">Cloudenly</span>
               </v-card-text>
 
               <v-card-text class="grey lighten-5">
-                update App Discount<span class="float-right">update _ _ _</span>
+                Cloudenly<span class="float-right">Cloudenly</span>
               </v-card-text>
 
               <v-card-text class="grey lighten-3">
-                update Total / Month<span class="float-right"
-                  >update N4,632</span
-                >
+                Cloudenly<span class="float-right">Cloudenly</span>
               </v-card-text>
 
               <div class="grey lighten-5">
                 <v-card-text
                   ><p class="font-weight-thin">
-                    update Billed Annually<span class="float-right"
-                      >update N55,632</span
-                    >
+                    Cloudenly<span class="float-right">Cloudenly</span>
                   </p>
                 </v-card-text>
                 <div class="my-2 d-flex justify-center">
