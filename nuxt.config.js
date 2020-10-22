@@ -65,6 +65,10 @@ export default {
     // With options
     // ['@nuxtjs/vuetify', { /* module options */ }]
   ],
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    treeShake: true
+  },
   /*
    ** Nuxt.js modules
    */

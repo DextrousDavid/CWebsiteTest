@@ -132,7 +132,10 @@
 <script>
 export default {
   props: {
-    features: Array,
+    features: {
+      type: Array,
+      required: true,
+    },
   },
   data() {
     return {}

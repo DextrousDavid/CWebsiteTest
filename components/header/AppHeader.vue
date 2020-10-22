@@ -38,11 +38,14 @@
           >
             Products
           </li>
-          <li
+
+          <nuxt-link
+            to="/pricing"
             class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Pricing
-          </li>
+          </nuxt-link>
+
           <li
             class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >

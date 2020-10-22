@@ -286,7 +286,7 @@ margin-top: 45px;
     margin-right: 17px;
 }
 .all-brand-btn{
-    border-style: none;
+    border-radius: 5px;
     background-color: #4781dc;
     color: #fff;
     padding: 10px 20px;
