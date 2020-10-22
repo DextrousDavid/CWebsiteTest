@@ -1,35 +1,35 @@
 <template>
   <div>
     <no-ssr>
-    <v-tabs
-      fixed-tabs
-      height="60"
-      centered
-      right
-      light
-      center-active
-      background-color="grey lighten-3"
-    >
-      <v-tab>Guided <v-icon right>$expand</v-icon></v-tab>
-      <v-tab><img src="~assets/tabIcons/lite.png" /> Lite</v-tab>
-      <v-tab><img src="~assets/tabIcons/optima.png" />Optima</v-tab>
-      <v-tab><img src="~assets/tabIcons/humanaR.png" />HumanaR</v-tab>
-      <v-tab><img src="~assets/tabIcons/dome.png" />Dome</v-tab>
-      <v-tab><img src="~assets/tabIcons/ally.png" />Ally</v-tab>
-      <v-tab><img src="~assets/tabIcons/quantum.png" />Quantum</v-tab>
-      <v-tab style="background-color: #fff; color: #000">
-        <p style="font-size: 9px">
-          No of products: 3<br /><span class="total-no">
-            Total No of Apps: 12</span
-          >
-        </p></v-tab
+      <v-tabs
+        fixed-tabs
+        height="60"
+        centered
+        right
+        light
+        center-active
+        background-color="grey lighten-3"
       >
-      <v-tab style="background-color: #1976d2; color: #fff">
-        <p class="float-left" style="font-size: 8px">50, 000 per Month</p>
+        <v-tab>Guided <v-icon right>$expand</v-icon></v-tab>
+        <v-tab><img src="~assets/tabIcons/lite.png" /> Lite</v-tab>
+        <v-tab><img src="~assets/tabIcons/optima.png" />Optima</v-tab>
+        <v-tab><img src="~assets/tabIcons/humanaR.png" />HumanaR</v-tab>
+        <v-tab><img src="~assets/tabIcons/dome.png" />Dome</v-tab>
+        <v-tab><img src="~assets/tabIcons/ally.png" />Ally</v-tab>
+        <v-tab><img src="~assets/tabIcons/quantum.png" />Quantum</v-tab>
+        <v-tab style="background-color: #fff; color: #000">
+          <p style="font-size: 9px">
+            No of products: 3<br /><span class="total-no">
+              Total No of Apps: 12</span
+            >
+          </p></v-tab
+        >
+        <v-tab style="background-color: #1976d2; color: #fff">
+          <p class="float-left" style="font-size: 8px">50, 000 per Month</p>
 
-        <v-btn class="float-right" x-small elevation="2">Buy Now</v-btn>
-      </v-tab>
-    </v-tabs>
+          <v-btn class="float-right" x-small elevation="2">Buy Now</v-btn>
+        </v-tab>
+      </v-tabs>
     </no-ssr>
   </div>
 </template>
