@@ -1,5 +1,6 @@
 <template>
   <div>
+    <no-ssr>
     <v-tabs
       fixed-tabs
       height="60"
@@ -29,6 +30,7 @@
         <v-btn class="float-right" x-small elevation="2">Buy Now</v-btn>
       </v-tab>
     </v-tabs>
+    </no-ssr>
   </div>
 </template>
 
