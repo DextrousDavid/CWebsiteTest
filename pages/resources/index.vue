@@ -19,11 +19,20 @@
         <!-- Row One Starts here! -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <nuxt-link to="/resources/product-overview">
-            <div class="resource-card bg-gray-200">
+            <div class="resource-card">
               <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">Product Overview</h1>
-                <div style="max-width: 400px; margin: auto; margin-top: -10px">
-                  <p class="font-normal">
+                <h1 class="font-bold resources-h1 product-overview-h1">
+                  Product Overview
+                </h1>
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16"
+                    src="~assets/resourcesIcons/product-overview.svg"
+                  />
+                </div>
+
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal resources-font">
                     Read reference product overview documentation for all
                     Cloudenly's product suite
                   </p>
@@ -34,11 +43,18 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card bg-gray-200">
+          <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold">FAQ</h1>
+              <h1 class="font-bold resources-h1">FAQ</h1>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16"
+                    src="~assets/resourcesIcons/faq.svg"
+                  />
+                </div>
+
+                <p class="font-normal resources-font">
                   Read and find answers to frequently asked questions
                 </p>
               </div>
@@ -48,11 +64,17 @@
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
           <nuxt-link to="/resources/userguide">
-            <div class="resource-card bg-gray-200">
+            <div class="resource-card">
               <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">User Guide</h1>
+                <h1 class="font-bold resources-h1">User Guide</h1>
                 <div style="max-width: 400px; margin: auto">
-                  <p class="font-normal">
+                  <div class="flex justify-center mt-8">
+                    <img
+                      class="fill-current h-16 w-16"
+                      src="~assets/resourcesIcons/user-guide.svg"
+                    />
+                  </div>
+                  <p class="font-normal resources-font">
                     Read how-to articles and guides for all Cloudenly's product
                     suite
                   </p>
@@ -64,11 +86,17 @@
         <!-- Row Two Ends Here -->
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card bg-gray-200">
+          <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold">Blog</h1>
+              <h1 class="font-bold resources-h1">Blog</h1>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16"
+                    src="~assets/resourcesIcons/blog.svg"
+                  />
+                </div>
+                <p class="font-normal resources-font">
                   Be up to date on Cloudenly's activities as well as industry
                   and business trends
                 </p>
@@ -78,11 +106,17 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card bg-gray-200">
+          <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold">Events</h1>
+              <h1 class="font-bold resources-h1">Events</h1>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16"
+                    src="~assets/resourcesIcons/events.svg"
+                  />
+                </div>
+                <p class="font-normal resources-font">
                   Stay up to date with events across our ecosystem
                 </p>
               </div>
@@ -91,11 +125,17 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card bg-gray-200">
+          <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold">Community</h1>
+              <h1 class="font-bold resources-h1">Community</h1>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16"
+                    src="~assets/resourcesIcons/community.svg"
+                  />
+                </div>
+                <p class="font-normal resources-font">
                   Start a discussion, browse solutions, and get tips from us
                 </p>
               </div>
@@ -104,13 +144,22 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card bg-gray-200">
+          <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 style="margin-bottom: -24px" class="font-bold">
+              <h1
+                style="margin-top: -68px; margin-bottom: -6px"
+                class="font-bold resources-h1"
+              >
                 Developer Documentation
               </h1>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16"
+                    src="~assets/resourcesIcons/developer-documentation.svg"
+                  />
+                </div>
+                <p class="font-normal resources-font">
                   Read reference documentation for API development
                 </p>
               </div>
@@ -119,11 +168,17 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card bg-gray-200">
+          <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold">Academy</h1>
+              <h1 class="font-bold resources-h1">Academy</h1>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal">
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16"
+                    src="~assets/resourcesIcons/academy.svg"
+                  />
+                </div>
+                <p class="font-normal resources-font">
                   Watch video trainings, take test and get certified in
                   Cloudenly's product suite
                 </p>
@@ -157,14 +212,27 @@ export default {
 }
 </script>
 <style scoped>
+.product-overview-h1 {
+  margin-top: -61px;
+}
+.resources-font {
+  font-size: 14px;
+}
+
 * {
   font-family: GalanoGrotesque-Medium;
   color: #828282;
 }
+.resources-h1 {
+  color: #2b2b2b;
+}
 .resource-card {
-  padding: 80px 6px 15px 6px;
+  border: 1px solid #cfcfcf;
   border-radius: 6px;
-  min-height: 270px;
+  padding: 80px 1px 15px 1px;
+  border-radius: 6px;
+  max-height: 315px;
+  min-height: 285px;
 }
 
 h1 {
@@ -175,7 +243,7 @@ h1 {
 }
 
 p {
-  margin-top: 70px;
+  margin-top: 38px;
 }
 
 .banner-h1 {
