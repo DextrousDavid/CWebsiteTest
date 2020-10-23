@@ -25,7 +25,9 @@
           </p></v-tab
         >
         <v-tab style="background-color: #1976d2; color: #fff">
-          <p class="float-left" style="font-size: 8px">50, 000 per Month</p>
+          <p class="float-left" style="font-size: 8px; color: #efefef">
+            50, 000 per Month
+          </p>
 
           <v-btn class="float-right" x-small elevation="2">Buy Now</v-btn>
         </v-tab>
