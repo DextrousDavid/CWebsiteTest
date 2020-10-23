@@ -64,17 +64,24 @@
           </li>
         </div>
         <div class="nav-item-left">
-          <li
+          <a
+            href="http://dev-quantum-frontend.s3-website.eu-west-2.amazonaws.com/"
             class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Sign In
-          </li>
-          <nuxt-link
+          </a>
+          <!-- <nuxt-link
             to="/signup"
             class="join-btn inline-block text-sm px-6 py-4 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Sign Up
-          </nuxt-link>
+          </nuxt-link> -->
+          <a
+            href="http://dev-quantum-frontend.s3-website.eu-west-2.amazonaws.com/signup"
+            class="join-btn inline-block text-sm px-6 py-4 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
+          >
+            Sign Up
+          </a>
         </div>
       </div>
     </nav>
