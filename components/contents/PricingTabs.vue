@@ -24,12 +24,10 @@
             >
           </p></v-tab
         >
-        <v-tab style="background-color: #1976d2; color: #fff">
-          <p class="float-left" style="font-size: 8px; color: #efefef">
-            50, 000 per Month
-          </p>
+        <v-tab class="flex" style="background-color: #1976d2; color: #fff">
+          <p class="buy-now-button">50, 000 per Month</p>
 
-          <v-btn class="float-right" x-small elevation="2">Buy Now</v-btn>
+          <v-btn x-small elevation="2">Buy Now</v-btn>
         </v-tab>
       </v-tabs>
     </no-ssr>
@@ -80,5 +78,14 @@ export default {
 
 img {
   margin-right: 5px;
+}
+.buy-now-button {
+  font-size: 8px;
+  color: #efefef;
+}
+@media (max-width: 446px) {
+  .buy-now-button {
+    font-size: 6px;
+  }
 }
 </style>

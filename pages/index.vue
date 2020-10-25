@@ -59,7 +59,9 @@
     </div>
 
     <div class="cloudenly-suite sm:flex">
-      <div class="cloudenly-headline">Cloudenly Suite</div>
+      <div class="cloudenly-headline" style="color: #4d4d4d">
+        Cloudenly Suite
+      </div>
       <div class="cloudenly-light-headline">
         Our Product help your team work from anywhere delivering exceptional
         customer experiences.
@@ -120,7 +122,7 @@
     </div>
     <WhyCloudenly />
     <div class="high-growth-companies sm:flex justify-center">
-      <div class="cloudenly-headline">
+      <div class="cloudenly-headline" style="color: #556365">
         Powering Growth for Amazing Businesses.
       </div>
       <div
@@ -138,16 +140,7 @@
       </div>
     </div>
     <ProductPackComponent />
-    <div class="try-product-free sm:flex justify-center">
-      <div class="cloudenly-headline">Try Cloudenly for free.</div>
-      <div class="free-try-text">
-        No software installation required, no credit card required, easy to
-        setup.
-      </div>
-      <div class="flex justify-center">
-        <button class="all-brand-btn mt-4 font-medium">TRY FOR FREE</button>
-      </div>
-    </div>
+    <!-- Index call to action section (There's a component for this used by other pages-->
   </div>
 </template>
 

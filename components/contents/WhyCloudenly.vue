@@ -285,9 +285,10 @@ export default {
 }
 
 .cloudenly-headline {
-  font-size: 35px;
+  font-size: 34px;
+  color: rgb(85, 99, 101);
 }
-/* 
+/*
 /*  *
 /* @media (max-width: 768px) {
   .section-tabs .v-slide-group__wrapper {
@@ -320,4 +321,11 @@ export default {
     margin-bottom: 50px !important;
   }
 } */
+@media (max-width: 768px) {
+  .cloudenly-headline {
+    font-size: 22px;
+    line-height: 2;
+    text-align: center;
+  }
+}
 </style>

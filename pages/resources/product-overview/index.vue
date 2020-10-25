@@ -143,17 +143,20 @@
         </div>
       </div>
     </main>
+    <!-- <TryCloudenlyForFree /> -->
   </div>
 </template>
 
 <script>
 import UserguideHeader from '../../../components/contents/UserguideHeader'
+// import TryCloudenlyForFree from '../../../components/contents/TryCloudenlyForFree'
 // import Banner from '../../../components/contents/Banner'
 
 export default {
   components: {
     UserguideHeader,
     // Banner,
+    // TryCloudenlyForFree,
   },
   head() {
     return {

@@ -188,14 +188,17 @@
         </div>
       </div>
     </main>
+    <!-- <TryCloudenlyForFree /> -->
   </div>
 </template>
 
 <script>
 import AppHeader from '../../components/header/AppHeader'
+// import TryCloudenlyForFree from '../../components/contents/TryCloudenlyForFree'
 export default {
   components: {
     AppHeader,
+    // TryCloudenlyForFree,
   },
   head() {
     return {

@@ -36,7 +36,9 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Purchase. Learn More...</span>
+                  <span class="tooltip-notification"
+                    >Purchase. Learn More...</span
+                  >
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -72,7 +74,7 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Sales. Learn More...</span>
+                  <span class="tooltip-notification">Sales. Learn More...</span>
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -108,7 +110,9 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Payments. Learn More...</span>
+                  <span class="tooltip-notification"
+                    >Payments. Learn More...</span
+                  >
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -144,7 +148,7 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>CRM. Learn More...</span>
+                  <span class="tooltip-notification">CRM. Learn More...</span>
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -180,7 +184,9 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Expense. Learn More...</span>
+                  <span class="tooltip-notification"
+                    >Expense. Learn More...</span
+                  >
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -216,7 +222,9 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Accounts. Learn More...</span>
+                  <span class="tooltip-notification"
+                    >Accounts. Learn More...</span
+                  >
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -252,7 +260,9 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Inventory. Learn More...</span>
+                  <span class="tooltip-notification"
+                    >Inventory. Learn More...</span
+                  >
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -288,7 +298,9 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Fixed Assets. Learn More...</span>
+                  <span class="tooltip-notification"
+                    >Fixed Assets. Learn More...</span
+                  >
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -324,7 +336,9 @@
                       </v-icon>
                     </v-btn>
                   </template>
-                  <span>Budget Planning. Learn More...</span>
+                  <span class="tooltip-notification"
+                    >Budget Planning. Learn More...</span
+                  >
                 </v-tooltip>
               </v-list-item>
             </v-card>
@@ -354,7 +368,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.tooltip-notification {
+  font-size: 12px;
+  color: #fff;
+}
 * {
   font-family: GalanoGrotesque-Medium;
   /* color: #828282; */

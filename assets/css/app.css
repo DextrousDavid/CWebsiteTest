@@ -293,26 +293,30 @@ margin-top: 45px;
     margin-right: 17px;
 }
 .all-brand-btn{
-    border-radius: 5px;
-    background-color: #4781dc;
-    color: #fff;
-    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #4781dc;
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 600;
 }
 .try-product-free{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    
+    padding-top: 39px;
+    padding-bottom: 52px;
     flex-direction: column;
     align-items: center;
-    background: #F3F3F3;
+    background: #4781dc;
+   
 }
 
 .free-try-text{
-margin-top: 10px;
-font-family: GalanoGrotesque-Medium;
-font-size: 18px;
-line-height: 21px;
-
-color: #8E8E8E
+    margin-top: 0px;
+    font-family: GalanoGrotesque-Medium;
+    font-size: 15px;
+    line-height: 21px;
+    color: #fff;
+    margin-bottom: 2rem;
 }
 .free-try-btn{
     margin-top: 50px;
@@ -351,13 +355,13 @@ color: #828282;
 }
 .newsleter-head{
 font-family: GalanoGrotesque-Medium;
-font-size: 18px;
+font-size: 15px;
 line-height: 21px;
 color: #333333;
 }
 .text-newsletter{
 font-family: GalanoGrotesque-Medium;
-font-size: 14px;
+font-size: 13px;
 line-height: 16px;
 color: #828282;
 }
@@ -384,7 +388,7 @@ padding: 12px 18px;
 margin-right: 50px;
 
 font-family: GalanoGrotesque-Medium;
-font-size: 14px;
+font-size: 13px;
 line-height: 16px;
 
 color: #4781DC;
@@ -598,6 +602,7 @@ margin-left: 0px;
      .free-try-text
      {
         text-align: center;
+        font-size: 12px;
     }
     .brand-wrapper{
         justify-content: center;
@@ -615,6 +620,7 @@ margin-left: 0px;
     .try-product-free {
         padding-left: 2rem;
         padding-right: 2rem;
+        margin-top: 1rem;
       }
       .footer-wrapper{
         padding: 2rem;
@@ -647,10 +653,10 @@ color: #333333
           width: 100%;
       }
       .text-newsletter{
-          margin-top: 15px;
+          margin-top: 3px;
       }
       .newsleter-head {
-        font-size: 21px;
+        font-size: 16px;
       }
       .new-letter-form .blue-btn{
         padding: 12px 26 14px;

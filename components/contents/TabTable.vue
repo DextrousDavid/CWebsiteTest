@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="tab-table">
     <v-card elevation="3">
       <template>
         <v-tabs centered>
@@ -105,10 +105,31 @@ export default {
 }
 
 @media (min-width: 960px) {
-  .col-md-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-    margin-top: 100px;
+  .tab-table {
+    margin-top: 4rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .tab-table {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tab-table {
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tab-table {
+    margin-top: -4rem;
+  }
+}
+/* @media (min-width: 1264px) {
+  .tab-table {
+    margin-top: -1rem;
+  }
+} */
 </style>
