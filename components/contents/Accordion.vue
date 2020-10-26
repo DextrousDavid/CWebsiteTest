@@ -51,7 +51,7 @@
                 </div>
               </a>
 
-              <a :href="userGuide.url7">
+              <a target="_blank" :href="userGuide.url7">
                 <div class="divtextColor mt-2">
                   {{ userGuide.content7 }}
                 </div>

@@ -27,7 +27,9 @@
 
     <!-- main content -->
     <main>
-      <Accordion :user-guides="userGuides" />
+      <no-ssr>
+        <Accordion :user-guides="userGuides" />
+      </no-ssr>
     </main>
   </div>
 </template>

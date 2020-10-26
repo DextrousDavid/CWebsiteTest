@@ -118,7 +118,7 @@ export default {
   background: #ffffff;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 .section-content {
@@ -160,10 +160,11 @@ export default {
   box-sizing: border-box;
   border-radius: 37px;
   max-width: 1179px;
+  max-height: 495px;
 }
 .card-text-div {
   height: 570px;
-  padding: 149px 53px 0px 59px;
+  padding: 46px 53px 0px 59px;
 }
 .card-header {
   font-family: GalanoGrotesque-Heavy;
@@ -188,9 +189,10 @@ export default {
   /* border: 4px solid #ffffff; */
   box-sizing: border-box;
   border-radius: 0px 35px 35px 0px;
-  padding-top: 97px;
+  padding-top: 15px;
   display: flex;
   justify-content: center;
+  max-height: 488px;
 }
 .scalability-bg {
   background: linear-gradient(180deg, #47c9fa 0%, #4881db 100%);
@@ -326,6 +328,13 @@ export default {
     font-size: 22px;
     line-height: 2;
     text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  .product-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 11rem;
   }
 }
 </style>
