@@ -14,19 +14,17 @@
     </section>
 
     <div class="mt-16 mb-10 flex items-center justify-center">
-      <nuxt-link to="/">
-        <div class="font-extrabold rounded-lg">
-          <img
-            class="-mb-4 img-logo text-center inline-block fill-current h-20 w-20"
-            src="~assets/Cloudenly.svg"
-            alt="cloudenlyLogo"
-          />
-          <span class="logoTexts">
-            <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
-            <h3 class="-mt-2 text-center font-semibold">Product Overview</h3>
-          </span>
-        </div>
-      </nuxt-link>
+      <div class="font-extrabold rounded-lg">
+        <img
+          class="-mb-4 img-logo text-center inline-block fill-current h-20 w-20"
+          src="~assets/Cloudenly.svg"
+          alt="cloudenlyLogo"
+        />
+        <span class="logoTexts">
+          <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
+          <h3 class="-mt-2 text-center font-semibold">Product Overview</h3>
+        </span>
+      </div>
     </div>
 
     <!-- main content -->

@@ -2,7 +2,9 @@
   <div>
     <TryCloudenlyForFree />
     <div class="bg-white pb-8" style="font-size: 15px">
-      <div class="flex flex-wrap px-12 justify-center p-6 app-footer leading-7">
+      <div
+        class="flex flex-wrap px-12 justify-center p-6 pt-12 app-footer leading-7"
+      >
         <div class="flex flex-wrap mb-3 text-center w-full">
           <!-- <hr class="sm:invisible" /> -->
           <!-- Products to support begins here -->
@@ -124,7 +126,7 @@
         <div
           class="flex flex-wrap mb-3 mt-2 w-full xs:-px-8 sm:-px-8 md:px-2 lg:px-2 -mx-2"
         >
-          <div class="w-full md:w-2/4 lg:w-3/4 mb-3 text-left px-2 sm:mt-3">
+          <div class="w-full md:w-3/4 lg:w-3/4 mb-3 text-left px-2 sm:mt-3">
             <div class="sm:flex bottom-navigation-div">
               <div class="bottom-link">Terms of Service</div>
               <div class="bottom-link">Privacy Information</div>
@@ -140,7 +142,7 @@
             </div>
           </div>
 
-          <div class="w-full md:w-2/4 lg:w-1/4 mb-3 text-left px-2">
+          <div class="w-full md:w-1/4 lg:w-1/4 mb-3 text-left px-2">
             <div class="newsleter-head">Suscribe to our Newsletter</div>
             <div class="text-newsletter" style="margin-bottom: 8px">
               Subscribe to our newsletters. We don’t Bite!

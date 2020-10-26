@@ -26,7 +26,7 @@
                 </h1>
                 <div class="flex justify-center mt-8">
                   <img
-                    class="fill-current h-16 w-16"
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/product-overview.svg"
                   />
                 </div>
@@ -49,7 +49,7 @@
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
-                    class="fill-current h-16 w-16"
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/faq.svg"
                   />
                 </div>
@@ -70,7 +70,7 @@
                 <div style="max-width: 400px; margin: auto">
                   <div class="flex justify-center mt-8">
                     <img
-                      class="fill-current h-16 w-16"
+                      class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/resourcesIcons/user-guide.svg"
                     />
                   </div>
@@ -92,7 +92,7 @@
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
-                    class="fill-current h-16 w-16"
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/blog.svg"
                   />
                 </div>
@@ -106,13 +106,13 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card">
+          <div class="resource-card events-card">
             <div class="text-center mr-3 ml-3">
               <h1 class="font-bold resources-h1">Events</h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
-                    class="fill-current h-16 w-16"
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/events.svg"
                   />
                 </div>
@@ -131,7 +131,7 @@
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
-                    class="fill-current h-16 w-16"
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/community.svg"
                   />
                 </div>
@@ -155,7 +155,7 @@
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
-                    class="fill-current h-16 w-16"
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/developer-documentation.svg"
                   />
                 </div>
@@ -174,7 +174,7 @@
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
-                    class="fill-current h-16 w-16"
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/academy.svg"
                   />
                 </div>
@@ -275,6 +275,14 @@ p {
   background-size: 100% 100%;
   color: white;
 }
+
+/* .events-card:hover {
+  background: #000;
+}
+
+.events-card:hover:before {
+  content: 'ADD';
+} */
 
 @media (max-width: 728px) {
   .banner-p {

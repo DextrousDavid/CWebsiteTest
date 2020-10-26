@@ -16,17 +16,17 @@
     </div>
 
     <div class="mb-10 flex items-center justify-center">
-      <nuxt-link to="/resources/userguide">
-        <div class="font-extrabold items-center rounded-lg">
-          <img
-            class="-mb-4 img-logo inline-block fill-current h-20 w-20"
-            src="~assets/Cloudenly.svg"
-            alt="cloudenlyLogo"
-          />
-          <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
-          <h3 class="h3-logo -mt-2 text-center font-semibold">User Guide</h3>
-        </div>
-      </nuxt-link>
+      <!-- <nuxt-link to="/resources/userguide"> -->
+      <div class="font-extrabold items-center rounded-lg">
+        <img
+          class="-mb-4 img-logo inline-block fill-current h-20 w-20"
+          src="~assets/Cloudenly.svg"
+          alt="cloudenlyLogo"
+        />
+        <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
+        <h3 class="h3-logo -mt-2 text-center font-semibold">User Guide</h3>
+      </div>
+      <!-- </nuxt-link> -->
     </div>
 
     <!-- main Content -->
