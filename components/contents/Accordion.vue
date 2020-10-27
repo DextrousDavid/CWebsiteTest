@@ -1,79 +1,81 @@
 <template>
-  <div style="position: relative" class="mt-3">
-    <v-app>
-      <div class="xs:mx-2 sm:mx-2 md:mx-48 lg:mx-56">
-        <v-expansion-panels accordion hover>
-          <v-expansion-panel
-            v-for="userGuide in userGuides"
-            :key="userGuide.id"
-          >
-            <v-expansion-panel-header>
-              {{ userGuide.heading }}
-              <template v-slot:actions>
-                <v-icon color="primary">$expand</v-icon>
-              </template>
-            </v-expansion-panel-header>
+  <no-ssr>
+    <div style="position: relative" class="mt-3">
+      <v-app>
+        <div class="xs:mx-2 sm:mx-2 md:mx-48 lg:mx-56">
+          <v-expansion-panels accordion hover>
+            <v-expansion-panel
+              v-for="userGuide in userGuides"
+              :key="userGuide.id"
+            >
+              <v-expansion-panel-header>
+                {{ userGuide.heading }}
+                <template v-slot:actions>
+                  <v-icon color="primary">$expand</v-icon>
+                </template>
+              </v-expansion-panel-header>
 
-            <v-expansion-panel-content color="blue lighten-5">
-              <a :href="userGuide.url1">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content1 }}
-                </div>
-              </a>
+              <v-expansion-panel-content color="blue lighten-5">
+                <a :href="userGuide.url1">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content1 }}
+                  </div>
+                </a>
 
-              <a :href="userGuide.url2">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content2 }}
-                </div>
-              </a>
+                <a :href="userGuide.url2">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content2 }}
+                  </div>
+                </a>
 
-              <a :href="userGuide.url3">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content3 }}
-                </div>
-              </a>
+                <a :href="userGuide.url3">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content3 }}
+                  </div>
+                </a>
 
-              <a :href="userGuide.url4">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content4 }}
-                </div>
-              </a>
+                <a :href="userGuide.url4">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content4 }}
+                  </div>
+                </a>
 
-              <a :href="userGuide.url5">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content5 }}
-                </div>
-              </a>
+                <a :href="userGuide.url5">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content5 }}
+                  </div>
+                </a>
 
-              <a :href="userGuide.url6">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content6 }}
-                </div>
-              </a>
+                <a :href="userGuide.url6">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content6 }}
+                  </div>
+                </a>
 
-              <a target="_blank" :href="userGuide.url7">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content7 }}
-                </div>
-              </a>
+                <a target="_blank" :href="userGuide.url7">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content7 }}
+                  </div>
+                </a>
 
-              <a :href="userGuide.url8">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content8 }}
-                </div>
-              </a>
+                <a :href="userGuide.url8">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content8 }}
+                  </div>
+                </a>
 
-              <a :href="userGuide.url9">
-                <div class="divtextColor mt-2">
-                  {{ userGuide.content9 }}
-                </div>
-              </a>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-      </div>
-    </v-app>
-  </div>
+                <a :href="userGuide.url9">
+                  <div class="divtextColor mt-2">
+                    {{ userGuide.content9 }}
+                  </div>
+                </a>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </div>
+      </v-app>
+    </div>
+  </no-ssr>
 </template>
 
 <script>

@@ -49,11 +49,8 @@ export default {
           id: 1,
           heading: 'Get Started with HumanaR',
           content1: 'How do i log in on the app?',
-          url1: '',
           content2: 'Tips and Tricks of HumanaR',
-          url2: '',
           content3: 'Get started with HumanaR',
-          url3: '',
         },
         {
           id: 2,
