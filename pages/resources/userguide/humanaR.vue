@@ -1,35 +1,37 @@
 <template>
-  <div>
-    <AccordionHeader />
-    <section class="banner mb-8">
-      <div class="content-center mr-3 ml-3">
-        <h1 class="banner-h1">How can we help you?</h1>
-        <div style="max-width: 550px; margin: auto">
-          <p class="banner-p font-normal">
-            Find help and learning resources below
-          </p>
+  <no-ssr>
+    <div>
+      <AccordionHeader />
+      <section class="banner mb-8">
+        <div class="content-center mr-3 ml-3">
+          <h1 class="banner-h1">How can we help you?</h1>
+          <div style="max-width: 550px; margin: auto">
+            <p class="banner-p font-normal">
+              Find help and learning resources below
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="mt-12 mb-8 flex items-center text-center justify-center">
+        <div class="rounded-lg">
+          <img
+            class="mr-3 inline-block"
+            src="~assets/userguideIcons/HumanaR.png"
+            alt="humanaRLogo"
+          />
+          <h1 class="font-bold inline-block" style="color: #333">HumanaR</h1>
+          <!-- The one belser Guide</h2> -->
+          <h3 class="-mt-2 font-semibold" style="color: #333">User Guide</h3>
         </div>
       </div>
-    </section>
 
-    <div class="mt-12 mb-8 flex items-center text-center justify-center">
-      <div class="rounded-lg">
-        <img
-          class="mr-3 inline-block"
-          src="~assets/userguideIcons/HumanaR.png"
-          alt="humanaRLogo"
-        />
-        <h1 class="font-bold inline-block">HumanaR</h1>
-        <!-- The one belser Guide</h2> -->
-        <h3 class="-mt-2 font-semibold">User Guide</h3>
-      </div>
+      <!-- main content -->
+      <main>
+        <Accordion :user-guides="userGuides" />
+      </main>
     </div>
-
-    <!-- main content -->
-    <main>
-      <Accordion :user-guides="userGuides" />
-    </main>
-  </div>
+  </no-ssr>
 </template>
 
 <script>

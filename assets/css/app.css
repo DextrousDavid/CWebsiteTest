@@ -485,12 +485,16 @@ color: #666666;
   .call-to-action-div
   {
     padding-right: 55px;
-  }  .log-wrapper{
-    margin-left: 35px;
-    }
+  }  
     .nav-item-left{
         margin-right: 0px;
     }
+  }
+
+  @media (max-width: 1280px){
+    
+  }  .log-wrapper{
+    margin-left: 35px;
   }
 
 

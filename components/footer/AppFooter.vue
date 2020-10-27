@@ -16,7 +16,9 @@
               <div class="w-full mb-6 px-2">
                 <div class="xs:text-center md:text-left">
                   <div class="inline-block">
-                    <img class="footer-logo" src="~assets/Cloudenly.svg" />
+                    <nuxt-link to="/">
+                      <img class="footer-logo" src="~assets/Cloudenly.svg" />
+                    </nuxt-link>
                   </div>
                 </div>
                 <div class="xs:text-center md:text-left mt-4">
@@ -67,10 +69,15 @@
               class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/6 mb-6 px-2 xl:-mx-6"
             >
               <div class="menu-head">Resources</div>
-              <div class="list-element">Product Overview</div>
+              <nuxt-link to="/resources/product-overview">
+                <div class="list-element">Product Overview</div>
+              </nuxt-link>
               <div class="list-element">FAQ</div>
-              <div class="list-element">User Guide</div>
-              <div class="list-element">Blogs / Events</div>
+              <nuxt-link to="/resources/userguide">
+                <div class="list-element">User Guide</div>
+              </nuxt-link>
+              <div class="list-element">Blogs</div>
+              <div class="list-element">Events</div>
               <div class="list-element">Community</div>
               <div class="list-element">Developer Documentation</div>
               <div class="list-element">Academy</div>

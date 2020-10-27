@@ -1,38 +1,41 @@
 <template>
-  <div>
-    <AppHeader />
-    <v-app>
-      <section class="banner">
-        <div class="content-center mr-3 ml-3">
-          <h1 class="banner-h1 font-bold">Cloudenly Pricing</h1>
-          <div style="max-width: 550px; margin: auto">
-            <p class="banner-p font-normal">
-              Flexible pricing options, from personal projects to enterprise
-              applications, and everything in between
-            </p>
+  <no-ssr>
+    <div>
+      <AppHeader />
+      <v-app>
+        <section class="banner">
+          <div class="content-center mr-3 ml-3">
+            <h1 class="banner-h1 font-bold">Cloudenly Pricing</h1>
+            <div style="max-width: 550px; margin: auto">
+              <p class="banner-p font-normal">
+                Flexible pricing options, from personal projects to enterprise
+                applications, and everything in between
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <PricingTabs />
-      <v-container>
-        <div class="mt-16">
-          <h3 class="mb-4">Choose the number of users</h3>
+        </section>
+        <PricingTabs />
+        <v-container>
+          <div class="mt-16">
+            <h3 class="mb-4">Choose the number of users</h3>
+            <div>
+              <v-btn outlined medium class="d-inline">
+                10
+                <v-icon right>$expand</v-icon>
+              </v-btn>
+              <v-btn class="d-inline text-capitalize" color="primary"
+                >Users</v-btn
+              ><span class="ml-3">N80/user/ Month</span>
+            </div>
+          </div>
+          <!-- Choose your apps starts here -->
           <div>
-            <v-btn outlined medium class="d-inline">
-              10
-              <v-icon right>$expand</v-icon>
-            </v-btn>
-            <v-btn class="d-inline text-capitalize" color="primary">Users</v-btn
-            ><span class="ml-3">N80/user/ Month</span>
+            <ChooseYourApps />
           </div>
-        </div>
-        <!-- Choose your apps starts here -->
-        <div>
-          <ChooseYourApps />
-        </div>
-      </v-container>
-    </v-app>
-  </div>
+        </v-container>
+      </v-app>
+    </div>
+  </no-ssr>
 </template>
 
 <script>

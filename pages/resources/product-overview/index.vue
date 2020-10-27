@@ -23,8 +23,12 @@
             alt="cloudenlyLogo"
           />
           <span class="logoTexts">
-            <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
-            <h3 class="-mt-2 text-center font-semibold">Product Overview</h3>
+            <h1 class="font-extrabold h1-logo inline-block" style="color: #333">
+              Cloudenly
+            </h1>
+            <h3 class="-mt-2 text-center font-semibold" style="color: #333">
+              Product Overview
+            </h3>
           </span>
         </div>
       </div>

@@ -2,7 +2,7 @@
   <div>
     <AppHeader />
     <div class="sm:flex mb-4 landing-page-banner">
-      <div class="sm:w-1/2 landing-page-left-div sm:flex justify-center">
+      <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
         <div class="div-wrapper">
           <div class="bold-header">
             The Business
