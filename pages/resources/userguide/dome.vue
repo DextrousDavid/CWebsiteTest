@@ -12,9 +12,7 @@
         <h1 class="font-bold inline-block" style="color: #333">Dome</h1>
         <!-- The one below Doesnt look to Good -->
         <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
-        <h3 class="ml-16 -mt-2 font-semibold" style="color: #333">
-          User Guide
-        </h3>
+        <h3 class="ml-16 -mt-2 font-semibold">User Guide</h3>
       </div>
     </div>
 

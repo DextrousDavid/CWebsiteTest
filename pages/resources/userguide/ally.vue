@@ -10,7 +10,7 @@
           alt="AllyLogo"
         />
         <h1 class="font-bold inline-block" style="color: #333">Ally</h1>
-        <h3 class="-mt-2 font-semibold" style="color: #333">User Guide</h3>
+        <h3 class="-mt-2 font-semibold">User Guide</h3>
       </div>
     </div>
 

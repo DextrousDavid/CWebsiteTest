@@ -27,12 +27,7 @@
           <h1 class="font-extrabold h1-logo inline-block" style="color: #333">
             Cloudenly
           </h1>
-          <h3
-            class="h3-logo -mt-2 text-center font-semibold"
-            style="color: #333"
-          >
-            User Guide.
-          </h3>
+          <h3 class="h3-logo -mt-2 text-center font-semibold">User Guide</h3>
         </div>
         <!-- </nuxt-link> -->
       </div>
