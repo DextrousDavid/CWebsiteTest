@@ -85,7 +85,8 @@ img {
 .buy-now-button {
   font-size: 11px;
   color: #efefef;
-  margin-right: 2px;
+  margin-right: 4px;
+  margin-bottom: 5px;
 }
 /* To fix tab width use this */
 .v-tabs--fixed-tabs > .v-tabs-bar .v-tab {
