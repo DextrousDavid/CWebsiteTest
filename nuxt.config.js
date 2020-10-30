@@ -21,17 +21,17 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'Cloudenly - The Business Software for a Connected Digital Economy',
+    title: 'Cloudenly - Grow Your Business With Ease',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid:
-          'Cloudenly - The Business Software for a Connected Digital Economy',
+          'Cloudenly - Grow Your Business With Ease',
         name:
-          'Cloudenly - The Business Software for a Connected Digital Economy',
+          'Cloudenly - Grow Your Business With Ease',
         content:
-          'Cloudenly - The Business Software for a Connected Digital Economy',
+          'Cloudenly - Grow Your Business With Ease',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],

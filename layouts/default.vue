@@ -13,15 +13,15 @@ export default {
   head() {
     return {
       title:
-        'Cloudenly - The Business Software for a Connected Digital Economy',
+        'Cloudenly - Grow Your Business With Ease',
       meta: [
         {
           hid:
-            'Cloudenly - The Business Software for a Connected Digital Economy',
+            'Cloudenly - Grow Your Business With Ease',
           name:
-            'Cloudenly - The Business Software for a Connected Digital Economy',
+            'Cloudenly - Grow Your Business With Ease',
           content:
-            'Cloudenly - The Business Software for a Connected Digital Economy',
+            'Cloudenly - Grow Your Business With Ease',
         },
       ],
     }
