@@ -8,7 +8,7 @@
       No software installation required, no credit card required, easy to setup.
     </div>
     <div class="flex justify-center">
-      <button class="all-brand-btn mt-4 font-medium">TRY FOR FREE</button>
+      <button class="try-for-free-btn mt-4 font-medium">TRY FOR FREE</button>
     </div>
   </div>
 </template>

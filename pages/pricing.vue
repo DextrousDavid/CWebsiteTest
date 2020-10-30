@@ -130,8 +130,11 @@ p {
     );
   }
 }
+/* .v-application--wrap {
+  min-height: 1px !important;
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 }
 @media (max-width: 768px) {
 }
@@ -139,5 +142,5 @@ p {
 @media (max-width: 1024px) {
 }
 @media (min-width: 1200px) {
-}
+} */
 </style>

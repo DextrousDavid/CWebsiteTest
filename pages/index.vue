@@ -5,16 +5,20 @@
       <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
         <div class="div-wrapper">
           <div class="bold-header">
-            The Business
+            Grow Your Business With Ease.
+            <!-- The Business
             <span>Software</span>
-            for a Connected Digital Economy
+            for a Connected Digital Economy -->
           </div>
           <div class="light-text-header top-text">
-            Transform with Cloudenly and experience the power of a unified
-            business operation.
+            Unify operations, drive better engagement and keep track of the
+            indices that help your business grow.
+
+            <!-- Transform with Cloudenly and experience the power of a unified
+            business operation. -->
           </div>
           <div class="light-text-header bottom-text">
-            CRM. Sales. Purchase. Inventory. Operations. Commerce. Finance.
+            CRM. Purchase. Sales. Inventory. Operations. Commerce. Finance.
             Cloud Storage. HRM.
           </div>
           <div class="call-to-action-div sm:flex"></div>
@@ -70,12 +74,15 @@
         <div class="product-div">
           <div class="product-top-line optima-top"></div>
           <div class="product-desc">
-            <img src="/img/Optima-logo.svg" />
+            <img class="products-logo" src="/img/Optima-logo.svg" />
             <div class="product-name">Optima</div>
             <div class="product-explain">
-              Streamline your retail, supply chain, commerce, finance, and
+              Improve your customer experience, operational efficiency, business
+              intelligence and agility by streamlining your retail, supply
+              chain, commerce, finance, and accounting.
+              <!-- Streamline your retail, supply chain, commerce, finance, and
               accounting for improved customer experience, operational
-              efficiency, business intelligence, and agility.
+              efficiency, business intelligence, and agility. -->
             </div>
             <button class="product-btn optima-btn">TRY FOR FREE</button>
           </div>
@@ -83,12 +90,15 @@
         <div class="product-div">
           <div class="product-top-line humana-top"></div>
           <div class="product-desc">
-            <img src="/img/Humana-logo.svg" />
+            <img class="products-logo" src="/img/Humana-logo.svg" />
             <div class="product-name">HumanaR</div>
-            <div class="product-explain">
-              Amplify your HR processes with ease, and achieve better employee
+            <div class="product-explain" style="margin-bottom: 20px">
+              Make it easier for your work team. Improve performance and
+              employee experience with self service and workforce analytics.
+
+              <!-- Amplify your HR processes with ease, and achieve better employee
               experience with self-service. Improve people and business
-              performance through workforce analytics.
+              performance through workforce analytics. -->
             </div>
             <button class="product-btn humana-btn">TRY FOR FREE</button>
           </div>
@@ -96,33 +106,42 @@
         <div class="product-div">
           <div class="product-top-line dome-top"></div>
           <div class="product-desc">
-            <img src="/img/Dome-logo.svg" />
+            <img class="products-logo" src="/img/Dome-logo.svg" />
             <div class="product-name">Dome</div>
-            <div class="product-explain" style="max-width: 247px">
+            <div
+              class="product-explain"
+              style="max-width: 247px; margin-bottom: -10px"
+            >
               Manage files and folders securely on the cloud and collaborate
-              remotely. Enjoy the boundless opportunity.
+              remotely. Enjoy the boundless opportunity of an organizational
+              digital library.
+
+              <!-- Manage files and folders securely on the cloud and collaborate
+              remotely. Enjoy the boundless opportunity. -->
             </div>
             <button class="product-btn dome-btn">TRY FOR FREE</button>
           </div>
         </div>
-        <div class="product-div products-div-lite lite-margin">
+        <!-- <div class="product-div products-div-lite lite-margin">
           <div class="product-top-line lite-top"></div>
           <div class="product-desc">
-            <img src="/img/Optima-logo.svg" />
+            <img class="products-logo" src="/img/Lite-logo.svg" />
             <div class="product-name">Lite</div>
             <div class="product-explain">
+              Built for micro businesses, to unify purchase, inventory, sales,
+              customer, expense management and more.
               Built for micro and small businesses, to unify purchase,
               inventory, sales, customer, expense management, and more. Scaling
               from Lite to other Apps is seamless.
             </div>
             <button class="product-btn lite-btn">TRY FOR FREE</button>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <WhyCloudenly />
     <div class="high-growth-companies sm:flex justify-center">
-      <div class="cloudenly-headline" style="color: #556365">
+      <div class="cloudenly-headline" style="color: #556365; font-size: 24px">
         Powering Growth for Amazing Businesses.
       </div>
       <div
@@ -209,6 +228,9 @@ export default {
   padding: 12px;
   margin-right: 70px;
   margin-left: auto;
+}
+.products-logo {
+  height: 70px;
 }
 @media (max-width: 480px) {
   .why-cloudenly-img {

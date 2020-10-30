@@ -19,10 +19,10 @@
         >
           <v-tabs v-model="currentTab" background-color="transparent" grow>
             <!-- <v-tab>Ally</v-tab> -->
-            <v-tab>Dome</v-tab>
-            <v-tab>HumanaR</v-tab>
             <v-tab>Optima</v-tab>
-            <v-tab>Quantum</v-tab>
+            <v-tab>HumanaR</v-tab>
+            <v-tab>Dome</v-tab>
+            <!-- <v-tab>Quantum</v-tab> -->
           </v-tabs>
         </div>
 
@@ -31,17 +31,17 @@
             <div></div>
           </v-tab-item> -->
           <v-tab-item>
-            <Product :features="dome_content" />
+            <Product :features="optima_content" />
           </v-tab-item>
           <v-tab-item>
             <Product :features="humana_content" />
           </v-tab-item>
           <v-tab-item>
-            <Product :features="optima_content" />
+            <Product :features="dome_content" />
           </v-tab-item>
-          <v-tab-item>
+          <!-- <v-tab-item>
             <Product :features="quantum_content" />
-          </v-tab-item>
+          </v-tab-item> -->
         </v-tabs-items>
       </div>
     </div>
@@ -60,7 +60,7 @@ export default {
   },
   data() {
     return {
-      currentTab: 2,
+      currentTab: 0,
       optima_content: [
         {
           header: 'CRM',
@@ -88,6 +88,12 @@ Orders, Invoice, Debit Notes`,
           content: `Payment & collection`,
         },
         {
+          header: '	Accounting',
+          content: `Chart of Accounts, Cost Centers, Expense Codes, 
+  Account Receivables, Account Payables, Revenue,
+  Expense, Profits & Loss, Assets & Liabilities.`,
+        },
+        {
           header: 'Commerce Cloud',
           content: `PoS, Marketplace integrations`,
         },
@@ -95,12 +101,6 @@ Orders, Invoice, Debit Notes`,
           header: 'Production Management (Coming Soon)',
           content: `Material Requirement Planning, Material Assembly, Job
                     Orders, Material Request, Production Management`,
-        },
-        {
-          header: '	Accounting',
-          content: `Chart of Accounts, Cost Centers, Expense Codes, 
-Account Receivables, Account Payables, Revenue,
-Expense, Profits & Loss, Assets & Liabilities.`,
         },
         {
           header: `Budget, Asset and Expense Management
@@ -122,7 +122,7 @@ Expense, Profits & Loss, Assets & Liabilities.`,
  Delegation Management.`,
         },
         {
-          header: 'Benfit Adminstration',
+          header: 'Benefit Adminstration',
           content: `Leave of Absence, Advances & Loans, Overtime`,
         },
         {
@@ -271,7 +271,7 @@ Two Factor Authentication (2FA), IP Fencing`,
   font-size: 16px;
   line-height: 19px;
   color: #f1f5fb;
-  background: #05613a;
+  background: #4781dc;
   border-radius: 3px;
 }
 .quantumActive .v-tab.v-tab--active {
@@ -281,7 +281,7 @@ Two Factor Authentication (2FA), IP Fencing`,
   background: #5e227f !important;
 }
 .optimaActive .v-tab.v-tab--active {
-  background: #4781dc !important;
+  background: #05613a !important;
 }
 
 /* dome: #05613a green

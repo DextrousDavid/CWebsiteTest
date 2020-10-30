@@ -3,24 +3,27 @@
     <no-ssr>
       <v-tabs
         fixed-tabs
-        height="60"
+        height="70"
         centered
         right
         light
         center-active
         background-color="grey lighten-3"
       >
-        <v-tab>Guided <v-icon right>$expand</v-icon></v-tab>
-        <v-tab><img src="~assets/tabIcons/lite.png" /> Lite</v-tab>
+        <!-- <v-tab>Guided <v-icon right>$expand</v-icon></v-tab> -->
+        <!-- <v-tabs-slider color="teal lighten-3"></v-tabs-slider> -->
+
+        <v-tab>Product</v-tab>
+        <!-- <v-tab><img src="~assets/tabIcons/lite.png" /> Lite</v-tab> -->
         <v-tab><img src="~assets/tabIcons/optima.png" />Optima</v-tab>
         <v-tab><img src="~assets/tabIcons/humanaR.png" />HumanaR</v-tab>
         <v-tab><img src="~assets/tabIcons/dome.png" />Dome</v-tab>
-        <v-tab><img src="~assets/tabIcons/ally.png" />Ally</v-tab>
-        <v-tab><img src="~assets/tabIcons/quantum.png" />Quantum</v-tab>
+        <!-- <v-tab><img src="~assets/tabIcons/ally.png" />Ally</v-tab>
+        <v-tab><img src="~assets/tabIcons/quantum.png" />Quantum</v-tab> -->
         <v-tab style="background-color: #fff; color: #000">
-          <p style="font-size: 9px">
-            No of products: 3<br /><span class="total-no">
-              Total No of Apps: 12</span
+          <p style="font-size: 11px; font-weight: 900">
+            Products: 3<br /><span class="total-no">
+              Total Number of Applications: 12</span
             >
           </p></v-tab
         >
@@ -80,9 +83,16 @@ img {
   margin-right: 5px;
 }
 .buy-now-button {
-  font-size: 8px;
+  font-size: 11px;
   color: #efefef;
+  margin-right: 2px;
 }
+/* To fix tab width use this */
+.v-tabs--fixed-tabs > .v-tabs-bar .v-tab {
+  flex: 1 1 auto;
+  width: unset;
+}
+
 @media (max-width: 446px) {
   .buy-now-button {
     font-size: 6px;

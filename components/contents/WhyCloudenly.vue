@@ -13,7 +13,14 @@
               grow
             >
               <v-tab v-for="item in items" :key="item">
-                <span style="font-size: 16px; text-transform: capitalize">
+                <span
+                  style="
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #000;
+                    font-weight: 600;
+                  "
+                >
                   {{ item }}</span
                 >
               </v-tab>
@@ -25,13 +32,15 @@
                 <div class="flex-2 card-text-div">
                   <div class="card-header">Innovation</div>
                   <div class="card-inner-text">
-                    Our magic lies in our vision, craft, and the courage to
-                    shape tomorrow,in catalyzing innovation for growth. From the
-                    very first code, our mission remains the same, to provide
-                    your business with the tools that it needs to thrive.
+                    Our magic lies in our vision, our craft, in catalyzing
+                    innovation for development and in the courage to shape
+                    tomorrow. From the very first code, our mission remains the
+                    same, to become your most trusted partner for growth by
+                    providing your business with the tools that it needs to
+                    thrive.
                   </div>
                 </div>
-                <div class="flex-1 card-img-right scalability-bg">
+                <div class="flex-1 card-img-right innovation-bg">
                   <img
                     src="/img/innovation_icon.svg"
                     class="why-cloudenly-img"
@@ -44,10 +53,11 @@
                 <div class="flex-2 card-text-div">
                   <div class="card-header">Scalability</div>
                   <div class="card-inner-text">
-                    The Cloudenly infrastructure is built on the Quantum OS with
-                    a unified data kernel serving all of her applications. This
-                    empowers us to meet you where you are and allows you scale
-                    as your business grows without losing a single data.
+                    We built the Cloudenly infrastructure on a Quantum OS with a
+                    unified data kernel serving all of her applications, making
+                    room for your scalability. This structure empowers you to
+                    scale and grow your business without losing a single data
+                    and enables us to meet you at your stage of growth.
                   </div>
                 </div>
                 <div class="flex-1 card-img-right scalability-bg">
@@ -64,9 +74,9 @@
                   <div class="card-header">Ecosystem</div>
                   <div class="card-inner-text">
                     Regardless of which application you use, the Cloudenly
-                    platform keeps you connected to the global network of
-                    buyers, suppliers, facilitators, and advisors, extending
-                    your reach and opportunities exponentially.
+                    platform keeps you connected to a global network of buyers,
+                    suppliers, facilitators, and advisors, extending your reach
+                    and opportunities exponentially.
                   </div>
                 </div>
                 <div class="flex-1 card-img-right ecosystem-bg">
@@ -197,8 +207,12 @@ export default {
 .scalability-bg {
   background: linear-gradient(180deg, #47c9fa 0%, #4881db 100%);
 }
+
 .ecosystem-bg {
   background: linear-gradient(180deg, #ffa35d 0%, #fe6c76 100%);
+}
+.innovation-bg {
+  background: linear-gradient(57.52deg, #16b271 24.05%, #11955e 83.96%);
 }
 @media (max-width: 768px) {
   .product-wrapper {
@@ -288,7 +302,7 @@ export default {
 
 .cloudenly-headline {
   font-size: 34px;
-  color: rgb(85, 99, 101);
+  color: #000;
 }
 /*
 /*  *

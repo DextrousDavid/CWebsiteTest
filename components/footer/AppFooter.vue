@@ -17,7 +17,10 @@
                 <div class="xs:text-center md:text-left">
                   <div class="inline-block">
                     <nuxt-link to="/">
-                      <img class="footer-logo" src="~assets/Cloudenly.svg" />
+                      <img
+                        class="footer-logo"
+                        src="img/Cloudenly-logo-width.svg"
+                      />
                     </nuxt-link>
                   </div>
                 </div>
@@ -88,13 +91,14 @@
               class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/6 px-2"
             >
               <div class="menu-head">Support</div>
-              <div class="list-element">Support@cloudenly.com</div>
+              <div class="list-element">support@cloudenly.com</div>
               <a href="tel:+2348159530070">
                 <div class="list-element">+234 8159530070</div>
               </a>
               <a href="tel:+234556655667">
                 <div class="list-element">+234 5566 55667</div>
               </a>
+              <div class="list-element">Get Help</div>
             </div>
 
             <!-- <hr style="margin-top: 17px; border-top-color: red" /> -->
@@ -208,7 +212,7 @@ export default {
 </script>
 <style scoped>
 .footer-logo {
-  height: 55px;
+  width: 68px;
 }
 /* .app-footer {
   margin-top: 6em;
