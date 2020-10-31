@@ -281,7 +281,7 @@ Two Factor Authentication (2FA), IP Fencing`,
   background: #5e227f !important;
 }
 .optimaActive .v-tab.v-tab--active {
-  background: #05613a !important;
+  background: #16b271 !important;
 }
 
 /* dome: #05613a green

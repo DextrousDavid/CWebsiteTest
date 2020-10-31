@@ -38,7 +38,7 @@
           <!-- Row One Starts here! -->
           <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
             <nuxt-link to="/resources/userguide/optima">
-              <div class="resource-card shadow-md">
+              <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
                   <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
@@ -56,7 +56,7 @@
           <!-- Row 1 Ends Here -->
           <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
             <nuxt-link to="/resources/userguide/humanaR">
-              <div class="resource-card shadow-md">
+              <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
                   <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
@@ -74,7 +74,7 @@
 
           <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
             <nuxt-link to="/resources/userguide/dome">
-              <div class="resource-card shadow-md">
+              <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
                   <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
@@ -92,7 +92,7 @@
 
           <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
             <nuxt-link to="/resources/userguide/ally">
-              <div class="resource-card shadow-md">
+              <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
                   <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
@@ -110,7 +110,7 @@
 
           <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
             <nuxt-link to="/resources/userguide/quantum">
-              <div class="resource-card shadow-md">
+              <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
                   <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
@@ -128,7 +128,7 @@
 
           <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
             <nuxt-link to="/resources/userguide/lite">
-              <div class="resource-card shadow-md">
+              <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
                   <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">

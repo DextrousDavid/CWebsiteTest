@@ -12,16 +12,12 @@ export default {
   },
   head() {
     return {
-      title:
-        'Cloudenly - Grow Your Business With Ease',
+      title: 'Cloudenly - Grow Your Business With Ease',
       meta: [
         {
-          hid:
-            'Cloudenly - Grow Your Business With Ease',
-          name:
-            'Cloudenly - Grow Your Business With Ease',
-          content:
-            'Cloudenly - Grow Your Business With Ease',
+          hid: 'Cloudenly - Grow Your Business With Ease',
+          name: 'Cloudenly - Grow Your Business With Ease',
+          content: 'Cloudenly - Grow Your Business With Ease',
         },
       ],
     }

@@ -48,8 +48,8 @@
               <div class="list-element">Optima</div>
               <div class="list-element">HumanaR</div>
               <div class="list-element">Dome</div>
-              <div class="list-element">Quantum</div>
-              <div class="list-element">Ally</div>
+              <!-- <div class="list-element">Quantum</div>
+              <div class="list-element">Ally</div> -->
               <!-- <div class="list-element">Quantum</div> -->
             </div>
             <div
