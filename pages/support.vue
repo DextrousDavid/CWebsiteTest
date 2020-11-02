@@ -99,19 +99,19 @@
                 <tr class="table-data">
                   <td class="w-1/4 py-5 flex">Edition and Hosting</td>
                   <td class="w-3/4 py-5 edition-and-hosting">
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
                       /><span style="margin-left: 6px">Cloudenly Online</span>
                     </div>
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -119,10 +119,10 @@
                         >Cloudenly Entreprise</span
                       >
                     </div>
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -134,7 +134,9 @@
                 </tr>
 
                 <tr class="table-data">
-                  <td class="w-1/4 py-5 your-subscription-code">
+                  <td
+                    class="w-1/4 py-5 your-subscription-code sm:flex md:w-full"
+                  >
                     Your Subscription Code
                   </td>
                   <td class="w-3/4 py-5">
@@ -173,10 +175,10 @@
                 <tr class="table-data">
                   <td class="w-1/4 py-5 flex">Ticket Type</td>
                   <td class="w-3/4 py-5 edition-and-hosting">
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -184,10 +186,10 @@
                         >related to my subscription, bill or payment
                       </span>
                     </div>
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -196,10 +198,10 @@
                       </span>
                     </div>
 
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -208,10 +210,10 @@
                       </span>
                     </div>
 
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -220,10 +222,10 @@
                       >
                     </div>
 
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -232,10 +234,10 @@
                       >
                     </div>
 
-                    <div class="block">
+                    <div class="block mb-3">
                       <input
                         id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-4 form-radio"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
                         type="radio"
                         name="radio"
                         value="1"
@@ -290,7 +292,7 @@
                   </td>
                 </tr>
               </table>
-              <div class="flex justify-end mt-8">
+              <div class="flex justify-end md:mt-3">
                 <button
                   type="submit"
                   class="join-btn inline-block text-sm px-6 py-4 leading-none border rounded text-white hover:bg-blue-800 mt-4 lg:mt-0 shadow-md duration-200"
