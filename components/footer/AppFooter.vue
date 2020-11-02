@@ -90,7 +90,7 @@
             <div
               class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/6 px-2"
             >
-              <div class="menu-head">Support</div>
+              <nuxt-link to="/support" class="menu-head">Support</nuxt-link>
               <div class="list-element">support@cloudenly.com</div>
               <a href="tel:+2348159530070">
                 <div class="list-element">+234 8159530070</div>
@@ -225,7 +225,7 @@ li {
   padding-top: 5px;
 }
 a:hover {
-  color: #ddd;
+  color: #080101;
 }
 
 button {
