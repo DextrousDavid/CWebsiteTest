@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="sm:w-1/2 landing-page-right-div flex">
-        <img src="/img/mana-img.svg" />
+        <img class="mana-img" src="/img/mana-img.svg" />
       </div>
     </div>
 
@@ -232,6 +232,10 @@ export default {
 .products-logo {
   height: 70px;
 }
+.mana-img {
+  width: 636px;
+  height: 420px;
+}
 @media (max-width: 480px) {
   .why-cloudenly-img {
     max-width: none;
@@ -248,6 +252,10 @@ export default {
 @media (max-width: 768px) {
   .white-btn-border {
     margin-top: 20px;
+  }
+  .mana-img {
+    height: unset;
+    width: unset;
   }
   .header-text-light {
     margin-top: 20px;
