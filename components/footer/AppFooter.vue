@@ -55,7 +55,9 @@
             <div
               class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/6 mb-6 px-2 xl:-mx-20"
             >
-              <div class="menu-head">Pricing</div>
+              <nuxt-link to="/pricing" class="menu-head hover:underline"
+                >Pricing</nuxt-link
+              >
               <div class="list-element">Optima</div>
               <div class="list-element">HumanaR</div>
             </div>
@@ -71,13 +73,19 @@
             <div
               class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/6 mb-6 px-2 xl:-mx-6"
             >
-              <div class="menu-head">Resources</div>
+              <nuxt-link to="/resources">
+                <div class="menu-head hover:underline">
+                  Resources
+                </div></nuxt-link
+              >
               <nuxt-link to="/resources/product-overview">
-                <div class="list-element">Product Overview</div>
+                <div class="list-element hover:underline">Product Overview</div>
               </nuxt-link>
-              <div class="list-element">FAQ</div>
+              <nuxt-link to="/faq"
+                ><div class="list-element hover:underline">FAQ</div></nuxt-link
+              >
               <nuxt-link to="/resources/userguide">
-                <div class="list-element">User Guide</div>
+                <div class="list-element hover:underline">User Guide</div>
               </nuxt-link>
               <div class="list-element">Blogs</div>
               <div class="list-element">Events</div>
@@ -90,13 +98,15 @@
             <div
               class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/6 px-2"
             >
-              <nuxt-link to="/support" class="menu-head">Support</nuxt-link>
+              <nuxt-link to="/support" class="menu-head hover:underline"
+                >Support</nuxt-link
+              >
               <div class="list-element">support@cloudenly.com</div>
               <a href="tel:+2348159530070">
-                <div class="list-element">+234 8159530070</div>
+                <div class="list-element hover:underline">+234 8159530070</div>
               </a>
               <a href="tel:+234556655667">
-                <div class="list-element">+234 5566 55667</div>
+                <div class="list-element hover:underline">+234 5566 55667</div>
               </a>
               <div class="list-element">Get Help</div>
             </div>

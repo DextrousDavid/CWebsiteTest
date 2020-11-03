@@ -35,9 +35,9 @@
             </div>
             <div>
               <table class="w-full">
-                <tr class="table-data">
-                  <td class="w-1/4 py-5">Your Name</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Your Name</td>
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="name"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
@@ -46,9 +46,9 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5">Your Email</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Your Email</td>
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="email"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
@@ -58,9 +58,9 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5">Your Phone or Skype ID</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Your Phone or Skype ID</td>
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="phone"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
@@ -70,9 +70,9 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5 mr-1">CC to (optional)</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 mr-1">CC to (optional)</td>
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="telephone"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
@@ -96,9 +96,9 @@
             </div>
             <div>
               <table class="w-full">
-                <tr class="table-data">
-                  <td class="w-1/4 py-5 flex">Edition and Hosting</td>
-                  <td class="w-3/4 py-5 edition-and-hosting">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 flex">Edition and Hosting</td>
+                  <td class="md:w-3/4 lg:py-5 edition-and-hosting">
                     <div class="block mb-3">
                       <input
                         id="name"
@@ -133,13 +133,11 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td
-                    class="w-1/4 py-5 your-subscription-code sm:flex md:w-full"
-                  >
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 your-subscription-code sm:flex">
                     Your Subscription Code
                   </td>
-                  <td class="w-3/4 py-5">
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="phone"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
@@ -148,9 +146,9 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5">Cloudenly Version</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Cloudenly Version</td>
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="number"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
@@ -172,9 +170,9 @@
             </div>
             <div>
               <table class="w-full">
-                <tr class="table-data">
-                  <td class="w-1/4 py-5 flex">Ticket Type</td>
-                  <td class="w-3/4 py-5 edition-and-hosting">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 flex">Ticket Type</td>
+                  <td class="md:w-3/4 lg:py-5 edition-and-hosting">
                     <div class="block mb-3">
                       <input
                         id="name"
@@ -248,9 +246,9 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5">Subject</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Subject</td>
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="text"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
@@ -259,9 +257,10 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5 flex">Detailed Description</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 flex">Detailed Description</td>
+
+                  <td class="md:w-3/4 lg:py-5">
                     <textarea
                       id="textfield"
                       class="w-full border border-solid border-gray-800 resize-none rounded focus:outline-none"
@@ -270,9 +269,9 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5">Attachments</td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Attachments</td>
+                  <td class="md:w-3/4 lg:py-5">
                     <input
                       id="text"
                       class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight"
@@ -281,9 +280,9 @@
                   </td>
                 </tr>
 
-                <tr class="table-data">
-                  <td class="w-1/4 py-5"></td>
-                  <td class="w-3/4 py-5">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5"></td>
+                  <td class="md:w-3/4 lg:py-5">
                     Add more attachments
                     <hr
                       class="add-more-attachments-hr w-full"
@@ -335,7 +334,7 @@ export default {
 }
 
 .edition-and-hosting {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .your-description {
   font-size: 16px;

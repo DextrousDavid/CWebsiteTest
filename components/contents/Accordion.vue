@@ -3,7 +3,7 @@
     <div style="position: relative" class="mt-3">
       <v-app>
         <div class="xs:mx-2 sm:mx-2 md:mx-48 lg:mx-56">
-          <v-expansion-panels accordion hover>
+          <v-expansion-panels style="z-index: 0" accordion hover>
             <v-expansion-panel
               v-for="userGuide in userGuides"
               :key="userGuide.id"
@@ -117,6 +117,16 @@ export default {
 </script>
 
 <style>
+.v-expansion-panels {
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  /* z-index: 1; */
+}
 * {
   font-family: GalanoGrotesque-Medium;
   color: #828282;

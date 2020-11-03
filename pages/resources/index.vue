@@ -43,23 +43,25 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card">
-            <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold resources-h1">FAQ</h1>
-              <div style="max-width: 400px; margin: auto">
-                <div class="flex justify-center mt-8">
-                  <img
-                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
-                    src="~assets/resourcesIcons/faq.svg"
-                  />
-                </div>
+          <nuxt-link to="/faq">
+            <div class="resource-card">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold resources-h1">FAQ</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <div class="flex justify-center mt-8">
+                    <img
+                      class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
+                      src="~assets/resourcesIcons/faq.svg"
+                    />
+                  </div>
 
-                <p class="font-normal resources-font">
-                  Read and find answers to frequently asked questions
-                </p>
+                  <p class="font-normal resources-font">
+                    Read and find answers to frequently asked questions
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </nuxt-link>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
