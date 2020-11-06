@@ -122,6 +122,13 @@ export default {
   -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 } */
+@media (min-width: 768px) {
+  .btnscoped {
+    outline: none;
+    margin-right: 12px;
+  }
+}
+
 @media (min-width: 1280px) {
   .nav-image {
     margin-left: 2.7rem;

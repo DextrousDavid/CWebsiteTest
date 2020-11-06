@@ -121,10 +121,16 @@ export default {
   -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
-
 .nuxt-link-exact-active {
   color: #4781dc;
 }
+@media (min-width: 768px) {
+  .btnscoped {
+    outline: none;
+    margin-right: 31px;
+  }
+}
+
 @media (min-width: 1280px) {
   .nav-image {
     margin-left: 2.7rem;

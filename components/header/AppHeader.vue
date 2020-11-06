@@ -65,24 +65,28 @@
         </div>
         <no-ssr>
           <div class="nav-item-left">
-            <a
-              href="http://dev-quantum-frontend.s3-website.eu-west-2.amazonaws.com/"
-              class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
-            >
-              Sign In
-            </a>
+            <div class="tooltip">
+              <a
+                class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
+              >
+                Sign In
+              </a>
+              <span class="tooltiptext">Coming Soon..</span>
+            </div>
             <!-- <nuxt-link
             to="/signup"
             class="join-btn inline-block text-sm px-6 py-4 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Sign Up
           </nuxt-link> -->
-            <a
-              href="http://dev-quantum-frontend.s3-website.eu-west-2.amazonaws.com/signup"
-              class="join-btn inline-block text-sm px-6 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
-            >
-              Sign Up
-            </a>
+            <div class="tooltip">
+              <a
+                class="join-btn inline-block text-sm px-6 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
+              >
+                Sign Up
+              </a>
+              <span class="tooltiptext">Coming Soon...</span>
+            </div>
           </div>
         </no-ssr>
       </div>
@@ -115,7 +119,62 @@ export default {
   },
 }
 </script>
+
 <style scoped>
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 105px;
+  top: 118%;
+  left: 50%;
+  margin-left: -59px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 12px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Tooltip ends hear */
+
+.join-btn:hover {
+  cursor: pointer;
+}
+
 .btnscoped {
   outline: none;
 }
@@ -132,6 +191,13 @@ export default {
 }
 .nuxt-link-exact-active {
   color: #4781dc;
+}
+
+@media (min-width: 768px) {
+  .btnscoped {
+    outline: none;
+    margin-right: 31px;
+  }
 }
 
 @media (min-width: 1280px) {

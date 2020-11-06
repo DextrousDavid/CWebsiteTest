@@ -189,7 +189,7 @@ export default {
 .resource-card {
   padding: 30px 8px 15px 8px;
   border-radius: 6px;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #eee;
   margin-bottom: 40px;
 }
 

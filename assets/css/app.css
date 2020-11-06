@@ -37,7 +37,11 @@ padding-bottom: 16px;
 }
 .sign-in-nav{
  margin-right: 22px;
+
+}.sign-in-nav:hover {
+    cursor: pointer
 }
+
 
 .landing-page-banner{
     /* padding-top: 181px; */
@@ -502,14 +506,23 @@ color: #666666;
         margin-right: 0px;
     }
   }
-
-  @media (max-width: 1280px){
-
-  }  .log-wrapper{
+  
+  /* @media (max-width: 1280px){
+      
+}   */
+.log-wrapper{
     margin-left: 35px;
     margin-top: 5px;
-  }
+}
 
+@media (max-width: 1024px){
+
+  .log-wrapper{
+  margin-left: 36px;
+  margin-top: 5px;
+}
+  }
+ 
 
 
 
@@ -523,6 +536,8 @@ color: #666666;
 .log-wrapper{
 margin-left: 0px;
 }
+
+
 .list-item-navigation{
 margin-left: 0px;
 }

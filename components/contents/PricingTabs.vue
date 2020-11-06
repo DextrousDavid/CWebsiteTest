@@ -27,10 +27,12 @@
             >
           </p></v-tab
         >
-        <v-tab class="flex" style="background-color: #1976d2; color: #fff">
-          <p class="buy-now-button">50, 000 per Month</p>
+        <v-tab class="flex" style="background-color: #16b271; color: #fff">
+          <p class="buy-now-button">
+            <span class="no-of">No of Products</span><br />50, 000 per Month
+          </p>
 
-          <v-btn x-small elevation="2">Buy Now</v-btn>
+          <v-btn x-medium elevation="2" style="color: #000">Buy Now</v-btn>
         </v-tab>
       </v-tabs>
     </no-ssr>
@@ -85,7 +87,7 @@ img {
 .buy-now-button {
   font-size: 11px;
   color: #efefef;
-  margin-right: 4px;
+  margin-right: 8px;
   margin-bottom: 5px;
 }
 /* To fix tab width use this */
@@ -94,9 +96,18 @@ img {
   width: unset;
 }
 
+.no-of {
+  margin-left: -28px;
+  font-size: 10px;
+}
+
 @media (max-width: 446px) {
   .buy-now-button {
-    font-size: 6px;
+    font-size: 8px;
+  }
+  .no-of {
+    font-size: 7px;
+    margin-left: -24px;
   }
 }
 </style>
