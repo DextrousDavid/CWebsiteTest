@@ -29,7 +29,8 @@
         >
         <v-tab class="flex" style="background-color: #16b271; color: #fff">
           <p class="buy-now-button">
-            <span class="no-of">No of Products</span><br />50, 000 per Month
+            <span class="no-of" style="color: #fff">No of Products</span
+            ><br />50, 000 per Month
           </p>
 
           <v-btn x-medium elevation="2" style="color: #000">Buy Now</v-btn>
@@ -54,7 +55,7 @@ export default {
 }
 * {
   font-family: GalanoGrotesque-Medium;
-  /* color: #828282; */
+  color: #000;
 }
 .v-tab {
   align-items: center;
@@ -86,7 +87,7 @@ img {
 }
 .buy-now-button {
   font-size: 11px;
-  color: #efefef;
+  color: #fff;
   margin-right: 8px;
   margin-bottom: 5px;
 }

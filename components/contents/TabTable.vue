@@ -4,8 +4,9 @@
       <template>
         <v-tabs centered light>
           <label>
-            <v-tab>
+            <v-tab style="color: #1976d2">
               <input
+                style="color: #1976d2"
                 type="radio"
                 class="form-radio radio-bg"
                 name="radio"
@@ -15,7 +16,7 @@
             >
           </label>
           <label>
-            <v-tab>
+            <v-tab style="color: #1976d2">
               <input
                 type="radio"
                 class="form-radio text-indigo-600"
@@ -120,7 +121,7 @@ export default {
 <style scoped>
 * {
   font-family: GalanoGrotesque-Medium;
-  /* color: #828282; */
+  /* color: rgb(21, 187, 216); */
 }
 
 @media (min-width: 960px) {
