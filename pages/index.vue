@@ -1,39 +1,41 @@
 <template>
   <div>
     <AppHeader />
-    <div class="sm:flex mb-4 landing-page-banner">
-      <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
-        <div class="div-wrapper">
-          <div class="bold-header">
-            Grow Your Business With Ease.
-            <!-- The Business
+    <div class="landing-page-banner-background">
+      <div class="sm:flex mb-4 landing-page-banner">
+        <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
+          <div class="div-wrapper">
+            <div class="bold-header">
+              Grow Your Business With Ease.
+              <!-- The Business
             <span>Software</span>
             for a Connected Digital Economy -->
-          </div>
-          <div class="light-text-header top-text">
-            Unify operations, drive better engagement and keep track of the
-            indices that help your business grow.
+            </div>
+            <div class="light-text-header top-text">
+              Unify operations, drive better engagement and keep track of the
+              indices that help your business grow.
 
-            <!-- Transform with Cloudenly and experience the power of a unified
+              <!-- Transform with Cloudenly and experience the power of a unified
             business operation. -->
+            </div>
+            <div class="light-text-header bottom-text">
+              CRM. Purchase. Sales. Inventory. Operations. Commerce. Finance.
+              Cloud Storage. HRM.
+            </div>
+            <div class="call-to-action-div sm:flex"></div>
+            <button
+              class="try-for text-white mr-2 py-2 px-10 rounded inline-block hover:bg-blue-700 hover:text-white duration-200"
+            >
+              TRY FOR FREE
+            </button>
+            <button class="white-btn-border inline-block duration-200">
+              EXPLORE MORE
+            </button>
           </div>
-          <div class="light-text-header bottom-text">
-            CRM. Purchase. Sales. Inventory. Operations. Commerce. Finance.
-            Cloud Storage. HRM.
-          </div>
-          <div class="call-to-action-div sm:flex"></div>
-          <button
-            class="try-for text-white mr-2 py-2 px-10 rounded inline-block hover:bg-blue-700 hover:text-white duration-200"
-          >
-            TRY FOR FREE
-          </button>
-          <button class="white-btn-border inline-block duration-200">
-            EXPLORE MORE
-          </button>
         </div>
-      </div>
-      <div class="sm:w-1/2 landing-page-right-div flex">
-        <img class="mana-img" src="/img/mana-img.svg" />
+        <!-- <div class="sm:w-1/2 landing-page-right-div flex">
+          <img class="mana-img" src="/img/mana-img.svg" />
+        </div> -->
       </div>
     </div>
 
@@ -223,6 +225,48 @@ export default {
 </script>
 
 <style scoped>
+.landing-page-banner-background {
+  background: linear-gradient(
+    76deg,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff
+  );
+  background-size: 500% 500%;
+  -webkit-animation: landing-page-banner-background 45s ease infinite;
+  animation: landing-page-banner-background 45s ease infinite;
+}
+
+@keyframes landing-page-banner-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .container {
   width: 100%;
   padding: 12px;
