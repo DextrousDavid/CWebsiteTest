@@ -1,7 +1,8 @@
 <template>
   <div>
     <AppHeader />
-    <div class="landing-page-banner-background">
+    <div>
+      <!-- <div class="landing-page-banner-background"> Replace the one above with this-->
       <div class="sm:flex mb-4 landing-page-banner">
         <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
           <div class="div-wrapper">
@@ -33,9 +34,9 @@
             </button>
           </div>
         </div>
-        <!-- <div class="sm:w-1/2 landing-page-right-div flex">
+        <div class="sm:w-1/2 landing-page-right-div flex">
           <img class="mana-img" src="/img/mana-img.svg" />
-        </div> -->
+        </div>
       </div>
     </div>
 
@@ -277,8 +278,9 @@ export default {
   height: 70px;
 }
 .mana-img {
-  width: 636px;
-  height: 420px;
+  width: 90%;
+  /* width: 636px;
+  height: 420px; */
 }
 @media (max-width: 480px) {
   .why-cloudenly-img {
