@@ -20,6 +20,7 @@
                       <img
                         class="footer-logo"
                         src="img/Cloudenly-logo-width.svg"
+                        alt="cloudenly logo"
                       />
                     </nuxt-link>
                   </div>
@@ -198,6 +199,7 @@
                   <img
                     class="fill-current h-6 w-6"
                     src="~assets/arrow-button.svg"
+                    alt="cloudenly logo"
                   />
                 </button>
               </div>

@@ -7,7 +7,7 @@
         <img
           class="mr-3 inline-block"
           src="~assets/userguideIcons/Dome.png"
-          alt="DomeLogo"
+          alt="Dome Logo"
         />
         <h1 class="font-bold inline-block" style="color: #333">Dome</h1>
         <!-- The one below Doesnt look to Good -->

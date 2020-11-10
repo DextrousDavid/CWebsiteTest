@@ -20,7 +20,7 @@
           <img
             class="-mb-4 img-logo text-center inline-block fill-current h-20 w-20"
             src="~assets/Cloudenly.svg"
-            alt="cloudenlyLogo"
+            alt="cloudenly Logo"
           />
           <span class="logoTexts">
             <h1 class="font-extrabold h1-logo inline-block" style="color: #333">
@@ -44,7 +44,7 @@
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/userguideIcons/Optima1.png"
-                      alt="optima1"
+                      alt="optima logo"
                     />
                     <h5 class="font-semibold">Optima</h5>
                   </div>
@@ -63,7 +63,7 @@
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/userguideIcons/HumanaR.png"
-                      alt="humanaR"
+                      alt="humanaR logo"
                     />
                     <h5 class="font-semibold">HumanaR</h5>
                   </div>
@@ -81,7 +81,7 @@
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/userguideIcons/Dome.png"
-                      alt="Dome"
+                      alt="Dome logo"
                     />
                     <h5 class="font-semibold">Dome</h5>
                   </div>
@@ -99,7 +99,7 @@
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/userguideIcons/Ally.png"
-                      alt="Ally"
+                      alt="Ally logo"
                     />
                     <h5 class="font-semibold">Ally</h5>
                   </div>
@@ -117,7 +117,7 @@
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/userguideIcons/Quantum.png"
-                      alt="Quantum"
+                      alt="Quantum logo"
                     />
                     <h5 class="font-semibold">Quantum</h5>
                   </div>
@@ -135,7 +135,7 @@
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/userguideIcons/Lite.png"
-                      alt="Lite"
+                      alt="Lite logo"
                     />
                     <h5 class="font-semibold">Lite</h5>
                   </div>

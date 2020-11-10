@@ -7,7 +7,7 @@
         <img
           class="mr-3 inline-block"
           src="~assets/userguideIcons/Ally.png"
-          alt="AllyLogo"
+          alt="Ally Logo"
         />
         <h1 class="font-bold inline-block" style="color: #333">Ally</h1>
         <h3 class="-mt-2 font-semibold">User Guide</h3>

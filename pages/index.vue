@@ -2,7 +2,8 @@
   <div>
     <AppHeader />
     <div>
-      <!-- <div class="landing-page-banner-background"> Replace the one above with this-->
+      <!-- <div class="landing-page-banner-background"> -->
+      Replace the one above with this
       <div class="sm:flex mb-4 landing-page-banner">
         <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
           <div class="div-wrapper">
@@ -35,7 +36,11 @@
           </div>
         </div>
         <div class="sm:w-1/2 landing-page-right-div flex">
-          <img class="mana-img" src="/img/mana-img.svg" />
+          <img
+            class="mana-img"
+            src="/img/mana-img.svg"
+            alt="cloudenly banner image"
+          />
         </div>
       </div>
     </div>

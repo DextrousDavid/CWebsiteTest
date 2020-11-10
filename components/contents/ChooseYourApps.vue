@@ -16,7 +16,7 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/crm.png" />
+                  <img src="~assets/apps/crm.png" alt="crm icon" />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -53,7 +53,7 @@
               <!-- hover -->
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/purchase.png" />
+                  <img src="~assets/apps/purchase.png" alt="purchase icon" />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -91,7 +91,7 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/sales.png" />
+                  <img src="~assets/apps/sales.png" alt="sales icon" />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -127,7 +127,7 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/inventory.png" />
+                  <img src="~assets/apps/inventory.png" alt="inventory icon" />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -164,7 +164,7 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/payments.png" />
+                  <img src="~assets/apps/payments.png" alt="payments icon" />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -202,7 +202,7 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/accounts.png" />
+                  <img src="~assets/apps/accounts.png" alt="accounts icon" />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -240,7 +240,7 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/expense.png" />
+                  <img src="~assets/apps/expense.png" alt="expense icon" />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -283,7 +283,10 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/fixed-assets.png" />
+                  <img
+                    src="~assets/apps/fixed-assets.png"
+                    alt="fixed assets icon"
+                  />
                 </v-list-item-avatar>
 
                 <v-list-item-content
@@ -327,7 +330,10 @@
             >
               <v-list-item three-line>
                 <v-list-item-avatar tile size="40">
-                  <img src="~assets/apps/budget-planning.png" />
+                  <img
+                    src="~assets/apps/budget-planning.png"
+                    alt="budget planning icon"
+                  />
                 </v-list-item-avatar>
 
                 <v-list-item-content

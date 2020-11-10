@@ -46,7 +46,7 @@ padding-bottom: 16px;
 .landing-page-banner{
     /* padding-top: 181px; */
     /* padding-bottom: 143px; */
-    background: rgb(186, 147, 249, 0.01);
+    background: rgba(186,147,249,.01);
     position: relative;
 
 }
@@ -112,6 +112,10 @@ margin-right: 35px;
     line-height: 19px;
     color: #4781DC;
     padding: 10px 30px 10px 35px;
+}
+
+.white-btn-border:hover {
+    background-color: #f8f8f8;
 }
 
 .enterprices{

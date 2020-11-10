@@ -18,7 +18,7 @@
           <img
             class="mr-3 inline-block"
             src="~assets/userguideIcons/HumanaR.png"
-            alt="humanaRLogo"
+            alt="humanaR Logo"
           />
           <h1 class="font-bold inline-block" style="color: #333">HumanaR</h1>
           <!-- The one belser Guide</h2> -->

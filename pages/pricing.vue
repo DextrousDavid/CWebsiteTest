@@ -70,6 +70,10 @@ export default {
 }
 </script>
 <style scoped>
+.container-alignment {
+  margin-left: 2px;
+  margin-right: 2px;
+}
 * {
   font-family: GalanoGrotesque-Medium;
   /* color: #828282; */

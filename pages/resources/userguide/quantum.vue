@@ -7,7 +7,7 @@
         <img
           class="mr-3 inline-block"
           src="~assets/userguideIcons/Quantum.png"
-          alt="QuantumLogo"
+          alt="Quantum Logo"
         />
         <h1 class="font-bold inline-block" style="color: #333">Quantum</h1>
         <!-- The one below Doesnt look to Good -->

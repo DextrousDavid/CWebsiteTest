@@ -44,6 +44,7 @@
                   <img
                     src="/img/innovation_icon.svg"
                     class="why-cloudenly-img"
+                    alt="innovation image"
                   />
                 </div>
               </div>
@@ -64,6 +65,7 @@
                   <img
                     src="/img/scalability-icon.svg"
                     class="why-cloudenly-img"
+                    alt="scalability image"
                   />
                 </div>
               </div>
@@ -83,6 +85,7 @@
                   <img
                     src="/img/ecosystem-icon.svg"
                     class="why-cloudenly-img"
+                    alt="ecosystem image"
                   />
                 </div>
               </div>

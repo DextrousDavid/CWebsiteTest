@@ -7,6 +7,7 @@
           <img
             class="nav-image xl:mr-5 cloudenly-logo"
             src="/img/cloudenly-logo.svg"
+            alt="cloudenly logo"
           />
         </nuxt-link>
       </div>

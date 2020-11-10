@@ -17,7 +17,7 @@
           <img
             class="mr-3 inline-block"
             src="~assets/userguideIcons/Optima1.png"
-            alt="Optimalogo"
+            alt="Optima logo"
           />
           <h1 class="font-bold inline-block" style="color: #333">Optima</h1>
           <!-- The one below Doesnt look to Good -->

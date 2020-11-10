@@ -28,6 +28,7 @@
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/product-overview.svg"
+                    alt="cloudenly product overview"
                   />
                 </div>
 
@@ -52,6 +53,7 @@
                     <img
                       class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/resourcesIcons/faq.svg"
+                      alt="cloudenly FAQ"
                     />
                   </div>
 
@@ -74,6 +76,7 @@
                     <img
                       class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                       src="~assets/resourcesIcons/user-guide.svg"
+                      alt="cloudenly userguide logo"
                     />
                   </div>
                   <p class="font-normal resources-font">
@@ -96,6 +99,7 @@
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/blog.svg"
+                    alt="cloudenly blog"
                   />
                 </div>
                 <p class="font-normal resources-font">
@@ -116,6 +120,7 @@
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/events.svg"
+                    alt="cloudenly events"
                   />
                 </div>
                 <p class="font-normal resources-font">
@@ -135,6 +140,7 @@
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/community.svg"
+                    alt="cloudenly community"
                   />
                 </div>
                 <p class="font-normal resources-font">
@@ -159,6 +165,7 @@
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/developer-documentation.svg"
+                    alt="cloudenly developer documentation"
                   />
                 </div>
                 <p class="font-normal resources-font">
@@ -178,6 +185,7 @@
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/resourcesIcons/academy.svg"
+                    alt="cloudenly academy"
                   />
                 </div>
                 <p class="font-normal resources-font">

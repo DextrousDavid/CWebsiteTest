@@ -7,7 +7,7 @@
         <img
           class="mr-2 inline-block"
           src="~assets/userguideIcons/Lite.png"
-          alt="LiteLogo"
+          alt="Lite Logo"
         />
         <h1 class="font-bold inline-block" style="color: #333">Lite</h1>
         <!-- The one below Doesnt look to Good -->
