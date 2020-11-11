@@ -1,9 +1,9 @@
 <template>
   <div>
     <AppHeader />
-    <div>
-      <!-- <div class="landing-page-banner-background"> -->
-      Replace the one above with this
+    <!-- <div> -->
+    <div class="landing-page-banner-background">
+      <!-- Replace the one above with this -->
       <div class="sm:flex mb-4 landing-page-banner">
         <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
           <div class="div-wrapper">
@@ -43,30 +43,30 @@
           />
         </div>
       </div>
-    </div>
 
-    <div class="enterprices flex flex-wrap sm:text-center">
-      <div class="flex trust-enterprices md:text-left">
-        Trusted by your favourite enterprises.
-      </div>
-      <div class="enterprice-box md:text-center">
-        <img src="/img/Mansaard-logo.svg" />
-        Mansaard Inc.
-      </div>
-      <div class="enterprice-box sm:flex">
-        <img src="/img/YorkShire-logo.svg" />
-        YorkShire Ent.
-      </div>
-      <div class="enterprice-box sm:flex">
-        <img src="/img/Shally-logo.svg " />
-        YorkShire Ent.
-      </div>
-      <div class="enterprice-box sm:flex">
-        <img src="/img/Circle-logo.svg " />
-        Circle Comp
-      </div>
-      <div class="sm:flex">
-        <img src="/img/chat-icon.svg " />
+      <div class="enterprices flex flex-wrap sm:text-center">
+        <div class="flex trust-enterprices md:text-left">
+          Trusted by your favourite enterprises.
+        </div>
+        <div class="enterprice-box md:text-center">
+          <img src="/img/Mansaard-logo.svg" />
+          Mansaard Inc.
+        </div>
+        <div class="enterprice-box sm:flex">
+          <img src="/img/YorkShire-logo.svg" />
+          YorkShire Ent.
+        </div>
+        <div class="enterprice-box sm:flex">
+          <img src="/img/Shally-logo.svg " />
+          YorkShire Ent.
+        </div>
+        <div class="enterprice-box sm:flex">
+          <img src="/img/Circle-logo.svg " />
+          Circle Comp
+        </div>
+        <div class="sm:flex">
+          <img src="/img/chat-icon.svg " />
+        </div>
       </div>
     </div>
 
