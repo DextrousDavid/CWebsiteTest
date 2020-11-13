@@ -252,6 +252,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  color: #000;
+}
 .banner-h1 {
   margin-top: -50px;
   margin-bottom: 10px;
