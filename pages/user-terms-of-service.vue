@@ -1,5 +1,6 @@
 <template>
   <no-ssr>
+    <!-- <div class="user-terms-of-use-container"> -->
     <div>
       <AppHeader />
       <!-- <Banner /> -->
@@ -11,7 +12,7 @@
       </section>
       <!-- Banner Ends here -->
       <main class="container mx-auto px-6 py-10 mt-8">
-        <div class="flex flex-wrap -mx-6">
+        <div class="flex flex-wrap -mx-6 sticky top-0">
           <div class="side-bar w-xs px-6">
             <div class="flex-wrap bg-white">
               <a
@@ -141,86 +142,83 @@
           <!-- Resources Items starts here -->
           <div class="flex-1 flex-wrap">
             <!-- Row One Starts here! -->
-            <div class="flex mb-6">
-              <div class="px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
-                <nuxt-link to="/faq">
+            <div class="md:flex mb-6">
+              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+                <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
-                      User Terms of Service
+                      Terms of Use
                     </div>
-                    <div class="pb-5 pl-5">
-                      1Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Amet, iusto!
-                    </div>
+                    <div class="pb-5 pl-5">Cloudenly Terms of Use</div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/security.png"
                       alt="security card"
                     />
                     <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500">READ MORE</a>
+                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
                     </div>
-                    <div class="float-right pb-4 pr-5"></div>
+                    <div class="float-right pb-4 pr-5">
+                      <!-- <img
+                        class="w-full"
+                        src="
+                      ~assets/policyIcons/right-arrow-icon.png"
+                        alt="arrow icons"
+                      /> -->
+                    </div>
                   </div>
-                </nuxt-link>
+                </div>
               </div>
 
-              <div class="px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
-                <nuxt-link to="/faq">
+              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+                <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
-                      User Terms of Service
+                      Privacy Policy
                     </div>
-                    <div class="pb-5 pl-5">
-                      2Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Amet, iusto!
-                    </div>
+                    <div class="pb-5 pl-5">Cloudenly Privacy Policy</div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/secured-lock.png"
                       alt="secured lock card"
                     />
                     <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500">READ MORE</a>
+                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
                     </div>
                     <div class="float-right pb-4 pr-5"></div>
                   </div>
-                </nuxt-link>
+                </div>
               </div>
             </div>
 
-            <div class="flex mb-4">
-              <div class="px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
-                <nuxt-link to="/faq">
+            <div class="md:flex mb-4">
+              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+                <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
-                      Security Overview
+                      Security Policy
                     </div>
-                    <div class="pb-5 pl-5">
-                      3Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Amet, iusto!
-                    </div>
+                    <div class="pb-5 pl-5">Cloudenly Security Policy</div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/padlock.png"
                       alt="security card"
                     />
                     <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500">READ MORE</a>
+                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
                     </div>
                     <div class="float-right pb-4 pr-5"></div>
                   </div>
-                </nuxt-link>
+                </div>
               </div>
-              <div class="px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
-                <nuxt-link to="/faq">
+              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+                <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
-                      Acceptable use policy
+                      Non-Disclosure Agreement
                     </div>
                     <div class="pb-5 pl-5">
-                      4Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Amet, iusto!
+                      Cloudenly Non-Disclosure Agreement
                     </div>
                     <img
                       class="w-full mb-3"
@@ -228,11 +226,11 @@
                       alt="security card"
                     />
                     <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500">READ MORE</a>
+                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
                     </div>
                     <div class="float-right pb-4 pr-5"></div>
                   </div>
-                </nuxt-link>
+                </div>
               </div>
             </div>
           </div>
@@ -252,6 +250,12 @@ export default {
 </script>
 
 <style scoped>
+.user-terms-of-use-container {
+  background-color: #fbfbfb;
+}
+.read-more {
+  color: #38b1e9;
+}
 * {
   color: #000;
 }
