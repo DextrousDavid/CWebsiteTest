@@ -150,7 +150,9 @@
         >
           <div class="w-full md:w-3/4 lg:w-3/4 mb-3 text-left px-2 sm:mt-3">
             <div class="sm:flex bottom-navigation-div">
-              <div class="bottom-link">Terms of Service</div>
+              <nuxt-link to="/user-terms-of-service">
+                <div class="bottom-link">Terms of Service</div>
+              </nuxt-link>
               <div class="bottom-link">Privacy Information</div>
               <div class="bottom-link">Security</div>
               <div class="bottom-link">Careers</div>

@@ -17,113 +17,113 @@
             <div class="flex-wrap bg-white">
               <a
                 href="#"
-                class="block no-underline font-semibold text-grey-dark px-4 py-1"
+                class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
                 >ON THIS PAGE</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Customer Terms of Service</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >User Terms of Service</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Customer-Specific Suppl.</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >API Terms of Service</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >App Directory Agreement</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Service Level Agreement</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >App Directory Agreement</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Data Processing Agenda</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Slack Partner Program Terms & Condition</a
               >
 
               <a
                 href="#"
-                class="block no-underline font-semibold text-grey-dark px-4 py-1 mt-5"
+                class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1 mt-5"
                 >ON THIS PAGE</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Privacy Shield Notice</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Acceptable Use Policy</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Slack Subprocessors</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Slack Affiliates</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >DMCA Policy</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Multi-year Accessibility Plan</a
               >
               <a
                 href="#"
-                class="mt-5 block no-underline font-semibold text-grey-dark px-4 py-1"
+                class="mt-5 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
                 >SECURITY</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Security Practices</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Report a Vulnerability</a
               >
               <a
                 href="#"
-                class="mt-5 block no-underline font-semibold text-grey-dark px-4 py-1"
+                class="mt-5 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
                 >SECURITY</a
               >
               <a
                 href="#"
-                class="block no-underline text-grey-dark px-4 py-1 text-sm"
+                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Cloudenly Certified Participant</a
               >
               <a
@@ -133,7 +133,7 @@
               >
               <!-- <a
               href="#"
-              class="block no-underline text-grey-dark px-4 py-1 text-sm"
+              class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
               >Slack Partner Program Terms and Conditions</a
             > -->
             </div>
