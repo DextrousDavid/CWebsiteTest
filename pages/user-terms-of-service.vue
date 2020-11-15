@@ -124,7 +124,8 @@
               <a
                 href="#"
                 class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                >Cloudenly Certified Participant</a
+              >
+                Cloudenly Certified Participant</a
               >
               <a
                 href="#"
@@ -140,7 +141,7 @@
           </div>
 
           <!-- Resources Items starts here -->
-          <div class="flex-1 flex-wrap">
+          <div class="flex-1 flex-wrap mx-auto">
             <!-- Row One Starts here! -->
             <div class="md:flex mb-6">
               <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
@@ -149,7 +150,7 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Terms of Use
                     </div>
-                    <div class="pb-5 pl-5">Cloudenly Terms of Use</div>
+                    <div class="pb-5 pl-5">Terms of Use</div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/security.png"
@@ -176,7 +177,7 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Privacy Policy
                     </div>
-                    <div class="pb-5 pl-5">Cloudenly Privacy Policy</div>
+                    <div class="pb-5 pl-5">Privacy Policy</div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/secured-lock.png"
@@ -198,7 +199,7 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Security Policy
                     </div>
-                    <div class="pb-5 pl-5">Cloudenly Security Policy</div>
+                    <div class="pb-5 pl-5">Security Policy</div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/padlock.png"
@@ -217,9 +218,7 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Non-Disclosure Agreement
                     </div>
-                    <div class="pb-5 pl-5">
-                      Cloudenly Non-Disclosure Agreement
-                    </div>
+                    <div class="pb-5 pl-5">Non-Disclosure Agreement</div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/folder.png"
