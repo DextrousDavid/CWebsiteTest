@@ -141,7 +141,7 @@
           </div>
 
           <!-- Resources Items starts here -->
-          <div class="flex-1 flex-wrap user-terms-of-services-cards">
+          <div class="flex-1 flex-wrap user-terms-of-services-cards mx-5">
             <!-- Row One Starts here! -->
             <div class="md:flex mb-6 mx-6 cards">
               <div
