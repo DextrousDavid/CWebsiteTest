@@ -141,9 +141,9 @@
           </div>
 
           <!-- Resources Items starts here -->
-          <div class="flex-1 flex-wrap mx-auto">
+          <div class="flex-1 flex-wrap">
             <!-- Row One Starts here! -->
-            <div class="md:flex mb-6">
+            <div class="md:flex mb-6 mx-auto">
               <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
                 <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
@@ -193,7 +193,9 @@
             </div>
 
             <div class="md:flex mb-4">
-              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+              <div
+                class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
+              >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
@@ -212,7 +214,9 @@
                   </div>
                 </div>
               </div>
-              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+              <div
+                class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
+              >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
