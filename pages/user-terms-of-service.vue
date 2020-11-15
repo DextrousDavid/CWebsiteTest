@@ -141,7 +141,7 @@
           </div>
 
           <!-- Resources Items starts here -->
-          <div class="flex-1 flex-wrap">
+          <div class="flex-1 flex-wrap user-terms-of-services-cards">
             <!-- Row One Starts here! -->
             <div class="md:flex mb-6 mx-auto">
               <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
@@ -287,6 +287,12 @@ export default {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
+}
+
+@media (max-width: 480px) {
+  .user-terms-of-services-cards {
+    margin: auto;
+  }
 }
 
 @media (max-width: 728px) {
