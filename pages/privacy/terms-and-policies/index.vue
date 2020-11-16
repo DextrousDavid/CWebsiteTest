@@ -12,8 +12,8 @@
       </section>
       <!-- Banner Ends here -->
       <main class="container mx-auto px-6 py-10 mt-8">
-        <div class="flex flex-wrap -mx-6 sticky top-0">
-          <div class="side-bar w-xs px-6">
+        <div class="flex flex-wrap sticky top-0">
+          <div class="side-bar w-xs px-6 pb-4">
             <div class="flex-wrap bg-white">
               <a
                 href="#"
@@ -143,10 +143,8 @@
           <!-- Resources Items starts here -->
           <div class="flex-1 flex-wrap user-terms-of-services-cards mx-5">
             <!-- Row One Starts here! -->
-            <div class="md:flex mb-6 mx-6 cards">
-              <div
-                class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 cards"
-              >
+            <div class="md:flex mb-6 mx-6">
+              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
                 <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
