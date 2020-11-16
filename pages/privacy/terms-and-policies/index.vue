@@ -144,7 +144,9 @@
           <div class="flex-1 flex-wrap user-terms-of-services-cards mx-5">
             <!-- Row One Starts here! -->
             <div class="md:flex mb-6 mx-6">
-              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+              <div
+                class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
+              >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
@@ -174,7 +176,9 @@
                 </div>
               </div>
 
-              <div class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
+              <div
+                class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
+              >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden shadow-lg">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
