@@ -152,23 +152,26 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Terms of Use
                     </div>
-                    <div class="pb-5 pl-5">Terms of Use</div>
+                    <div class="pb-5 pl-5 text-sm">
+                      This Terms of Use Agreement (this “Agreement”) is made and
+                      entered into by and between...
+                    </div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/security.png"
                       alt="security card"
                     />
-                    <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
-                    </div>
-                    <div class="float-right pb-4 pr-5">
-                      <!-- <img
-                        class="w-full"
-                        src="
-                      ~assets/policyIcons/right-arrow-icon.png"
-                        alt="arrow icons"
-                      /> -->
-                    </div>
+                    <nuxt-link
+                      to="/privacy/terms-and-policies/terms-of-use"
+                      class=""
+                    >
+                      <div class="text-blue-500 read-more float-left pl-5 pb-4">
+                        READ MORE
+                      </div>
+                      <div class="float-right pb-4 pr-5 mt-1 mr-2">
+                        <img src="~assets/right-arrow.png" alt="right-arrow" />
+                      </div>
+                    </nuxt-link>
                   </div>
                 </div>
               </div>
@@ -179,16 +182,26 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Privacy Policy
                     </div>
-                    <div class="pb-5 pl-5">Privacy Policy</div>
+                    <div class="pb-5 pl-5 text-sm">
+                      This Privacy Policy tells you how we collect personal and
+                      other information about you, and how...
+                    </div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/secured-lock.png"
                       alt="secured lock card"
                     />
-                    <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
-                    </div>
-                    <div class="float-right pb-4 pr-5"></div>
+                    <nuxt-link
+                      to="/privacy/terms-and-policies/privacy-policy"
+                      class=""
+                    >
+                      <div class="float-left pl-5 pb-4 read-more">
+                        READ MORE
+                      </div>
+                      <div class="float-right pb-4 pr-5 mt-1 mr-2">
+                        <img src="~assets/right-arrow.png" alt="right-arrow" />
+                      </div>
+                    </nuxt-link>
                   </div>
                 </div>
               </div>
@@ -203,16 +216,26 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Security Policy
                     </div>
-                    <div class="pb-5 pl-5">Security Policy</div>
+                    <div class="pb-5 pl-5 text-sm">
+                      This security policy tells you the security measures put
+                      in place by Scelloo...
+                    </div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/padlock.png"
                       alt="security card"
                     />
-                    <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
-                    </div>
-                    <div class="float-right pb-4 pr-5"></div>
+                    <nuxt-link
+                      to="/privacy/terms-and-policies/security-policy"
+                      class=""
+                    >
+                      <div class="float-left pl-5 pb-4 read-more">
+                        READ MORE
+                      </div>
+                      <div class="float-right pb-4 pr-5 mt-1 mr-2">
+                        <img src="~assets/right-arrow.png" alt="right-arrow" />
+                      </div>
+                    </nuxt-link>
                   </div>
                 </div>
               </div>
@@ -224,16 +247,26 @@
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Non-Disclosure Agreement
                     </div>
-                    <div class="pb-5 pl-5">Non-Disclosure Agreement</div>
+                    <div class="pb-5 pl-5 text-sm">
+                      THIS NON-DISCLOSURE AGREEMENT (the "Agreement”) is entered
+                      into: By and ...
+                    </div>
                     <img
                       class="w-full mb-3"
                       src="~assets/policyIcons/folder.png"
                       alt="security card"
                     />
-                    <div class="float-left pl-5 pb-4">
-                      <a href="#" class="text-blue-500 read-more">READ MORE</a>
-                    </div>
-                    <div class="float-right pb-4 pr-5"></div>
+                    <nuxt-link
+                      to="/privacy/terms-and-policies/non-disclosure-agreement"
+                      class=""
+                    >
+                      <div class="float-left pl-5 pb-4 read-more">
+                        READ MORE
+                      </div>
+                      <div class="float-right pb-4 pr-5 mt-1 mr-2">
+                        <img src="~assets/right-arrow.png" alt="right-arrow" />
+                      </div>
+                    </nuxt-link>
                   </div>
                 </div>
               </div>
@@ -246,7 +279,7 @@
 </template>
 
 <script>
-import AppHeader from './../components/header/AppHeader'
+import AppHeader from './../../../components/header/AppHeader'
 export default {
   components: {
     AppHeader,
