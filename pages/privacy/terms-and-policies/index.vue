@@ -10,6 +10,7 @@
           <div style="max-width: 550px; margin: auto"></div>
         </div>
       </section>
+
       <!-- Banner Ends here -->
       <main class="container mx-auto px-6 py-10 mt-8">
         <div class="flex flex-wrap sticky top-0">
@@ -143,12 +144,13 @@
           <!-- Resources Items starts here -->
           <div class="flex-1 flex-wrap user-terms-of-services-cards mx-5">
             <!-- Row One Starts here! -->
-            <div class="md:flex mb-6 mx-6">
+            <div class="md:flex mb-6">
               <div
                 class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
+                style="margin-bottom: 18px"
               >
                 <div>
-                  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                  <div class="max-w-sm rounded overflow-hidden cards">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Terms of Use
                     </div>
@@ -180,13 +182,13 @@
                 class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
               >
                 <div>
-                  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                  <div class="max-w-sm rounded overflow-hidden cards">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Privacy Policy
                     </div>
                     <div class="pb-5 pl-5 text-sm">
                       This Privacy Policy tells you how we collect personal and
-                      other information about you, and how...
+                      other information about...
                     </div>
                     <img
                       class="w-full mb-3"
@@ -212,9 +214,10 @@
             <div class="md:flex mb-4">
               <div
                 class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
+                style="margin-bottom: 18px"
               >
                 <div>
-                  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                  <div class="max-w-sm rounded overflow-hidden cards">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Security Policy
                     </div>
@@ -245,7 +248,7 @@
                 class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
               >
                 <div>
-                  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                  <div class="max-w-sm rounded overflow-hidden cards">
                     <div class="font-bold text-lg mb-2 pl-5 pt-5">
                       Non-Disclosure Agreement
                     </div>
@@ -290,6 +293,10 @@ export default {
 </script>
 
 <style scoped>
+.cards {
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+}
 .user-terms-of-use-container {
   background-color: #fbfbfb;
 }
