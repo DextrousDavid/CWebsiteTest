@@ -13,8 +13,8 @@
       <!-- Banner Ends here -->
       <div class="grey-container">
         <main class="container mx-auto px-6 py-10 mt-8">
-          <div class="flex flex-wrap -mx-6 sticky top-0">
-            <div class="side-bar w-xs px-6">
+          <div class="flex flex-wrap -mx-6">
+            <div class="flex side-bar w-xs px-6">
               <div
                 class="flex-wrap bg-white"
                 style="background: rgb(250, 250, 250)"
@@ -54,11 +54,7 @@
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                   >Service Level Agreement</a
                 >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >App Directory Agreement</a
-                >
+
                 <a
                   href="#"
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -70,11 +66,6 @@
                   >Slack Partner Program Terms & Condition</a
                 >
 
-                <a
-                  href="#"
-                  class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1 mt-5"
-                  >ON THIS PAGE</a
-                >
                 <a
                   href="#"
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -120,11 +111,7 @@
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                   >Report a Vulnerability</a
                 >
-                <a
-                  href="#"
-                  class="mt-5 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
-                  >SECURITY</a
-                >
+
                 <a
                   href="#"
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -203,20 +190,26 @@
                     All notices provided and consents and rights obtained (or
                     will obtain) for us to process the personal information is
                     in accordance with this Agreement and our
-                    <span class="read-more underline">Privacy Policy</span>; If
-                    personal information provided to us is not personal to you,
-                    you agree that you have either provided the data subject
-                    notice or received permission from the data subject and have
-                    the appropriate legal basis, as required by applicable law,
-                    for us to (a) use, and/or disclose the personal information
-                    in accordance with our
-                    <span class="read-more underline">Privacy Policy</span>, (b)
-                    provide the personal information to Third Party Products
-                    that you subscribe to (c) otherwise use and disclose the
-                    personal information in accordance with this Agreement (d)
-                    move the data outsideof the country of residence of such
-                    owner of the personal data, if applicable, pursuant to our
-                    Privacy policy. <br /><br />
+                    <nuxt-link
+                      to="/privacy/terms-and-policies/privacy-policy"
+                      class="read-more underline"
+                      >Privacy Policy</nuxt-link
+                    >; If personal information provided to us is not personal to
+                    you, you agree that you have either provided the data
+                    subject notice or received permission from the data subject
+                    and have the appropriate legal basis, as required by
+                    applicable law, for us to (a) use, and/or disclose the
+                    personal information in accordance with our
+                    <nuxt-link
+                      to="/privacy/terms-and-policies/privacy-policy"
+                      class="read-more underline"
+                      >Privacy Policy</nuxt-link
+                    >, (b) provide the personal information to Third Party
+                    Products that you subscribe to (c) otherwise use and
+                    disclose the personal information in accordance with this
+                    Agreement (d) move the data outsideof the country of
+                    residence of such owner of the personal data, if applicable,
+                    pursuant to our Privacy policy. <br /><br />
                     Note that where discrepancy or discrepancies exist between
                     this Agreement and the Scelloo Privacy Policy concerning the
                     collection, use, and/or disclosure of the personal
@@ -1346,6 +1339,7 @@ export default {
     background: rgb(250, 250, 250);
     margin-top: -35px;
     margin-bottom: -86px;
+    padding-top: 1rem;
   }
 }
 </style>

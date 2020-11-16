@@ -54,11 +54,7 @@
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                   >Service Level Agreement</a
                 >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >App Directory Agreement</a
-                >
+
                 <a
                   href="#"
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -70,11 +66,6 @@
                   >Slack Partner Program Terms & Condition</a
                 >
 
-                <a
-                  href="#"
-                  class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1 mt-5"
-                  >ON THIS PAGE</a
-                >
                 <a
                   href="#"
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -120,11 +111,7 @@
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                   >Report a Vulnerability</a
                 >
-                <a
-                  href="#"
-                  class="mt-5 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
-                  >SECURITY</a
-                >
+
                 <a
                   href="#"
                   class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -616,6 +603,7 @@ export default {
     background: rgb(250, 250, 250);
     margin-top: -35px;
     margin-bottom: -86px;
+    padding-top: 1rem;
   }
 }
 </style>

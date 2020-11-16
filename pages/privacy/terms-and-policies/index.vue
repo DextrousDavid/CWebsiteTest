@@ -13,7 +13,7 @@
 
       <!-- Banner Ends here -->
       <main class="container mx-auto px-6 py-10 mt-8">
-        <div class="flex flex-wrap sticky top-0">
+        <div class="flex flex-wrap">
           <div class="side-bar w-xs px-6 pb-4">
             <div class="flex-wrap bg-white">
               <a
@@ -51,11 +51,7 @@
                 class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Service Level Agreement</a
               >
-              <a
-                href="#"
-                class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                >App Directory Agreement</a
-              >
+
               <a
                 href="#"
                 class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -67,11 +63,6 @@
                 >Slack Partner Program Terms & Condition</a
               >
 
-              <a
-                href="#"
-                class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1 mt-5"
-                >ON THIS PAGE</a
-              >
               <a
                 href="#"
                 class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -117,11 +108,7 @@
                 class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
                 >Report a Vulnerability</a
               >
-              <a
-                href="#"
-                class="mt-5 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
-                >SECURITY</a
-              >
+
               <a
                 href="#"
                 class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -156,7 +143,7 @@
                     </div>
                     <div class="pb-5 pl-5 text-sm">
                       This Terms of Use Agreement (this “Agreement”) is made and
-                      entered into by and between...
+                      entered into by...
                     </div>
                     <img
                       class="w-full mb-3"
@@ -254,7 +241,7 @@
                     </div>
                     <div class="pb-5 pl-5 text-sm">
                       THIS NON-DISCLOSURE AGREEMENT (the "Agreement”) is entered
-                      into: By and ...
+                      into: By and...
                     </div>
                     <img
                       class="w-full mb-3"
