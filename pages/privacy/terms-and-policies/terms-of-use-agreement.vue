@@ -44,7 +44,7 @@
             </div>
 
             <!-- Resources Items starts here -->
-            <div class="flex-1 flex-wrap mx-2 select-none">
+            <div class="flex-1 flex-wrap select-none">
               <!-- Row One Starts here! -->
               <div class="mb-6 mx-2 cards">
                 <!-- <div class="md:flex mb-6 mx-6 cards"> -->
