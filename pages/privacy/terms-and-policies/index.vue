@@ -12,9 +12,9 @@
       </section>
 
       <!-- Banner Ends here -->
-      <main class="container mx-auto px-6 py-10 mt-8">
+      <main class="container mx-auto px-2 py-10 mt-8">
         <div class="flex flex-wrap">
-          <div class="side-bar w-xs px-6 pb-4">
+          <div class="side-bar w-xs pb-4">
             <div class="flex-wrap bg-white">
               <a
                 href="#"
@@ -138,10 +138,10 @@
               >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden cards">
-                    <div class="font-bold text-lg mb-2 pl-5 pt-5">
+                    <div class="font-bold text-lg mb-2 px-3 pt-5">
                       Terms of Use
                     </div>
-                    <div class="pb-5 pl-5 text-sm">
+                    <div class="pb-5 px-3 text-sm">
                       This Terms of Use Agreement (this “Agreement”) is made and
                       entered into by...
                     </div>
@@ -170,10 +170,10 @@
               >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden cards">
-                    <div class="font-bold text-lg mb-2 pl-5 pt-5">
+                    <div class="font-bold text-lg mb-2 px-3 pt-5">
                       Privacy Policy
                     </div>
-                    <div class="pb-5 pl-5 text-sm">
+                    <div class="pb-5 px-3 text-sm">
                       This Privacy Policy tells you how we collect personal and
                       other information about...
                     </div>
@@ -205,10 +205,10 @@
               >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden cards">
-                    <div class="font-bold text-lg mb-2 pl-5 pt-5">
+                    <div class="font-bold text-lg mb-2 px-3 pt-5">
                       Security Policy
                     </div>
-                    <div class="pb-5 pl-5 text-sm">
+                    <div class="pb-5 px-3 text-sm">
                       This security policy tells you the security measures put
                       in place by Scelloo...
                     </div>
@@ -236,10 +236,10 @@
               >
                 <div>
                   <div class="max-w-sm rounded overflow-hidden cards">
-                    <div class="font-bold text-lg mb-2 pl-5 pt-5">
+                    <div class="font-bold text-lg mb-2 px-3 pt-5">
                       Non-Disclosure Agreement
                     </div>
-                    <div class="pb-5 pl-5 text-sm">
+                    <div class="pb-5 px-3 text-sm">
                       THIS NON-DISCLOSURE AGREEMENT (the "Agreement”) is entered
                       into: By and...
                     </div>
@@ -288,7 +288,7 @@ export default {
   background-color: #fbfbfb;
 }
 .read-more {
-  color: #38b1e9;
+  color: #3598da;
 }
 * {
   color: #000;
