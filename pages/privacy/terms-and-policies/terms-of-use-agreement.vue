@@ -13,116 +13,28 @@
       <!-- Banner Ends here -->
       <div class="grey-container">
         <main class="container mx-auto px-6 py-10 mt-8">
-          <div class="flex flex-wrap -mx-6">
+          <div class="flex flex-wrap">
             <div class="side-bar w-xs px-6">
               <div
                 class="flex-wrap bg-white"
                 style="background: rgb(250, 250, 250)"
               >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
-                  >ON THIS PAGE</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Customer Terms of Service</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >User Terms of Service</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Customer-Specific Suppl.</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >API Terms of Service</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >App Directory Agreement</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Service Level Agreement</a
-                >
+                <nuxt-link to="/privacy/terms-and-policies/privacy-policy">
+                  <a
+                    class="mt-2 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
+                    style="color: #387ce9; font-size: 15px"
+                    >PRIVACY POLICY</a
+                  >
+                </nuxt-link>
 
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Data Processing Agenda</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Slack Partner Program Terms & Condition</a
-                >
+                <nuxt-link to="/privacy/terms-and-policies/security-policy">
+                  <a
+                    class="mt-2 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
+                    style="color: #387ce9; font-size: 15px"
+                    >SECURITY POLICY</a
+                  >
+                </nuxt-link>
 
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Privacy Shield Notice</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Acceptable Use Policy</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Slack Subprocessors</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Slack Affiliates</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >DMCA Policy</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Multi-year Accessibility Plan</a
-                >
-                <a
-                  href="#"
-                  class="mt-5 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
-                  >SECURITY</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Security Practices</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Report a Vulnerability</a
-                >
-
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                >
-                  Cloudenly Certified Participant</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline text-grey-dark px-4 py-1 text-sm"
-                  >Agreement</a
-                >
                 <!-- <a
               href="#"
               class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
@@ -153,8 +65,10 @@
                     the terms and conditions that govern the use of Cloudenly,
                     Scelloo’s flagship, and proprietary Unified business
                     software application. The use can be directly, through its
-                    website (https://cloudenly.com) and associated domains
-                    thereof, the “Site” (collectively, the “Platform”).
+                    website (<nuxt-link to="/" class="read-more hover:underline"
+                      >https://cloudenly.com</nuxt-link
+                    >) and associated domains thereof, the “Site” (collectively,
+                    the “Platform”).
 
                     <br /><br />
 
@@ -199,17 +113,13 @@
                     subject notice or received permission from the data subject
                     and have the appropriate legal basis, as required by
                     applicable law, for us to (a) use, and/or disclose the
-                    personal information in accordance with our
-                    <nuxt-link
-                      to="/privacy/terms-and-policies/privacy-policy"
-                      class="read-more underline"
-                      >Privacy Policy</nuxt-link
-                    >, (b) provide the personal information to Third Party
-                    Products that you subscribe to (c) otherwise use and
-                    disclose the personal information in accordance with this
-                    Agreement (d) move the data outsideof the country of
-                    residence of such owner of the personal data, if applicable,
-                    pursuant to our Privacy policy. <br /><br />
+                    personal information in accordance with our Privacy Policy,
+                    (b) provide the personal information to Third Party Products
+                    that you subscribe to (c) otherwise use and disclose the
+                    personal information in accordance with this Agreement (d)
+                    move the data outsideof the country of residence of such
+                    owner of the personal data, if applicable, pursuant to our
+                    Privacy policy. <br /><br />
                     Note that where discrepancy or discrepancies exist between
                     this Agreement and the Scelloo Privacy Policy concerning the
                     collection, use, and/or disclosure of the personal
@@ -273,8 +183,10 @@
                     agrees in writing to receive such messages. If the User
                     would like to opt-out of receiving SMS and MMS messages, the
                     User should contact
-                    <span class="read-more underline"
-                      >support@scelloo.com.</span
+                    <nuxt-link to="/support">
+                      <span class="read-more hover:underline"
+                        >https://cloudenly.com/support</span
+                      ></nuxt-link
                     >
                   </p>
 
@@ -662,8 +574,12 @@
                     For a failed transaction (i.e. user account has been debited
                     for a transaction, but the value was not received), please
                     contact us at
-                    <span class="read-more">payments@scelloo.com</span> for
-                    resolution. We shall liaise with the applicable payment
+                    <nuxt-link to="/support">
+                      <span class="read-more hover:underline"
+                        >https://cloudenly.com/support</span
+                      ></nuxt-link
+                    >
+                    for resolution. We shall liaise with the applicable payment
                     solution service provider on a best efforts basis to resolve
                     and reverse the debit transaction. Some of the information
                     we shall need you to provide includes the user’s mobile
@@ -704,9 +620,11 @@
                     <li class="list-disc">
                       You represent and warrant it is your responsibility to
                       immediately log as a ticket at
-                      <span class="underline read-more">
-                        https://support.scelloo.com
-                      </span>
+                      <nuxt-link to="/support">
+                        <span class="hover:underline read-more">
+                          https://cloudenly.com/support
+                        </span>
+                      </nuxt-link>
                       in the event your device has been stolen or there is an
                       unauthorized access to your Cloudenly account.
                     </li>
@@ -717,8 +635,10 @@
                       dispute any, you will be required and such transaction
                       will be investigated by our Fraud Team once we receive a
                       logged ticket at
-                      <span class="underline read-more"
-                        >https://support.scelloo.com</span
+                      <nuxt-link to="/support">
+                        <span class="hover:underline read-more"
+                          >https://cloudenly.com/support</span
+                        ></nuxt-link
                       >
                     </li>
                   </ol>
@@ -1209,8 +1129,10 @@
                   <p class="my-3">
                     If the User has any questions about this Agreement, the
                     Platform, or the Services, User may contact through email:
-                    <span class="read-more underline">
-                      support@scelloo.com</span
+                    <nuxt-link to="/support">
+                      <span class="read-more hover:underline">
+                        https://cloudenly.com/support</span
+                      ></nuxt-link
                     >
                     or call: +234 906 007 1225; +234 906 002 0838. Scelloo Ltd
                     has its office address at Plot 16, New Creation Street, Off
@@ -1224,9 +1146,11 @@
                     be used as a means of communicating information, notices,
                     and documents to you. Any changes to such information should
                     be logged as a ticket on
-                    <span class="read-more underline"
-                      >https://support.scelloo.com</span
-                    >.
+                    <nuxt-link to="/support"
+                      ><span class="read-more hover:underline"
+                        >https://cloudenly.com/support</span
+                      ></nuxt-link
+                    >
                   </p>
                 </div>
               </div>

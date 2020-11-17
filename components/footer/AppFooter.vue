@@ -99,9 +99,7 @@
             <div
               class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/6 px-2"
             >
-              <nuxt-link to="/support" class="menu-head hover:underline"
-                >Support</nuxt-link
-              >
+              <div to="/support" class="menu-head">Support</div>
               <div class="list-element">support@cloudenly.com</div>
               <a href="tel:+2348159530070">
                 <div class="list-element hover:underline">+234 8159530070</div>
@@ -109,7 +107,11 @@
               <a href="tel:+234556655667">
                 <div class="list-element hover:underline">+234 5566 55667</div>
               </a>
-              <div class="list-element">Get Help</div>
+              <nuxt-link to="/support"
+                ><div class="list-element hover:underline">
+                  Get Help
+                </div></nuxt-link
+              >
             </div>
 
             <!-- <hr style="margin-top: 17px; border-top-color: red" /> -->

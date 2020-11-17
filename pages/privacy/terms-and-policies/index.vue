@@ -12,11 +12,37 @@
       </section>
 
       <!-- Banner Ends here -->
-      <main class="container mx-auto px-2 py-10 mt-8">
+      <main class="container mx-auto py-10 mt-8">
         <div class="flex flex-wrap">
-          <div class="side-bar w-xs pb-4">
+          <div class="w-xs pb-4 side-bar">
             <div class="flex-wrap bg-white">
-              <a
+              <nuxt-link
+                to="/privacy/terms-and-policies/terms-of-use-agreement"
+              >
+                <a
+                  class="mt-2 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
+                  style="color: #387ce9; font-size: 15px"
+                  >TERMS OF USE</a
+                >
+              </nuxt-link>
+              <nuxt-link to="/privacy/terms-and-policies/privacy-policy">
+                <a
+                  class="mt-2 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
+                  style="color: #387ce9; font-size: 15px"
+                  >PRIVACY POLICY</a
+                >
+              </nuxt-link>
+
+              <nuxt-link to="/privacy/terms-and-policies/security-policy">
+                <a
+                  class="mt-2 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
+                  style="color: #387ce9; font-size: 15px"
+                  >SECURITY POLICY</a
+                >
+              </nuxt-link>
+            </div>
+          </div>
+          <!-- <a
                 href="#"
                 class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
                 >ON THIS PAGE</a
@@ -119,14 +145,7 @@
                 href="#"
                 class="block no-underline text-grey-dark px-4 py-1 text-sm"
                 >Agreement</a
-              >
-              <!-- <a
-              href="#"
-              class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-              >Slack Partner Program Terms and Conditions</a
-            > -->
-            </div>
-          </div>
+              > -->
 
           <!-- Resources Items starts here -->
           <div class="flex-1 flex-wrap user-terms-of-services-cards mx-5">
@@ -234,7 +253,7 @@
               <div
                 class="flex px-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto"
               >
-                <div>
+                <!-- <div>
                   <div class="max-w-sm rounded overflow-hidden cards">
                     <div class="font-bold text-lg mb-2 px-3 pt-5">
                       Non-Disclosure Agreement
@@ -260,7 +279,7 @@
                       </div>
                     </nuxt-link>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -330,6 +349,9 @@ export default {
   /* .your-subscription-code {
         width: 10%;
     } */
+  .side-bar {
+    display: none;
+  }
   .add-more-attachments-hr {
     display: none;
   }
@@ -349,4 +371,17 @@ export default {
     );
   }
 }
+@media (min-width: 728px) {
+  .side-bar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+/* @media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+}
+@media (min-width: 1200px) {
+} */
 </style>

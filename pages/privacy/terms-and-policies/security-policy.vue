@@ -13,116 +13,29 @@
       <!-- Banner Ends here -->
       <div class="grey-container">
         <main class="container mx-auto px-6 py-10 mt-8">
-          <div class="flex flex-wrap -mx-6 sticky top-0">
+          <div class="flex flex-wrap sticky top-0">
             <div class="side-bar w-xs px-6">
               <div
                 class="flex-wrap bg-white"
                 style="background: rgb(250, 250, 250)"
               >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
-                  >ON THIS PAGE</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Customer Terms of Service</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >User Terms of Service</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Customer-Specific Suppl.</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >API Terms of Service</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >App Directory Agreement</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Service Level Agreement</a
-                >
+                <nuxt-link to="/privacy/terms-and-policies/privacy-policy">
+                  <a
+                    class="mt-2 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
+                    style="color: #387ce9; font-size: 15px"
+                    >PRIVACY POLICY</a
+                  >
+                </nuxt-link>
 
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Data Processing Agenda</a
+                <nuxt-link
+                  to="/privacy/terms-and-policies/terms-of-use-agreement"
                 >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Slack Partner Program Terms & Condition</a
-                >
-
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Privacy Shield Notice</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Acceptable Use Policy</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Slack Subprocessors</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Slack Affiliates</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >DMCA Policy</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Multi-year Accessibility Plan</a
-                >
-                <a
-                  href="#"
-                  class="mt-5 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
-                  >SECURITY</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Security Practices</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                  >Report a Vulnerability</a
-                >
-
-                <a
-                  href="#"
-                  class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
-                >
-                  Cloudenly Certified Participant</a
-                >
-                <a
-                  href="#"
-                  class="block no-underline text-grey-dark px-4 py-1 text-sm"
-                  >Agreement</a
-                >
+                  <a
+                    class="mt-2 block no-underline hover:underline font-semibold text-grey-dark px-4 py-1"
+                    style="color: #387ce9; font-size: 15px"
+                    >TERMS OF USE</a
+                  >
+                </nuxt-link>
                 <!-- <a
               href="#"
               class="block no-underline hover:underline text-grey-dark px-4 py-1 text-sm"
