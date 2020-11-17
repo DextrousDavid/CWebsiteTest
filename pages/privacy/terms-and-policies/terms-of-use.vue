@@ -14,7 +14,7 @@
       <div class="grey-container">
         <main class="container mx-auto px-6 py-10 mt-8">
           <div class="flex flex-wrap -mx-6">
-            <div class="flex side-bar w-xs px-6">
+            <div class="side-bar w-xs px-6">
               <div
                 class="flex-wrap bg-white"
                 style="background: rgb(250, 250, 250)"
@@ -132,9 +132,9 @@
             </div>
 
             <!-- Resources Items starts here -->
-            <div class="flex-1 flex-wrap mx-3 select-none">
+            <div class="flex-1 flex-wrap mx-5 select-none">
               <!-- Row One Starts here! -->
-              <div class="mb-6 mx-3">
+              <div class="mb-6 mx-6 cards">
                 <!-- <div class="md:flex mb-6 mx-6 cards"> -->
                 <div>
                   <h1 class="terms-of-use-h1 mb-3 font-semibold">Cloudenly</h1>
