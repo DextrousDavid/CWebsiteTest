@@ -151,7 +151,7 @@
                       alt="security card"
                     />
                     <nuxt-link
-                      to="/privacy/terms-and-policies/terms-of-use"
+                      to="/privacy/terms-and-policies/terms-of-use-agreement"
                       class=""
                     >
                       <div class="text-blue-500 read-more float-left pl-5 pb-4">

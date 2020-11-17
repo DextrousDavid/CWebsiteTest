@@ -6,7 +6,7 @@
       <!-- <Banner /> -->
       <section class="banner mb-8">
         <div class="content-center mr-3 ml-3">
-          <h1 class="banner-h1">Terms of Use</h1>
+          <h1 class="banner-h1">Terms of Use Agreement</h1>
           <div style="max-width: 550px; margin: auto"></div>
         </div>
       </section>
@@ -132,9 +132,9 @@
             </div>
 
             <!-- Resources Items starts here -->
-            <div class="flex-1 flex-wrap mx-5 select-none">
+            <div class="flex-1 flex-wrap mx-2 select-none">
               <!-- Row One Starts here! -->
-              <div class="mb-6 mx-6 cards">
+              <div class="mb-6 mx-2 cards">
                 <!-- <div class="md:flex mb-6 mx-6 cards"> -->
                 <div>
                   <h1 class="terms-of-use-h1 mb-3 font-semibold">Cloudenly</h1>

@@ -132,9 +132,9 @@
             </div>
 
             <!-- Resources Items starts here -->
-            <div class="flex-1 select-none">
+            <div class="flex-1 select-none mx-2">
               <!-- Row One Starts here! -->
-              <div class="mb-6 mx-3">
+              <div class="mb-6 mx-2">
                 <!-- <div class="md:flex mb-6 mx-6 cards"> -->
                 <div>
                   <h1 class="terms-of-use-h1 mb-3 font-semibold">Cloudenly</h1>
