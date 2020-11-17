@@ -132,7 +132,7 @@
             </div>
 
             <!-- Resources Items starts here -->
-            <div class="flex-1 select-none">
+            <div class="flex-1 flex-wrap mx-3 select-none">
               <!-- Row One Starts here! -->
               <div class="mb-6 mx-3">
                 <!-- <div class="md:flex mb-6 mx-6 cards"> -->
