@@ -71,7 +71,29 @@
                 </tr>
 
                 <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5 mr-1">CC to (optional)</td>
+                  <td class="md:w-1/4 lg:py-5 mr-1">Enrollment Date</td>
+                  <td class="md:w-3/4 lg:py-5">
+                    <input
+                      id="telephone"
+                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+                      type="date"
+                    />
+                  </td>
+                </tr>
+
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 mr-1">Last Contact Date</td>
+                  <td class="md:w-3/4 lg:py-5">
+                    <input
+                      id="telephone"
+                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+                      type="date"
+                    />
+                  </td>
+                </tr>
+
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 mr-1">Copy to</td>
                   <td class="md:w-3/4 lg:py-5">
                     <input
                       id="telephone"
@@ -84,7 +106,49 @@
             </div>
           </div>
 
+          <!-- YOUR DESCRIPTION ENDS HERE -->
+
           <div class="w-full mb-4 text-left px-2 sm:mt-3">
+            <div class="bottom-navigation-div">
+              <h5 class="your-description font-semibold">
+                YOUR ACCOUNT INFORMATION
+              </h5>
+              <hr
+                class="w-full"
+                style="
+                  border: 1px solid #808080;
+                  margin-top: 5px;
+                  margin-bottom: 10px;
+                "
+              />
+            </div>
+            <div>
+              <table class="w-full">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 mr-1">Your Account Number</td>
+                  <td class="md:w-3/4 lg:py-5">
+                    <input
+                      id="number"
+                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+                      type="text"
+                    />
+                  </td>
+                </tr>
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 mr-1">Your Product Version</td>
+                  <td class="md:w-3/4 lg:py-5">
+                    <input
+                      id="telephone"
+                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+                      type="text"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- <div class="w-full mb-4 text-left px-2 sm:mt-3">
             <div class="bottom-navigation-div">
               <h5 class="your-description font-semibold">
                 YOUR CLOUDENLY INSTALLATION INFORMATION
@@ -158,7 +222,7 @@
                 </tr>
               </table>
             </div>
-          </div>
+          </div> -->
 
           <div class="w-full mb-4 text-left px-2 sm:mt-3">
             <div class="bottom-navigation-div">
@@ -171,6 +235,17 @@
             <div>
               <table class="w-full">
                 <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Your Account Number</td>
+                  <td class="md:w-3/4 lg:py-5">
+                    <input
+                      id="telephone"
+                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+                      type="text"
+                    />
+                  </td>
+                </tr>
+                <!-- Ticket Type Starts here -->
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
                   <td class="md:w-1/4 lg:py-5 flex">Ticket Type</td>
                   <td class="md:w-3/4 lg:py-5 edition-and-hosting">
                     <div class="block mb-3">
@@ -181,7 +256,7 @@
                         name="radio"
                         value="1"
                       /><span style="margin-left: 6px"
-                        >related to my subscription, bill or payment
+                        >Technical/Commercial/Enquiry
                       </span>
                     </div>
                     <div class="block mb-3">
@@ -192,19 +267,7 @@
                         name="radio"
                         value="1"
                       /><span style="margin-left: 6px"
-                        >about the configuration or use of Cloudenly
-                      </span>
-                    </div>
-
-                    <div class="block mb-3">
-                      <input
-                        id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
-                        type="radio"
-                        name="radio"
-                        value="1"
-                      /><span style="margin-left: 6px"
-                        >a bug/incorrect behavior (without a traceback error)
+                        >Subscription/Billing/Payment
                       </span>
                     </div>
 
@@ -216,8 +279,8 @@
                         name="radio"
                         value="1"
                       /><span style="margin-left: 6px"
-                        >a bug with a traceback error</span
-                      >
+                        >Configuration & Setup
+                      </span>
                     </div>
 
                     <div class="block mb-3">
@@ -228,8 +291,19 @@
                         name="radio"
                         value="1"
                       /><span style="margin-left: 6px"
-                        >related to my upgrade to a new version</span
-                      >
+                        >Bug/incorrect behavior (without a trace back error
+                        code)
+                      </span>
+                    </div>
+
+                    <div class="block mb-3">
+                      <input
+                        id="name"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                      /><span style="margin-left: 6px">Traceable Bugs </span>
                     </div>
 
                     <div class="block mb-3">
@@ -240,14 +314,93 @@
                         name="radio"
                         value="1"
                       /><span style="margin-left: 6px"
-                        >something else / not sure
+                        >Urgent. High. Medium. Low
+                      </span>
+                    </div>
+
+                    <div class="block mb-3">
+                      <input
+                        id="name"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                      /><span style="margin-left: 6px"
+                        >Upgrade related issue
+                      </span>
+                    </div>
+
+                    <div class="block mb-3">
+                      <input
+                        id="name"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                      /><span style="margin-left: 6px"
+                        >Technical, can't Say
                       </span>
                     </div>
                   </td>
                 </tr>
+                <!-- Ticket Type Ends here -->
+
+                <!-- Flag Starts here -->
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5">Flag</td>
+                  <td class="md:w-3/4 lg:py-5 edition-and-hosting flex">
+                    <div class="mb-3">
+                      <input
+                        id="name"
+                        class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                      /><span style="margin-left: 6px; margin-right: 10px"
+                        >Urgent
+                      </span>
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        id="name"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                      /><span style="margin-left: 6px; margin-right: 10px"
+                        >High
+                      </span>
+                    </div>
+
+                    <div class="">
+                      <input
+                        id="name"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                      /><span style="margin-left: 6px; margin-right: 10px"
+                        >Medium
+                      </span>
+                    </div>
+
+                    <div class="">
+                      <input
+                        id="name"
+                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                      /><span style="margin-left: 6px; margin-right: 10px"
+                        >Low
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Flag Starts here -->
 
                 <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5">Subject</td>
+                  <td class="md:w-1/4 lg:py-5 mr-1">Subject</td>
                   <td class="md:w-3/4 lg:py-5">
                     <input
                       id="text"
@@ -258,7 +411,7 @@
                 </tr>
 
                 <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5 flex">Detailed Description</td>
+                  <td class="md:w-1/4 lg:py-5 flex">Description</td>
 
                   <td class="md:w-3/4 lg:py-5">
                     <textarea
@@ -269,7 +422,7 @@
                   </td>
                 </tr>
 
-                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                <!-- <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
                   <td class="md:w-1/4 lg:py-5">Attachments</td>
                   <td class="md:w-3/4 lg:py-5">
                     <input
@@ -289,8 +442,16 @@
                       style="border: 1px solid #808080; margin-top: 15px"
                     />
                   </td>
-                </tr>
+                </tr> -->
               </table>
+              <hr
+                class="w-full"
+                style="
+                  border: 1px solid #808080;
+                  margin-top: 1rem;
+                  margin-bottom: 1rem;
+                "
+              />
               <div class="flex justify-end md:mt-3">
                 <button
                   type="submit"
