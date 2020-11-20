@@ -19,18 +19,608 @@
           <div class="mt-16">
             <h3 class="mb-4">Choose the number of users</h3>
             <div>
-              <v-btn outlined medium class="d-inline">
-                10
-                <v-icon right>$expand</v-icon>
-              </v-btn>
-              <v-btn class="d-inline text-capitalize" color="primary"
-                >Users</v-btn
-              ><span class="ml-3">N80/user/ Month</span>
+              <div class="d-flex">
+                <v-col cols="3" sm="2" md="1">
+                  <v-text-field
+                    id="input-20"
+                    v-model="users"
+                    min="1"
+                    type="number"
+                    required="required"
+                    outlined
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="3" sm="2" md="1">
+                  <v-btn
+                    class="text-capitalize -ml-8"
+                    color="primary"
+                    style="
+                      cursor: not-allowed;
+                      pointer-events: none;
+                      padding: 28px 15px;
+                    "
+                    >Users</v-btn
+                  >
+                </v-col>
+                <v-col cols="5" sm="5" md="5">
+                  <span class="ml-4">N80/user/ Month</span>
+                </v-col>
+              </div>
             </div>
           </div>
+
           <!-- Choose your apps starts here -->
           <div>
-            <ChooseYourApps />
+            <div>
+              <v-row>
+                <v-col class="lg:mt-20" cols="12" sm="12" md="8" lg="8">
+                  <div class="mt-5">
+                    <h3 class="mt-4 mb-2">Choose your apps</h3>
+                  </div>
+                  <v-row>
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img src="~assets/apps/crm.png" alt="crm icon" />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            CRM
+                            <v-list-item-subtitle style="margin-top: -34px"
+                              >640/ Month</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >CRM. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <!-- hover -->
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/purchase.png"
+                              alt="purchase icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            Purchase
+                            <v-list-item-subtitle style="margin-top: -34px"
+                              >640/ Month</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Purchase. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/sales.png"
+                              alt="sales icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                            >Sales
+
+                            <v-list-item-subtitle style="margin-top: -34px"
+                              >640/ Month</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Sales. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/inventory.png"
+                              alt="inventory icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            Inventory
+                            <v-list-item-subtitle style="margin-top: -34px"
+                              >640/ Month</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Inventory. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/payments.png"
+                              alt="payments icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            Payments
+                            <v-list-item-subtitle style="margin-top: -34px"
+                              >640/ Month</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Payments. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/accounts.png"
+                              alt="accounts icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            Accounting
+                            <v-list-item-subtitle style="margin-top: -34px"
+                              >640/ Month</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Accounts. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/expense.png"
+                              alt="expense icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            Expense
+                            <v-list-item-subtitle
+                              style="
+                                margin-top: -26px;
+                                font-style: italic;
+                                font-family: system-ui;
+                                font-weight: 600;
+                              "
+                              >(Coming Soon...)</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Expense. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/fixed-assets.png"
+                              alt="fixed assets icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            Fixed Assets
+                            <v-list-item-subtitle
+                              style="
+                                margin-top: -26px;
+                                font-style: italic;
+                                font-family: system-ui;
+                                font-weight: 600;
+                              "
+                              >(Coming Soon...)</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Fixed Assets. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <v-card
+                        max-width="auto"
+                        max-height="80"
+                        outlined
+                        hover
+                        color="grey lighten-4"
+                      >
+                        <v-list-item three-line>
+                          <v-list-item-avatar tile size="40">
+                            <img
+                              src="~assets/apps/budget-planning.png"
+                              alt="budget planning icon"
+                            />
+                          </v-list-item-avatar>
+
+                          <v-list-item-content
+                            style="margin-top: -20px"
+                            class="text-capitalize"
+                          >
+                            Budget
+                            <v-list-item-subtitle
+                              style="
+                                margin-top: -26px;
+                                font-style: italic;
+                                font-family: system-ui;
+                                font-weight: 600;
+                              "
+                              >(Coming Soon...)</v-list-item-subtitle
+                            >
+                          </v-list-item-content>
+                          <v-tooltip class="d-flex align-end" top>
+                            <template v-slot:activator="{ on, attrs }">
+                              <v-btn icon v-bind="attrs" v-on="on">
+                                <v-icon small color="grey lighten-1">
+                                  mdi-information
+                                </v-icon>
+                              </v-btn>
+                            </template>
+                            <span class="tooltip-notification"
+                              >Budget Planning. Learn More...</span
+                            >
+                          </v-tooltip>
+                        </v-list-item>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-col>
+                <!-- choose your apps ends here -->
+                <!-- Second Col -->
+
+                <!-- tab table begins here -->
+                <v-col cols="12" sm="12" md="4" lg="4">
+                  <v-app class="tab-table">
+                    <v-card elevation="3">
+                      <template>
+                        <v-tabs centered light>
+                          <label>
+                            <v-tab style="color: #1976d2">
+                              <input
+                                type="radio"
+                                class="form-radio text-indigo-600"
+                                name="radio"
+                                value="1"
+                                checked
+                              /><span style="margin-left: 4px">Annually</span>
+                            </v-tab>
+                          </label>
+                          <label>
+                            <v-tab style="color: #1976d2">
+                              <input
+                                style="color: #1976d2"
+                                type="radio"
+                                class="form-radio radio-bg"
+                                name="radio"
+                                value="1"
+                              /><span style="margin-left: 4px"
+                                >Monthly</span
+                              ></v-tab
+                            >
+                          </label>
+                          <v-tab-item>
+                            <v-card flat>
+                              <v-card-text
+                                class="grey lighten-3"
+                                style="color: #000"
+                              >
+                                {{ users }} Users<span class="float-right"
+                                  >N80</span
+                                >
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-5"
+                                style="color: #000"
+                              >
+                                User Discount<span class="float-right"
+                                  >_ _ _</span
+                                >
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-3"
+                                style="color: #000"
+                              >
+                                9 Apps<span class="float-right">4800</span>
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-5"
+                                style="color: #000"
+                              >
+                                App Discount<span class="float-right"
+                                  >_ _ _</span
+                                >
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-3"
+                                style="color: #000"
+                              >
+                                Total / Month<span class="float-right"
+                                  >N4,632</span
+                                >
+                              </v-card-text>
+
+                              <div class="grey lighten-5">
+                                <v-card-text
+                                  ><p
+                                    class="font-weight-thin"
+                                    style="color: #000"
+                                  >
+                                    Billed Annually<span class="float-right"
+                                      >N55,632</span
+                                    >
+                                  </p>
+                                </v-card-text>
+                                <div class="my-2 d-flex justify-center">
+                                  <v-btn class="px-9" color="warning" dark>
+                                    Try for free
+                                  </v-btn>
+                                </div>
+                                <div class="my-2 d-flex justify-center">
+                                  <v-btn class="px-14" color="success" dark>
+                                    Buy Now
+                                  </v-btn>
+                                </div>
+                              </div>
+                            </v-card>
+                          </v-tab-item>
+                          <v-tab-item>
+                            <v-card flat>
+                              <v-card-text
+                                class="grey lighten-3"
+                                style="color: #000"
+                              >
+                                {{ users }} Users<span class="float-right"
+                                  >N80</span
+                                >
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-5"
+                                style="color: #000"
+                              >
+                                User Discount<span class="float-right"
+                                  >_ _ _</span
+                                >
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-3"
+                                style="color: #000"
+                              >
+                                9 Apps<span class="float-right">4800</span>
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-5"
+                                style="color: #000"
+                              >
+                                App Discount<span class="float-right"
+                                  >_ _ _</span
+                                >
+                              </v-card-text>
+
+                              <v-card-text
+                                class="grey lighten-3"
+                                style="color: #000"
+                              >
+                                Total / Month<span class="float-right"
+                                  >N4,632</span
+                                >
+                              </v-card-text>
+
+                              <div class="grey lighten-5">
+                                <v-card-text
+                                  ><p
+                                    class="font-weight-thin"
+                                    style="color: #000"
+                                  >
+                                    Billed Monthly<span class="float-right"
+                                      >N55,632</span
+                                    >
+                                  </p>
+                                </v-card-text>
+                                <div class="my-2 d-flex justify-center">
+                                  <v-btn class="px-9" color="warning" dark>
+                                    Try for free
+                                  </v-btn>
+                                </div>
+                                <div class="my-2 d-flex justify-center">
+                                  <v-btn class="px-14" color="success" dark>
+                                    Buy Now
+                                  </v-btn>
+                                </div>
+                              </div>
+                            </v-card>
+                          </v-tab-item>
+                        </v-tabs>
+                      </template>
+                    </v-card>
+                  </v-app>
+                  <!-- tab table ends here -->
+                </v-col>
+              </v-row>
+            </div>
           </div>
         </v-container>
       </v-app>
@@ -41,18 +631,22 @@
 <script>
 import AppHeader from './../components/header/AppHeader'
 import PricingTabs from './../components/contents/PricingTabs'
-import ChooseYourApps from './../components/contents/ChooseYourApps'
 export default {
   components: {
     AppHeader,
     PricingTabs,
-    ChooseYourApps,
   },
-  data: () => ({
-    currentItem: 'tab-Web',
-    items: ['Web', 'Shopping', 'Videos', 'Images'],
-    more: ['News', 'Maps', 'Books', 'Flights', 'Apps'],
-  }),
+  data() {
+    return {
+      show: false,
+      users: 1,
+    }
+  },
+  // data: () => ({
+  //   currentItem: 'tab-Web',
+  //   items: ['Web', 'Shopping', 'Videos', 'Images'],
+  //   more: ['News', 'Maps', 'Books', 'Flights', 'Apps'],
+  // }),
 
   head() {
     return {
@@ -70,6 +664,18 @@ export default {
 }
 </script>
 <style scoped>
+/* Choose the number of users css */
+.v-btn:not(.v-btn--round).v-size--default {
+  height: 42px;
+  min-width: 64px;
+  padding: 0 16px;
+}
+
+.tooltip-notification {
+  font-size: 12px;
+  color: #fff;
+}
+
 .container-alignment {
   margin-left: 2px;
   margin-right: 2px;
@@ -84,10 +690,6 @@ h1 {
   font-size: 22px;
   font-weight: 500;
   margin-top: -50px;
-}
-
-p {
-  margin-top: 70px;
 }
 
 .banner-h1 {
@@ -134,6 +736,40 @@ p {
     );
   }
 }
+@media (min-width: 960px) {
+  .tab-table {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tab-table {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tab-table {
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tab-table {
+    margin-top: -4rem;
+  }
+}
+.v-tabs:not(.v-tabs--vertical) .v-tab {
+  white-space: normal;
+  margin-top: -6px;
+  padding: 20px 15px;
+}
+/* @media (min-width: 1264px) {
+  .tab-table {
+    margin-top: -1rem;
+  }
+} */
+
 /* .v-application--wrap {
   min-height: 1px !important;
 } */

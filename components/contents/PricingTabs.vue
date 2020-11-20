@@ -15,9 +15,21 @@
 
         <v-tab>Product</v-tab>
         <!-- <v-tab><img src="~assets/tabIcons/lite.png" /> Lite</v-tab> -->
-        <v-tab><img src="~assets/tabIcons/optima.png" />Optima</v-tab>
-        <v-tab><img src="~assets/tabIcons/humanaR.png" />HumanaR</v-tab>
-        <v-tab><img src="~assets/tabIcons/dome.png" />Dome</v-tab>
+        <v-tab
+          ><img src="~assets/tabIcons/optima.png" /><span style="color: #000"
+            >Optima</span
+          ></v-tab
+        >
+        <v-tab
+          ><img src="~assets/tabIcons/humanaR.png" /><span style="color: #000"
+            >HumanaR</span
+          ></v-tab
+        >
+        <v-tab
+          ><img src="~assets/tabIcons/dome.png" /><span style="color: #000"
+            >Dome</span
+          ></v-tab
+        >
         <!-- <v-tab><img src="~assets/tabIcons/ally.png" />Ally</v-tab>
         <v-tab><img src="~assets/tabIcons/quantum.png" />Quantum</v-tab> -->
         <v-tab style="background-color: #fff; color: #000">
