@@ -66,6 +66,7 @@
                         hover
                         color="grey lighten-4"
                       >
+                        <!-- @click="append('640')" -->
                         <v-list-item three-line>
                           <v-list-item-avatar tile size="40">
                             <img src="~assets/apps/crm.png" alt="crm icon" />
@@ -100,10 +101,12 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
+                        style="border: 2px solid red"
                       >
+                        <!-- @click="append('640')" -->
                         <!-- hover -->
                         <v-list-item three-line>
                           <v-list-item-avatar tile size="40">
@@ -482,7 +485,8 @@
                                 style="color: #000"
                               >
                                 {{ users }} Users<span class="float-right"
-                                  >N80</span
+                                  ><span style="margin-right: 2px">₦</span
+                                  >{{ appValue }}</span
                                 >
                               </v-card-text>
 
@@ -499,7 +503,9 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                9 Apps<span class="float-right">4800</span>
+                                9 Apps<span class="float-right">{{
+                                  eightyTimesUser() || '4800'
+                                }}</span>
                               </v-card-text>
 
                               <v-card-text
@@ -516,7 +522,8 @@
                                 style="color: #000"
                               >
                                 Total / Month<span class="float-right"
-                                  >N4,632</span
+                                  ><span style="margin-right: 2px">₦</span
+                                  >4,632</span
                                 >
                               </v-card-text>
 
@@ -527,7 +534,8 @@
                                     style="color: #000"
                                   >
                                     Billed Annually<span class="float-right"
-                                      >N55,632</span
+                                      ><span style="margin-right: 2px">₦</span
+                                      >55,632</span
                                     >
                                   </p>
                                 </v-card-text>
@@ -551,7 +559,8 @@
                                 style="color: #000"
                               >
                                 {{ users }} Users<span class="float-right"
-                                  >N80</span
+                                  ><span style="margin-right: 2px">₦</span
+                                  >{{ appValue }}</span
                                 >
                               </v-card-text>
 
@@ -568,7 +577,9 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                9 Apps<span class="float-right">4800</span>
+                                9 Apps<span class="float-right">{{
+                                  eightyTimesUser() || '4800'
+                                }}</span>
                               </v-card-text>
 
                               <v-card-text
@@ -585,7 +596,8 @@
                                 style="color: #000"
                               >
                                 Total / Month<span class="float-right"
-                                  >N4,632</span
+                                  ><span style="margin-right: 2px">₦</span
+                                  >4,632</span
                                 >
                               </v-card-text>
 
@@ -596,7 +608,8 @@
                                     style="color: #000"
                                   >
                                     Billed Monthly<span class="float-right"
-                                      >N55,632</span
+                                      ><span style="margin-right: 2px">₦</span
+                                      >55,632</span
                                     >
                                   </p>
                                 </v-card-text>
@@ -640,13 +653,17 @@ export default {
     return {
       show: false,
       users: 1,
+      appValue: '',
     }
   },
-  // data: () => ({
-  //   currentItem: 'tab-Web',
-  //   items: ['Web', 'Shopping', 'Videos', 'Images'],
-  //   more: ['News', 'Maps', 'Books', 'Flights', 'Apps'],
-  // }),
+  methods: {
+    // append(number) {
+    //   this.appValue = `${this.appValue}${number}`
+    // }
+    eightyTimesUser() {
+      this.appValue = this.users * 80
+    },
+  },
 
   head() {
     return {
