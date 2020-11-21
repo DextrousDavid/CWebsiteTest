@@ -78,7 +78,7 @@
                           >
                             CRM
                             <v-list-item-subtitle style="margin-top: -34px"
-                              >640/ Month</v-list-item-subtitle
+                              >2799 / Month</v-list-item-subtitle
                             >
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
@@ -90,7 +90,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >CRM. Learn More...</span
+                              >CRM. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -122,7 +122,7 @@
                           >
                             Purchase
                             <v-list-item-subtitle style="margin-top: -34px"
-                              >640/ Month</v-list-item-subtitle
+                              >2159 / Month</v-list-item-subtitle
                             >
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
@@ -134,7 +134,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Purchase. Learn More...</span
+                              >Purchase. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -163,7 +163,7 @@
                             >Sales
 
                             <v-list-item-subtitle style="margin-top: -34px"
-                              >640/ Month</v-list-item-subtitle
+                              >2159 / Month</v-list-item-subtitle
                             >
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
@@ -175,7 +175,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Sales. Learn More...</span
+                              >Sales. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -204,7 +204,7 @@
                           >
                             Inventory
                             <v-list-item-subtitle style="margin-top: -34px"
-                              >640/ Month</v-list-item-subtitle
+                              >4399 / Month</v-list-item-subtitle
                             >
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
@@ -216,7 +216,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Inventory. Learn More...</span
+                              >Inventory. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -244,7 +244,7 @@
                           >
                             Payments
                             <v-list-item-subtitle style="margin-top: -34px"
-                              >640/ Month</v-list-item-subtitle
+                              >Free</v-list-item-subtitle
                             >
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
@@ -256,7 +256,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Payments. Learn More...</span
+                              >Payments. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -285,7 +285,7 @@
                           >
                             Accounting
                             <v-list-item-subtitle style="margin-top: -34px"
-                              >640/ Month</v-list-item-subtitle
+                              >Free</v-list-item-subtitle
                             >
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
@@ -297,7 +297,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Accounts. Learn More...</span
+                              >Accounting. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -344,7 +344,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Expense. Learn More...</span
+                              >Expense. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -390,7 +390,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Fixed Assets. Learn More...</span
+                              >Fixed Assets. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -437,7 +437,7 @@
                               </v-btn>
                             </template>
                             <span class="tooltip-notification"
-                              >Budget Planning. Learn More...</span
+                              >Budget Planning. Summary...</span
                             >
                           </v-tooltip>
                         </v-list-item>
@@ -484,9 +484,10 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                {{ users }} Users<span class="float-right"
-                                  ><span style="margin-right: 2px">₦</span
-                                  >{{ appValue }}</span
+                                {{ users }}
+                                <span>{{ userToUsersText() }}</span
+                                ><span class="float-right"
+                                  >₦{{ annualTimesUser }}</span
                                 >
                               </v-card-text>
 
@@ -494,8 +495,12 @@
                                 class="grey lighten-5"
                                 style="color: #000"
                               >
-                                User Discount<span class="float-right"
-                                  >_ _ _</span
+                                User Discount<span
+                                  style="color: #ff0000"
+                                  class="float-right"
+                                  >-₦{{
+                                    annualUserDiscountOnInitialPurchase
+                                  }}</span
                                 >
                               </v-card-text>
 
@@ -503,9 +508,7 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                9 Apps<span class="float-right">{{
-                                  eightyTimesUser() || '4800'
-                                }}</span>
+                                * Apps<span class="float-right">_ _ _</span>
                               </v-card-text>
 
                               <v-card-text
@@ -522,8 +525,9 @@
                                 style="color: #000"
                               >
                                 Total / Month<span class="float-right"
-                                  ><span style="margin-right: 2px">₦</span
-                                  >4,632</span
+                                  ><span class="float-right"
+                                    >₦{{ totalPerMonthAnnualForAnnual }}</span
+                                  ></span
                                 >
                               </v-card-text>
 
@@ -534,8 +538,9 @@
                                     style="color: #000"
                                   >
                                     Billed Annually<span class="float-right"
-                                      ><span style="margin-right: 2px">₦</span
-                                      >55,632</span
+                                      ><span class="float-right"
+                                        >₦{{ billedAnnualTimesUser }}</span
+                                      ></span
                                     >
                                   </p>
                                 </v-card-text>
@@ -558,9 +563,9 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                {{ users }} Users<span class="float-right"
-                                  ><span style="margin-right: 2px">₦</span
-                                  >{{ appValue }}</span
+                                {{ users }} <span>{{ userToUsersText() }}</span
+                                ><span class="float-right"
+                                  >₦{{ monthlyTimesUser }}</span
                                 >
                               </v-card-text>
 
@@ -568,8 +573,12 @@
                                 class="grey lighten-5"
                                 style="color: #000"
                               >
-                                User Discount<span class="float-right"
-                                  >_ _ _</span
+                                User Discount<span
+                                  style="color: #ff0000"
+                                  class="float-right"
+                                  >-₦{{
+                                    monthlyUserDiscountOnInitialPurchase
+                                  }}</span
                                 >
                               </v-card-text>
 
@@ -577,9 +586,7 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                9 Apps<span class="float-right">{{
-                                  eightyTimesUser() || '4800'
-                                }}</span>
+                                * Apps<span class="float-right">_ _ _</span>
                               </v-card-text>
 
                               <v-card-text
@@ -596,8 +603,9 @@
                                 style="color: #000"
                               >
                                 Total / Month<span class="float-right"
-                                  ><span style="margin-right: 2px">₦</span
-                                  >4,632</span
+                                  ><span class="float-right"
+                                    >₦{{ totalPerMonthAnnualForMonthly }}</span
+                                  ></span
                                 >
                               </v-card-text>
 
@@ -608,8 +616,7 @@
                                     style="color: #000"
                                   >
                                     Billed Monthly<span class="float-right"
-                                      ><span style="margin-right: 2px">₦</span
-                                      >55,632</span
+                                      >₦{{ billedMonthlyTimesUser }}</span
                                     >
                                   </p>
                                 </v-card-text>
@@ -654,16 +661,70 @@ export default {
       show: false,
       users: 1,
       appValue: '',
+      // appValue uses eightyTimesUser method value
     }
   },
-  methods: {
-    // append(number) {
-    //   this.appValue = `${this.appValue}${number}`
-    // }
-    eightyTimesUser() {
-      this.appValue = this.users * 80
+  computed: {
+    // ANNUAL SUBSCRIPTION CALCULATION STARTS HERE *******
+    // multiplies 2799 with the total number of users
+    annualTimesUser() {
+      return this.users * 2799
+    },
+
+    // multiplies 2799 and total number number of users, then divides by 2
+    annualUserDiscountOnInitialPurchase() {
+      return Math.floor((this.users * 2799) / 2)
+    },
+
+    // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase functions!
+    totalPerMonthAnnualForAnnual() {
+      return this.annualTimesUser - this.annualUserDiscountOnInitialPurchase
+    },
+    // multiplies totalPerMonthAnual  by 12 (annual)
+    billedAnnualTimesUser() {
+      return this.totalPerMonthAnnualForAnnual * 12
+    },
+
+    // MONTHLY SUBSCRIPTION CALCULATION STARTS HERE *******
+    // multiplies 3499 with the total number of users
+    monthlyTimesUser() {
+      return this.users * 3499
+    },
+    // multiplies 3499 and total number number of users, then divides by 2
+    monthlyUserDiscountOnInitialPurchase() {
+      return Math.floor((this.users * 3499) / 2)
+    },
+
+    // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase functions!
+    totalPerMonthAnnualForMonthly() {
+      return this.monthlyTimesUser - this.monthlyUserDiscountOnInitialPurchase
+    },
+    // multiplies totalPerMonthAnual  by 12 (annual)
+    billedMonthlyTimesUser() {
+      return this.totalPerMonthAnnualForMonthly
     },
   },
+  methods: {
+    // changes user to users text
+    userToUsersText() {
+      if (this.users > 1) {
+        return 'Users'
+      } else {
+        return 'User'
+      }
+    },
+  },
+  // methods: {
+  //   eightyTimesUser() {
+  //     this.appValue = this.users * 80
+  //   },
+  // },
+
+  // data: () => ({
+  //   currentItem: 'tab-Web',
+  //   items: ['Web', 'Shopping', 'Videos', 'Images'],
+  //   more: ['News', 'Maps', 'Books', 'Flights', 'Apps'],
+  // }),
 
   head() {
     return {

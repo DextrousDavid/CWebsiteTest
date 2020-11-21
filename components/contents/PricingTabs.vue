@@ -13,7 +13,6 @@
         <!-- <v-tab>Guided <v-icon right>$expand</v-icon></v-tab> -->
         <!-- <v-tabs-slider color="teal lighten-3"></v-tabs-slider> -->
 
-        <v-tab>Product</v-tab>
         <!-- <v-tab><img src="~assets/tabIcons/lite.png" /> Lite</v-tab> -->
         <v-tab
           ><img src="~assets/tabIcons/optima.png" /><span style="color: #000"
@@ -30,6 +29,7 @@
             >Dome</span
           ></v-tab
         >
+        <v-tab><span style="color: #000">Product</span></v-tab>
         <!-- <v-tab><img src="~assets/tabIcons/ally.png" />Ally</v-tab>
         <v-tab><img src="~assets/tabIcons/quantum.png" />Quantum</v-tab> -->
         <v-tab style="background-color: #fff; color: #000">
