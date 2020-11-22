@@ -43,7 +43,7 @@
                   >
                 </v-col>
                 <v-col cols="5" sm="5" md="5">
-                  <span class="ml-4">N80/user/ Month</span>
+                  <span class="ml-4">{{ cost }}</span>
                 </v-col>
               </div>
             </div>
@@ -62,8 +62,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <!-- @click="append('640')" -->
@@ -77,9 +77,9 @@
                             class="text-capitalize"
                           >
                             CRM
-                            <v-list-item-subtitle style="margin-top: -34px"
-                              >2799 / Month</v-list-item-subtitle
-                            >
+                            <v-list-item-subtitle style="margin-top: -34px">{{
+                              crm
+                            }}</v-list-item-subtitle>
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
                             <template v-slot:activator="{ on, attrs }">
@@ -104,7 +104,6 @@
                         flat
                         link
                         color="grey lighten-4"
-                        style="border: 2px solid red"
                       >
                         <!-- @click="append('640')" -->
                         <!-- hover -->
@@ -121,9 +120,9 @@
                             class="text-capitalize"
                           >
                             Purchase
-                            <v-list-item-subtitle style="margin-top: -34px"
-                              >2159 / Month</v-list-item-subtitle
-                            >
+                            <v-list-item-subtitle style="margin-top: -34px">{{
+                              purchase
+                            }}</v-list-item-subtitle>
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
                             <template v-slot:activator="{ on, attrs }">
@@ -145,8 +144,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
@@ -162,9 +161,9 @@
                             class="text-capitalize"
                             >Sales
 
-                            <v-list-item-subtitle style="margin-top: -34px"
-                              >2159 / Month</v-list-item-subtitle
-                            >
+                            <v-list-item-subtitle style="margin-top: -34px">{{
+                              sales
+                            }}</v-list-item-subtitle>
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
                             <template v-slot:activator="{ on, attrs }">
@@ -186,8 +185,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
@@ -203,9 +202,9 @@
                             class="text-capitalize"
                           >
                             Inventory
-                            <v-list-item-subtitle style="margin-top: -34px"
-                              >4399 / Month</v-list-item-subtitle
-                            >
+                            <v-list-item-subtitle style="margin-top: -34px">{{
+                              inventory
+                            }}</v-list-item-subtitle>
                           </v-list-item-content>
                           <v-tooltip class="d-flex align-end" top>
                             <template v-slot:activator="{ on, attrs }">
@@ -226,8 +225,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
@@ -267,8 +266,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
@@ -308,8 +307,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
@@ -354,8 +353,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
@@ -401,8 +400,8 @@
                       <v-card
                         max-width="auto"
                         max-height="80"
-                        outlined
-                        hover
+                        flat
+                        link
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
@@ -455,7 +454,10 @@
                       <template>
                         <v-tabs centered light>
                           <label>
-                            <v-tab style="color: #1976d2">
+                            <v-tab
+                              style="color: #1976d2"
+                              @click="userPerAnnual"
+                            >
                               <input
                                 type="radio"
                                 class="form-radio text-indigo-600"
@@ -466,7 +468,7 @@
                             </v-tab>
                           </label>
                           <label>
-                            <v-tab style="color: #1976d2">
+                            <v-tab style="color: #1976d2" @click="userPerMonth">
                               <input
                                 style="color: #1976d2"
                                 type="radio"
@@ -508,7 +510,9 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                * Apps<span class="float-right">_ _ _</span>
+                                * Apps<span class="float-right">{{
+                                  appValue
+                                }}</span>
                               </v-card-text>
 
                               <v-card-text
@@ -660,7 +664,13 @@ export default {
     return {
       show: false,
       users: 1,
-      appValue: '',
+      appValue: '_ _ _',
+      // cost here being synanimous with choose your apps
+      cost: '₦2799 / User / Month',
+      crm: 2799,
+      purchase: 2159,
+      sales: 2159,
+      inventory: 4399,
       // appValue uses eightyTimesUser method value
     }
   },
@@ -673,7 +683,7 @@ export default {
 
     // multiplies 2799 and total number number of users, then divides by 2
     annualUserDiscountOnInitialPurchase() {
-      return Math.floor((this.users * 2799) / 2)
+      return Math.round((this.users * 2799) / 2)
     },
 
     // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase functions!
@@ -692,7 +702,7 @@ export default {
     },
     // multiplies 3499 and total number number of users, then divides by 2
     monthlyUserDiscountOnInitialPurchase() {
-      return Math.floor((this.users * 3499) / 2)
+      return Math.round((this.users * 3499) / 2)
     },
 
     // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase functions!
@@ -705,6 +715,9 @@ export default {
     },
   },
   methods: {
+    // calculateApps() {
+    //   return (this.appValue = this.appValue * 2)
+    // },
     // changes user to users text
     userToUsersText() {
       if (this.users > 1) {
@@ -712,6 +725,22 @@ export default {
       } else {
         return 'User'
       }
+    },
+
+    // 2799 user / month
+    userPerAnnual() {
+      this.cost = '₦2799 / User / Month'
+      this.crm = 2799
+      this.purchase = 2159
+      this.sales = 2159
+      this.inventory = 4399
+    },
+    userPerMonth() {
+      this.cost = '₦3499 / User / Month'
+      this.crm = 3499
+      this.purchase = 2699
+      this.sales = 2699
+      this.inventory = 5499
     },
   },
   // methods: {
