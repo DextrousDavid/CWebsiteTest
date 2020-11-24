@@ -59,44 +59,191 @@
                   </div>
                   <v-row>
                     <v-col cols="12" sm="6" md="6" lg="4">
-                      <v-card
-                        max-width="auto"
-                        max-height="80"
-                        flat
-                        link
-                        color="grey lighten-4"
-                      >
-                        <!-- @click="append('640')" -->
-                        <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
-                            <img src="~assets/apps/crm.png" alt="crm icon" />
-                          </v-list-item-avatar>
+                      <div :class="{ 'card-border': checkSelected('crm') }">
+                        <v-card
+                          max-width="auto"
+                          max-height="80"
+                          flat
+                          link
+                          color="grey lighten-4"
+                          @click="addToAppsValue('crm')"
+                        >
+                          <!-- @click="append('640')" -->
+                          <v-list-item three-line>
+                            <v-list-item-avatar tile size="50">
+                              <img src="~assets/apps/crm.svg" alt="crm icon" />
+                            </v-list-item-avatar>
 
-                          <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
-                          >
-                            CRM
-                            <v-list-item-subtitle style="margin-top: -34px">{{
-                              crm
-                            }}</v-list-item-subtitle>
-                          </v-list-item-content>
-                          <v-tooltip class="d-flex align-end" top>
-                            <template v-slot:activator="{ on, attrs }">
-                              <v-btn icon v-bind="attrs" v-on="on">
-                                <v-icon small color="grey lighten-1">
-                                  mdi-information
-                                </v-icon>
-                              </v-btn>
-                            </template>
-                            <span class="tooltip-notification"
-                              >CRM. Summary...</span
+                            <v-list-item-content
+                              style="margin-top: -10px"
+                              class="text-capitalize black--text"
                             >
-                          </v-tooltip>
-                        </v-list-item>
-                      </v-card>
+                              CRM
+                              <v-list-item-subtitle
+                                style="margin-top: -34px; font-size: 13px"
+                                class="black--text"
+                                >₦{{ crm }} / Month</v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                            <v-tooltip class="d-flex align-end" top>
+                              <template v-slot:activator="{ on, attrs }">
+                                <v-btn icon v-bind="attrs" v-on="on">
+                                  <v-icon small color="grey lighten-1">
+                                    mdi-information
+                                  </v-icon>
+                                </v-btn>
+                              </template>
+                              <span class="tooltip-notification"
+                                >CRM. Summary...</span
+                              >
+                            </v-tooltip>
+                          </v-list-item>
+                        </v-card>
+                      </div>
                     </v-col>
 
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <div
+                        :class="{ 'card-border': checkSelected('purchase') }"
+                      >
+                        <v-card
+                          max-width="auto"
+                          max-height="80"
+                          flat
+                          color="grey lighten-4"
+                          @click="addToAppsValue('purchase')"
+                        >
+                          <!-- @click="append('640')" -->
+                          <!-- hover -->
+                          <v-list-item three-line>
+                            <v-list-item-avatar tile size="50">
+                              <img
+                                src="~assets/apps/purchase.svg"
+                                alt="purchase icon"
+                              />
+                            </v-list-item-avatar>
+
+                            <v-list-item-content
+                              style="margin-top: -10px"
+                              class="text--capitalize black--text"
+                            >
+                              Purchase
+                              <v-list-item-subtitle
+                                style="margin-top: -34px; font-size: 13px"
+                                class="black--text"
+                                >₦{{ purchase }} / Month</v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                            <v-tooltip class="d-flex align-end" top>
+                              <template v-slot:activator="{ on, attrs }">
+                                <v-btn icon v-bind="attrs" v-on="on">
+                                  <v-icon small color="grey lighten-1">
+                                    mdi-information
+                                  </v-icon>
+                                </v-btn>
+                              </template>
+                              <span class="tooltip-notification"
+                                >Purchase. Summary...</span
+                              >
+                            </v-tooltip>
+                          </v-list-item>
+                        </v-card>
+                      </div>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <div :class="{ 'card-border': checkSelected('sales') }">
+                        <v-card
+                          max-width="auto"
+                          max-height="80"
+                          flat
+                          link
+                          color="grey lighten-4"
+                          @click="addToAppsValue('sales')"
+                        >
+                          <v-list-item three-line>
+                            <v-list-item-avatar tile size="50">
+                              <img
+                                src="~assets/apps/sales.svg"
+                                alt="sales icon"
+                              />
+                            </v-list-item-avatar>
+
+                            <v-list-item-content
+                              style="margin-top: -10px"
+                              class="text-capitalize black--text"
+                              >Sales
+
+                              <v-list-item-subtitle
+                                style="margin-top: -34px; font-size: 13px"
+                                class="black--text"
+                                >₦{{ sales }} / Month</v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                            <v-tooltip class="d-flex align-end" top>
+                              <template v-slot:activator="{ on, attrs }">
+                                <v-btn icon v-bind="attrs" v-on="on">
+                                  <v-icon small color="grey lighten-1">
+                                    mdi-information
+                                  </v-icon>
+                                </v-btn>
+                              </template>
+                              <span class="tooltip-notification"
+                                >Sales. Summary...</span
+                              >
+                            </v-tooltip>
+                          </v-list-item>
+                        </v-card>
+                      </div>
+                    </v-col>
+
+                    <v-col cols="12" sm="6" md="6" lg="4">
+                      <div
+                        :class="{ 'card-border': checkSelected('inventory') }"
+                      >
+                        <v-card
+                          max-width="auto"
+                          max-height="80"
+                          flat
+                          link
+                          color="grey lighten-4"
+                          @click="addToAppsValue('inventory')"
+                        >
+                          <v-list-item three-line>
+                            <v-list-item-avatar tile size="50">
+                              <img
+                                src="~assets/apps/inventory.svg"
+                                alt="inventory icon"
+                              />
+                            </v-list-item-avatar>
+
+                            <v-list-item-content
+                              style="margin-top: -10px"
+                              class="text-capitalize black--text"
+                            >
+                              Inventory
+                              <v-list-item-subtitle
+                                style="margin-top: -34px; font-size: 13px"
+                                class="black--text"
+                                >₦{{ inventory }} / Month</v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                            <v-tooltip class="d-flex align-end" top>
+                              <template v-slot:activator="{ on, attrs }">
+                                <v-btn icon v-bind="attrs" v-on="on">
+                                  <v-icon small color="grey lighten-1">
+                                    mdi-information
+                                  </v-icon>
+                                </v-btn>
+                              </template>
+                              <span class="tooltip-notification"
+                                >Inventory. Summary...</span
+                              >
+                            </v-tooltip>
+                          </v-list-item>
+                        </v-card>
+                      </div>
+                    </v-col>
                     <v-col cols="12" sm="6" md="6" lg="4">
                       <v-card
                         max-width="auto"
@@ -105,144 +252,22 @@
                         link
                         color="grey lighten-4"
                       >
-                        <!-- @click="append('640')" -->
-                        <!-- hover -->
                         <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
+                          <v-list-item-avatar tile size="50">
                             <img
-                              src="~assets/apps/purchase.png"
-                              alt="purchase icon"
-                            />
-                          </v-list-item-avatar>
-
-                          <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
-                          >
-                            Purchase
-                            <v-list-item-subtitle style="margin-top: -34px">{{
-                              purchase
-                            }}</v-list-item-subtitle>
-                          </v-list-item-content>
-                          <v-tooltip class="d-flex align-end" top>
-                            <template v-slot:activator="{ on, attrs }">
-                              <v-btn icon v-bind="attrs" v-on="on">
-                                <v-icon small color="grey lighten-1">
-                                  mdi-information
-                                </v-icon>
-                              </v-btn>
-                            </template>
-                            <span class="tooltip-notification"
-                              >Purchase. Summary...</span
-                            >
-                          </v-tooltip>
-                        </v-list-item>
-                      </v-card>
-                    </v-col>
-
-                    <v-col cols="12" sm="6" md="6" lg="4">
-                      <v-card
-                        max-width="auto"
-                        max-height="80"
-                        flat
-                        link
-                        color="grey lighten-4"
-                      >
-                        <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
-                            <img
-                              src="~assets/apps/sales.png"
-                              alt="sales icon"
-                            />
-                          </v-list-item-avatar>
-
-                          <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
-                            >Sales
-
-                            <v-list-item-subtitle style="margin-top: -34px">{{
-                              sales
-                            }}</v-list-item-subtitle>
-                          </v-list-item-content>
-                          <v-tooltip class="d-flex align-end" top>
-                            <template v-slot:activator="{ on, attrs }">
-                              <v-btn icon v-bind="attrs" v-on="on">
-                                <v-icon small color="grey lighten-1">
-                                  mdi-information
-                                </v-icon>
-                              </v-btn>
-                            </template>
-                            <span class="tooltip-notification"
-                              >Sales. Summary...</span
-                            >
-                          </v-tooltip>
-                        </v-list-item>
-                      </v-card>
-                    </v-col>
-
-                    <v-col cols="12" sm="6" md="6" lg="4">
-                      <v-card
-                        max-width="auto"
-                        max-height="80"
-                        flat
-                        link
-                        color="grey lighten-4"
-                      >
-                        <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
-                            <img
-                              src="~assets/apps/inventory.png"
-                              alt="inventory icon"
-                            />
-                          </v-list-item-avatar>
-
-                          <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
-                          >
-                            Inventory
-                            <v-list-item-subtitle style="margin-top: -34px">{{
-                              inventory
-                            }}</v-list-item-subtitle>
-                          </v-list-item-content>
-                          <v-tooltip class="d-flex align-end" top>
-                            <template v-slot:activator="{ on, attrs }">
-                              <v-btn icon v-bind="attrs" v-on="on">
-                                <v-icon small color="grey lighten-1">
-                                  mdi-information
-                                </v-icon>
-                              </v-btn>
-                            </template>
-                            <span class="tooltip-notification"
-                              >Inventory. Summary...</span
-                            >
-                          </v-tooltip>
-                        </v-list-item>
-                      </v-card>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="6" lg="4">
-                      <v-card
-                        max-width="auto"
-                        max-height="80"
-                        flat
-                        link
-                        color="grey lighten-4"
-                      >
-                        <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
-                            <img
-                              src="~assets/apps/payments.png"
+                              src="~assets/apps/payments.svg"
                               alt="payments icon"
                             />
                           </v-list-item-avatar>
 
                           <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
+                            style="margin-top: -10px"
+                            class="text-capitalize black--text"
                           >
                             Payments
-                            <v-list-item-subtitle style="margin-top: -34px"
+                            <v-list-item-subtitle
+                              style="margin-top: -34px"
+                              class="black--text"
                               >Free</v-list-item-subtitle
                             >
                           </v-list-item-content>
@@ -271,19 +296,21 @@
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
+                          <v-list-item-avatar tile size="50">
                             <img
-                              src="~assets/apps/accounts.png"
+                              src="~assets/apps/accounting.svg"
                               alt="accounts icon"
                             />
                           </v-list-item-avatar>
 
                           <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
+                            style="margin-top: -10px"
+                            class="text-capitalize black--text"
                           >
                             Accounting
-                            <v-list-item-subtitle style="margin-top: -34px"
+                            <v-list-item-subtitle
+                              style="margin-top: -34px"
+                              class="black--text"
                               >Free</v-list-item-subtitle
                             >
                           </v-list-item-content>
@@ -312,25 +339,27 @@
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
+                          <v-list-item-avatar tile size="50">
                             <img
-                              src="~assets/apps/expense.png"
+                              src="~assets/apps/expense.svg"
                               alt="expense icon"
                             />
                           </v-list-item-avatar>
 
                           <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
+                            style="margin-top: -10px"
+                            class="text-capitalize black--text"
                           >
                             Expense
                             <v-list-item-subtitle
                               style="
-                                margin-top: -26px;
+                                margin-top: -31px;
                                 font-style: italic;
                                 font-family: system-ui;
                                 font-weight: 600;
+                                font-size: 11px;
                               "
+                              class="black--text"
                               >(Coming Soon...)</v-list-item-subtitle
                             >
                           </v-list-item-content>
@@ -358,25 +387,27 @@
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
+                          <v-list-item-avatar tile size="50">
                             <img
-                              src="~assets/apps/fixed-assets.png"
+                              src="~assets/apps/fixed-assets.svg"
                               alt="fixed assets icon"
                             />
                           </v-list-item-avatar>
 
                           <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
+                            style="margin-top: -10px"
+                            class="text-capitalize black--text"
                           >
                             Fixed Assets
                             <v-list-item-subtitle
                               style="
-                                margin-top: -26px;
+                                margin-top: -31px;
                                 font-style: italic;
                                 font-family: system-ui;
                                 font-weight: 600;
+                                font-size: 11px;
                               "
+                              class="black--text"
                               >(Coming Soon...)</v-list-item-subtitle
                             >
                           </v-list-item-content>
@@ -405,25 +436,27 @@
                         color="grey lighten-4"
                       >
                         <v-list-item three-line>
-                          <v-list-item-avatar tile size="40">
+                          <v-list-item-avatar tile size="50">
                             <img
-                              src="~assets/apps/budget-planning.png"
+                              src="~assets/apps/budget.svg"
                               alt="budget planning icon"
                             />
                           </v-list-item-avatar>
 
                           <v-list-item-content
-                            style="margin-top: -20px"
-                            class="text-capitalize"
+                            style="margin-top: -10px"
+                            class="text-capitalize black--text"
                           >
                             Budget
                             <v-list-item-subtitle
                               style="
-                                margin-top: -26px;
+                                margin-top: -31px;
                                 font-style: italic;
                                 font-family: system-ui;
                                 font-weight: 600;
+                                font-size: 11px;
                               "
+                              class="black--text"
                               >(Coming Soon...)</v-list-item-subtitle
                             >
                           </v-list-item-content>
@@ -510,9 +543,10 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                * Apps<span class="float-right">{{
-                                  appValue
-                                }}</span>
+                                {{ products.length }} {{ appToAppsText()
+                                }}<span class="float-right"
+                                  >₦{{ appsValueAnnually }}</span
+                                >
                               </v-card-text>
 
                               <v-card-text
@@ -590,7 +624,10 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                * Apps<span class="float-right">_ _ _</span>
+                                {{ products.length }} {{ appToAppsText()
+                                }}<span class="float-right"
+                                  >₦{{ appsValueMonthly }}</span
+                                >
                               </v-card-text>
 
                               <v-card-text
@@ -662,15 +699,25 @@ export default {
   },
   data() {
     return {
+      prices: {
+        crm: 3499,
+        purchase: 2699,
+        sales: 2699,
+        inventory: 5499,
+      },
+      products: [],
       show: false,
       users: 1,
-      appValue: '_ _ _',
+      apps: 0,
+      appsValueMonthly: 0,
+      appsValueAnnually: 0,
       // cost here being synanimous with choose your apps
       cost: '₦2799 / User / Month',
       crm: 2799,
       purchase: 2159,
       sales: 2159,
       inventory: 4399,
+      isActive: true,
       // appValue uses eightyTimesUser method value
     }
   },
@@ -715,15 +762,145 @@ export default {
     },
   },
   methods: {
-    // calculateApps() {
-    //   return (this.appValue = this.appValue * 2)
-    // },
+    checkSelected(value) {
+      return this.products.includes(value)
+    },
+    addToAppsValue(value) {
+      let products = this.products
+
+      if (products.includes(value)) {
+        products = products.filter((el) => el !== value)
+        this.removePrice(value)
+      } else {
+        products.push(value)
+        this.calculateApps(value)
+      }
+      this.products = products
+    },
+    calculateApps(value) {
+      let appsValueMonthly = this.appsValueMonthly
+      const appsValueAnnually = this.appsValueAnnually
+      let valuePrice = 0
+
+      const percentDisount = 0.2
+      let discount = 0
+
+      switch (value) {
+        case 'crm':
+          appsValueMonthly = appsValueMonthly + this.prices.crm
+          this.appsValueMonthly = appsValueMonthly
+
+          valuePrice = this.prices.crm
+          discount = Math.round(valuePrice * percentDisount)
+          valuePrice = valuePrice - discount
+          this.appsValueAnnually = appsValueAnnually + valuePrice
+          break
+        case 'purchase':
+          appsValueMonthly = appsValueMonthly + this.prices.purchase
+          this.appsValueMonthly = appsValueMonthly
+
+          valuePrice = this.prices.purchase
+          discount = Math.round(valuePrice * percentDisount)
+          valuePrice = valuePrice - discount
+          this.appsValueAnnually = appsValueAnnually + valuePrice
+          break
+        case 'sales':
+          appsValueMonthly = appsValueMonthly + this.prices.sales
+          this.appsValueMonthly = appsValueMonthly
+
+          valuePrice = this.prices.sales
+          discount = Math.round(valuePrice * percentDisount)
+          valuePrice = valuePrice - discount
+          this.appsValueAnnually = appsValueAnnually + valuePrice
+          break
+        case 'inventory':
+          appsValueMonthly = appsValueMonthly + this.prices.inventory
+          this.appsValueMonthly = appsValueMonthly
+
+          valuePrice = this.prices.inventory
+          discount = Math.round(valuePrice * percentDisount)
+          valuePrice = valuePrice - discount
+          this.appsValueAnnually = appsValueAnnually + valuePrice
+          break
+
+        default:
+          break
+      }
+    },
+    removePrice(value) {
+      let appsValueMonthly = this.appsValueMonthly
+      let appsValueAnnually = this.appsValueAnnually
+      let annualPrice = 0
+
+      const percentDisount = 0.2
+      let discount = 0
+
+      switch (value) {
+        case 'crm':
+          appsValueMonthly = appsValueMonthly - this.prices.crm
+          this.appsValueMonthly = appsValueMonthly
+
+          annualPrice = this.prices.crm
+
+          discount = Math.round(annualPrice * percentDisount)
+
+          annualPrice = annualPrice - discount
+          appsValueAnnually = appsValueAnnually - annualPrice
+          this.appsValueAnnually = appsValueAnnually
+          break
+        case 'purchase':
+          appsValueMonthly = appsValueMonthly - this.prices.purchase
+          this.appsValueMonthly = appsValueMonthly
+
+          annualPrice = this.prices.purchase
+
+          discount = Math.round(annualPrice * percentDisount)
+
+          annualPrice = annualPrice - discount
+          appsValueAnnually = appsValueAnnually - annualPrice
+          this.appsValueAnnually = appsValueAnnually
+          break
+        case 'sales':
+          appsValueMonthly = appsValueMonthly - this.prices.sales
+          this.appsValueMonthly = appsValueMonthly
+
+          annualPrice = this.prices.sales
+
+          discount = Math.round(annualPrice * percentDisount)
+
+          annualPrice = annualPrice - discount
+          appsValueAnnually = appsValueAnnually - annualPrice
+          this.appsValueAnnually = appsValueAnnually
+          break
+        case 'inventory':
+          appsValueMonthly = appsValueMonthly - this.prices.inventory
+          this.appsValueMonthly = appsValueMonthly
+
+          annualPrice = this.prices.inventory
+
+          discount = Math.round(annualPrice * percentDisount)
+
+          annualPrice = annualPrice - discount
+          appsValueAnnually = appsValueAnnually - annualPrice
+          this.appsValueAnnually = appsValueAnnually
+          break
+        default:
+          break
+      }
+    },
     // changes user to users text
     userToUsersText() {
       if (this.users > 1) {
         return 'Users'
       } else {
         return 'User'
+      }
+    },
+    appToAppsText() {
+      if (this.products.length > 1) {
+        return 'Apps'
+      } else {
+        return 'App'
       }
     },
 
@@ -771,6 +948,15 @@ export default {
 }
 </script>
 <style scoped>
+.card-border {
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    rgb(84 219 241),
+    rgb(250 159 66 / 85%)
+  );
+  border-image-slice: 1;
+}
 /* Choose the number of users css */
 .v-btn:not(.v-btn--round).v-size--default {
   height: 42px;
