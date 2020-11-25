@@ -101,11 +101,11 @@
             >
               <div to="/support" class="menu-head">Support</div>
               <div class="list-element">support@cloudenly.com</div>
-              <a href="tel:+2348159530070">
-                <div class="list-element hover:underline">+234 8159530070</div>
+              <a href="tel:+2349060020838">
+                <div class="list-element hover:underline">09060020838</div>
               </a>
-              <a href="tel:+234556655667">
-                <div class="list-element hover:underline">+234 5566 55667</div>
+              <a href="tel:+2349060071225">
+                <div class="list-element hover:underline">09060071225</div>
               </a>
               <nuxt-link to="/support"
                 ><div class="list-element hover:underline">
