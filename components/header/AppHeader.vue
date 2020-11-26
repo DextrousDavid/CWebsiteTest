@@ -46,12 +46,34 @@
           >
             Pricing
           </nuxt-link>
-
-          <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
-          >
-            Partners
-          </li>
+          <no-ssr>
+            <!-- using no ssr because of anchor tag( nuxt serverside rendering) -->
+            <li
+              class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
+            >
+              <div class="dropdown inline-block relative">
+                <span class="rounded inline-flex items-center">
+                  <span class="list-item-navigation">Partners</span>
+                </span>
+                <ul class="dropdown-menu absolute hidden pt-2 -ml-2">
+                  <li class="">
+                    <a
+                      class="rounded-t bg-gray-100 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      >Find a Partner</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="bg-gray-100 rounded-b hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="https://scelloo.com/partnership/"
+                      target="_blank"
+                      >Become a Partner</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </no-ssr>
           <nuxt-link
             class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
             to="/resources"
@@ -66,28 +88,30 @@
         </div>
         <no-ssr>
           <div class="nav-item-left">
-            <div class="tooltip">
-              <a
-                class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
-              >
-                Sign In
-              </a>
-              <span class="tooltiptext">Coming Soon..</span>
-            </div>
+            <!-- <div class="tooltip"> -->
+            <a
+              class="sign-in-nav list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
+            >
+              Sign In
+            </a>
+            <!-- <span class="tooltiptext">Coming Soon..</span> -->
+            <!-- </div> -->
+            <!-- tooltip div is the one above -->
             <!-- <nuxt-link
             to="/signup"
             class="join-btn inline-block text-sm px-6 py-4 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Sign Up
           </nuxt-link> -->
-            <div class="tooltip">
-              <a
-                class="join-btn inline-block text-sm px-6 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
-              >
-                Sign Up
-              </a>
-              <span class="tooltiptext">Coming Soon...</span>
-            </div>
+            <!-- <div class="tooltip"> -->
+            <nuxt-link
+              to="/signup"
+              class="join-btn inline-block text-sm px-6 leading-none border rounded text-white hover:bg-white hover:text-blue-700 mt-4 mr-4 lg:mt-0 shadow-md duration-200"
+            >
+              Sign Up
+            </nuxt-link>
+            <!-- <span class="tooltiptext">Coming Soon...</span> -->
+            <!-- </div> -->
           </div>
         </no-ssr>
       </div>
@@ -122,6 +146,9 @@ export default {
 </script>
 
 <style scoped>
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 /* Tooltip container */
 .tooltip {
   position: relative;

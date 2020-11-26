@@ -1172,6 +1172,11 @@ export default {
 </script>
 
 <style scoped>
+* {
+  line-height: 2;
+  font-size: 18px;
+}
+
 .terms-of-use-paragragh {
   line-height: 1.8;
 }

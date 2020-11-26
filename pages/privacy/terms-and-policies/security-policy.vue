@@ -445,6 +445,8 @@ export default {
 }
 * {
   color: #000;
+  line-height: 2;
+  font-size: 18px;
 }
 .banner-h1 {
   margin-top: -50px;

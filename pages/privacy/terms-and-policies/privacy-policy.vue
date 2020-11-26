@@ -419,6 +419,8 @@ export default {
   color: #38b1e9;
 }
 * {
+  line-height: 2;
+  font-size: 18px;
   color: #000;
 }
 .banner-h1 {

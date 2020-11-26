@@ -68,7 +68,13 @@
             >
               <div class="menu-head">Partners</div>
               <div class="list-element">Find a Partner</div>
-              <div class="list-element">Become a Partner</div>
+              <no-ssr>
+                <a href="https://scelloo.com/partnership/" target="_blank">
+                  <div class="list-element hover:underline">
+                    Become a Partner
+                  </div>
+                </a>
+              </no-ssr>
             </div>
 
             <div
@@ -155,12 +161,10 @@
               <nuxt-link to="/privacy/terms-and-policies">
                 <!-- <div class="bottom-link">Terms of Service</div> -->
 
-                <div class="bottom-link">Terms of Use</div>
+                <div class="bottom-link">Terms and Policies</div>
               </nuxt-link>
-              <div class="bottom-link">Privacy Information</div>
-              <div class="bottom-link">Security</div>
+
               <div class="bottom-link">Careers</div>
-              <div class="bottom-link">Contract</div>
             </div>
             <div class="text-newsletter mt-2">
               <p class="text-newsletter">

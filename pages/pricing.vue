@@ -80,7 +80,7 @@
                             >
                               CRM
                               <v-list-item-subtitle
-                                style="margin-top: -34px; font-size: 13px"
+                                style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
                                 >₦{{ crm }} / Month</v-list-item-subtitle
                               >
@@ -129,7 +129,7 @@
                             >
                               Purchase
                               <v-list-item-subtitle
-                                style="margin-top: -34px; font-size: 13px"
+                                style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
                                 >₦{{ purchase }} / Month</v-list-item-subtitle
                               >
@@ -175,7 +175,7 @@
                               >Sales
 
                               <v-list-item-subtitle
-                                style="margin-top: -34px; font-size: 13px"
+                                style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
                                 >₦{{ sales }} / Month</v-list-item-subtitle
                               >
@@ -223,7 +223,7 @@
                             >
                               Inventory
                               <v-list-item-subtitle
-                                style="margin-top: -34px; font-size: 13px"
+                                style="margin-top: -30px; font-size: 13px"
                                 class="black--text"
                                 >₦{{ inventory }} / Month</v-list-item-subtitle
                               >
@@ -266,7 +266,7 @@
                           >
                             Payments
                             <v-list-item-subtitle
-                              style="margin-top: -34px"
+                              style="margin-top: -30px; font-size: 13px"
                               class="black--text"
                               >Free</v-list-item-subtitle
                             >
@@ -309,7 +309,7 @@
                           >
                             Accounting
                             <v-list-item-subtitle
-                              style="margin-top: -34px"
+                              style="margin-top: -30px; font-size: 13px"
                               class="black--text"
                               >Free</v-list-item-subtitle
                             >
@@ -533,9 +533,9 @@
                                 User Discount<span
                                   style="color: #ff0000"
                                   class="float-right"
-                                  >-₦{{
+                                  >(₦{{
                                     annualUserDiscountOnInitialPurchase
-                                  }}</span
+                                  }})</span
                                 >
                               </v-card-text>
 
@@ -553,8 +553,10 @@
                                 class="grey lighten-5"
                                 style="color: #000"
                               >
-                                App Discount<span class="float-right"
-                                  >_ _ _</span
+                                App Discount<span
+                                  class="float-right"
+                                  style="color: #ff0000"
+                                  >(₦{{ appDiscountAnnualCalculator() }})</span
                                 >
                               </v-card-text>
 
@@ -614,9 +616,9 @@
                                 User Discount<span
                                   style="color: #ff0000"
                                   class="float-right"
-                                  >-₦{{
+                                  >(₦{{
                                     monthlyUserDiscountOnInitialPurchase
-                                  }}</span
+                                  }})</span
                                 >
                               </v-card-text>
 
@@ -634,8 +636,10 @@
                                 class="grey lighten-5"
                                 style="color: #000"
                               >
-                                App Discount<span class="float-right"
-                                  >_ _ _</span
+                                App Discount<span
+                                  class="float-right"
+                                  style="color: #ff0000"
+                                  >(₦{{ appDiscountMonthlyCalculator() }})</span
                                 >
                               </v-card-text>
 
@@ -711,6 +715,7 @@ export default {
       apps: 0,
       appsValueMonthly: 0,
       appsValueAnnually: 0,
+      appDiscount: 0,
       // cost here being synanimous with choose your apps
       cost: '₦2799 / User / Month',
       crm: 2799,
@@ -730,12 +735,17 @@ export default {
 
     // multiplies 2799 and total number number of users, then divides by 2
     annualUserDiscountOnInitialPurchase() {
-      return Math.round((this.users * 2799) / 2)
+      return Math.floor((this.users * 2799) / 2)
     },
 
-    // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase functions!
+    // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase + appsvalueAnnually - appDiscount annual calculator functions!
     totalPerMonthAnnualForAnnual() {
-      return this.annualTimesUser - this.annualUserDiscountOnInitialPurchase
+      return (
+        this.annualTimesUser -
+        this.annualUserDiscountOnInitialPurchase +
+        this.appsValueAnnually -
+        this.appDiscountAnnualCalculator()
+      )
     },
     // multiplies totalPerMonthAnual  by 12 (annual)
     billedAnnualTimesUser() {
@@ -749,12 +759,17 @@ export default {
     },
     // multiplies 3499 and total number number of users, then divides by 2
     monthlyUserDiscountOnInitialPurchase() {
-      return Math.round((this.users * 3499) / 2)
+      return Math.floor((this.users * 3499) / 2)
     },
 
     // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase functions!
     totalPerMonthAnnualForMonthly() {
-      return this.monthlyTimesUser - this.monthlyUserDiscountOnInitialPurchase
+      return (
+        this.monthlyTimesUser -
+        this.monthlyUserDiscountOnInitialPurchase +
+        this.appsValueMonthly -
+        this.appDiscountMonthlyCalculator()
+      )
     },
     // multiplies totalPerMonthAnual  by 12 (annual)
     billedMonthlyTimesUser() {
@@ -762,6 +777,18 @@ export default {
     },
   },
   methods: {
+    // calculates the value of apps discount 1 - number of users * 1% * app fees per annual
+    appDiscountAnnualCalculator() {
+      return Math.floor(
+        (this.appDiscount = (1 - this.users * 0.01) * this.appsValueAnnually)
+      )
+    },
+    // calculates the value of apps discount 1 - number of users * 1% * app fees per month
+    appDiscountMonthlyCalculator() {
+      return Math.floor(
+        (this.appDiscount = (1 - this.users * 0.01) * this.appsValueMonthly)
+      )
+    },
     checkSelected(value) {
       return this.products.includes(value)
     },
