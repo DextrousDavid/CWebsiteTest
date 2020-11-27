@@ -90,11 +90,10 @@
             </nuxt-link>
           </div>
 
-          <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+          <!-- <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
             <nuxt-link to="/resources/userguide/ally">
               <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
-                  <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
@@ -112,7 +111,6 @@
             <nuxt-link to="/resources/userguide/quantum">
               <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
-                  <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
@@ -130,7 +128,6 @@
             <nuxt-link to="/resources/userguide/lite">
               <div class="resource-card">
                 <div class="text-center mr-3 ml-3">
-                  <!-- <h1 class="font-bold">User Guide</h1> -->
                   <div style="max-width: 300px; margin: auto">
                     <img
                       class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
@@ -142,7 +139,7 @@
                 </div>
               </div>
             </nuxt-link>
-          </div>
+          </div> -->
         </div>
       </main>
     </div>

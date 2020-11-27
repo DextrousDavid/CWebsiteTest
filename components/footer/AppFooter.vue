@@ -48,7 +48,9 @@
               <div class="menu-head">Products</div>
               <div class="list-element">Optima</div>
               <div class="list-element">HumanaR</div>
-              <div class="list-element">Dome</div>
+              <div class="list-element">
+                Dome <span style="font-size: 10px">(coming soon)</span>
+              </div>
               <!-- <div class="list-element">Quantum</div>
               <div class="list-element">Ally</div> -->
               <!-- <div class="list-element">Quantum</div> -->

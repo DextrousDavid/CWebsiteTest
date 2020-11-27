@@ -15,9 +15,10 @@
           </div>
         </section>
         <PricingTabs />
-        <v-container>
+
+        <div class="mx-8">
           <div class="mt-16">
-            <h3 class="mb-4">Choose the number of users</h3>
+            <h3 class="mb-4" style="color: #000">Choose the number of users</h3>
             <div>
               <div class="d-flex">
                 <v-col cols="3" sm="2" md="1">
@@ -43,7 +44,7 @@
                   >
                 </v-col>
                 <v-col cols="5" sm="5" md="5">
-                  <span class="ml-4">{{ cost }}</span>
+                  <span style="color: #000">{{ cost }}</span>
                 </v-col>
               </div>
             </div>
@@ -477,6 +478,7 @@
                     </v-col>
                   </v-row>
                 </v-col>
+
                 <!-- choose your apps ends here -->
                 <!-- Second Col -->
 
@@ -520,15 +522,17 @@
                                 style="color: #000"
                               >
                                 {{ users }}
-                                <span>{{ userToUsersText() }}</span
-                                ><span class="float-right"
+                                <span style="color: #000">{{
+                                  userToUsersText()
+                                }}</span
+                                ><span class="float-right" style="color: #000"
                                   >₦{{ annualTimesUser }}</span
                                 >
                               </v-card-text>
 
                               <v-card-text
                                 class="grey lighten-5"
-                                style="color: #000"
+                                style="color: #0b1eff96"
                               >
                                 User Discount<span
                                   style="color: #ff0000"
@@ -544,14 +548,14 @@
                                 style="color: #000"
                               >
                                 {{ products.length }} {{ appToAppsText()
-                                }}<span class="float-right"
+                                }}<span class="float-right" style="color: #000"
                                   >₦{{ appsValueAnnually }}</span
                                 >
                               </v-card-text>
 
                               <v-card-text
                                 class="grey lighten-5"
-                                style="color: #000"
+                                style="color: #0b1eff96"
                               >
                                 App Discount<span
                                   class="float-right"
@@ -564,8 +568,10 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                Total / Month<span class="float-right"
-                                  ><span class="float-right"
+                                Total / Month<span
+                                  class="float-right"
+                                  style="color: #000"
+                                  ><span class="float-right" style="color: #000"
                                     >₦{{ totalPerMonthAnnualForAnnual }}</span
                                   ></span
                                 >
@@ -578,7 +584,9 @@
                                     style="color: #000"
                                   >
                                     Billed Annually<span class="float-right"
-                                      ><span class="float-right"
+                                      ><span
+                                        class="float-right"
+                                        style="color: #000"
                                         >₦{{ billedAnnualTimesUser }}</span
                                       ></span
                                     >
@@ -603,15 +611,18 @@
                                 class="grey lighten-3"
                                 style="color: #000"
                               >
-                                {{ users }} <span>{{ userToUsersText() }}</span
-                                ><span class="float-right"
+                                {{ users }}
+                                <span style="color: #000">{{
+                                  userToUsersText()
+                                }}</span
+                                ><span class="float-right" style="color: #000"
                                   >₦{{ monthlyTimesUser }}</span
                                 >
                               </v-card-text>
 
                               <v-card-text
                                 class="grey lighten-5"
-                                style="color: #000"
+                                style="color: #0b1eff96"
                               >
                                 User Discount<span
                                   style="color: #ff0000"
@@ -627,14 +638,14 @@
                                 style="color: #000"
                               >
                                 {{ products.length }} {{ appToAppsText()
-                                }}<span class="float-right"
+                                }}<span class="float-right" style="color: #000"
                                   >₦{{ appsValueMonthly }}</span
                                 >
                               </v-card-text>
 
                               <v-card-text
                                 class="grey lighten-5"
-                                style="color: #000"
+                                style="color: #0b1eff96"
                               >
                                 App Discount<span
                                   class="float-right"
@@ -648,7 +659,7 @@
                                 style="color: #000"
                               >
                                 Total / Month<span class="float-right"
-                                  ><span class="float-right"
+                                  ><span class="float-right" style="color: #000"
                                     >₦{{ totalPerMonthAnnualForMonthly }}</span
                                   ></span
                                 >
@@ -660,7 +671,9 @@
                                     class="font-weight-thin"
                                     style="color: #000"
                                   >
-                                    Billed Monthly<span class="float-right"
+                                    Billed Monthly<span
+                                      class="float-right"
+                                      style="color: #000"
                                       >₦{{ billedMonthlyTimesUser }}</span
                                     >
                                   </p>
@@ -687,7 +700,7 @@
               </v-row>
             </div>
           </div>
-        </v-container>
+        </div>
       </v-app>
     </div>
   </no-ssr>
@@ -1083,6 +1096,13 @@ h1 {
   white-space: normal;
   margin-top: -6px;
   padding: 20px 15px;
+}
+
+@media (min-width: 1264px) {
+  .col-lg-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 31.333333%;
+  }
 }
 /* @media (min-width: 1264px) {
   .tab-table {

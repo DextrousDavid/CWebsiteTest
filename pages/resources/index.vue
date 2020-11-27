@@ -93,7 +93,7 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold resources-h1">Blog</h1>
+              <h1 class="font-bold resources-h1" style="color: #eee">Blog</h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
@@ -114,7 +114,7 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card events-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold resources-h1">Events</h1>
+              <h1 class="font-bold resources-h1" style="color: #eee">Events</h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
@@ -134,7 +134,9 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold resources-h1">Community</h1>
+              <h1 class="font-bold resources-h1" style="color: #eee">
+                Community
+              </h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
@@ -155,7 +157,7 @@
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
               <h1
-                style="margin-top: -68px; margin-bottom: -6px"
+                style="margin-top: -68px; margin-bottom: -6px; color: #eee"
                 class="font-bold resources-h1"
               >
                 Developer Documentation
@@ -179,7 +181,9 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="font-bold resources-h1">Academy</h1>
+              <h1 class="font-bold resources-h1" style="color: #eee">
+                Academy
+              </h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img

@@ -59,7 +59,7 @@
                 </tr>
 
                 <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5">Your Phone or Skype ID</td>
+                  <td class="md:w-1/4 lg:py-5">Your Phone</td>
                   <td class="md:w-3/4 lg:py-5">
                     <input
                       id="phone"
@@ -234,7 +234,7 @@
             </div>
             <div>
               <table class="w-full">
-                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                <!-- <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
                   <td class="md:w-1/4 lg:py-5">Your Account Number</td>
                   <td class="md:w-3/4 lg:py-5">
                     <input
@@ -243,12 +243,12 @@
                       type="text"
                     />
                   </td>
-                </tr>
+                </tr> -->
                 <!-- Ticket Type Starts here -->
                 <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
                   <td class="md:w-1/4 lg:py-5 flex">Ticket Type</td>
                   <td class="md:w-3/4 lg:py-5 edition-and-hosting">
-                    <div class="block mb-3">
+                    <!-- <div class="block mb-3">
                       <input
                         id="name"
                         class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
@@ -258,7 +258,7 @@
                       /><span style="margin-left: 6px"
                         >Technical/Commercial/Enquiry
                       </span>
-                    </div>
+                    </div> -->
                     <div class="block mb-3">
                       <input
                         id="name"
@@ -306,7 +306,7 @@
                       /><span style="margin-left: 6px">Traceable Bugs </span>
                     </div>
 
-                    <div class="block mb-3">
+                    <!-- <div class="block mb-3">
                       <input
                         id="name"
                         class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
@@ -316,7 +316,7 @@
                       /><span style="margin-left: 6px"
                         >Urgent. High. Medium. Low
                       </span>
-                    </div>
+                    </div> -->
 
                     <div class="block mb-3">
                       <input
