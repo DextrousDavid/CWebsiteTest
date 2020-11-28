@@ -534,9 +534,30 @@
                                 class="grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount<span
-                                  style="color: #ff0000"
-                                  class="float-right"
+                                User Discount
+
+                                <v-tooltip top>
+                                  <template v-slot:activator="{ on, attrs }">
+                                    <v-btn
+                                      icon
+                                      v-bind="attrs"
+                                      style="
+                                        color: blue;
+                                        font-size: 10px;
+                                        margin-top: -5px;
+                                        margin-left: -10px;
+                                      "
+                                      v-on="on"
+                                    >
+                                      (1)
+                                    </v-btn>
+                                  </template>
+                                  <span class="tooltip-notification"
+                                    >New customers get a discount on the initial
+                                    number of users purchased
+                                  </span>
+                                </v-tooltip>
+                                <span style="color: #ff0000" class="float-right"
                                   >(₦{{
                                     annualUserDiscountOnInitialPurchase
                                   }})</span
@@ -624,7 +645,28 @@
                                 class="grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount<span
+                                User Discount
+                                <v-tooltip top>
+                                  <template v-slot:activator="{ on, attrs }">
+                                    <v-btn
+                                      icon
+                                      v-bind="attrs"
+                                      style="
+                                        color: blue;
+                                        font-size: 10px;
+                                        margin-top: -5px;
+                                        margin-left: -10px;
+                                      "
+                                      v-on="on"
+                                    >
+                                      (1)
+                                    </v-btn>
+                                  </template>
+                                  <span class="tooltip-notification"
+                                    >New customers get a discount on the initial
+                                    number of users purchased
+                                  </span> </v-tooltip
+                                ><span
                                   style="color: #ff0000"
                                   class="float-right"
                                   >(₦{{
@@ -988,6 +1030,10 @@ export default {
 }
 </script>
 <style scoped>
+.v-btn:before {
+  display: none;
+}
+
 .card-border {
   border: 2px solid;
   border-image-source: linear-gradient(

@@ -96,12 +96,14 @@
               <nuxt-link to="/resources/userguide">
                 <div class="list-element hover:underline">User Guide</div>
               </nuxt-link>
-              <div class="list-element">Blogs</div>
-              <div class="list-element">Events</div>
-              <div class="list-element">Community</div>
-              <div class="list-element">Developer Documentation</div>
-              <div class="list-element">Academy</div>
-              <div class="list-element">Demo</div>
+              <div class="list-element" style="color: #eee">Blogs</div>
+              <div class="list-element" style="color: #eee">Events</div>
+              <div class="list-element" style="color: #eee">Community</div>
+              <div class="list-element" style="color: #eee">
+                Developer Documentation
+              </div>
+              <div class="list-element" style="color: #eee">Academy</div>
+              <div class="list-element" style="color: #eee">Demo</div>
             </div>
 
             <div
