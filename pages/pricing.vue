@@ -518,7 +518,7 @@
                           <v-tab-item>
                             <v-card flat>
                               <v-card-text
-                                class="grey lighten-3"
+                                class="text-padding grey lighten-3"
                                 style="color: #000"
                               >
                                 {{ users }}
@@ -531,33 +531,14 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-5"
+                                class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount
-
-                                <v-tooltip top>
-                                  <template v-slot:activator="{ on, attrs }">
-                                    <v-btn
-                                      icon
-                                      v-bind="attrs"
-                                      style="
-                                        color: blue;
-                                        font-size: 10px;
-                                        margin-top: -5px;
-                                        margin-left: -10px;
-                                      "
-                                      v-on="on"
-                                    >
-                                      (1)
-                                    </v-btn>
-                                  </template>
-                                  <span class="tooltip-notification"
-                                    >New customers get a discount on the initial
-                                    number of users purchased
-                                  </span>
-                                </v-tooltip>
-                                <span style="color: #ff0000" class="float-right"
+                                User Discount<sup style="color: #0b1eff96">
+                                  (1)</sup
+                                ><span
+                                  style="color: #ff0000"
+                                  class="float-right"
                                   >(₦{{
                                     annualUserDiscountOnInitialPurchase
                                   }})</span
@@ -565,7 +546,7 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-3"
+                                class="text-padding grey lighten-3"
                                 style="color: #000"
                               >
                                 {{ products.length }} {{ appToAppsText()
@@ -575,7 +556,7 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-5"
+                                class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
                                 App Discount<span
@@ -586,12 +567,11 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-3"
+                                class="text-padding grey lighten-3"
                                 style="color: #000"
                               >
-                                Total / Month<span
-                                  class="float-right"
-                                  style="color: #000"
+                                Total / Month<sup> (2)</sup
+                                ><span class="float-right" style="color: #000"
                                   ><span class="float-right" style="color: #000"
                                     >₦{{ totalPerMonthAnnualForAnnual }}</span
                                   ></span
@@ -599,37 +579,90 @@
                               </v-card-text>
 
                               <div class="grey lighten-5">
-                                <v-card-text
-                                  ><p
+                                <v-card-text class="text-padding"
+                                  ><span
                                     class="font-weight-thin"
-                                    style="color: #000"
+                                    style="
+                                      color: #000;
+
+                                      font-size: 12px;
+                                    "
                                   >
-                                    Billed Annually<span class="float-right"
-                                      ><span
-                                        class="float-right"
-                                        style="color: #000"
+                                    <sup>(2)</sup> Billed Annually:
+                                    <span
+                                      ><span style="color: #000"
                                         >₦{{ billedAnnualTimesUser }}</span
                                       ></span
                                     >
-                                  </p>
+                                  </span>
+                                </v-card-text>
+                                <v-card-text
+                                  class="grey lighten-3 text-padding"
+                                  style="color: #000"
+                                >
+                                  VAT<span
+                                    class="float-right"
+                                    style="color: #000"
+                                    ><span
+                                      class="float-right"
+                                      style="color: #000"
+                                      >₦{{ annualVat }}</span
+                                    ></span
+                                  >
+                                </v-card-text>
+                                <v-card-text
+                                  class="grey lighten-5 text-padding"
+                                  style="color: #000"
+                                >
+                                  Payment Due<span
+                                    class="float-right"
+                                    style="color: #000; font-weight: 600"
+                                    >₦{{ paymentDue }}</span
+                                  >
+                                </v-card-text>
+                                <v-card-text
+                                  class="grey lighten-3 text-padding"
+                                  style="color: #000; font-size: 12px"
+                                >
+                                  <span style="margin-left: 1rem">
+                                    Total Discount (NGN)</span
+                                  ><span
+                                    class="float-right"
+                                    style="color: #000; margin-right: 1rem"
+                                    >₦{{ totalAnnualDiscount }}</span
+                                  >
                                 </v-card-text>
                                 <div class="my-2 d-flex justify-center">
-                                  <v-btn class="px-9" color="warning" dark>
-                                    Try for free
+                                  <v-btn
+                                    class="px-8"
+                                    color="warning"
+                                    dark
+                                    style="text-transform: none"
+                                  >
+                                    TRY NOW
+
+                                    <br />
+                                    15 days Free trial
                                   </v-btn>
                                 </div>
                                 <div class="my-2 d-flex justify-center">
-                                  <v-btn class="px-14" color="success" dark>
-                                    Buy Now
+                                  <v-btn class="px-15" color="success" dark>
+                                    BUY NOW
                                   </v-btn>
                                 </div>
+                                <!-- <div class="border border-gray-500"> -->
+                                <p class="mx-1 text-sm">
+                                  <sup>(1) </sup>New customers get a discount on
+                                  the initial number of users purchased
+                                </p>
+                                <!-- </div> -->
                               </div>
                             </v-card>
                           </v-tab-item>
                           <v-tab-item>
                             <v-card flat>
                               <v-card-text
-                                class="grey lighten-3"
+                                class="text-padding grey lighten-3"
                                 style="color: #000"
                               >
                                 {{ users }}
@@ -642,31 +675,10 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-5"
+                                class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount
-                                <v-tooltip top>
-                                  <template v-slot:activator="{ on, attrs }">
-                                    <v-btn
-                                      icon
-                                      v-bind="attrs"
-                                      style="
-                                        color: blue;
-                                        font-size: 10px;
-                                        margin-top: -5px;
-                                        margin-left: -10px;
-                                      "
-                                      v-on="on"
-                                    >
-                                      (1)
-                                    </v-btn>
-                                  </template>
-                                  <span class="tooltip-notification"
-                                    >New customers get a discount on the initial
-                                    number of users purchased
-                                  </span> </v-tooltip
-                                ><span
+                                User Discount<span
                                   style="color: #ff0000"
                                   class="float-right"
                                   >(₦{{
@@ -676,7 +688,7 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-3"
+                                class="text-padding grey lighten-3"
                                 style="color: #000"
                               >
                                 {{ products.length }} {{ appToAppsText()
@@ -686,7 +698,7 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-5"
+                                class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
                                 App Discount<span
@@ -697,7 +709,7 @@
                               </v-card-text>
 
                               <v-card-text
-                                class="grey lighten-3"
+                                class="text-padding grey lighten-3"
                                 style="color: #000"
                               >
                                 Total / Month<span class="float-right"
@@ -771,6 +783,7 @@ export default {
       appsValueMonthly: 0,
       appsValueAnnually: 0,
       appDiscount: 0,
+      valueOfVat: 0,
       // cost here being synanimous with choose your apps
       cost: '₦2799 / User / Month',
       crm: 2799,
@@ -786,6 +799,8 @@ export default {
     // multiplies 2799 with the total number of users
     annualTimesUser() {
       return this.users * 2799
+      // .toLocaleString()
+      // new Intl.NumberFormat().format(this.users * 2799)
     },
 
     // multiplies 2799 and total number number of users, then divides by 2
@@ -806,9 +821,23 @@ export default {
     billedAnnualTimesUser() {
       return this.totalPerMonthAnnualForAnnual * 12
     },
-
+    // Billed annually * 7.5%
+    annualVat() {
+      return Math.floor(this.billedAnnualTimesUser * 0.075)
+    },
+    paymentDue() {
+      return Math.floor(this.billedAnnualTimesUser + this.annualVat)
+    },
+    totalAnnualDiscount() {
+      return (
+        (this.appDiscountAnnualCalculator() +
+          this.annualUserDiscountOnInitialPurchase) *
+        12
+      )
+    },
     // MONTHLY SUBSCRIPTION CALCULATION STARTS HERE *******
     // multiplies 3499 with the total number of users
+
     monthlyTimesUser() {
       return this.users * 3499
     },
@@ -831,7 +860,16 @@ export default {
       return this.totalPerMonthAnnualForMonthly
     },
   },
+  // Calculates the value of vat being 7.5% of billedMOnthly
+
   methods: {
+    // adds a comma to thousand; giving NaN error
+    thousands_separators(num) {
+      const numParts = num.toString().split('.')
+      numParts[0] = numParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+      return numParts.join('.')
+    },
+    // thousands seperator ends here
     // calculates the value of apps discount 1 - number of users * 1% * app fees per annual
     appDiscountAnnualCalculator() {
       return Math.floor(
@@ -1030,6 +1068,11 @@ export default {
 }
 </script>
 <style scoped>
+.text-padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .v-btn:before {
   display: none;
 }
@@ -1047,7 +1090,7 @@ export default {
 .v-btn:not(.v-btn--round).v-size--default {
   height: 42px;
   min-width: 64px;
-  padding: 0 16px;
+  padding: 4 16px;
 }
 
 .tooltip-notification {
