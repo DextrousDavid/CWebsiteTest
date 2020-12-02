@@ -566,6 +566,19 @@
                                 >
                               </v-card-text>
 
+                              <!-- <v-card-text
+                                class="text-padding green lighten-2"
+                                style="color: #000"
+                              >
+                                Special Discount<span
+                                  class="float-right"
+                                  style="color: #ff0000"
+                                  >(₦{{
+                                    specialDiscountAnnualCalculator
+                                  }})</span
+                                >
+                              </v-card-text> -->
+
                               <v-card-text
                                 class="text-padding grey lighten-3"
                                 style="color: #000"
@@ -617,7 +630,7 @@
                                   Payment Due<span
                                     class="float-right"
                                     style="color: #000; font-weight: 600"
-                                    >₦{{ paymentDue }}</span
+                                    >₦{{ paymentDueAnnual }}</span
                                   >
                                 </v-card-text>
                                 <v-card-text
@@ -678,7 +691,9 @@
                                 class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount<span
+                                User Discount<sup style="color: #0b1eff96">
+                                  (1)</sup
+                                ><span
                                   style="color: #ff0000"
                                   class="float-right"
                                   >(₦{{
@@ -708,6 +723,19 @@
                                 >
                               </v-card-text>
 
+                              <!-- <v-card-text
+                                class="text-padding green lighten-2"
+                                style="color: #000"
+                              >
+                                Special Discount<span
+                                  class="float-right"
+                                  style="color: #ff0000"
+                                  >(₦{{
+                                    specialDiscountMonthlyCalculator
+                                  }})</span
+                                >
+                              </v-card-text> -->
+
                               <v-card-text
                                 class="text-padding grey lighten-3"
                                 style="color: #000"
@@ -720,7 +748,7 @@
                               </v-card-text>
 
                               <div class="grey lighten-5">
-                                <v-card-text
+                                <!-- <v-card-text
                                   ><p
                                     class="font-weight-thin"
                                     style="color: #000"
@@ -731,17 +759,66 @@
                                       >₦{{ billedMonthlyTimesUser }}</span
                                     >
                                   </p>
+                                </v-card-text> -->
+                                <v-card-text
+                                  class="grey lighten-5 text-padding"
+                                  style="color: #000"
+                                >
+                                  VAT<span
+                                    class="float-right"
+                                    style="color: #000"
+                                    ><span
+                                      class="float-right"
+                                      style="color: #000"
+                                      >₦{{ monthlyVat }}</span
+                                    ></span
+                                  >
+                                </v-card-text>
+                                <v-card-text
+                                  class="grey lighten-3 text-padding"
+                                  style="color: #000"
+                                >
+                                  Payment Due<span
+                                    class="float-right"
+                                    style="color: #000; font-weight: 600"
+                                    >₦{{ paymentDueMonthly }}</span
+                                  >
+                                </v-card-text>
+                                <v-card-text
+                                  class="grey lighten-5 text-padding"
+                                  style="color: #000; font-size: 12px"
+                                >
+                                  <span style="margin-left: 1rem">
+                                    Total Discount (NGN)</span
+                                  ><span
+                                    class="float-right"
+                                    style="color: #000; margin-right: 1rem"
+                                    >₦{{ totalMonthlyDiscount }}</span
+                                  >
                                 </v-card-text>
                                 <div class="my-2 d-flex justify-center">
-                                  <v-btn class="px-9" color="warning" dark>
-                                    Try for free
+                                  <v-btn
+                                    class="px-8"
+                                    color="warning"
+                                    dark
+                                    style="text-transform: none"
+                                  >
+                                    TRY NOW
+
+                                    <br />
+                                    15 days Free trial
                                   </v-btn>
                                 </div>
                                 <div class="my-2 d-flex justify-center">
-                                  <v-btn class="px-14" color="success" dark>
-                                    Buy Now
+                                  <v-btn class="px-15" color="success" dark>
+                                    BUY NOW
                                   </v-btn>
                                 </div>
+                                <!-- <div class="border border-gray-500"> -->
+                                <p class="mx-1 text-sm">
+                                  <sup>(1) </sup>New customers get a discount on
+                                  the initial number of users purchased
+                                </p>
                               </div>
                             </v-card>
                           </v-tab-item>
@@ -815,6 +892,7 @@ export default {
         this.annualUserDiscountOnInitialPurchase +
         this.appsValueAnnually -
         this.appDiscountAnnualCalculator()
+        // - this.specialDiscountAnnualCalculator
       )
     },
     // multiplies totalPerMonthAnual  by 12 (annual)
@@ -825,14 +903,24 @@ export default {
     annualVat() {
       return Math.floor(this.billedAnnualTimesUser * 0.075)
     },
-    paymentDue() {
+    paymentDueAnnual() {
       return Math.floor(this.billedAnnualTimesUser + this.annualVat)
     },
     totalAnnualDiscount() {
       return (
         (this.appDiscountAnnualCalculator() +
           this.annualUserDiscountOnInitialPurchase) *
+        // + this.specialDiscountAnnualCalculator
         12
+      )
+    },
+    specialDiscountAnnualCalculator() {
+      return (
+        (this.annualTimesUser +
+          this.appsValueAnnually -
+          (this.annualUserDiscountOnInitialPurchase +
+            this.appDiscountAnnualCalculator())) *
+        0
       )
     },
     // MONTHLY SUBSCRIPTION CALCULATION STARTS HERE *******
@@ -858,6 +946,29 @@ export default {
     // multiplies totalPerMonthAnual  by 12 (annual)
     billedMonthlyTimesUser() {
       return this.totalPerMonthAnnualForMonthly
+    },
+    monthlyVat() {
+      return Math.floor(this.billedMonthlyTimesUser * 0.075)
+    },
+    paymentDueMonthly() {
+      return Math.floor(this.billedMonthlyTimesUser + this.monthlyVat)
+    },
+    // totalPerMonthAnnualForAnnual
+    totalMonthlyDiscount() {
+      return (
+        this.appDiscountMonthlyCalculator() +
+        this.monthlyUserDiscountOnInitialPurchase
+        // + this.specialDiscountAnnualCalculator
+      )
+    },
+    specialDiscountMonthlyCalculator() {
+      return Math.floor(
+        (this.monthlyTimesUser +
+          this.appsValueMonthly -
+          (this.monthlyUserDiscountOnInitialPurchase +
+            this.appDiscountMonthlyCalculator())) *
+          0
+      )
     },
   },
   // Calculates the value of vat being 7.5% of billedMOnthly
