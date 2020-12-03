@@ -61,8 +61,8 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                     label="First Name"
                                     autocomplete
                                     :rules="nameRules"
-                                    outlined
-                                    required
+                                    filled
+                                    disabled
                                   ></v-text-field>
                                 </v-col>
                                 <v-col cols="12" sm="12" md="6" lg="6">
@@ -72,8 +72,8 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                     label="Last Name"
                                     autocomplete
                                     :rules="nameRules"
-                                    outlined
-                                    required
+                                    filled
+                                    disabled
                                   >
                                   </v-text-field>
                                 </v-col>
@@ -82,9 +82,15 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                               <!-- Phone input goes here -->
                               <no-ssr>
                                 <vue-tel-input
-                                  style="padding: 10px; margin-bottom: 29px"
+                                  style="
+                                    padding: 10px;
+                                    margin-bottom: 29px;
+                                    background-color: #eee;
+                                  "
                                   required
                                   placeholder="Mobile Number"
+                                  filled
+                                  disabled
                                 ></vue-tel-input>
                               </no-ssr>
 
@@ -98,6 +104,8 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                 :rules="emailRules"
                                 required
                                 persistent-hint
+                                filled
+                                disabled
                               ></v-text-field>
                               <!-- <v-text-field
                                   ref="password"
@@ -124,6 +132,8 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
                                 :rules="nameRules"
                                 outlined
                                 required
+                                filled
+                                disabled
                               >
                               </v-text-field>
                             </v-col>
