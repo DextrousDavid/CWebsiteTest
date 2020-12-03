@@ -15,7 +15,7 @@
             >
               <div class="w-full mb-6 px-2">
                 <div class="xs:text-center md:text-left">
-                  <div class="inline-block">
+                  <div class="inline-block cloudenly-footer-logo">
                     <nuxt-link to="/">
                       <img
                         class="footer-logo"
@@ -168,6 +168,24 @@
                 <div class="bottom-link">Terms and Policies</div>
               </nuxt-link>
 
+              <nuxt-link
+                to="/privacy/terms-and-policies/terms-of-use-agreement"
+              >
+                <!-- <div class="bottom-link">Terms of Service</div> -->
+
+                <div class="bottom-link">Terms Of Use</div>
+              </nuxt-link>
+              <nuxt-link to="/privacy/terms-and-policies/privacy-policy">
+                <!-- <div class="bottom-link">Terms of Service</div> -->
+
+                <div class="bottom-link">Privacy Policy</div>
+              </nuxt-link>
+              <nuxt-link to="/privacy/terms-and-policies/security-policy">
+                <!-- <div class="bottom-link">Terms of Service</div> -->
+
+                <div class="bottom-link">Security Policy</div>
+              </nuxt-link>
+
               <div class="bottom-link">Careers</div>
             </div>
             <div class="text-newsletter mt-2">
@@ -213,7 +231,7 @@
                   <img
                     class="fill-current h-6 w-6"
                     src="~assets/arrow-button.svg"
-                    alt="cloudenly logo"
+                    alt="arrow button"
                   />
                 </button>
               </div>
@@ -275,5 +293,10 @@ button {
 }
 .list-element {
   font-size: 14px;
+}
+@media (min-width: 768px) {
+  .cloudenly-footer-logo {
+    margin-left: 17px;
+  }
 }
 </style>
