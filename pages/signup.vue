@@ -191,11 +191,13 @@ vue/no-duplicate-attributes */ /* eslint-disable vue/no-duplicate-attributes */
           >
             <div class="main-img place-center">
               <div class="tw-text-left place-center" style="width: 55%">
-                <h2 class="h2 leading-8 transform-with-cloudenly font-semibold">
+                <h2
+                  class="h2 leading-8 transform-with-cloudenly text-white font-semibold"
+                >
                   Transform with Cloudenly and experience the Power of a unified
                   business operation
                 </h2>
-                <div class="mt-4">
+                <div class="mt-4 pricing-apps text-white">
                   CRM. Sales. Purchase. Inventory. Operations. Commerce.
                   Finance. Cloud Storage. HRM.
                 </div>
@@ -498,8 +500,11 @@ export default {
 }
 .transform-with-cloudenly {
   font-size: 22px;
+  color: #fff;
 }
-
+.pricing-apps {
+  color: #fff;
+}
 .create-account {
   font-size: 28px;
   font-weight: 900;
