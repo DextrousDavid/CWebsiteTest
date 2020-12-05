@@ -21,8 +21,8 @@
             business operation. -->
             </div>
             <div class="light-text-header bottom-text">
-              CRM. Purchase. Sales. Inventory. Operations. Commerce. Finance.
-              Cloud Storage. HRM.
+              CRM. Purchase. Sales. Inventory. Operations. Commerce. Cloud.
+              Finance. Cloud Storage. HRM.
             </div>
             <div class="call-to-action-div sm:flex"></div>
             <button
@@ -87,7 +87,7 @@
             <div class="product-explain">
               Improve your customer experience, operational efficiency, business
               intelligence and agility by streamlining your retail, supply
-              chain, commerce, finance, and accounting.
+              chain, finance and accounting.
               <!-- Streamline your retail, supply chain, commerce, finance, and
               accounting for improved customer experience, operational
               efficiency, business intelligence, and agility. -->

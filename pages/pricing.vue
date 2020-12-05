@@ -18,7 +18,7 @@
 
         <div class="mx-8">
           <div class="mt-16">
-            <h3 class="mb-4" style="color: #000">Choose the number of users</h3>
+            <h3 class="mb-4" style="color: #000">Choose to select Users</h3>
             <div>
               <div class="d-flex">
                 <v-col cols="3" sm="2" md="1">
@@ -44,7 +44,12 @@
                   >
                 </v-col>
                 <v-col cols="5" sm="5" md="5">
-                  <span style="color: #000">{{ cost.toLocaleString() }}</span>
+                  <del style="color: #495057">{{
+                    costStrikeThrough.toLocaleString()
+                  }}</del
+                  ><span style="color: #000; margin-left: 10px">{{
+                    cost.toLocaleString()
+                  }}</span>
                 </v-col>
               </div>
             </div>
@@ -335,7 +340,7 @@
                       </v-card>
                     </v-col>
 
-                    <v-col cols="12" sm="6" md="6" lg="4">
+                    <!-- <v-col cols="12" sm="6" md="6" lg="4">
                       <v-card
                         max-width="auto"
                         max-height="80"
@@ -479,7 +484,7 @@
                           </v-tooltip>
                         </v-list-item>
                       </v-card>
-                    </v-col>
+                    </v-col> -->
                   </v-row>
                 </v-col>
 
@@ -897,7 +902,8 @@ export default {
       appDiscount: 0,
       valueOfVat: 0,
       // cost here being synanimous with choose your apps
-      cost: '₦2,799 / User / Month',
+      costStrikeThrough: '₦2,799',
+      cost: '₦1,399.5 / User / Month',
       crm: 2799,
       purchase: 2159,
       sales: 2159,
@@ -1170,14 +1176,16 @@ export default {
 
     // 2799 user / month
     userPerAnnual() {
-      this.cost = '₦2,799 / User / Month'
+      this.costStrikeThrough = '₦2,799'
+      this.cost = '₦1,399.5 / User / Month'
       this.crm = 2799
       this.purchase = 2159
       this.sales = 2159
       this.inventory = 4399
     },
     userPerMonth() {
-      this.cost = '₦3,499 / User / Month'
+      this.costStrikeThrough = '₦3,499'
+      this.cost = '₦1,749.5 / User / Month'
       this.crm = 3499
       this.purchase = 2699
       this.sales = 2699
@@ -1322,7 +1330,7 @@ h1 {
 
 @media (min-width: 1280px) {
   .tab-table {
-    margin-top: -4rem;
+    margin-top: -8rem;
   }
 }
 .v-tabs:not(.v-tabs--vertical) .v-tab {

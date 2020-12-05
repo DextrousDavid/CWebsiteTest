@@ -165,7 +165,7 @@
               <nuxt-link to="/privacy/terms-and-policies">
                 <!-- <div class="bottom-link">Terms of Service</div> -->
 
-                <div class="bottom-link">Terms and Policies</div>
+                <div class="bottom-link">General</div>
               </nuxt-link>
 
               <nuxt-link
