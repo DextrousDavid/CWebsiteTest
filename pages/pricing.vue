@@ -1020,12 +1020,12 @@ export default {
     // calculates the value of apps discount 1 - number of users * 1% * app fees per annual
     appDiscountAnnualCalculator() {
       return (this.appDiscount =
-        (1 - this.users * 0.05) * this.appsValueAnnually)
+        (1 - this.users * 0.01) * this.appsValueAnnually)
     },
     // calculates the value of apps discount 1 - number of users * 1% * app fees per month
     appDiscountMonthlyCalculator() {
       return (this.appDiscount =
-        (1 - this.users * 0.05) * this.appsValueMonthly)
+        (1 - this.users * 0.01) * this.appsValueMonthly)
     },
     checkSelected(value) {
       return this.products.includes(value)
