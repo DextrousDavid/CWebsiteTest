@@ -543,9 +543,7 @@
                                 class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount<sup style="color: #0b1eff96">
-                                  (1)</sup
-                                ><span
+                                User Discount<span
                                   style="color: #ff0000"
                                   class="float-right"
                                   >(₦{{
@@ -664,7 +662,9 @@
                                     margin-right: 10px;
                                   "
                                 >
-                                  <span> Total Discount (NGN): </span
+                                  <span>
+                                    <sup style="color: #000">(1) </sup>Total
+                                    Discount (NGN): </span
                                   ><span style="color: #000; margin-left: 10px"
                                     >₦{{
                                       totalAnnualDiscount.toLocaleString()
@@ -691,8 +691,8 @@
                                 </div>
                                 <!-- <div class="border border-gray-500"> -->
                                 <p class="mx-1 text-sm">
-                                  <sup>(1) </sup>New customers get a discount on
-                                  the initial number of users purchased
+                                  <sup>(1) </sup>New Customers get a discount on
+                                  initial purchases
                                 </p>
                                 <!-- </div> -->
                               </div>
@@ -719,9 +719,7 @@
                                 class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount<sup style="color: #0b1eff96">
-                                  (1)</sup
-                                ><span
+                                User Discount<span
                                   style="color: #ff0000"
                                   class="float-right"
                                   >(₦{{
@@ -829,7 +827,9 @@
                                     margin-right: 10px;
                                   "
                                 >
-                                  <span> Total Discount (NGN): </span
+                                  <span>
+                                    <sup style="color: #000">(1) </sup>Total
+                                    Discount (NGN): </span
                                   ><span style="color: #000; margin-left: 10px"
                                     >₦{{
                                       totalMonthlyDiscount.toLocaleString()
@@ -856,8 +856,8 @@
                                 </div>
                                 <!-- <div class="border border-gray-500"> -->
                                 <p class="mx-1 text-sm">
-                                  <sup>(1) </sup>New customers get a discount on
-                                  the initial number of users purchased
+                                  <sup>(1) </sup>New Customers get a discount on
+                                  initial purchases
                                 </p>
                               </div>
                             </v-card>
@@ -923,7 +923,7 @@ export default {
 
     // multiplies 2799 and total number number of users, then divides by 2
     annualUserDiscountOnInitialPurchase() {
-      return (this.users * 2799) / 2
+      return this.users * 2799 * 0.25
     },
 
     // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase + appsvalueAnnually - appDiscount annual calculator functions!
@@ -972,7 +972,7 @@ export default {
     },
     // multiplies 3499 and total number number of users, then divides by 2
     monthlyUserDiscountOnInitialPurchase() {
-      return (this.users * 3499) / 2
+      return this.users * 3499 * 0.25
     },
 
     // Total / Month multiplies annualTimesUser with annualUserDiscountOnInitialPurchase functions!
@@ -1016,21 +1016,16 @@ export default {
 
   methods: {
     // adds a comma to thousand; giving NaN error
-    thousands_separators(num) {
-      const numParts = num.toString().split('.')
-      numParts[0] = numParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-      return numParts.join('.')
-    },
     // thousands seperator ends here
     // calculates the value of apps discount 1 - number of users * 1% * app fees per annual
     appDiscountAnnualCalculator() {
       return (this.appDiscount =
-        (1 - this.users * 0.01) * this.appsValueAnnually)
+        (1 - this.users * 0.05) * this.appsValueAnnually)
     },
     // calculates the value of apps discount 1 - number of users * 1% * app fees per month
     appDiscountMonthlyCalculator() {
       return (this.appDiscount =
-        (1 - this.users * 0.01) * this.appsValueMonthly)
+        (1 - this.users * 0.05) * this.appsValueMonthly)
     },
     checkSelected(value) {
       return this.products.includes(value)
