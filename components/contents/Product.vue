@@ -212,7 +212,7 @@ export default {
   bottom: 5%;
   width: 4px;
   height: 90%;
-  /* height: 100%; */
+  /* height: 120%; */
   background: #4c9f70;
 }
 .horizontal-line {
