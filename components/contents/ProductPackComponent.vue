@@ -102,11 +102,7 @@ Orders, Invoice, Debit Notes`,
           content: `Material Requirement Planning, Material Assembly, Job
                     Orders, Material Request, Production Management`,
         },
-        {
-          header: `Budget, Asset and Expense Management
-(Coming Soon)`,
-          content: `Expense Management, BudgetPlanning & Management`,
-        },
+
         {
           header: `Analytics & Business Intelligence`,
         },

@@ -8,7 +8,7 @@
         <div class="horizontal-line"></div>
         <img src="/img/icon-left.svg" style="margin-left: 47px" />
       </div>
-      <div class="sm:w-1/2 product-features-left flex justify-center">
+      <div class="sm:w-1/2 product-features-left flex">
         <div class="card-feature">
           <div class="feature-header">{{ features[0].header }}</div>
           <div class="feature-description-left">
@@ -68,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="sm:w-1/2 product-features-right flex justify-center">
+      <div class="sm:w-1/2 product-features-right flex">
         <div class="card-feature">
           <div class="feature-header">{{ features[5].header }}</div>
           <div class="feature-description-right">
@@ -279,4 +279,11 @@ export default {
     text-align: center;
   }
 }
+/* @media (min-width: 768px) {
+  .product-features-right {
+    flex-direction: column;
+    margin-top: -13rem;
+    align-items: flex-end;
+  }
+} */
 </style>
