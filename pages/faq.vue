@@ -229,7 +229,6 @@ export default {
           content1:
             'With Cloudenly, the power is in your hands, you can choose the billing method that is most convenient for you and your business, click here to get started. ',
           content2: 'Sign up to get started. ',
-          urll2: '/signup',
         },
       ],
 
