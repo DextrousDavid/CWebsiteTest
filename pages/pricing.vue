@@ -50,6 +50,10 @@
                   ><span style="color: #000; margin-left: 10px">{{
                     cost.toLocaleString()
                   }}</span>
+                  <span class="block" style="font-size: 12px"
+                    ><sup>(1)</sup> A 25% discount on the initial number of
+                    Users purchased</span
+                  >
                 </v-col>
               </div>
             </div>
@@ -907,7 +911,7 @@ export default {
       valueOfVat: 0,
       // cost here being synanimous with choose your apps
       costStrikeThrough: '₦2,799',
-      cost: '₦1,399.5 / User / Month',
+      cost: '₦2,099.25 / User / Month',
       crm: 2799,
       purchase: 2159,
       sales: 2159,
@@ -1184,7 +1188,7 @@ export default {
     // 2799 user / month
     userPerAnnual() {
       this.costStrikeThrough = '₦2,799'
-      this.cost = '₦1,399.5 / User / Month'
+      this.cost = '₦2,099.25 / User / Month'
       this.crm = 2799
       this.purchase = 2159
       this.sales = 2159
@@ -1192,7 +1196,7 @@ export default {
     },
     userPerMonth() {
       this.costStrikeThrough = '₦3,499'
-      this.cost = '₦1,749.5 / User / Month'
+      this.cost = '₦2,624.25 / User / Month'
       this.crm = 3499
       this.purchase = 2699
       this.sales = 2699

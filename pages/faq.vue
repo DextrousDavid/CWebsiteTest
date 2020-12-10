@@ -117,7 +117,8 @@ export default {
         {
           id: 1,
           heading: 'What is the relationship between Scelloo and Cloudenly?',
-          content1: 'Cloudenly is a product suite of Scelloo.',
+          content1:
+            'Cloudenly is a product suite of Scelloo a technology company that harnesses the value of technology to provide solutions to help entrepreneurs and organizations thrive.',
         },
         {
           id: 2,
@@ -125,19 +126,19 @@ export default {
           content1:
             'Cloudenly is an Enterprise Resource Planning (ERP) application with the following products:',
           content2:
-            '• Optima (An integrated supply chain and accounting solution)',
+            '• Optima - (An integrated supply chain and accounting solution)',
 
           content3:
-            '• HumanaR (The platform for seamless HR operations and people experience management)',
+            '• HumanaR - The integrated HR operations and people experience management platform ',
 
           content4:
-            '• Dome (Secure file sharing and storage for teams with access control.) – Coming soon',
+            '• Dome - (Secure file sharing and storage for teams with access control.) – Coming soon',
         },
         {
           id: 3,
           heading: 'How are Cloudenly products offered?',
           content1:
-            'Cloudenly products are offered to customers primarily as “Software as a Service” (SaaS) applications and are preconfigured to fit most organizations needs. Organizations have the flexibility to customize these products to fit their specific needs. Usage is generally subscription-based, with the option to pay monthly or annually. Cloudenly products, being cloud based means that users do not have to worry about expensive, costly and most often challenging upgrades. These products are deployed on both web & mobile environments.',
+            'Cloudenly products are offered to customers primarily as “Software as a Service” (SaaS) applications and are preconfigured to fit most organization’s needs. Organizations have the flexibility to customize these products to fit their specific needs. Usage is generally subscription-based, with the option to pay monthly or annually. Cloudenly products, being cloud based means that users do not have to worry about expensive and most often challenging upgrades.',
         },
       ],
       faqs2: [
@@ -146,50 +147,53 @@ export default {
           heading:
             'Do I need a lot of money to get started on the Cloudenly software?',
           content1:
-            'No, you don’t. Our software is available for a monthly token as a Software-as-a-Service (SaaS), and you can access the service from anywhere through a browser. Sign up for free or Contact us for assistance.',
+            'No, you don’t. Our software is available for a monthly token as a Software-as-a-Service (SaaS), and you can access the service from anywhere through a browser. Sign up for free or Contact us for assistance',
         },
         {
           id: 2,
           heading:
             'I am not sure which product works for my business in the Cloudenly suite',
           content1:
-            'Micro Enterprises : Are you a solo enterprise with basic business processes and bootstrapping your way to success?. If this sounds like you then Lite is for you. Sign up for free or Contact us for assistance. ',
-          content2:
-            'Small, Medium & Large Enterprise : Do you have a growing team and looking at ways to scale your business ? ',
-          content3: 'Customer Engagement',
+            'Micro Enterprises: Are you a solo enterprise with basic business processes and bootstrapping your way to success? If this sounds like you then Lite is for you.',
+          content2: 'Sign up for free or Contact us for assistance.',
+          content3:
+            'Small, Medium & Large Enterprise: Do you have a growing team and looking at ways to scale your business? ',
           content4:
-            'Get on-boarded with Optima, HumanaR & all our other products for your growing business. Sign up for free or Contact us for assistance. ',
+            'Get on-boarded with Optima, HumanaR & all our other products for your growing business.',
+          content5: 'Sign up for free or Contact us for assistance. ',
         },
         {
           id: 3,
           heading: 'Is there a trial period and how do I sign up?',
           content1:
-            "There's a 21 day free trial period. Just enter your name, email address & password, your card details and you're good to go. You can then choose a plan and get started. ",
+            "There's a 15 day free trial period. Just enter your name, email address & password, your card details and you're good to go. You can then choose a plan and get started. ",
         },
         {
           id: 4,
           heading:
-            'How do I subscribe if I decide to use Cloudenly for my business ',
+            'How do I subscribe if I decide to use Cloudenly for my business?',
           content1:
-            'At any stage in your trial period you decide to go to the payment page and make your payments, you will also be re-directed to the payment page at the end of your trial period . ',
+            'You can subscribe to Cloudenly at your convenience all you need to do is go to the pricing page and get started.',
+          content2:
+            'You can also subscribe at any stage in your trial period, you will also be re-directed to the pricing page at the end of your trial period. ',
         },
         {
           id: 5,
           heading: 'What information do I need to sign up on Cloudenly?',
           content1:
-            'Signing up on Cloudenly is easy, you can sign up with basic information about you and your business. You can always customize and update your setting as you go.',
+            'Signing up on Cloudenly is easy, you can sign up with basic information about you and your business. You can always customize and update your information as you go',
         },
         {
           id: 6,
           heading: 'Do I require IT expertise to use Cloudenly ERP?',
           content1:
-            'No, you do not. As a SaaS service, the application is already preconfigured and fit for use for most people/organizations. In addition, the in-app user guide is designed to walk you through any additional setup that may be required.',
+            'No, you do not require IT expertise. As a SaaS service, the application is already preconfigured and fit for use for most people/organizations. In addition, the in-app user guide is designed to walk you through any additional setup that may be required.',
         },
         {
           id: 7,
           heading: 'Does Cloudenly provide setup assistance?',
           content1:
-            'Getting started on Cloudenly is so easy that you will likely not need assistance, However we have a step by step process to set up which you can access in our knowledge base . We also have a friendly and knowledgeable support team that is here to help you along the way.',
+            'Getting started on Cloudenly is so easy that you will likely not need assistance. However we have a step by step process to set up which you can access in our resource library . We also have a friendly and knowledgeable support team that is here to help you.',
           url1: '',
         },
       ],
@@ -202,27 +206,30 @@ export default {
         },
         {
           id: 2,
-          heading: 'Can I purchase services as a stand-alone product?',
+          heading: 'What payment methods do you accept?',
           content1:
-            'Yes, our products are designed for you to apply add-ons services to any of the products, adding the number of rights and the services that you want . Sign up for free or Contact us for assistance',
+            'You can pay for your subscription using any Mastercard or Visa credit card or an debit card.',
         },
         {
           id: 3,
-          heading: 'How much will my Cloudenly subscription cost ?',
+          heading: 'Can I purchase services as a stand-alone product?',
           content1:
-            'Cloudenly pricing is bult to be flexible and to suite your business needs. You can make use of our pricing calculator  here to determine the software and price that works for your business. ',
+            'Yes, our products are designed for you to apply add-on applications as well as expand the number of users and customize to suite your business.',
+          content2: 'Sign up for free or Contact us for assistance.',
         },
         {
           id: 4,
-          heading: 'Will I be billed monthly or annually?',
+          heading: 'How much will my Cloudenly subscription cost?',
           content1:
-            'With Cloudenly, the power is in your hands, you can choose the billing method that is most convenient for you and your business, click here to get started. ',
+            'Cloudenly pricing is built to be flexible and to suite your business needs. You can make use of our pricing calculator to determine the software and price that works for your business. ',
         },
         {
           id: 5,
-          heading: 'What payment methods do you accept',
+          heading: 'Will I be billed monthly or annually?',
           content1:
-            'You can pay for your subscription using any Mastercard or Visa credit or debit card. ',
+            'With Cloudenly, the power is in your hands, you can choose the billing method that is most convenient for you and your business, click here to get started. ',
+          content2: 'Sign up to get started. ',
+          urll2: '/signup',
         },
       ],
 
@@ -230,7 +237,7 @@ export default {
         {
           id: 1,
           heading:
-            'Can I migrate my old or historical data into Cloudenly from another platfrom?',
+            'Can I migrate my old or historical data into Cloudenly from another platform?',
           content1:
             'Cloudenly presently supports the migration of your employee data, CRM and Product catalogue using our customized CSV template.',
         },
@@ -247,11 +254,12 @@ export default {
             'We are committed to safeguarding your personal data and we have put in place adequate security measures to ensure that personal data we collect is not altered, accessed without authorization or lost. The personal data we collect are only accessed to the extent mandated by law.',
           content2: 'We ensure data privacy and security by:',
           content3: '• Making sure that access controls are in place',
-          content4:
-            '• Continuously accessing internal risks and performing compliance audits',
+          content4: '• Installing anti-virus software on our servers',
           content5:
-            '• Testing our security controls, including external audits on a regular basis ',
+            '• Continuously accessing internal risks and performing compliance audits',
           content6:
+            '• Testing our security controls, including external audits on a regular basis ',
+          content7:
             '• Providing training on data security and privacy to our employees.',
         },
         {
@@ -260,23 +268,24 @@ export default {
           content1:
             'Cloudenly is designed to ensure the highest standard of security by incorporating:',
           content2: '• Encrypted password algorithm',
-          content3: '• Two-factor authentication',
-          content4: '• Ring-fencing',
-          content5: '• Users, role-based access controls and privileges',
+          content3: '• Security Questions',
+          content4: '• Two-factor authentication',
+          content5: '• Ring-fencing',
+          content6: '• Users, role-based access controls and privileges',
         },
         {
           id: 5,
           heading: 'What happens to my data if I cancel?',
           content1:
-            "If you decide to cancel during the free 21 day trial, we'll delete all traces of your data from our servers immediately. When it's gone, it's gone - so before you cancel, make sure you've saved all the reports you want to keep.",
+            "If you decide to cancel during the free 15 day trial, we will delete all traces of your data from our servers immediately. When it's gone, it's gone - so before you cancel, make sure you've saved all the reports you want to keep.",
           content2:
-            "If you're a paying subscriber, you will have access to your data for 90 days after you cancel, after which we'll delete all your data from our servers.",
+            "If you're a paying subscriber, you will have access to your data for a 90 days period post cancellation, after which we'll delete all your data from our servers.",
         },
         {
           id: 6,
           heading: 'Can I download a copy of my data?',
           content1:
-            'Yes, Cloudenly allows you to export your data at any point in an MS excel format. You can also export any of the reports in an MS excel format as well. ',
+            'Yes, Cloudenly allows you to export your data at any point in CSV.',
         },
       ],
 
@@ -285,20 +294,19 @@ export default {
           id: 1,
           heading: "Are Cloudenly's products scalable?",
           content1:
-            'These products are designed for entrepreneurs, small, medium and large enterprises; and scales seamlessly as your business grows.',
+            'Cloudenly products are designed for entrepreneurs, small, medium and large enterprises; and built to scale seamlessly as your business grows.',
         },
         {
           id: 2,
           heading: 'Can I access Cloudenly on my mobile phone or tablet?',
           content1:
-            'Cloudenly can be accessed from any web enabled mobile device with a web browser as long as you have your username and password. You can also download the Cloudenly app on your phone for easy access on the go. You can download the app here',
+            'Cloudenly can be accessed from any web enabled mobile device with a web browser as long as you have your username and password.',
         },
         {
           id: 3,
-          heading:
-            'Can multiple I add multiple users to my Cloudenly account ? ',
+          heading: 'Can I add multiple users to my Cloudenly account?',
           content1:
-            'Yes you can add multiple users to your account. With Cloudenly, the power is in your hands and you can always customize to suite you and your business',
+            'Yes, you can add multiple users to your account. With Cloudenly, the power is in your hands and you can always customize to suite your business.',
         },
       ],
       faqs6: [
@@ -315,11 +323,12 @@ export default {
         },
         {
           id: 2,
-          heading: 'What type of support can I get from the Partner Networks?',
+          heading: 'What type of support can I get from the Partner Network?',
           content1:
             'The partners are independent, but authorized agents. Depending on the profile of the Partner, they may provide pre-sales, onboarding, training platform and post-sales support. Some are qualified and certified subject matter experts capable of providing business consulting and advisory services for your business.',
           content2:
             'You can find an expert across the areas covered by the Cloudenly workflow platform as well as for other business needs.',
+          content3: 'Talk to an expert today.',
         },
         {
           id: 3,
