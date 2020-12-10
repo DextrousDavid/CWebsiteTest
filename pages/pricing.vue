@@ -543,7 +543,9 @@
                                 class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount<span
+                                User Discount<sup style="color: #0b1eff96">
+                                  (1)</sup
+                                ><span
                                   style="color: #ff0000"
                                   class="float-right"
                                   >(₦{{
@@ -663,7 +665,7 @@
                                   "
                                 >
                                   <span>
-                                    <sup style="color: #000">(1) </sup>Total
+                                    <sup style="color: #000">(3) </sup>Total
                                     Discount (NGN): </span
                                   ><span style="color: #000; margin-left: 10px"
                                     >₦{{
@@ -691,7 +693,7 @@
                                 </div>
                                 <!-- <div class="border border-gray-500"> -->
                                 <p class="mx-1 text-sm">
-                                  <sup>(1) </sup>New Customers get a discount on
+                                  <sup>(3) </sup>New Customers get a discount on
                                   initial purchases
                                 </p>
                                 <!-- </div> -->
@@ -719,7 +721,9 @@
                                 class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
-                                User Discount<span
+                                User Discount<sup style="color: #0b1eff96">
+                                  (1)</sup
+                                ><span
                                   style="color: #ff0000"
                                   class="float-right"
                                   >(₦{{
@@ -828,7 +832,7 @@
                                   "
                                 >
                                   <span>
-                                    <sup style="color: #000">(1) </sup>Total
+                                    <sup style="color: #000">(2) </sup>Total
                                     Discount (NGN): </span
                                   ><span style="color: #000; margin-left: 10px"
                                     >₦{{
@@ -856,7 +860,7 @@
                                 </div>
                                 <!-- <div class="border border-gray-500"> -->
                                 <p class="mx-1 text-sm">
-                                  <sup>(1) </sup>New Customers get a discount on
+                                  <sup>(2) </sup>New Customers get a discount on
                                   initial purchases
                                 </p>
                               </div>
@@ -1019,13 +1023,21 @@ export default {
     // thousands seperator ends here
     // calculates the value of apps discount 1 - number of users * 1% * app fees per annual
     appDiscountAnnualCalculator() {
-      return (this.appDiscount =
-        (1 - this.users * 0.05) * this.appsValueAnnually)
+      if (this.users >= 20) {
+        return 0
+      } else {
+        return (this.appDiscount =
+          (1 - this.users * 0.05) * this.appsValueAnnually)
+      }
     },
     // calculates the value of apps discount 1 - number of users * 1% * app fees per month
     appDiscountMonthlyCalculator() {
-      return (this.appDiscount =
-        (1 - this.users * 0.05) * this.appsValueMonthly)
+      if (this.users >= 20) {
+        return 0
+      } else {
+        return (this.appDiscount =
+          (1 - this.users * 0.05) * this.appsValueMonthly)
+      }
     },
     checkSelected(value) {
       return this.products.includes(value)
