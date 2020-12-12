@@ -572,6 +572,7 @@
                               </v-card-text>
 
                               <v-card-text
+                                v-if="users < 20"
                                 class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
@@ -750,6 +751,7 @@
                               </v-card-text>
 
                               <v-card-text
+                                v-if="users < 20"
                                 class="text-padding grey lighten-5"
                                 style="color: #0b1eff96"
                               >
