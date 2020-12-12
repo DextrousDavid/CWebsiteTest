@@ -123,30 +123,6 @@
                 </div></nuxt-link
               >
             </div>
-
-            <!-- <hr style="margin-top: 17px; border-top-color: red" /> -->
-
-            <!-- <div class="flex flex-wrap mb-3 w-full md:text-left">
-          <div class="w-full mb-2 px-2">
-            <div>
-              <img src="~assets/cloudenly-logo.svg" />
-            </div>
-            <div class="inline-block mr-2">
-              Icons starts
-              <img src="/img/whatsapp-icon.svg" />
-            </div>
-            <div class="inline-block mr-2">
-              <img src="/img/twitter-icon.svg" />
-            </div>
-            <div class="inline-block mr-2">
-              <img src="/img/facebook-icon.svg" />
-            </div>
-            <div class="inline-block mr-2">
-              <img src="/img/instagram-icon.svg" />
-              icon ends
-            </div>
-          </div>
-        </div> -->
           </div>
         </div>
       </div>

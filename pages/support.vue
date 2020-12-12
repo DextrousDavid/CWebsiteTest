@@ -7,20 +7,20 @@
       <div class="content-center mr-3 ml-3">
         <h1 class="banner-h1">Submit a Support Ticket</h1>
         <div style="max-width: 550px; margin: auto">
-          <p class="banner-p font-normal">
+          <!-- <p class="banner-p font-normal">
             Our technical teams are currently facing a significant increase in
             the number of support requests. You may experience a delayed
             response time as we work to address this.
-          </p>
+          </p> -->
         </div>
       </div>
     </section>
     <!-- Banner Ends here -->
-    <div>
-      <div class="flex flex-wrap sm:px-2 lg:px-40 justify-center mt-4 mb-20">
-        <div
-          class="flex flex-wrap mb-3 mt-2 w-full xs:-px-8 sm:-px-8 md:px-2 lg:px-2 -mx-2"
-        >
+    <div class="flex flex-wrap sm:px-2 lg:px-20 justify-center mt-4 mb-20">
+      <div
+        class="flex flex-wrap mb-3 mt-2 w-full xs:-px-8 sm:-px-8 md:px-2 lg:px-2 -mx-2"
+      >
+        <div class="w-full md:w-3/4 lg:w-3/4 mb-3 text-left px-2 sm:mt-3">
           <div class="w-full mb-4 text-left px-2 sm:mt-3">
             <div class="bottom-navigation-div">
               <h5 class="your-description font-semibold">YOUR DESCRIPTION</h5>
@@ -139,90 +139,16 @@
                   <td class="md:w-3/4 lg:py-5">
                     <input
                       id="telephone"
-                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none disabled"
+                      disabled
                       type="text"
+                      placeholder="2.0"
                     />
                   </td>
                 </tr>
               </table>
             </div>
           </div>
-
-          <!-- <div class="w-full mb-4 text-left px-2 sm:mt-3">
-            <div class="bottom-navigation-div">
-              <h5 class="your-description font-semibold">
-                YOUR CLOUDENLY INSTALLATION INFORMATION
-              </h5>
-              <hr
-                class="w-full"
-                style="border: 1px solid #808080; margin-top: 5px"
-              />
-            </div>
-            <div>
-              <table class="w-full">
-                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5 flex">Edition and Hosting</td>
-                  <td class="md:w-3/4 lg:py-5 edition-and-hosting">
-                    <div class="block mb-3">
-                      <input
-                        id="name"
-                        class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
-                        type="radio"
-                        name="radio"
-                        value="1"
-                      /><span style="margin-left: 6px">Cloudenly Online</span>
-                    </div>
-                    <div class="block mb-3">
-                      <input
-                        id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
-                        type="radio"
-                        name="radio"
-                        value="1"
-                      /><span style="margin-left: 6px"
-                        >Cloudenly Entreprise</span
-                      >
-                    </div>
-                    <div class="block mb-3">
-                      <input
-                        id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
-                        type="radio"
-                        name="radio"
-                        value="1"
-                      /><span style="margin-left: 6px"
-                        >Cloudenly Community</span
-                      >
-                    </div>
-                  </td>
-                </tr>
-
-                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5 your-subscription-code sm:flex">
-                    Your Subscription Code
-                  </td>
-                  <td class="md:w-3/4 lg:py-5">
-                    <input
-                      id="phone"
-                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
-                      type="text"
-                    />
-                  </td>
-                </tr>
-
-                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5">Cloudenly Version</td>
-                  <td class="md:w-3/4 lg:py-5">
-                    <input
-                      id="number"
-                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
-                      type="text"
-                    />
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div> -->
 
           <div class="w-full mb-4 text-left px-2 sm:mt-3">
             <div class="bottom-navigation-div">
@@ -234,31 +160,9 @@
             </div>
             <div>
               <table class="w-full">
-                <!-- <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5">Your Account Number</td>
-                  <td class="md:w-3/4 lg:py-5">
-                    <input
-                      id="telephone"
-                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
-                      type="text"
-                    />
-                  </td>
-                </tr> -->
-                <!-- Ticket Type Starts here -->
                 <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
                   <td class="md:w-1/4 lg:py-5 flex">Ticket Type</td>
                   <td class="md:w-3/4 lg:py-5 edition-and-hosting">
-                    <!-- <div class="block mb-3">
-                      <input
-                        id="name"
-                        class="border border-solid border-gray-800 rounded pt-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
-                        type="radio"
-                        name="radio"
-                        value="1"
-                      /><span style="margin-left: 6px"
-                        >Technical/Commercial/Enquiry
-                      </span>
-                    </div> -->
                     <div class="block mb-3">
                       <input
                         id="name"
@@ -305,18 +209,6 @@
                         value="1"
                       /><span style="margin-left: 6px">Traceable Bugs </span>
                     </div>
-
-                    <!-- <div class="block mb-3">
-                      <input
-                        id="name"
-                        class="border border-solid border-gray-800 rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none form-radio"
-                        type="radio"
-                        name="radio"
-                        value="1"
-                      /><span style="margin-left: 6px"
-                        >Urgent. High. Medium. Low
-                      </span>
-                    </div> -->
 
                     <div class="block mb-3">
                       <input
@@ -421,29 +313,26 @@
                     ></textarea>
                   </td>
                 </tr>
-
-                <!-- <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5">Attachments</td>
+              </table>
+              <hr
+                class="w-full"
+                style="
+                  border: 1px solid #808080;
+                  margin-top: 1rem;
+                  margin-bottom: 1rem;
+                "
+              />
+              <table class="w-full">
+                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
+                  <td class="md:w-1/4 lg:py-5 mr-1">Attached Files</td>
                   <td class="md:w-3/4 lg:py-5">
-                    <input
-                      id="text"
-                      class="border border-solid border-gray-800 rounded w-full py-2 px-3 text-gray-700 leading-tight"
-                      type="text"
-                    />
+                    <div class="form-group files">
+                      <input id="file" type="file" class="form-control" />
+                    </div>
                   </td>
                 </tr>
-
-                <tr class="w-full flex flex-col flex-no-wrap sm:table-row">
-                  <td class="md:w-1/4 lg:py-5"></td>
-                  <td class="md:w-3/4 lg:py-5">
-                    Add more attachments
-                    <hr
-                      class="add-more-attachments-hr w-full"
-                      style="border: 1px solid #808080; margin-top: 15px"
-                    />
-                  </td>
-                </tr> -->
               </table>
+
               <hr
                 class="w-full"
                 style="
@@ -459,6 +348,46 @@
                 >
                   Submit
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-1/4 lg:w-1/4 mb-3 text-left px-8 md:-mt-16 sm:mt-3"
+        >
+          <div
+            class="border bg-white w-full px-2 py-2 flex justify-center mb-2"
+          >
+            <div class="rounded w-64 text-center p-2">
+              <div>
+                <h3 class="text-sm font-semibold">Already have an account?</h3>
+              </div>
+              <div>
+                <button class="already-have-an-account-btn mt-4">Login</button>
+              </div>
+
+              <p class="text-xs">Login to find your contract ID</p>
+            </div>
+          </div>
+
+          <div
+            class="border bg-white w-full px-2 py-2 md:mt-20 flex justify-center"
+          >
+            <div class="rounded w-64 p-0">
+              <div>
+                <h3 class="text-sm font-semibold" style="margin-bottom: 10px">
+                  Emergency Lines
+                </h3>
+              </div>
+              <div>
+                <div>
+                  <span class="text-sm">Line 1</span>
+                  <span class="float-right text-sm">+234 9060020838</span>
+                </div>
+                <div>
+                  <span class="text-sm">Line 2</span>
+                  <span class="float-right text-sm">+234 9060071225</span>
+                </div>
               </div>
             </div>
           </div>
@@ -490,6 +419,16 @@ export default {
 </script>
 
 <style scoped>
+.already-have-an-account-btn {
+  border-radius: 3px;
+  background-color: #4781dc;
+  color: #fff;
+  padding: 10px 65px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
 .join-btn {
   color: #fff;
 }
