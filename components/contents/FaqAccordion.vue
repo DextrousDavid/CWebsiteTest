@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/no-v-html -->
+
 <template>
   <no-ssr>
     <div class="mb-4">
@@ -15,57 +17,39 @@
 
               <v-expansion-panel-content color="white">
                 <a :href="faq.url1">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content1 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content1"></div>
                 </a>
 
                 <a :href="faq.url2">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content2 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content2"></div>
                 </a>
 
                 <a :href="faq.url3">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content3 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content3"></div>
                 </a>
 
                 <a :href="faq.url4">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content4 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content4"></div>
                 </a>
 
                 <a :href="faq.url5">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content5 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content5"></div>
                 </a>
 
                 <a :href="faq.url6">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content6 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content6"></div>
                 </a>
 
                 <a :href="faq.url7">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content7 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content7"></div>
                 </a>
 
                 <a :href="faq.url8">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content8 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content8"></div>
                 </a>
 
                 <a :href="faq.url9">
-                  <div class="divtextColor mt-2">
-                    {{ faq.content9 }}
-                  </div>
+                  <div class="divtextColor mt-2" v-html="faq.content9"></div>
                 </a>
               </v-expansion-panel-content>
             </v-expansion-panel>
