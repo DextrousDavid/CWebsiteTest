@@ -34,11 +34,129 @@
         class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
-          <li
-            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
-          >
-            Products
-          </li>
+          <!-- Product Hoverable megamenu -->
+          <no-ssr>
+            <li
+              class="hoverable block mt-4 lg:inline-block lg:mt-0 px-1 py-1 hover:bg-gray-200 rounded mr-2"
+            >
+              <span
+                class="block lg:inline-block lg:mt-0 px-1 hover:bg-gray-200 rounded"
+              >
+                <span class="list-item-navigation">Products</span>
+              </span>
+              <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-white">
+                <div
+                  class="container mx-auto w-full flex flex-wrap justify-between mx-2"
+                >
+                  <ul
+                    class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3"
+                  >
+                    <div class="flex items-center hover:bg-blue-100">
+                      <img
+                        class="products-logo h-8 w-8"
+                        src="/img/Optima-logo.svg"
+                      />
+                      <h3
+                        class="ml-1 font-bold text-xl text-blue-600 text-bold mb-2"
+                      >
+                        Optima
+                      </h3>
+                    </div>
+                    <p class="ml-1 text-black text-base">
+                      An integrated cloud ERP for accounting, Supply Chain and
+                      Unified Commerce Solutions.
+                    </p>
+                    <div class="flex items-center py-3">
+                      <svg
+                        class="h-6 pr-3 fill-current text-black"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"
+                        />
+                      </svg>
+                      <a
+                        href="#"
+                        class="text-black bold border-b-2 border-blue-300 hover:text-blue-300"
+                        >Find out more...</a
+                      >
+                    </div>
+                  </ul>
+                  <ul
+                    class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3"
+                  >
+                    <div class="flex items-center hover:bg-purple-100">
+                      <img
+                        class="products-logo h-8 w-8"
+                        src="/img/Humana-logo.svg"
+                      />
+                      <h3
+                        class="ml-1 font-bold text-xl text-purple-700 text-bold mb-2"
+                      >
+                        HumanaR
+                      </h3>
+                    </div>
+                    <p class="text-black text-base">
+                      A digital HR system for seamless HR Operations and payroll
+                      compliance.
+                    </p>
+                    <div class="flex items-center py-3">
+                      <svg
+                        class="h-6 pr-3 fill-current text-black"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"
+                        />
+                      </svg>
+                      <a
+                        href="#"
+                        class="text-black bold border-b-2 border-blue-300 hover:text-blue-300"
+                        >Find out more...</a
+                      >
+                    </div>
+                  </ul>
+                  <ul
+                    class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-b-0 md:border-b-0 pb-6 pt-6 lg:pt-3"
+                  >
+                    <div class="flex items-center hover:bg-green-100">
+                      <img
+                        class="products-logo h-8 w-8"
+                        src="/img/Dome-logo.svg"
+                      />
+                      <h3
+                        class="ml-1 font-bold text-xl text-green-600 text-bold mb-2"
+                      >
+                        Dome
+                      </h3>
+                    </div>
+                    <p class="text-black text-base">
+                      A Cloud storage and collaboration tool.
+                    </p>
+                    <div class="flex items-center py-3">
+                      <svg
+                        class="h-6 pr-3 fill-current text-black"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"
+                        />
+                      </svg>
+                      <a
+                        href="#"
+                        class="text-black bold border-b-2 border-blue-300 hover:text-blue-300"
+                        >Find out more...</a
+                      >
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </no-ssr>
+          <!-- Product Hoverable megamenu ends here -->
 
           <nuxt-link
             to="/pricing"
@@ -51,7 +169,7 @@
             <li
               class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
             >
-              <div class="dropdown inline-block relative">
+              <div class="dropdown inline-block">
                 <span class="rounded inline-flex items-center">
                   <span class="list-item-navigation">Partners</span>
                 </span>
@@ -220,6 +338,54 @@ export default {
 .nuxt-link-exact-active {
   color: #4781dc;
 }
+
+/* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.hoverable {
+  position: static;
+}
+
+.hoverable > a:after {
+  content: '\25BC';
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+.hoverable:hover .mega-menu {
+  display: block;
+  animation: bounce 2s;
+  transition: all 21ms ease;
+  margin-top: 4px;
+}
+/* #hoverable Class Styles ends here */
 
 @media (min-width: 768px) {
   .btnscoped {
