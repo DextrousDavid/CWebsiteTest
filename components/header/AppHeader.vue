@@ -51,17 +51,19 @@
                   <ul
                     class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3"
                   >
-                    <div class="flex items-center hover:bg-blue-100">
-                      <img
-                        class="products-logo h-8 w-8"
-                        src="/img/Optima-logo.svg"
-                      />
-                      <h3
-                        class="ml-1 font-bold text-xl text-blue-600 text-bold mb-2"
-                      >
-                        Optima
-                      </h3>
-                    </div>
+                    <nuxt-link to="/products/optima">
+                      <div class="flex items-center hover:bg-blue-100">
+                        <img
+                          class="products-logo h-8 w-8"
+                          src="/img/Optima-logo.svg"
+                        />
+                        <h3
+                          class="ml-1 font-bold text-xl text-blue-600 text-bold mb-2"
+                        >
+                          Optima
+                        </h3>
+                      </div>
+                    </nuxt-link>
                     <p class="ml-1 text-black text-base">
                       An integrated cloud ERP for accounting, Supply Chain and
                       Unified Commerce Solutions.

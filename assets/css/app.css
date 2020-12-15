@@ -123,13 +123,13 @@ padding-top:29px;
 padding-bottom: 30px;
 padding-left: 60px;
 padding-right: 50px;
-border-top: 2px solid #ECECEC;;
+border-top: 2px solid #ECECEC;
 }
 .trust-enterprices{
     font-family: GalanoGrotesque;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 23px;
-    color: #272525;
+    color: #000;
     margin-right: 20px;
     margin-top: 10px;
     display: inline-block
@@ -489,7 +489,7 @@ margin-right: 50px;
 .bottom-text{
     font-family: GalanoGrotesque-Medium;
 font-size: 100%;
-line-height: 18px;
+line-height: 24px;
 letter-spacing: 0.015em;
 max-width: 70%;
 color: #666666;
@@ -541,6 +541,15 @@ color: #666666;
 @media (max-width: 768px){
 .log-wrapper{
 margin-left: 0px;
+}
+.trust-enterprices{
+    font-family: GalanoGrotesque;
+    font-size: 12px;
+    line-height: 23px;
+    color: #fff;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: inline-block
 }
 
 /* @media (min-width: 768px) {
