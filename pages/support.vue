@@ -7,11 +7,9 @@
       <div class="content-center mr-3 ml-3">
         <h1 class="banner-h1">Submit a Support Ticket</h1>
         <div style="max-width: 550px; margin: auto">
-          <!-- <p class="banner-p font-normal">
-            Our technical teams are currently facing a significant increase in
-            the number of support requests. You may experience a delayed
-            response time as we work to address this.
-          </p> -->
+          <p class="banner-p font-normal">
+            Find help to your support questions or technical issues. The Cloudenly support team is always here to help!
+          </p>
         </div>
       </div>
     </section>
