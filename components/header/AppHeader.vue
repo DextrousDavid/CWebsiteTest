@@ -68,8 +68,8 @@
                       An integrated cloud ERP for accounting, Supply Chain and
                       Unified Commerce Solutions.
                     </p>
-                    <div class="flex items-center py-3">
-                      <svg
+                    <div class="items-center py-3">
+                      <!-- <svg
                         class="h-6 pr-3 fill-current text-black"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -77,11 +77,24 @@
                         <path
                           d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"
                         />
-                      </svg>
+                      </svg> -->
+
                       <a
                         href="#"
-                        class="text-black bold border-b-2 border-blue-300 hover:text-blue-300"
-                        >Find out more...</a
+                        class="flex text-black font-bold text-lg text-blue-600"
+                        >Apps and Features</a
+                      >
+                      <a href="#" class="flex text-black hover:text-blue-300"
+                        >CRM</a
+                      >
+                      <a href="#" class="flex text-black hover:text-blue-300"
+                        >Purchase</a
+                      >
+                      <a href="#" class="block text-black hover:text-blue-300"
+                        >Sales</a
+                      >
+                      <a href="#" class="block text-black hover:text-blue-300"
+                        >Inventory</a
                       >
                     </div>
                   </ul>
@@ -103,7 +116,7 @@
                       A digital HR system for seamless HR Operations and payroll
                       compliance.
                     </p>
-                    <div class="flex items-center py-3">
+                    <!-- <div class="flex items-center py-3">
                       <svg
                         class="h-6 pr-3 fill-current text-black"
                         xmlns="http://www.w3.org/2000/svg"
@@ -115,10 +128,10 @@
                       </svg>
                       <a
                         href="#"
-                        class="text-black bold border-b-2 border-blue-300 hover:text-blue-300"
+                        class="text-black bold border-b-2 hover:text-blue-300"
                         >Find out more...</a
                       >
-                    </div>
+                    </div> -->
                   </ul>
                   <ul
                     class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-b-0 md:border-b-0 pb-6 pt-6 lg:pt-3"
@@ -137,7 +150,7 @@
                     <p class="text-black text-base">
                       A Cloud storage and collaboration tool.
                     </p>
-                    <div class="flex items-center py-3">
+                    <!-- <div class="flex items-center py-3">
                       <svg
                         class="h-6 pr-3 fill-current text-black"
                         xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +165,7 @@
                         class="text-black bold border-b-2 border-blue-300 hover:text-blue-300"
                         >Find out more...</a
                       >
-                    </div>
+                    </div> -->
                   </ul>
                 </div>
               </div>

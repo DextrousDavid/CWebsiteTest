@@ -38,6 +38,8 @@
 
                 <a :href="faq.url6">
                   <div class="divtextColor mt-2" v-html="faq.content6"></div>
+                  <nuxt-link to="/signup">{{ faq.signup6 }}</nuxt-link>
+                  <nuxt-link to="/support">{{ faq.contactus6 }}</nuxt-link>
                 </a>
 
                 <a :href="faq.url7">
@@ -89,6 +91,10 @@ export default {
 </script>
 
 <style>
+* {
+  font-size: 16px;
+  line-height: 1.7;
+}
 .v-expansion-panel::before {
   outline: none !important;
 }

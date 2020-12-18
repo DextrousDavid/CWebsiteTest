@@ -4,8 +4,8 @@
       <div class="cloudenly-headline" style="text-align: center">
         Explore other Cloudenly Products
       </div>
-      <div class="w-full sm:flex justify-center tabs-container">
-        <div
+      <div class="w-full text-center tabs-container">
+        <!-- <div
           class="tabs-control"
           :class="
             currentTab == 1
@@ -18,18 +18,15 @@
           "
         >
           <v-tabs v-model="currentTab" background-color="transparent" grow>
-            <!-- <v-tab>Ally</v-tab> -->
             <v-tab>Optima</v-tab>
             <v-tab>HumanaR</v-tab>
             <v-tab>Dome</v-tab>
-            <!-- <v-tab>Quantum</v-tab> -->
+           
           </v-tabs>
         </div>
 
         <v-tabs-items v-model="currentTab">
-          <!-- <v-tab-item>
-            <div></div>
-          </v-tab-item> -->
+         
           <v-tab-item>
             <img
               class="mana-img"
@@ -43,10 +40,15 @@
           <v-tab-item>
             <p>(available shortly...)</p>
           </v-tab-item>
-          <!-- <v-tab-item>
-            <NewProducts :features="quantum_content" />
-          </v-tab-item> -->
-        </v-tabs-items>
+         
+        </v-tabs-items> -->
+        <div class="text-center">
+          <button class="product-btn font-semibold humana-btn">HumanaR</button>
+        </div>
+
+        <div class="text-center">
+          <button class="product-btn font-semibold dome-btn">Dome</button>
+        </div>
       </div>
     </div>
   </div>
@@ -63,6 +65,19 @@ export default {
 }
 </script>
 <style scoped>
+.cloudenly-headline {
+  font-family: GalanoGrotesque-Heavy;
+  font-size: 27px;
+  line-height: 15px;
+  color: #031a40;
+  text-align: center;
+}
+
+.dome-btn {
+  background: #16b271;
+  margin-top: 38px;
+  padding: 17px 77px;
+}
 .mana-img {
   width: 90%;
   image-rendering: -webkit-optimize-contrast;
@@ -87,6 +102,13 @@ export default {
 @media (max-width: 768px) {
   .our-product {
     padding: 0px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .cloudenly-headline {
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
   }
 }
 </style>

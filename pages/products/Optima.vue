@@ -62,7 +62,7 @@
                 </p>
               </div>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal resources-font" style="margin-top: 52px">
+                <p class="font-normal resources-font" style="margin-top: 74px">
                   Know your customers better, enhance engagement, close more
                   deals, and manage more...
                 </p>
@@ -88,7 +88,7 @@
                   Focus your sales team to navigate the realities of modern
                   selling.
                 </p>
-                <p class="font-normal resources-font">
+                <p class="font-normal resources-font" style="margin-top: 56px">
                   Optima’s sales management applications help simplify your
                   sales processes by eliminating...
                 </p>
@@ -151,13 +151,13 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card events-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1" style="color: #00">Helpdesk/Approval</h1>
+              <h1 class="resources-h1" style="color: #00">Helpdesk</h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/apps/helpdesk.svg"
-                    alt="cloudenly Helpdesk/Approval"
+                    alt="cloudenly Helpdesk"
                   />
                 </div>
                 <p
@@ -166,7 +166,7 @@
                 >
                   Build enduring customer experience.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 72px">
+                <p class="font-normal resources-font" style="margin-top: 78px">
                   Read reference product overview documentation for all
                   cloudenly’s product suite
                 </p>
@@ -332,11 +332,11 @@ export default {
   margin-top: -61px;
 }
 .top-resources-font {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
 }
 .resources-font {
-  font-size: 12px;
+  font-size: 14px;
   color: #828282;
 }
 
@@ -349,7 +349,7 @@ export default {
   border-radius: 6px;
   padding: 80px 1px 15px 1px;
   border-radius: 6px;
-  max-height: 360px;
+  max-height: 408px;
   min-height: 285px;
 }
 
