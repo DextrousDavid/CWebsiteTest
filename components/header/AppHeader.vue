@@ -81,7 +81,7 @@
 
                       <a
                         href="#"
-                        class="flex text-black font-bold text-lg text-blue-600"
+                        class="flex font-semibold text-base text-blue-600"
                         >Apps and Features</a
                       >
                       <a href="#" class="flex text-black hover:text-blue-300"

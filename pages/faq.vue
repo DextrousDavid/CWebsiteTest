@@ -119,6 +119,8 @@ export default {
           heading: 'What is the relationship between Scelloo and Cloudenly?',
           content1:
             'Cloudenly is a product suite of Scelloo a technology company that harnesses the value of technology to provide solutions to help entrepreneurs and organizations thrive.',
+          signup6: 'Sign up for free. ',
+          contactus6: '  Contact us for assistance.',
         },
         {
           id: 2,
@@ -133,12 +135,16 @@ export default {
 
           content4:
             '• <b>Dome</b> - Secure file sharing and storage for teams with access control. – <em>Coming soon</em>',
+          signup6: 'Sign up for free. ',
+          contactus6: '  Contact us for assistance.',
         },
         {
           id: 3,
           heading: 'How are Cloudenly products offered?',
           content1:
             'Cloudenly products are offered to customers primarily as “Software as a Service” (SaaS) applications and are preconfigured to fit most organization’s needs. Organizations have the flexibility to customize these products to fit their specific needs. Usage is generally subscription-based, with the option to pay monthly or annually. Cloudenly products, being cloud-based means that users do not have to worry about it being expensive and most often, challenging upgrades.',
+          signup6: 'Sign up for free. ',
+          contactus6: '  Contact us for assistance.',
         },
       ],
       faqs2: [
