@@ -62,7 +62,7 @@
                 </p>
               </div>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal resources-font" style="margin-top: 74px">
+                <p class="font-normal resources-font" style="margin-top: 54px">
                   Know your customers better, enhance engagement, close more
                   deals, and manage more...
                 </p>
@@ -88,7 +88,7 @@
                   Focus your sales team to navigate the realities of modern
                   selling.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 56px">
+                <p class="font-normal resources-font" style="margin-top: 38px">
                   Optima’s sales management applications help simplify your
                   sales processes by eliminating...
                 </p>
@@ -113,7 +113,7 @@
                   Streamline Purchasing and stay in control with
                   enterprise-class automation workflows.
                 </p>
-                <p class="font-normal resources-font">
+                <p class="font-normal resources-font" style="margin-top: 17px">
                   Seamlessly manage suppliers and purchase processes to improve
                   your supply chain...
                 </p>
@@ -139,7 +139,7 @@
                   Improve your multi-warehousing and inventory operations
                   agility and visibility.
                 </p>
-                <p class="font-normal resources-font">
+                <p class="font-normal resources-font" style="margin-top: 16px">
                   Regardless of how widespread your warehousing operations are,
                   the Optima inventory...
                 </p>
@@ -166,7 +166,7 @@
                 >
                   Build enduring customer experience.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 78px">
+                <p class="font-normal resources-font" style="margin-top: 77px">
                   Read reference product overview documentation for all
                   cloudenly’s product suite
                 </p>
