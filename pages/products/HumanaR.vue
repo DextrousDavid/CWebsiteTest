@@ -67,7 +67,7 @@
                 </p>
               </div>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal resources-font" style="margin-top: 16px">
+                <p class="font-normal resources-font" style="margin-top: 33px">
                   Set up your organizational functions, job levels and
                   designations in an efficient...
                 </p>
@@ -168,12 +168,12 @@
                 </div>
                 <p
                   class="font-semibold top-resources-font"
-                  style="margin-top: 38px"
+                  style="margin-top: 59px"
                 >
                   Automate your payroll process and accurately pay your
                   employees at the click of a button.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 41px">
+                <p class="font-normal resources-font" style="margin-top: 21px">
                   Do away with the manual processing of employees’ salaries
                   which is error prone and inefficient...
                 </p>
@@ -200,7 +200,7 @@
                   Align and manage your employees’ performance to deliver
                   desired business objectives.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 41px">
+                <p class="font-normal resources-font" style="margin-top: 29px">
                   Define your organizational performance goals, create and
                   assign corresponding KPAs and...
                 </p>
@@ -260,7 +260,7 @@
                   Gain useful business insights to optimize your HR operations,
                   people’s experience and drive growth.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 15px">
+                <p class="font-normal resources-font" style="margin-top: 41px">
                   Our mission is to enable you gain invaluable insights into
                   your HR Operations and people...
                 </p>

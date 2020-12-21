@@ -62,7 +62,7 @@
                 </p>
               </div>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal resources-font" style="margin-top: 54px">
+                <p class="font-normal resources-font" style="margin-top: 39x">
                   Know your customers better, enhance engagement, close more
                   deals, and manage more...
                 </p>
@@ -166,7 +166,7 @@
                 >
                   Build enduring customer experience.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 77px">
+                <p class="font-normal resources-font" style="margin-top: 60px">
                   Read reference product overview documentation for all
                   cloudenly’s product suite
                 </p>
