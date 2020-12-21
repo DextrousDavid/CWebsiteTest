@@ -7,11 +7,68 @@
       <div class="items-start flex-shrink-0 text-white mr-6 log-wrapper">
         <nuxt-link to="/">
           <img
-            class="nav-image xl:mr-5 cloudenly-logo"
+            class="nav-image xl:mr-1 cloudenly-logo"
             src="/img/cloudenly-logo.svg"
             alt="cloudenly logo"
           />
         </nuxt-link>
+        <div class="vl"></div>
+
+        <img
+          class="nav-image xl:mr-1 cloudenly-logo"
+          src="~assets/optimaHeader.svg"
+          alt="optima logo"
+        />
+        <span
+          class="text-black font-semibold"
+          style="margin-left: 4px; margin-top: 4px"
+          >Optima</span
+        >
+        <span
+          class="block"
+          style="margin-top: 10px; margin-left: 4px"
+          @click="toggle"
+        >
+          <svg
+            class="h-4 w-4"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </span>
+
+        <!-- <button
+          class="px-2 py-4 flex justify-between bg-blue-500 text-white"
+          @click.prevent="showMenu = !showMenu"
+        >
+          Optima
+          <svg
+            x-show="!showMenu"
+            class="w-6 h-6 mr-2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg
+            x-show="showMenu"
+            class="w-6 h-6 mr-2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button> -->
       </div>
 
       <div class="block lg:hidden" @click="toggle">
@@ -34,159 +91,23 @@
         class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
-          <!-- Product Hoverable megamenu -->
-          <no-ssr>
-            <li
-              class="hoverable block mt-4 lg:inline-block lg:mt-0 px-1 py-1 hover:bg-gray-200 rounded mr-2"
-            >
-              <span
-                class="block lg:inline-block lg:mt-0 px-1 hover:bg-gray-200 rounded"
-              >
-                <span class="list-item-navigation">Products</span>
-              </span>
-              <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-white">
-                <div
-                  class="container mx-auto w-full flex flex-wrap justify-between mx-2"
-                >
-                  <ul
-                    class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3"
-                  >
-                    <nuxt-link to="/products/optima">
-                      <div class="flex items-center hover:bg-blue-100">
-                        <img
-                          class="products-logo h-8 w-8"
-                          src="/img/Optima-logo.svg"
-                        />
-                        <h3
-                          class="ml-1 font-bold text-xl text-blue-600 text-bold mb-2"
-                        >
-                          Optima
-                        </h3>
-                      </div>
-                    </nuxt-link>
-                    <p class="ml-1 text-black text-base">
-                      An integrated cloud ERP for accounting, Supply Chain and
-                      Unified Commerce Solutions.
-                    </p>
-                    <div class="items-center py-3">
-                      <!-- <svg
-                        class="h-6 pr-3 fill-current text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"
-                        />
-                      </svg> -->
-
-                      <a
-                        href="#"
-                        class="flex font-semibold text-base text-blue-600"
-                        >Apps and Features</a
-                      >
-                      <a href="#" class="flex text-black hover:text-blue-300"
-                        >CRM</a
-                      >
-                      <a href="#" class="flex text-black hover:text-blue-300"
-                        >Purchase</a
-                      >
-                      <a href="#" class="block text-black hover:text-blue-300"
-                        >Sales</a
-                      >
-                      <a href="#" class="block text-black hover:text-blue-300"
-                        >Inventory</a
-                      >
-                    </div>
-                  </ul>
-                  <ul
-                    class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3"
-                  >
-                    <nuxt-link to="/products/humanar">
-                      <div class="flex items-center hover:bg-purple-100">
-                        <img
-                          class="products-logo h-8 w-8"
-                          src="/img/Humana-logo.svg"
-                        />
-                        <h3
-                          class="ml-1 font-bold text-xl text-purple-700 text-bold mb-2"
-                        >
-                          HumanaR
-                        </h3>
-                      </div>
-                    </nuxt-link>
-                    <p class="text-black text-base">
-                      A digital HR system for seamless HR Operations and payroll
-                      compliance.
-                    </p>
-                    <!-- <div class="flex items-center py-3">
-                      <svg
-                        class="h-6 pr-3 fill-current text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"
-                        />
-                      </svg>
-                      <a
-                        href="#"
-                        class="text-black bold border-b-2 hover:text-blue-300"
-                        >Find out more...</a
-                      >
-                    </div> -->
-                  </ul>
-                  <ul
-                    class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-b-0 md:border-b-0 pb-6 pt-6 lg:pt-3"
-                  >
-                    <div class="flex items-center hover:bg-green-100">
-                      <img
-                        class="products-logo h-8 w-8"
-                        src="/img/Dome-logo.svg"
-                      />
-                      <h3
-                        class="ml-1 font-bold text-xl text-green-600 text-bold mb-2"
-                      >
-                        Dome
-                      </h3>
-                    </div>
-                    <p class="text-black text-base">
-                      A Cloud storage and collaboration tool.
-                    </p>
-                    <!-- <div class="flex items-center py-3">
-                      <svg
-                        class="h-6 pr-3 fill-current text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"
-                        />
-                      </svg>
-                      <a
-                        href="#"
-                        class="text-black bold border-b-2 border-blue-300 hover:text-blue-300"
-                        >Find out more...</a
-                      >
-                    </div> -->
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </no-ssr>
-          <!-- Product Hoverable megamenu ends here -->
-
+          <li
+            class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
+          >
+            Apps
+          </li>
           <nuxt-link
             to="/pricing"
             class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
           >
             Pricing
           </nuxt-link>
-          <no-ssr>
-            <!-- using no ssr because of anchor tag( nuxt serverside rendering) -->
+          <!-- <no-ssr>
+            using no ssr because of anchor tag( nuxt serverside rendering)
             <li
               class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
             >
-              <div class="dropdown inline-block">
+               <div class="dropdown inline-block">
                 <span class="rounded inline-flex items-center">
                   <span class="list-item-navigation">Partners</span>
                 </span>
@@ -206,9 +127,9 @@
                     >
                   </li>
                 </ul>
-              </div>
+              </div> 
             </li>
-          </no-ssr>
+          </no-ssr> -->
           <nuxt-link
             class="list-item-navigation block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-200 py-2 px-2 pt-1 rounded duration-300"
             to="/resources"
@@ -281,6 +202,13 @@ export default {
 </script>
 
 <style scoped>
+.vl {
+  border-left: 2px solid #c4c4c4;
+  height: 33px;
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }

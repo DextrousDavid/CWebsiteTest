@@ -1,50 +1,54 @@
 <!-- eslint-disable no-irregular-whitespace -->
 <template>
   <div>
-    <OptimaHeader />
+    <humanarHeader />
     <div>
       <!-- Replace the one above with this -->
       <div class="sm:flex mb-4 landing-page-banner">
         <div class="sm:w-1/2 landing-page-left-div sm:flex justify-start">
           <div class="div-wrapper">
             <div class="bold-header">
-              Unify and Drive every part of your commerce...
+              Harmonize your HR operations and maximize your people’s
+              experience.
             </div>
             <div class="light-text-header bottom-text">
-              Deliver a superior customer experience and operational efficiency
-              with integrated customer relationship management, commerce, and
-              accounting software. Adapt quickly, extend the business reach, and
-              reduce cost.
+              Transform your HR processes and boost your employees experience in
+              the workplace. Streamline and manage your organizational
+              structure, workflows, employees and reward systems to achieve your
+              business goals.
             </div>
             <div class="call-to-action-div sm:flex"></div>
           </div>
         </div>
         <div class="sm:w-1/2 landing-page-right-div flex">
-          <img
+          <!-- <img
             class="mana-img"
             src="/img/optima-transactions.jpg"
             alt="Optima banner image"
-          />
+          /> -->
         </div>
       </div>
 
       <div class="enterprices flex-wrap text-center">
         <div class="trust-enterprices text-center">
-          Source. Store. Sell. Manage customer’s and your multi-outlet,
-          multi-inventory business with Optima.
+          Design your organization, manage your employees, their performance,
+          documents and benefits; process payroll, gain powerful insights with
+          HumanaR and much more...
         </div>
       </div>
     </div>
     <!-- banner ends here -->
     <!-- Apps begins here -->
-    <div class="optima-apps-headline" style="color: #4d4d4d">Apps</div>
+    <div class="humanar-apps-headline" style="color: #4d4d4d">Apps</div>
     <main class="container mx-auto px-10 py-10">
       <div class="flex flex-wrap mt-12">
         <!-- Row One Starts here! -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1 product-overview-h1">CRM</h1>
+              <h1 class="resources-h1 product-overview-h1">
+                Organization Design
+              </h1>
               <div class="flex justify-center mt-8">
                 <img
                   class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
@@ -58,13 +62,14 @@
                   class="font-semibold top-resources-font"
                   style="margin-top: 50px"
                 >
-                  Build enduring customer experience.
+                  Set up and manage your organizational structure to deliver
+                  your set business goals.
                 </p>
               </div>
               <div style="max-width: 400px; margin: auto">
-                <p class="font-normal resources-font" style="margin-top: 74px">
-                  Know your customers better, enhance engagement, close more
-                  deals, and manage more...
+                <p class="font-normal resources-font" style="margin-top: 16px">
+                  Set up your organizational functions, job levels and
+                  designations in an efficient...
                 </p>
               </div>
             </div>
@@ -74,23 +79,23 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1">Sales</h1>
+              <h1 class="resources-h1">Employees</h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
-                    src="~assets/apps/sales.svg"
-                    alt="cloudenly Sales"
+                    src="~assets/apps/employees.svg"
+                    alt="cloudenly employees"
                   />
                 </div>
 
                 <p class="font-semibold top-resources-font">
-                  Focus your sales team to navigate the realities of modern
-                  selling.
+                  Create your employees’ directory and seamlessly manage their
+                  records and privileges in real-time.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 56px">
-                  Optima’s sales management applications help simplify your
-                  sales processes by eliminating...
+                <p class="font-normal resources-font" style="margin-top: 19px">
+                  Create your employees and seamlessly manage their biodata,
+                  employment details, payroll...
                 </p>
               </div>
             </div>
@@ -100,22 +105,22 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1">Purchase</h1>
+              <h1 class="resources-h1">HR Documentations</h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/apps/purchase.svg"
-                    alt="cloudenly userguide logo"
+                    alt="cloudenly purchase"
                   />
                 </div>
                 <p class="font-semibold top-resources-font">
-                  Streamline Purchasing and stay in control with
-                  enterprise-class automation workflows.
+                  Organize, secure and control access to files and folders in
+                  your workplace.
                 </p>
                 <p class="font-normal resources-font">
-                  Seamlessly manage suppliers and purchase processes to improve
-                  your supply chain...
+                  Maintain an organized, secure, accurate and consistent
+                  documentation system for you...
                 </p>
               </div>
             </div>
@@ -126,22 +131,23 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1" style="color: #00">Inventory</h1>
+              <h1 class="resources-h1" style="color: #00">
+                Benefits Administration
+              </h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
-                    src="~assets/apps/inventory.svg"
-                    alt="cloudenly inventory"
+                    src="~assets/apps/benefits-administration.svg"
+                    alt="cloudenly benefits-administration.svg"
                   />
                 </div>
                 <p class="font-semibold top-resources-font">
-                  Improve your multi-warehousing and inventory operations
-                  agility and visibility.
+                  Efficiently manage and track all your employees’ benefits.
                 </p>
-                <p class="font-normal resources-font">
-                  Regardless of how widespread your warehousing operations are,
-                  the Optima inventory...
+                <p class="font-normal resources-font" style="margin-top: 36px">
+                  Regardless of the number of employees in your organization and
+                  the different benefits policies...
                 </p>
               </div>
             </div>
@@ -151,49 +157,25 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card events-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1" style="color: #00">Helpdesk</h1>
+              <h1 class="resources-h1" style="color: #00">Payroll</h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
-                    src="~assets/apps/helpdesk.svg"
-                    alt="cloudenly Helpdesk"
+                    src="~assets/apps/payroll.svg"
+                    alt="cloudenly payroll"
                   />
                 </div>
                 <p
                   class="font-semibold top-resources-font"
                   style="margin-top: 38px"
                 >
-                  Build enduring customer experience.
+                  Automate your payroll process and accurately pay your
+                  employees at the click of a button.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 78px">
-                  Read reference product overview documentation for all
-                  cloudenly’s product suite
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <div class="resource-card">
-            <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1" style="color: #00">Payments</h1>
-              <div style="max-width: 400px; margin: auto">
-                <div class="flex justify-center mt-8">
-                  <img
-                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
-                    src="~assets/apps/payments.svg"
-                    alt="cloudenly payments"
-                  />
-                </div>
-                <p class="font-semibold top-resources-font">
-                  Transform your payment from ordinary transactional activities
-                  to business intelligence centers.
-                </p>
-                <p class="font-normal resources-font">
-                  Optima’s payment application is a central payment management
-                  solution that provides...
+                <p class="font-normal resources-font" style="margin-top: 41px">
+                  Do away with the manual processing of employees’ salaries
+                  which is error prone and inefficient...
                 </p>
               </div>
             </div>
@@ -203,22 +185,24 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 style="color: #000" class="resources-h1">Accounting</h1>
+              <h1 class="resources-h1" style="color: #00">
+                Performance Management
+              </h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
-                    src="~assets/apps/accounting.svg"
-                    alt="cloudenly accounting"
+                    src="~assets/apps/performance-management.svg"
+                    alt="cloudenly performance-management"
                   />
                 </div>
                 <p class="font-semibold top-resources-font">
-                  Be up to date with your financials, manage costs better and
-                  achieve optimal business performance.
+                  Align and manage your employees’ performance to deliver
+                  desired business objectives.
                 </p>
-                <p class="font-normal resources-font">
-                  Optima’s accounting solution effortlessly couples your core
-                  accounting functionality...
+                <p class="font-normal resources-font" style="margin-top: 41px">
+                  Define your organizational performance goals, create and
+                  assign corresponding KPAs and...
                 </p>
               </div>
             </div>
@@ -228,21 +212,57 @@
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
           <div class="resource-card">
             <div class="text-center mr-3 ml-3">
-              <h1 class="resources-h1" style="color: #00">Analytics</h1>
+              <h1 style="color: #000" class="resources-h1">
+                Employee Self Service (ESS)
+              </h1>
               <div style="max-width: 400px; margin: auto">
                 <div class="flex justify-center mt-8">
                   <img
                     class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
-                    src="~assets/apps/analytics.svg"
-                    alt="cloudenly analytics"
+                    src="~assets/apps/employee-self-service.svg"
+                    alt="cloudenly employee-self-service"
                   />
                 </div>
-                <p class="font-semibold top-resources-font">
-                  Access data-driven business insights to drive growth.
+                <p
+                  class="font-semibold top-resources-font"
+                  style="margin-top: 37px"
+                >
+                  Give control to your employees, make your HR operations more
+                  efficient and ultimately improve your people’s experience.
                 </p>
-                <p class="font-normal resources-font" style="margin-top: 55px">
-                  Analytics and decision-support are central to our technology
-                  strategy. Our mission is to...
+                <p class="font-normal resources-font" style="margin-top: 20px">
+                  With ESS, your employees can directly manage their biodata,
+                  engage in vertical and horizontal...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <div class="resource-card">
+            <div class="text-center mr-3 ml-3">
+              <h1 class="resources-h1" style="color: #00">
+                Business Intelligence and Analytics
+              </h1>
+              <div style="max-width: 400px; margin: auto">
+                <div class="flex justify-center mt-8">
+                  <img
+                    class="fill-current h-16 w-16 transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
+                    src="~assets/apps/business-intelligence-and-analytics.svg"
+                    alt="cloudenly business-intelligence-and-analytics"
+                  />
+                </div>
+                <p
+                  class="font-semibold top-resources-font"
+                  style="margin-top: 20px"
+                >
+                  Gain useful business insights to optimize your HR operations,
+                  people’s experience and drive growth.
+                </p>
+                <p class="font-normal resources-font" style="margin-top: 15px">
+                  Our mission is to enable you gain invaluable insights into
+                  your HR Operations and people...
                 </p>
               </div>
             </div>
@@ -298,9 +318,9 @@
          
         </v-tabs-items> -->
           <div class="text-center">
-            <nuxt-link to="/products/humanar">
-              <button class="product-btn font-semibold humana-btn">
-                HumanaR
+            <nuxt-link to="/products/optima">
+              <button class="product-btn font-semibold optima-btn">
+                Optima
               </button>
             </nuxt-link>
           </div>
@@ -316,11 +336,11 @@
 
 <script>
 // import NewProductPackComponent from '../../components/contents/NewProductPackComponent'
-import OptimaHeader from '../../components/header/OptimaHeader'
+import humanarHeader from '../../components/header/humanarHeader'
 export default {
   components: {
     // NewProductPackComponent,
-    OptimaHeader,
+    humanarHeader,
   },
 }
 </script>
@@ -328,13 +348,13 @@ export default {
 <style scoped>
 .cloudenly-headline {
   font-family: GalanoGrotesque-Heavy;
-  font-size: 27px;
+  font-size: 25px;
   line-height: 15px;
   color: #031a40;
   text-align: center;
   margin-top: 25px;
 }
-.optima-apps-headline {
+.humanar-apps-headline {
   font-family: GalanoGrotesque-Heavy;
   font-size: 38px;
   line-height: 15px;
@@ -346,6 +366,9 @@ export default {
   background: #16b271;
   margin-top: 38px;
   padding: 17px 77px;
+}
+.optima-btn {
+  padding: 17px 71px;
 }
 .landing-page-banner-background {
   background: linear-gradient(
@@ -448,7 +471,7 @@ p {
   padding-left: 60px;
   padding-right: 50px;
   border-top: 2px solid #ececec;
-  background-color: #4781dc;
+  background-color: #592666;
 }
 
 .trust-enterprices {
@@ -531,16 +554,13 @@ p {
   }
 }
 @media (max-width: 768px) {
-  .optima-apps-headline {
-    font-family: GalanoGrotesque-Heavy;
-    font-size: 31px;
-    line-height: 15px;
-    color: #031a40;
-    text-align: center;
-    margin-top: 25px;
-  }
   .cloudenly-headline {
     font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .optima-apps-headline {
+    font-size: 31px;
     line-height: 22px;
     text-align: center;
   }
