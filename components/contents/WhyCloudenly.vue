@@ -54,11 +54,13 @@
                 <div class="flex-2 card-text-div">
                   <div class="card-header">Scalability</div>
                   <div class="card-inner-text">
-                    We built the Cloudenly infrastructure on a Quantum OS with a
-                    unified data kernel serving all of her applications, making
-                    room for your scalability. This structure empowers you to
-                    scale and grow your business without losing a single data
-                    and enables us to meet you at your stage of growth.
+                    The Quantum OS, a proprietary technology, powers the
+                    Cloudenly application suite: built with the microservices
+                    architecture and a unified application data kernel. Thus,
+                    making it possible to easily add new services or adapt to
+                    new service environments and empowers you to scale your
+                    services on your terms, depending on your business growth
+                    stage.
                   </div>
                 </div>
                 <div class="flex-1 card-img-right scalability-bg">

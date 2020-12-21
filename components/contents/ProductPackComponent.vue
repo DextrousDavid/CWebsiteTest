@@ -93,19 +93,34 @@ Orders, Invoice, Debit Notes`,
   Account Receivables, Account Payables, Revenue,
   Expense, Profits & Loss, Assets & Liabilities.`,
         },
+
         {
-          header: 'Commerce Cloud',
-          content: `PoS, Marketplace integrations`,
-        },
-        {
-          header: 'Production Management (Coming Soon)',
-          content: `Material Requirement Planning, Material Assembly, Job
-                    Orders, Material Request, Production Management`,
+          header: 'Analytics & Business Intelligence',
+          content: ``,
         },
 
         {
-          header: `Analytics & Business Intelligence`,
+          header: ``,
         },
+        //       {
+        //         header: '	Accounting',
+        //         content: `Chart of Accounts, Cost Centers, Expense Codes,
+        // Account Receivables, Account Payables, Revenue,
+        // Expense, Profits & Loss, Assets & Liabilities.`,
+        //       },
+        //       {
+        //         header: 'Commerce Cloud',
+        //         content: `PoS, Marketplace integrations`,
+        //       },
+        //       {
+        //         header: 'Production Management (Coming Soon)',
+        //         content: `Material Requirement Planning, Material Assembly, Job
+        //                   Orders, Material Request, Production Management`,
+        //       },
+
+        //       {
+        //         header: `Analytics & Business Intelligence`,
+        //       },
       ],
       humana_content: [
         {

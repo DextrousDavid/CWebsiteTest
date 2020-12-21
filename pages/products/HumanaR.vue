@@ -12,10 +12,13 @@
               experience.
             </div>
             <div class="light-text-header bottom-text">
-              Transform your HR processes and boost your employees experience in
+              <!-- Transform your HR processes and boost your employees experience in
               the workplace. Streamline and manage your organizational
               structure, workflows, employees and reward systems to achieve your
-              business goals.
+              business goals. -->
+              Experience exciting people operations capabilities, streamline HR
+              workflows, improve employee experience with self-service and
+              workforce analytics.
             </div>
             <div class="call-to-action-div sm:flex"></div>
           </div>

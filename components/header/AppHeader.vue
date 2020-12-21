@@ -65,8 +65,8 @@
                       </div>
                     </nuxt-link>
                     <p class="ml-1 text-black text-base">
-                      An integrated cloud ERP for accounting, Supply Chain and
-                      Unified Commerce Solutions.
+                      Integrated Cloud CRM and ERP for Supply Chain, Retail,
+                      Payments, and Accounting.
                     </p>
                     <div class="items-center py-3">
                       <!-- <svg
@@ -115,8 +115,8 @@
                       </div>
                     </nuxt-link>
                     <p class="text-black text-base">
-                      A digital HR system for seamless HR Operations and payroll
-                      compliance.
+                      Intelligent HR and people operations software built to
+                      empower your people and business.
                     </p>
                     <!-- <div class="flex items-center py-3">
                       <svg
@@ -150,7 +150,8 @@
                       </h3>
                     </div>
                     <p class="text-black text-base">
-                      A Cloud storage and collaboration tool.
+                      Intuitive, secure, and scalable cloud storage and
+                      collaboration platform built for work.
                     </p>
                     <!-- <div class="flex items-center py-3">
                       <svg

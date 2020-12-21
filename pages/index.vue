@@ -21,8 +21,9 @@
             business operation. -->
             </div>
             <div class="light-text-header bottom-text">
-              CRM. Purchase. Sales. Inventory. Operations. Commerce. Cloud.
-              Finance. Cloud Storage. HRM.
+              CRM. Purchase. Sales. Inventory. Payments. Accounting. Human
+              Resource Management. Cloud Storage. Analytics and Decision
+              Support.
             </div>
             <div class="call-to-action-div sm:flex"></div>
             <button

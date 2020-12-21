@@ -11,10 +11,9 @@
               Unify and Drive every part of your commerce...
             </div>
             <div class="light-text-header bottom-text">
-              Deliver a superior customer experience and operational efficiency
-              with integrated customer relationship management, commerce, and
-              accounting software. Adapt quickly, extend the business reach, and
-              reduce cost.
+              Improve customer experience, operational efficiency, business
+              agility with streamlined supply chain, retail, payment, and
+              accounting.
             </div>
             <div class="call-to-action-div sm:flex"></div>
           </div>
